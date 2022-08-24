@@ -1,0 +1,15 @@
+# private
+private
+
+# build output
+packages/**/dist
+pages/dist
+
+# dependencies
+node_modules
+
+# logs
+pnpm-debug.log*
+
+# macOS-specific files
+.DS_Store

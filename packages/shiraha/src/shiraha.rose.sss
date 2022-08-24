@@ -1,0 +1,14 @@
+@import './shiraha.base.sss'
+
+@layer base
+  @media (prefers-color-scheme: light) :root,
+  .light
+    --shiraha-background: rgb(249 250 251) // gray-50
+    --shiraha-color-primary: 244 63 94 // rose-500
+    --shiraha-color-content: 17 24 39 // gray-900
+
+  @media (prefers-color-scheme: dark) :root,
+  .dark
+    --shiraha-background: rgb(17 24 39) // gray-900
+    --shiraha-color-primary: 244 63 94 // rose-500
+    --shiraha-color-content: 249 250 251 // gray-50

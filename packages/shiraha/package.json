@@ -1,0 +1,46 @@
+{
+  "name": "shiraha",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "藍+85CD",
+  "license": "WTFPL",
+  "keywords": [
+    "css",
+    "theme",
+    "classless",
+    "web-design",
+    "reset",
+    "style"
+  ],
+  "description": "A beautiful classless CSS theme/framework with Sugar.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/shiraha.git",
+    "directory": "packages/shiraha"
+  },
+  "homepage": "https://github.com/importantimport/shiraha",
+  "bugs": "https://github.com/importantimport/shiraha/issues",
+  "scripts": {
+    "dev": "run-s dev:postcss",
+    "dev:postcss": "postcss src/*.sss --base src --dir dist --ext css --watch",
+    "build": "run-s build:postcss",
+    "build:postcss": "postcss src/*.sss --base src --dir dist --ext css",
+    "lint": "run-s lint:stylelint lint:prettier lint:eslint",
+    "lint:stylelint": "stylelint \"src/**/*.sss\"",
+    "lint:prettier": "prettier --check --plugin-search-dir=. .",
+    "lint:eslint": "eslint --ignore-path .gitignore .",
+    "format": "run-s format:stylelint format:prettier",
+    "format:stylelint": "stylelint \"src/**/*.sss\" --fix --allow-empty-input",
+    "format:prettier": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-easy-import": "^4.0.0",
+    "postcss-mixins": "^9.0.3",
+    "postcss-preset-env": "^7.7.2",
+    "sugarss": "^4.0.1"
+  }
+}
