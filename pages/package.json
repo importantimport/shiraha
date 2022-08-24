@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
     "shiraha": "workspace:*",
@@ -19,6 +21,7 @@
     "@vueuse/head": "^0.7.9",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
+    "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-vue-markdown": "^0.21.1",
     "vite-ssg": "^0.20.2",
     "vue-i18n": "^9.2.2",
