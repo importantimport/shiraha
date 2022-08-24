@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "string-quotes": "single"
+  },
+  "customSyntax": "sugarss"
+}
