@@ -21,17 +21,10 @@
   "homepage": "https://github.com/importantimport/shiraha",
   "bugs": "https://github.com/importantimport/shiraha/issues",
   "scripts": {
-    "dev": "run-s dev:postcss",
-    "dev:postcss": "postcss src/*.sss --base src --dir dist --ext css --watch",
-    "build": "run-s build:postcss",
-    "build:postcss": "postcss src/*.sss --base src --dir dist --ext css",
-    "lint": "run-s lint:stylelint lint:prettier lint:eslint",
-    "lint:stylelint": "stylelint \"src/**/*.sss\"",
-    "lint:prettier": "prettier --check --plugin-search-dir=. .",
-    "lint:eslint": "eslint --ignore-path .gitignore .",
-    "format": "run-s format:stylelint format:prettier",
-    "format:stylelint": "stylelint \"src/**/*.sss\" --fix --allow-empty-input",
-    "format:prettier": "prettier --write --plugin-search-dir=. ."
+    "dev": "postcss src/*.sss --base src --dir dist --ext css --watch",
+    "build": "postcss src/*.sss --base src --dir dist --ext css",
+    "lint": "stylelint \"src/**/*.sss\"",
+    "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
   },
   "devDependencies": {
     "cssnano": "^5.1.12",
