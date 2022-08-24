@@ -9,24 +9,24 @@ export default defineComponent({
         {
           rel: 'icon',
           type: 'image/svg+xml',
-          href: './snowflake.svg',
-        },
+          href: './snowflake.svg'
+        }
       ],
       meta: [
         {
           name: `description`,
-          content: `Website description`,
-        },
-      ],
+          content: `Website description`
+        }
+      ]
     })
     return () => (
       <>
         <div>
-          <a href='https://github.com/importantimport/shiraha' target='_blank'>
-            <img src='/shiraha.svg' class='logo' alt='Shiraha logo' />
+          <a href="https://github.com/importantimport/shiraha" target="_blank">
+            <img src="/shiraha.svg" class="logo" alt="Shiraha logo" />
           </a>
         </div>
       </>
     )
-  },
+  }
 })

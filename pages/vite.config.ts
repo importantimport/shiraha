@@ -12,9 +12,9 @@ export default defineConfig({
     vue({ include: [/\.vue$/, /\.md$/] }),
     vueJsx(),
     vueI18n({
-      include: resolve('src/locales/**'),
+      include: resolve('src/locales/**')
     }),
     Markdown(),
-    eslint(),
-  ],
+    eslint()
+  ]
 })
