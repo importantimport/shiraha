@@ -1,3 +1,6 @@
 {
-  "recommendations": ["octref.vetur"]
+  "recommendations": [
+    "octref.vetur",
+    "stylelint.vscode-stylelint"
+  ]
 }
