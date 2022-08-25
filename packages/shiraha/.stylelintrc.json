@@ -3,7 +3,8 @@
     "stylelint-order"
   ],
   "extends": [
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-clean-order"
   ],
   "rules": {
     "block-opening-brace-space-before": "never",
