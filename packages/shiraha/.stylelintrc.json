@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "string-quotes": "single",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "define-mixin",
+          "mixin"
+        ]
+      }
+    ]
+  },
+  "customSyntax": "sugarss"
+}
