@@ -6,6 +6,9 @@
     "stylelint-config-standard"
   ],
   "rules": {
+    "block-opening-brace-space-before": "never",
+    "block-closing-brace-newline-before": "never-multi-line",
+    "declaration-block-trailing-semicolon": "never",
     "string-quotes": "single",
     "at-rule-no-unknown": [
       true,
@@ -14,6 +17,12 @@
           "define-mixin",
           "mixin"
         ]
+      }
+    ],
+    "max-line-length": [
+      120,
+      {
+        "ignore": "non-comments"
       }
     ]
   },
