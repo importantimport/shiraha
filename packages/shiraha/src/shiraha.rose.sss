@@ -1,4 +1,4 @@
-@import './shiraha.base.sss'
+@import './shiraha.sss'
 
 @define-mixin theme-light
   --shiraha-color-background: rgb(249 250 251) // gray-50
@@ -14,18 +14,14 @@
   :root
     @mixin theme-light
 
+[data-theme='light'],
 .light
-  @mixin theme-light
-
-[data-theme='light']
   @mixin theme-light
 
 @media (prefers-color-scheme: dark)
   :root
     @mixin theme-dark
 
+[data-theme='dark'],
 .dark
-  @mixin theme-dark
-
-[data-theme='dark']
   @mixin theme-dark
