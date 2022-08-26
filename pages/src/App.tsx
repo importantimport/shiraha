@@ -1,6 +1,8 @@
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 
+import Intro from './components/intro.md'
+
 export default defineComponent({
   setup: () => {
     useHead({
@@ -15,7 +17,7 @@ export default defineComponent({
       meta: [
         {
           name: `description`,
-          content: `Website description`
+          content: `A beautiful class-light CSS theme/framework with Sugar.`
         }
       ]
     })
@@ -23,9 +25,10 @@ export default defineComponent({
       <>
         <div>
           <a href="https://github.com/importantimport/shiraha" target="_blank">
-            <img src="/snowflake.svg" class="logo" alt="Shiraha logo" />
+            <img src="/snowflake.svg" width="192" alt="Shiraha logo" />
           </a>
         </div>
+        <Intro />
       </>
     )
   }
