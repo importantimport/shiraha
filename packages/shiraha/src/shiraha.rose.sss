@@ -1,35 +1,21 @@
 @import './shiraha.sss'
 
-@define-mixin theme-light
-  --shiraha-color-background: rgb(249 250 251) // gray-50
-  --shiraha-color-primary: 244 63 94 // rose-500
-  --shiraha-color-content: 17 24 39 // gray-900
-
-  color-scheme: light
-
-@define-mixin theme-dark
-  --shiraha-color-background: rgb(17 24 39) // gray-900
-  --shiraha-color-primary: 244 63 94 // rose-500
-  --shiraha-color-content: 249 250 251 // gray-50
-
-  color-scheme: dark
-
-@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-  :root
-
-    @mixin theme-light
-
-[data-theme='light'],
-.light
-
-  @mixin theme-light
-
-@media (prefers-color-scheme: dark)
-  :root
-
-    @mixin theme-dark
-
-[data-theme='dark'],
-.dark
-
-  @mixin theme-dark
+:root
+  --shiraha-color-background-h-light: 210
+  --shiraha-color-background-s-light: 20%
+  --shiraha-color-background-l-light: 98%
+  --shiraha-color-content-h-light: 221
+  --shiraha-color-content-s-light: 39%
+  --shiraha-color-content-l-light: 11%
+  --shiraha-color-primary-h-light: 350
+  --shiraha-color-primary-s-light: 89%
+  --shiraha-color-primary-l-light: 60%
+  --shiraha-color-background-h-dark: 221
+  --shiraha-color-background-s-dark: 39%
+  --shiraha-color-background-l-dark: 11%
+  --shiraha-color-content-h-dark: 210
+  --shiraha-color-content-s-dark: 20%
+  --shiraha-color-content-l-dark: 98%
+  --shiraha-color-primary-h-dark: 350
+  --shiraha-color-primary-s-dark: 89%
+  --shiraha-color-primary-l-dark: 60%

@@ -1,3 +1,23 @@
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+  :root
+
+    @mixin theme light
+
+[data-theme='light'],
+.light
+
+  @mixin theme light
+
+@media (prefers-color-scheme: dark)
+  :root
+
+    @mixin theme dark
+
+[data-theme='dark'],
+.dark
+
+  @mixin theme dark
+
 :root
   --shiraha-color-background: hsl(var(--shiraha-color-background-h) var(--shiraha-color-background-s) var(--shiraha-color-background-l))
   --shiraha-color-content: hsl(var(--shiraha-color-content-h) var(--shiraha-color-content-s) var(--shiraha-color-content-l))
