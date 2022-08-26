@@ -23,7 +23,7 @@ export default defineComponent({
       <>
         <div>
           <a href="https://github.com/importantimport/shiraha" target="_blank">
-            <img src="/shiraha.svg" class="logo" alt="Shiraha logo" />
+            <img src="/snowflake.svg" class="logo" alt="Shiraha logo" />
           </a>
         </div>
       </>
