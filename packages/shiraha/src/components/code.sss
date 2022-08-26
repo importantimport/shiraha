@@ -1,0 +1,19 @@
+pre > code
+  display: grid
+
+/* rehype-pretty-code */
+
+code[data-line-numbers]
+  counter-reset: line
+
+code[data-line-numbers] > .line::before
+  content: counter(line)
+  counter-increment: line
+
+  display: inline-block
+
+  width: 1rem
+  margin-right: 2rem
+
+  color: var(--shiraha-color-content)
+  text-align: right
