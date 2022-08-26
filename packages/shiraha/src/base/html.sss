@@ -1,5 +1,8 @@
 html
-  scroll-behavior: smooth
   scrollbar-gutter: stable both-edges
 
   tab-size: 4
+
+@media (prefers-reduced-motion: no-preference)
+  html
+    scroll-behavior: smooth
