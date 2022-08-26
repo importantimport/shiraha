@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/importantimport/shiraha",
   "bugs": "https://github.com/importantimport/shiraha/issues",
+  "main": "dist/shiraha.css",
+  "style": "dist/shiraha.css",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "dev": "postcss src/*.sss --base src --dir dist --ext css --watch",
     "build": "postcss src/*.sss --base src --dir dist --ext css",
