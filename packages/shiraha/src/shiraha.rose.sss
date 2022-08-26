@@ -5,23 +5,31 @@
   --shiraha-color-primary: 244 63 94 // rose-500
   --shiraha-color-content: 17 24 39 // gray-900
 
+  color-scheme: light
+
 @define-mixin theme-dark
   --shiraha-color-background: rgb(17 24 39) // gray-900
   --shiraha-color-primary: 244 63 94 // rose-500
   --shiraha-color-content: 249 250 251 // gray-50
 
-@media (prefers-color-scheme: light)
+  color-scheme: dark
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
   :root
+
     @mixin theme-light
 
 [data-theme='light'],
 .light
+
   @mixin theme-light
 
 @media (prefers-color-scheme: dark)
   :root
+
     @mixin theme-dark
 
 [data-theme='dark'],
 .dark
+
   @mixin theme-dark
