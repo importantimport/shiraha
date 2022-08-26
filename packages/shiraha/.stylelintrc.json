@@ -7,9 +7,9 @@
     "stylelint-config-clean-order"
   ],
   "rules": {
-    "block-opening-brace-space-before": "never",
-    "block-closing-brace-newline-before": "never-multi-line",
-    "declaration-block-trailing-semicolon": "never",
+    "block-opening-brace-space-before": null,
+    "block-closing-brace-newline-before": null,
+    "declaration-block-trailing-semicolon": null,
     "string-quotes": "single",
     "at-rule-no-unknown": [
       true,
