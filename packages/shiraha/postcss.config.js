@@ -4,9 +4,9 @@ import sugarss from 'sugarss'
 import postcssEasyImport from 'postcss-easy-import'
 import postcssMixins from 'postcss-mixins'
 import postcssPresetEnv from 'postcss-preset-env'
-// import cssnano from 'cssnano'
+import cssnano from 'cssnano'
 
-export default ({ file }) => ({
+export default ({ env, file }) => ({
   parser: file.extname === '.sss' ? sugarss : false,
   plugins: [
     postcssEasyImport({ extensions: ['.sss'] }),
@@ -36,6 +36,6 @@ export default ({ file }) => ({
         'cascade-layers': true,
       },
     }),
-    // cssnano(),
+    ...(env === 'production' ? [cssnano()] : [])
   ],
 })
