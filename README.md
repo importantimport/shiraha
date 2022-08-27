@@ -4,7 +4,7 @@
 </a>
 </div>
 <h1 align="center">Shiraha</h1>
-<p align="center">A beautiful class-light CSS theme/framework with Sugar.</p>
+<p align="center">A beautiful classless CSS theme/framework with Sugar.</p>
 
 ## 📄 License
 

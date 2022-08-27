@@ -5,13 +5,14 @@
   "author": "藍+85CD",
   "license": "WTFPL",
   "keywords": [
+    "classless",
     "css",
     "theme",
     "web-design",
     "reset",
     "style"
   ],
-  "description": "A beautiful class-light CSS theme/framework with Sugar.",
+  "description": "A beautiful classless CSS theme/framework with Sugar.",
   "repository": {
     "type": "git",
     "url": "https://github.com/importantimport/shiraha.git",
