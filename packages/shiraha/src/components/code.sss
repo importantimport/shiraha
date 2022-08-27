@@ -13,3 +13,23 @@ pre > code
 /* rehype-pretty-code*/
 
 @mixin line-numbers code[data-line-numbers]
+
+@media (prefers-color-scheme: dark)
+  pre[data-theme='light'],
+  code[data-theme='light']
+    display: none
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+  pre[data-theme='dark'],
+  code[data-theme='dark']
+    display: none
+
+:is([data-theme='dark'], .dark)
+  pre[data-theme='light'],
+  code[data-theme='light']
+    display: none
+
+:is([data-theme='light'], .light)
+  pre[data-theme='dark'],
+  code[data-theme='dark']
+    display: none
