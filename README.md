@@ -4,7 +4,27 @@
 </a>
 </div>
 <h1 align="center">Shiraha</h1>
-<p align="center">A beautiful classless CSS theme/framework with Sugar.</p>
+<p align="center">A beautiful classless CSS theme/framework with Sugar. [WIP]</p>
+
+## ✨ Features
+
+### Embracing the Future
+
+Shiraha actively uses modern CSS syntax and media queries, benchmarked against the latest browser and HTML specifications.
+
+### Compatible with some Rehype plugins [WIP]
+
+Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc.
+
+## 👥 Contributing
+
+Welcome! Shiraha is still in the early stages of development and I would be happy to merge Pull Requests. (Don't forget to use gitmoji)
+
+```bash
+pnpm dlx degit importantimport/shiraha
+pnpm install
+pnpm dev --host 0.0.0.0
+```
 
 ## 📄 License
 
