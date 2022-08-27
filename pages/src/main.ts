@@ -1,5 +1,5 @@
 import { ViteSSG } from 'vite-ssg/single-page'
 import App from './App'
-import 'shiraha/dist/shiraha.rose.css'
+import 'shiraha/rose'
 
 export const createApp = ViteSSG(App)
