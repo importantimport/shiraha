@@ -23,6 +23,7 @@
   "main": "dist/shiraha.css",
   "style": "dist/shiraha.css",
   "exports": {
+    "./package.json": "./package.json",
     ".": "./dist/shiraha.css",
     "./base": "./dist/shiraha.base.css",
     "./rose": "./dist/shiraha.rose.css",
