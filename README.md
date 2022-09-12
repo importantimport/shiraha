@@ -6,9 +6,17 @@
 <h1 align="center">Shiraha</h1>
 <p align="center">A beautiful classless CSS theme/framework with Sugar. [WIP]</p>
 
+## 📝 ToDo
+
+- Remaining unfinished default styles
+- Example site
+- [Lightning CSS](https://github.com/parcel-bundler/lightningcss)
+- Extensions:
+  - [Shiki Twoslash](https://github.com/shikijs/twoslash)
+
 ## ✨ Features
 
-### Embracing the Future
+### Future-proof
 
 Shiraha actively uses modern CSS syntax and media queries, benchmarked against the latest browser and HTML specifications.
 
