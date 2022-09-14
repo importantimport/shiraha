@@ -25,11 +25,11 @@ pre > code
     display: none
 
 :is([data-theme='dark'], .dark)
-  pre[data-theme='light'],
-  code[data-theme='light']
+  & pre[data-theme='light'],
+  & code[data-theme='light']
     display: none
 
 :is([data-theme='light'], .light)
-  pre[data-theme='dark'],
-  code[data-theme='dark']
+  & pre[data-theme='dark'],
+  & code[data-theme='dark']
     display: none
