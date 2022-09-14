@@ -10,7 +10,6 @@
 
 - Remaining unfinished default styles
 - Example site
-- [Lightning CSS](https://github.com/parcel-bundler/lightningcss)
 - Extensions:
   - [Shiki Twoslash](https://github.com/shikijs/twoslash)
 

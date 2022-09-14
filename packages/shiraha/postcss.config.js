@@ -3,13 +3,16 @@ import sugarss from 'sugarss'
 // plugins
 import postcssEasyImport from 'postcss-easy-import'
 import postcssMixins from 'postcss-mixins'
-import postcssPresetEnv from 'postcss-preset-env'
-import cssnano from 'cssnano'
+import postcssJitProps from 'postcss-jit-props'
+import postcssLightningCSS from 'postcss-lightningcss'
+import combineSelectors from 'postcss-combine-duplicated-selectors'
+// open-props
+import OpenProps from 'open-props'
 
 export default ({ env, file }) => ({
   parser: file.extname === '.sss' ? sugarss : false,
   plugins: [
-    postcssEasyImport({ extensions: ['.sss'] }),
+    postcssEasyImport({ extensions: ['.sss', '.css'] }),
     postcssMixins({
       mixins: {
         theme: (_mixin, colorScheme) => ({
@@ -23,19 +26,22 @@ export default ({ env, file }) => ({
             '--shiraha-color-primary-h': `var(--shiraha-color-primary-h-${colorScheme})`,
             '--shiraha-color-primary-s': `var(--shiraha-color-primary-s-${colorScheme})`,
             '--shiraha-color-primary-l': `var(--shiraha-color-primary-l-${colorScheme})`,
-            'color-scheme': colorScheme
-          }
-        })
-      }
-    }),
-    postcssPresetEnv({
-      browsers:
-        'defaults and supports css-variables and supports prefers-color-scheme and supports css-cascade-layers',
-      features: {
-        'nesting-rules': true,
-        'cascade-layers': true,
+            'color-scheme': colorScheme,
+          },
+        }),
       },
     }),
-    ...(env === 'production' ? [cssnano()] : [])
+    postcssJitProps(OpenProps),
+    combineSelectors(),
+    postcssLightningCSS({
+      browsers: 'defaults and supports css-cascade-layers',
+      lightningcssOptions: {
+        minify: env === 'production' ? true : false,
+        drafts: {
+          nesting: true,
+          customMedia: true,
+        },
+      },
+    }),
   ],
 })
