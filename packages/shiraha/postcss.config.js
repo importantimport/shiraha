@@ -6,6 +6,7 @@ import postcssMixins from 'postcss-mixins'
 import postcssJitProps from 'postcss-jit-props'
 import postcssLightningCSS from 'postcss-lightningcss'
 import combineSelectors from 'postcss-combine-duplicated-selectors'
+import combineMediaQuery from 'postcss-combine-media-query'
 // open-props
 import OpenProps from 'open-props'
 
@@ -33,6 +34,7 @@ export default ({ env, file }) => ({
     }),
     postcssJitProps(OpenProps),
     combineSelectors(),
+    combineMediaQuery(),
     postcssLightningCSS({
       browsers: 'defaults and supports css-cascade-layers',
       lightningcssOptions: {
