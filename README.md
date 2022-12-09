@@ -6,6 +6,12 @@
 <h1 align="center">Shiraha</h1>
 <p align="center">A beautiful classless CSS theme/framework with Sugar. [WIP]</p>
 
+> Welcome aboard!
+>
+> I'm really a little overwhelmed with writing stylesheets.
+>
+> So if you want, you can always contact me or just submit a PR!
+
 ## 📝 ToDo
 
 - Remaining unfinished default styles
