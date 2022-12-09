@@ -10,6 +10,12 @@
 
 - Remaining unfinished default styles
 - Example site
+- Themes:
+  - lume-theme-shiraha
+    <!-- - hexo-theme-shiraha
+    - hugo-theme-shiraha
+    - zola-theme-shiraha -->
+  - miniflux-theme-shiraha
 - Extensions:
   - [Shiki Twoslash](https://github.com/shikijs/twoslash)
 
