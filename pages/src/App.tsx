@@ -1,6 +1,7 @@
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 
+import Header from './components/header'
 import Intro from './components/intro.md'
 
 export default defineComponent({
@@ -23,11 +24,12 @@ export default defineComponent({
     })
     return () => (
       <>
-        <div>
+        <Header />
+        {/* <div>
           <a href="https://github.com/importantimport/shiraha" target="_blank">
             <img src="/snowflake.svg" width="192" alt="Shiraha logo" />
           </a>
-        </div>
+        </div> */}
         <Intro />
       </>
     )
