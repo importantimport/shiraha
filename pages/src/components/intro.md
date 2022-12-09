@@ -1,3 +1,3 @@
 # Shiraha
 
-A beautiful classless CSS theme/framework with Sugar.
+A beautiful classless CSS framework with Sugar.
