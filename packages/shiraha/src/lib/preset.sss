@@ -1,90 +1,56 @@
-@define-mixin scheme-light
-  --md-sys-color-primary: var(--md-sys-color-primary-light)
-  --md-sys-color-on-primary: var(--md-sys-color-on-primary-light)
-  --md-sys-color-primary-container: var(--md-sys-color-primary-container-light)
-  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-light)
-  --md-sys-color-secondary: var(--md-sys-color-secondary-light)
-  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-light)
-  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-light)
-  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-light)
-  --md-sys-color-tertiary: var(--md-sys-color-tertiary-light)
-  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-light)
-  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-light)
-  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-light)
-  --md-sys-color-error: var(--md-sys-color-error-light)
-  --md-sys-color-on-error: var(--md-sys-color-on-error-light)
-  --md-sys-color-error-container: var(--md-sys-color-error-container-light)
-  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-light)
-  --md-sys-color-outline: var(--md-sys-color-outline-light)
-  --md-sys-color-background: var(--md-sys-color-background-light)
-  --md-sys-color-on-background: var(--md-sys-color-on-background-light)
-  --md-sys-color-surface: var(--md-sys-color-surface-light)
-  --md-sys-color-on-surface: var(--md-sys-color-on-surface-light)
-  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-light)
-  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-light)
-  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-light)
-  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-light)
-  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-light)
-  --md-sys-color-shadow: var(--md-sys-color-shadow-light)
-  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-light)
-  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light)
-  --md-sys-color-scrim: var(--md-sys-color-scrim-light)
+@define-mixin scheme $color
+  --md-sys-color-primary: var(--md-sys-color-primary-$(color))
+  --md-sys-color-on-primary: var(--md-sys-color-on-primary-$(color))
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-$(color))
+  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-$(color))
+  --md-sys-color-secondary: var(--md-sys-color-secondary-$(color))
+  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-$(color))
+  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-$(color))
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-$(color))
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-$(color))
+  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-$(color))
+  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-$(color))
+  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-$(color))
+  --md-sys-color-error: var(--md-sys-color-error-$(color))
+  --md-sys-color-on-error: var(--md-sys-color-on-error-$(color))
+  --md-sys-color-error-container: var(--md-sys-color-error-container-$(color))
+  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-$(color))
+  --md-sys-color-outline: var(--md-sys-color-outline-$(color))
+  --md-sys-color-background: var(--md-sys-color-background-$(color))
+  --md-sys-color-on-background: var(--md-sys-color-on-background-$(color))
+  --md-sys-color-surface: var(--md-sys-color-surface-$(color))
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-$(color))
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-$(color))
+  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-$(color))
+  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-$(color))
+  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-$(color))
+  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-$(color))
+  --md-sys-color-shadow: var(--md-sys-color-shadow-$(color))
+  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-$(color))
+  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-$(color))
+  --md-sys-color-scrim: var(--md-sys-color-scrim-$(color))
 
-  color-scheme: light
-
-@define-mixin scheme-dark
-  --md-sys-color-primary: var(--md-sys-color-primary-dark)
-  --md-sys-color-on-primary: var(--md-sys-color-on-primary-dark)
-  --md-sys-color-primary-container: var(--md-sys-color-primary-container-dark)
-  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-dark)
-  --md-sys-color-secondary: var(--md-sys-color-secondary-dark)
-  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-dark)
-  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-dark)
-  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-dark)
-  --md-sys-color-tertiary: var(--md-sys-color-tertiary-dark)
-  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-dark)
-  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-dark)
-  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark)
-  --md-sys-color-error: var(--md-sys-color-error-dark)
-  --md-sys-color-on-error: var(--md-sys-color-on-error-dark)
-  --md-sys-color-error-container: var(--md-sys-color-error-container-dark)
-  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-dark)
-  --md-sys-color-outline: var(--md-sys-color-outline-dark)
-  --md-sys-color-background: var(--md-sys-color-background-dark)
-  --md-sys-color-on-background: var(--md-sys-color-on-background-dark)
-  --md-sys-color-surface: var(--md-sys-color-surface-dark)
-  --md-sys-color-on-surface: var(--md-sys-color-on-surface-dark)
-  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-dark)
-  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-dark)
-  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-dark)
-  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-dark)
-  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-dark)
-  --md-sys-color-shadow: var(--md-sys-color-shadow-dark)
-  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-dark)
-  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-dark)
-  --md-sys-color-scrim: var(--md-sys-color-scrim-dark)
-
-  color-scheme: dark
+  color-scheme: $(color)
 
 @media (--OSlight)
   :root
 
-    @mixin scheme-light
+    @mixin scheme light
 
 [data-theme='light'],
 .light
 
-  @mixin scheme-light
+  @mixin scheme light
 
 @media (--OSdark)
   :root
 
-    @mixin scheme-dark
+    @mixin scheme dark
 
 [data-theme='dark'],
 .dark
 
-  @mixin scheme-dark
+  @mixin scheme dark
 
 :root
   --shiraha-font-sans: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Inter', 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
@@ -103,4 +69,4 @@
  --font--
  * shiraha-font-sans
  * shiraha-font-mono
- * shiraha-button-case*/
+ * shiraha-button-case */
