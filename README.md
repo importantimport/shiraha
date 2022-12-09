@@ -15,9 +15,13 @@
 
 ## ✨ Features
 
-### Future-proof
+### Tight integration with `material-color-utilities` [WIP]
 
-Shiraha actively uses modern CSS syntax and media queries, benchmarked against the latest browser and HTML specifications.
+Use the dynamic color scheme from the MCU in the way you like.
+
+### Built for semantic HTML [WIP]
+
+HTML gets better with [semantic elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics), [microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) and [microformats](https://developer.mozilla.org/en-US/docs/Web/HTML/microformats). Shiraha is ready for Machine-readable HTML.
 
 ### Compatible with some Rehype plugins [WIP]
 
