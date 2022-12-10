@@ -3,9 +3,6 @@ import {
   hexFromArgb,
 } from '@importantimport/material-color-utilities'
 
-/**
- * Update Shiraha Colors
- */
 const updateShirahaColors = async () => {
   const { head, querySelector, getElementById, createElement } =
     globalThis.document
@@ -38,17 +35,15 @@ const updateShirahaColors = async () => {
 
 let title: string
 
-const observer = new MutationObserver((mutations) =>
-  mutations.forEach((mutation) => {
-    if (
-      mutation.target.nodeName.toLowerCase() === 'title' &&
-      title !== mutation.target.textContent
-    ) {
-      title = mutation.target.textContent
-      updateShirahaColors()
-    }
-  })
-)
+const observer = new MutationObserver(async (mutations) => {
+  if (
+    mutations[0].target.nodeName.toLowerCase() === 'title' &&
+    title !== mutations[0].target.textContent
+  ) {
+    title = mutations[0].target.textContent
+    await updateShirahaColors()
+  }
+})
 
 observer.observe(globalThis.document.querySelector('title'), {
   attributes: true,
@@ -56,6 +51,10 @@ observer.observe(globalThis.document.querySelector('title'), {
   subtree: true,
 })
 
-document.addEventListener('DOMContentLoaded', () => updateShirahaColors(), {
-  once: true,
-})
+document.addEventListener(
+  'DOMContentLoaded',
+  async () => await updateShirahaColors(),
+  {
+    once: true,
+  }
+)
