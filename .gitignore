@@ -1,14 +1,14 @@
-# private
-private
-
-# build output
-packages/**/dist
-pages/dist
+# dist
+dist
+dist-ssr
+*.local
 
 # dependencies
 node_modules
 
 # logs
+logs
+*.log
 pnpm-debug.log*
 .turbo
 
