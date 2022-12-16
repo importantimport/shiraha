@@ -18,7 +18,7 @@ export default defineComponent({
       meta: [
         {
           name: `description`,
-          content: `A beautiful classless CSS theme/framework with Sugar.`
+          content: `A beautiful classless CSS framework with Sugar.`
         }
       ]
     })
