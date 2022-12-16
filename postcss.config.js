@@ -1,7 +1,8 @@
 // parser
 import sugarss from 'sugarss'
 // plugins
-import postcssEasyImport from 'postcss-easy-import'
+import postcssImport from 'postcss-import'
+import postcssImportExtGlob from 'postcss-import-ext-glob'
 import postcssMixins from 'postcss-mixins'
 import postcssJitProps from 'postcss-jit-props'
 import postcssLightningCSS from 'postcss-lightningcss'
@@ -13,7 +14,8 @@ import OpenProps from 'open-props'
 export default ({ env, file }) => ({
   parser: file.extname === '.sss' ? sugarss : false,
   plugins: [
-    postcssEasyImport({ extensions: ['.sss', '.css'] }),
+    postcssImport(),
+    postcssImportExtGlob(),
     postcssMixins(),
     postcssJitProps(OpenProps),
     combineSelectors(),
