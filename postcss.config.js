@@ -11,6 +11,27 @@ import combineMediaQuery from 'postcss-combine-media-query'
 // open-props
 import OpenProps from 'open-props'
 
+export const vite = {
+  parser: sugarss,
+  plugins: [
+    postcssImport(),
+    postcssImportExtGlob(),
+    postcssMixins(),
+    postcssJitProps(OpenProps),
+    combineSelectors(),
+    combineMediaQuery(),
+    postcssLightningCSS({
+      browsers: 'defaults and supports css-cascade-layers',
+      lightningcssOptions: {
+        drafts: {
+          nesting: true,
+          customMedia: true,
+        },
+      },
+    }),
+  ],
+}
+
 export default ({ env, file }) => ({
   parser: file.extname === '.sss' ? sugarss : false,
   plugins: [
