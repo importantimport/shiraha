@@ -1,6 +1,7 @@
 {
   "name": "shiraha-monorepo",
   "version": "0.0.1",
+  "type": "module",
   "private": true,
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
