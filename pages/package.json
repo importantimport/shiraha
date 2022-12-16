@@ -19,7 +19,6 @@
     "@vitejs/plugin-vue": "^3.1.2",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "@vueuse/head": "^0.7.13",
-    "vite": "^3.1.8",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-vue-markdown": "^0.21.1",
     "vite-ssg": "^0.20.2",
