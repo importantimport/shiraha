@@ -26,8 +26,8 @@
     "./package.json": "./package.json",
     ".": "./dist/shiraha.css",
     "./base": "./dist/shiraha.base.css",
-    "./dist/*": "./dist/*/*.css",
-    "./src/*": "./src/*/*.sss"
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
   },
   "files": [
     "src",
