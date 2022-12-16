@@ -1,5 +1,3 @@
-@import 'open-props/media.min.css'
-
 @define-mixin scheme $brightness
   --shiraha-color-primary: var(--md-sys-color-primary-$(brightness))
   --shiraha-color-on-primary: var(--md-sys-color-on-primary-$(brightness))
@@ -34,7 +32,7 @@
 
   color-scheme: $(brightness)
 
-@media (--OSlight)
+@media (prefers-color-scheme: light)
   :root
 
     @mixin scheme light
@@ -44,7 +42,7 @@
 
   @mixin scheme light
 
-@media (--OSdark)
+@media (prefers-color-scheme: dark)
   :root
 
     @mixin scheme dark
