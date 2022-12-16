@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "shiraha": "workspace:*",
+    "vite": "^4.0.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
