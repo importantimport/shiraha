@@ -1,4 +1,5 @@
 @import '../../node_modules/open-props/src/props.media.css'
+
 @import '../lib/mixin-line-numbers.sss'
 
 code,
@@ -7,6 +8,15 @@ samp,
 pre
   font-family: var(--shiraha-font-mono)
   font-size: 0.875rem
+
+code,
+pre
+  padding: var(--size-2)
+
+  color: var(--shiraha-color-on-surface-variant)
+
+  background-color: var(--shiraha-color-surface-variant)
+  border-radius: var(--size-1)
 
 pre > code
   display: grid
