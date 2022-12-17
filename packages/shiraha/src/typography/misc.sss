@@ -1,0 +1,26 @@
+abbr:where([title])
+  text-decoration: underline dotted
+
+:where(b, strong)
+  font-weight: var(--font-weight-7)
+
+:where(mark)
+  color: var(--shiraha-color-on-tertiary-container)
+
+  background-color: var(--shiraha-color-tertiary-container)
+
+:where(small)
+  font-size: 80%
+
+:where(sub, sup)
+  position: relative
+
+  font-size: 75%
+  line-height: 0
+  vertical-align: baseline
+
+:where(sub)
+  bottom: var(--size-00)
+
+:where(sup)
+  top: var(--size-000)
