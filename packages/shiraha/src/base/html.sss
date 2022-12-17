@@ -1,8 +1,11 @@
 @import '../../node_modules/open-props/src/props.media.css'
 
 html
-  scrollbar-gutter: stable both-edges
+  scrollbar-gutter: stable && both-edges
 
+  font-family: var(--shiraha-font-sans)
+  font-feature-settings: normal
+  line-height: var(--font-lineheight-3)
   tab-size: 4
 
 @media (--motionOK)
