@@ -30,7 +30,9 @@ export default defineComponent({
             <img src="/snowflake.svg" width="192" alt="Shiraha logo" />
           </a>
         </div> */}
-        <Intro />
+        <main>
+          <Intro />
+        </main>
       </>
     )
   }

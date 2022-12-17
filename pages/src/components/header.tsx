@@ -6,12 +6,18 @@ export default defineComponent({
     (
       <header>
         <h1>
-          <span>❄ Shiraha</span>
+          <span>❄ Shiraha </span>
           <code>{version}</code>
         </h1>
         <nav>
-          <a href="/">Home</a>
-          <a href="https://github.com/importantimport/shiraha">GitHub</a>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="https://github.com/importantimport/shiraha">GitHub</a>
+            </li>
+          </ul>
         </nav>
       </header>
     )
