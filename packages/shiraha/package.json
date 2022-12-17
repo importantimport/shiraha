@@ -41,5 +41,13 @@
   },
   "devDependencies": {
     "open-props": "^1.4.16"
+  },
+  "peerDependencies": {
+    "open-props": "^1.4.16"
+  },
+  "peerDependenciesMeta": {
+    "open-props": {
+      "optional": true
+    }
   }
 }
