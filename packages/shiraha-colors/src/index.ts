@@ -33,19 +33,19 @@ const updateShirahaColors = async () => {
   }
 }
 
-let title: string
+let mutationObserverTitle: string
 
-const observer = new MutationObserver(async (mutations) => {
+const mutationObserver = new MutationObserver(async ([mutation]) => {
   if (
-    mutations[0].target.nodeName.toLowerCase() === 'title' &&
-    title !== mutations[0].target.textContent
+    mutation.target.nodeName.toLowerCase() === 'title' &&
+    mutationObserverTitle !== mutation.target.textContent
   ) {
-    title = mutations[0].target.textContent
+    mutationObserverTitle = mutation.target.textContent
     await updateShirahaColors()
   }
 })
 
-observer.observe(globalThis.document.querySelector('title'), {
+mutationObserver.observe(globalThis.document.querySelector('title'), {
   attributes: true,
   childList: true,
   subtree: true,
