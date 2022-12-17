@@ -17,6 +17,7 @@
       true,
       {
         "ignoreAtRules": [
+          "import-glob",
           "define-mixin",
           "mixin"
         ]
