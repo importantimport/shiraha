@@ -38,5 +38,8 @@
     "build": "postcss src/*.sss --base src --dir dist --ext css",
     "lint": "stylelint \"src/**/*.sss\"",
     "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
+  },
+  "devDependencies": {
+    "open-props": "^1.4.16"
   }
 }

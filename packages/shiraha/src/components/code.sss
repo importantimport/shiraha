@@ -1,3 +1,4 @@
+@import '../../node_modules/open-props/src/props.media.css'
 @import '../lib/mixin-line-numbers.sss'
 
 code,
@@ -14,12 +15,12 @@ pre > code
 
 @mixin line-numbers code[data-line-numbers]
 
-@media (prefers-color-scheme: dark)
+@media (--OSdark)
   pre[data-theme='light'],
   code[data-theme='light']
     display: none
 
-@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+@media (--OSlight)
   pre[data-theme='dark'],
   code[data-theme='dark']
     display: none

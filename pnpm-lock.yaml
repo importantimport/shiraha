@@ -75,7 +75,10 @@ importers:
       vitest: 0.25.8_sugarss@4.0.1
 
   packages/shiraha:
-    specifiers: {}
+    specifiers:
+      open-props: ^1.4.16
+    devDependencies:
+      open-props: 1.4.16
 
   packages/shiraha-colors:
     specifiers:

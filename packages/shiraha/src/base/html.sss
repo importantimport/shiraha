@@ -1,8 +1,10 @@
+@import '../../node_modules/open-props/src/props.media.css'
+
 html
   scrollbar-gutter: stable both-edges
 
   tab-size: 4
 
-@media (prefers-reduced-motion: no-preference)
+@media (--motionOK)
   html
     scroll-behavior: smooth
