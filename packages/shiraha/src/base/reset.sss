@@ -5,3 +5,84 @@
 
   border-style: solid
   border-width: 0
+
+:where(table)
+  text-indent: 0
+  border-color: inherit
+  border-collapse: collapse
+
+:where(button, input, optgroup, select, textarea)
+  font-family: inherit
+  font-size: 100%
+  font-weight: inherit
+  line-height: inherit
+  color: inherit
+  margin: 0
+  padding: 0
+
+:where(button, select)
+  text-transform: none
+
+:where(button, [type='button'], [type='reset'], [type='submit'])
+  -webkit-appearance: button
+  background-color: transparent
+  background-image: none
+
+:-moz-focusring
+  outline: auto
+
+:-moz-ui-invalid
+  box-shadow: none
+
+:where(progress)
+  vertical-align: baseline
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button
+  height: auto
+
+:where([type='search'])
+  -webkit-appearance: textfield
+  outline-offset: -2px
+
+::-webkit-search-decoration
+  -webkit-appearance: none
+
+::-webkit-file-upload-button
+  -webkit-appearance: button
+  font: inherit
+
+:where(summary)
+  display: list-item
+
+:where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre)
+  margin: 0
+
+:where(fieldset)
+  margin: 0
+  padding: 0
+
+:where(legend)
+  padding: 0
+
+:where(ol, ul, menu)
+  list-style: none
+  margin: 0
+  padding: 0
+
+:where(textarea)
+  resize: vertical
+
+:where(button, [role="button"])
+  cursor: pointer
+
+:disabled
+  cursor: default
+
+:where(img, svg, video, canvas, audio, iframe, embed, object)
+  display: block
+  vertical-align: middle
+
+:where(img, video)
+  max-width: 100%
+  height: auto
