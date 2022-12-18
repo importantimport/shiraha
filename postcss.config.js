@@ -11,45 +11,33 @@ import combineMediaQuery from 'postcss-combine-media-query'
 // open-props
 import OpenProps from 'open-props'
 
+const plugins = (options) => [
+  postcssImport(),
+  postcssImportExtGlob(),
+  postcssMixins(),
+  postcssJitProps(OpenProps),
+  combineSelectors(),
+  combineMediaQuery(),
+  postcssLightningCSS({
+    browsers: 'defaults and supports css-cascade-layers',
+    lightningcssOptions: {
+      drafts: {
+        nesting: true,
+        customMedia: true,
+      },
+      ...options,
+    },
+  }),
+]
+
 export const vite = {
   parser: sugarss,
-  plugins: [
-    postcssImport(),
-    postcssImportExtGlob(),
-    postcssMixins(),
-    postcssJitProps(OpenProps),
-    combineSelectors(),
-    combineMediaQuery(),
-    postcssLightningCSS({
-      browsers: 'defaults and supports css-cascade-layers',
-      lightningcssOptions: {
-        drafts: {
-          nesting: true,
-          customMedia: true,
-        },
-      },
-    }),
-  ],
+  plugins: plugins(),
 }
 
 export default ({ env, file }) => ({
   parser: file.extname === '.sss' ? sugarss : false,
-  plugins: [
-    postcssImport(),
-    postcssImportExtGlob(),
-    postcssMixins(),
-    postcssJitProps(OpenProps),
-    combineSelectors(),
-    combineMediaQuery(),
-    postcssLightningCSS({
-      browsers: 'defaults and supports css-cascade-layers',
-      lightningcssOptions: {
-        minify: env === 'production' ? true : false,
-        drafts: {
-          nesting: true,
-          customMedia: true,
-        },
-      },
-    }),
-  ],
+  plugins: plugins({
+    minify: env === 'production' ? true : false,
+  }),
 })
