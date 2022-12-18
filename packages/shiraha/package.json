@@ -25,7 +25,6 @@
   "exports": {
     "./package.json": "./package.json",
     ".": "./dist/shiraha.css",
-    "./base": "./dist/shiraha.base.css",
     "./dist/*": "./dist/*",
     "./src/*": "./src/*"
   },

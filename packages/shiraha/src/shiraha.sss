@@ -1,4 +1,16 @@
-@import './shiraha.base.sss'
+/*! Shiraha - https://github.com/importantimport/shiraha !*/
+
+@layer base, typography, components, utilities
+
+@import '../node_modules/open-props/src/props.media.css'
+
+@import-glob './base/*.sss' layer(base)
+
+@import-glob './typography/*.sss' layer(typography)
+
+@import-glob './components/*.sss' layer(components)
+
+@import-glob './utilities/*.sss' layer(utilities)
 
 @import './themes/baseline.sss'
 
