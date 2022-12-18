@@ -2,7 +2,11 @@
 
 @layer base, typography, components, utilities
 
-@import '../node_modules/open-props/src/props.media.css'
+@import-glob '../node_modules/open-props/src/props.media.css'
+
+@import-glob './lib/preset.sss'
+
+@import-glob './themes/baseline.sss'
 
 @import-glob './base/*.sss' layer(base)
 
@@ -11,7 +15,3 @@
 @import-glob './components/*.sss' layer(components)
 
 @import-glob './utilities/*.sss' layer(utilities)
-
-@import './themes/baseline.sss'
-
-@import './lib/preset.sss'
