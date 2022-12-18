@@ -9,8 +9,9 @@ node_modules
 # logs
 logs
 *.log
-pnpm-debug.log*
 .turbo
+pnpm-debug.log*
+vite.config.ts.timestamp*
 
 # macOS-specific files
 .DS_Store
