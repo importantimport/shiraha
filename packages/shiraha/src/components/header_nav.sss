@@ -1,9 +1,13 @@
 @import '../../node_modules/open-props/src/props.media.css'
 
 body > header > nav:last-child
+  display: flex
+  flex-direction: row
+
   margin-bottom: calc(-0.125rem - var(--shiraha-content-padding))
 
   & > ul
+    overflow-x: auto
     display: flex
     flex-direction: row
 
@@ -20,6 +24,13 @@ body > header > nav:last-child
 
     & > li:hover
       border-bottom: 2px var(--shiraha-color-primary) solid
+
+  & > ul:first-child
+    flex: 1 1 0%
+    justify-content: flex-start
+
+  & > ul:last-child:not(:first-child)
+    justify-content: flex-end
 
 @media (--motionOK)
   body > header > nav:last-child > ul > li
