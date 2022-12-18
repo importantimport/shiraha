@@ -1,2 +1,26 @@
+@import '../../node_modules/open-props/src/props.media.css'
+
 body > header > nav:last-child
   margin-bottom: calc(-0.125rem - var(--shiraha-content-padding))
+
+  & > ul
+    display: flex
+    flex-direction: row
+
+    /* justify-content: flex-end*/
+    gap: var(--size-2)
+
+    & > li
+      padding: var(--size-2)
+
+      border-bottom: 2px transparent solid
+
+      & > a
+        text-decoration: none
+
+    & > li:hover
+      border-bottom: 2px var(--shiraha-color-primary) solid
+
+@media (--motionOK)
+  body > header > nav:last-child > ul > li
+    transition: border-color 0.25s var(--ease-in-out-2)
