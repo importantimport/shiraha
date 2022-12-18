@@ -7,26 +7,30 @@
   border-width: 0
 
 :where(table)
-  text-indent: 0
-  border-color: inherit
   border-collapse: collapse
 
+  text-indent: 0
+
+  border-color: inherit
+
 :where(button, input, optgroup, select, textarea)
+  margin: 0
+  padding: 0
+
   font-family: inherit
   font-size: 100%
   font-weight: inherit
   line-height: inherit
   color: inherit
-  margin: 0
-  padding: 0
 
 :where(button, select)
   text-transform: none
 
 :where(button, [type='button'], [type='reset'], [type='submit'])
-  -webkit-appearance: button
   background-color: transparent
   background-image: none
+
+  appearance: button
 
 :-moz-focusring
   outline: auto
@@ -42,15 +46,17 @@
   height: auto
 
 :where([type='search'])
-  -webkit-appearance: textfield
   outline-offset: -2px
 
+  appearance: textfield
+
 ::-webkit-search-decoration
-  -webkit-appearance: none
+  appearance: none
 
 ::-webkit-file-upload-button
-  -webkit-appearance: button
   font: inherit
+
+  appearance: button
 
 :where(summary)
   display: list-item
@@ -66,14 +72,15 @@
   padding: 0
 
 :where(ol, ul, menu)
-  list-style: none
   margin: 0
   padding: 0
+
+  list-style: none
 
 :where(textarea)
   resize: vertical
 
-:where(button, [role="button"])
+:where(button, [role='button'])
   cursor: pointer
 
 :disabled
@@ -81,6 +88,7 @@
 
 :where(img, svg, video, canvas, audio, iframe, embed, object)
   display: block
+
   vertical-align: middle
 
 :where(img, video)
