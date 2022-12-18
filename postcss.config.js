@@ -12,8 +12,8 @@ import combineMediaQuery from 'postcss-combine-media-query'
 import OpenProps from 'open-props'
 
 const plugins = (options) => [
-  postcssImport(),
   postcssImportExtGlob(),
+  postcssImport(),
   postcssMixins(),
   postcssJitProps(OpenProps),
   combineSelectors(),
