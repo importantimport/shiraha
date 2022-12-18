@@ -2,30 +2,31 @@
 
 @import '../lib/mixin-line-numbers.sss'
 
-code,
-kbd,
-samp,
-pre
+:where(code, kbd, samp, pre)
   font-family: var(--shiraha-font-mono, var(--font-mono))
   font-size: 0.875rem
 
-code,
-pre
-  padding: var(--size-2)
-
+:where(code, pre)
   color: var(--shiraha-color-on-surface-variant)
 
   background-color: var(--shiraha-color-surface-variant)
   border-radius: var(--size-1)
 
-code
+:where(code)
   display: inline-block
+
+  padding: var(--size-1) var(--size-2)
 
   vertical-align: middle
 
-pre > code
-  overflow-x: auto
-  display: grid
+:where(pre)
+  padding: calc(var(--size-1) + var(--size-2))
+
+  & > :where(code)
+    overflow-x: auto
+    display: grid
+
+    padding: 0
 
 /* rehype-pretty-code*/
 
