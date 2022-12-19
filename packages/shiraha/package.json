@@ -1,6 +1,6 @@
 {
   "name": "shiraha",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "type": "module",
   "author": "藍+85CD",
   "license": "WTFPL",
@@ -23,18 +23,19 @@
   "main": "dist/shiraha.css",
   "style": "dist/shiraha.css",
   "exports": {
-    "./package.json": "./package.json",
     ".": "./dist/shiraha.css",
+    "./package.json": "./package.json",
     "./dist/*": "./dist/*",
     "./src/*": "./src/*"
   },
   "files": [
     "src",
-    "dist"
+    "dist",
+    "package.json"
   ],
   "scripts": {
-    "dev": "postcss src/*.sss --base src --dir dist --ext css --watch",
-    "build": "postcss src/*.sss --base src --dir dist --ext css",
+    "dev": "postcss src/*.sss --base src --ext css -d dist -w",
+    "build": "postcss src/*.sss --base src --ext css -d dist",
     "lint": "stylelint \"src/**/*.sss\"",
     "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
   },

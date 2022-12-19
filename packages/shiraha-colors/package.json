@@ -1,7 +1,6 @@
 {
   "name": "shiraha-colors",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "type": "module",
   "author": "藍+85CD",
   "license": "WTFPL",
@@ -12,21 +11,26 @@
     "url": "https://github.com/importantimport/shiraha.git",
     "directory": "packages/shiraha-colors"
   },
-  "homepage": "",
+  "homepage": "https://github.com/importantimport/shiraha",
   "bugs": "https://github.com/importantimport/shiraha/issues",
-  "module": "./dist/index.mjs",
-  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "main": "./dist/index.iife.js",
   "types": "./dist/index.d.ts",
+  "browser": {
+    "./dist/index.js": "./dist/index.js",
+    "./dist/index.iife.js": "./dist/index.iife.js"
+  },
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "browser": "./dist/index.iife.js",
       "types": "./dist/index.d.ts"
     },
     "./package.json": "./package.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "package.json"
   ],
   "scripts": {
     "build": "tsup",
