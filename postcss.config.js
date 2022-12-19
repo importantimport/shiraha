@@ -13,7 +13,7 @@ import postcssLightningCSS from 'postcss-lightningcss'
 // open-props
 import OpenProps from 'open-props'
 
-const plugins = (options) => [
+const plugins = [
   postcssImportExtGlob(),
   postcssImport(),
   postcssCustomMedia(),
@@ -21,24 +21,33 @@ const plugins = (options) => [
   postcssJitProps(OpenProps),
   combineSelectors(),
   combineMediaQuery(),
-  pruneVar(),
-  postcssLightningCSS({
-    browsers: 'defaults and supports css-cascade-layers',
-    lightningcssOptions: {
-      drafts: { nesting: true },
-      ...options,
-    },
-  }),
 ]
 
 export const vite = {
   parser: sugarss,
-  plugins: plugins(),
+  plugins: [
+    ...plugins,
+    postcssLightningCSS({
+      browsers: 'defaults and supports css-cascade-layers',
+      lightningcssOptions: {
+        drafts: { nesting: true },
+      },
+    }),
+  ],
 }
 
 export default ({ env, file }) => ({
-  parser: file.extname === '.sss' ? sugarss : false,
-  plugins: plugins({
-    minify: env === 'production' ? true : false,
-  }),
+  parser: sugarss,
+  plugins: [
+    ...plugins,
+    // shiraha.css only
+    ...(file.dirname.endsWith('shiraha/src') ? [pruneVar()] : []),
+    postcssLightningCSS({
+      browsers: 'defaults and supports css-cascade-layers',
+      lightningcssOptions: {
+        drafts: { nesting: true },
+        minify: env === 'production' ? true : false,
+      },
+    }),
+  ],
 })
