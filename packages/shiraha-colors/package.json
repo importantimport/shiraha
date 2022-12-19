@@ -4,8 +4,16 @@
   "type": "module",
   "author": "藍+85CD",
   "license": "WTFPL",
-  "keywords": [],
-  "description": "",
+  "keywords": [
+    "browser",
+    "material",
+    "material-design",
+    "material3",
+    "material you",
+    "color extraction",
+    "theming"
+  ],
+  "description": "Browser script to generate colors for Shiraha.",
   "repository": {
     "type": "git",
     "url": "https://github.com/importantimport/shiraha.git",
