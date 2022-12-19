@@ -34,8 +34,8 @@
     "package.json"
   ],
   "scripts": {
-    "dev": "postcss src/*.sss --base src --ext css -d dist -w",
     "build": "postcss src/*.sss --base src --ext css -d dist",
+    "build:watch": "postcss src/*.sss --base src --ext css -d dist -w",
     "lint": "stylelint \"src/**/*.sss\"",
     "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
   },
