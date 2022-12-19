@@ -26,8 +26,6 @@
 ### nomodule
 
 > TODO
-> 
-> Since Shiraha Colors makes extensive use of new features, this doesn't make much sense. If you can make it compatible with older browsers, please send a PR!
 
 ```html
 <head>
