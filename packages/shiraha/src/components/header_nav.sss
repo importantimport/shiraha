@@ -9,11 +9,8 @@ body > header > nav:last-child
     display: flex
     flex-direction: row
 
-    /* justify-content: flex-end*/
-    gap: var(--size-2)
-
     & > li
-      padding: var(--size-2)
+      padding: var(--size-2) calc(var(--size-1) + var(--size-2))
 
       border-bottom: 2px transparent solid
 
@@ -26,9 +23,11 @@ body > header > nav:last-child
   & > ul:first-child
     flex: 1 1 0%
     justify-content: flex-start
+    margin-left: calc(0px - var(--size-1) - var(--size-2))
 
   & > ul:last-child:not(:first-child)
     justify-content: flex-end
+    margin-right: calc(0px - var(--size-1) - var(--size-2))
 
 @media (--motionOK)
   body > header > nav:last-child > ul > li
