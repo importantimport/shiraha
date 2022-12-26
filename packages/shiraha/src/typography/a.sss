@@ -1,0 +1,11 @@
+a
+  color: var(--shiraha-color-primary)
+  text-decoration: none
+
+  background: linear-gradient(0deg, var(--shiraha-color-primary), var(--shiraha-color-primary)) no-repeat right bottom / 0 1px
+
+  transition: background-size 250ms
+
+  &:where(:hover, :focus-visible)
+    background-position-x: left
+    background-size: 100% 1px
