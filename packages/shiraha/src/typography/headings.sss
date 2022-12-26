@@ -1,35 +1,51 @@
-:where(h1, h2, h3, h4, h5)
-  font-weight: var(--font-weight-4)
-  line-height: var(--font-lineheight-1)
+h1
+  margin-bottom: var(--size-3)
 
-:where(h1)
-  margin: 1rem 0
+  font-size: 2.25em
+  font-weight: var(--font-weight-8)
+  line-height: var(--font-lineheight-0)
 
-  font-size: var(--font-size-7)
+  & strong
+    font-weight: var(--font-weight-9)
 
-:where(h2)
-  margin: 1.75em 0 0.5em
+h2
+  margin-top: var(--size-7)
+  margin-bottom: var(--size-3)
 
-  font-size: var(--font-size-6)
+  font-size: 1.5em
+  font-weight: var(--font-weight-7)
+  line-height: var(--font-lineheight-2)
 
-:where(h3)
-  margin: 1.5em 0 0.5em
+  & strong
+    font-weight: var(--font-weight-8)
 
-  font-size: var(--font-size-5)
+h3
+  margin-bottom: var(--size-2)
 
-:where(h4)
-  margin: 1em 0
+  font-size: 1.25em
+  font-weight: var(--font-weight-6)
+  line-height: var(--font-lineheight-3)
 
-  font-size: var(--font-size-4)
+  & strong
+    font-weight: var(--font-weight-7)
 
-:where(h5)
-  margin: 1em 0
+h4,
+h5
+  margin-bottom: var(--size-2)
 
-  font-size: var(--font-size-3)
+  font-size: inherit
+  font-weight: var(--font-weight-6)
+  line-height: var(--font-lineheight-3)
 
-:where(h6)
-  margin: 0.875em 0
+  & strong
+    font-weight: var(--font-weight-7)
+
+h6
+  margin-bottom: var(--size-2)
 
   font-size: var(--font-size-1)
   font-weight: var(--font-weight-5)
   line-height: var(--font-lineheight-2)
+
+  & strong
+    font-weight: var(--font-weight-6)
