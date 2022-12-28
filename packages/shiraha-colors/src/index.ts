@@ -22,14 +22,18 @@ const updateShirahaColors = async () => {
     const theme = await themeFromImage(img)
     getElementById('shiraha-colors').innerHTML = `:root{${Object.entries(
       theme.schemes
-    ).map(([suffix, scheme]) =>
-      Object.entries(scheme.toJSON()).map(
-        ([key, value]) =>
-          `--md-sys-color-${key
-            .replace(/([A-Z]+)/g, '-$1')
-            .toLowerCase()}-${suffix}: ${hexFromArgb(value)};`
+    )
+      .map(([suffix, scheme]) =>
+        Object.entries(scheme.toJSON())
+          .map(
+            ([key, value]) =>
+              `--md-sys-color-${key
+                .replace(/([A-Z]+)/g, '-$1')
+                .toLowerCase()}-${suffix}: ${hexFromArgb(value)}`
+          )
+          .join(';')
       )
-    )}}`
+      .join('')}}`
   }
 }
 
