@@ -3,6 +3,27 @@ import {
   hexFromArgb,
 } from '@importantimport/material-color-utilities'
 
+export type ShirahaColorsOptions = {
+  /**
+   * CSS variable naming format.
+   *
+   * @example
+   * ```ts
+   * shiraha: onPrimary => '--shiraha-color-on-primary'
+   * material: onPrimary => '--md-sys-color-on-primary'
+   * ```
+   */
+  format?: 'shiraha' | 'material'
+}
+
+declare global {
+  var shiraha:
+    | {
+        colors?: ShirahaColorsOptions
+      }
+    | undefined
+}
+
 const updateShirahaColors = async () => {
   const { head, querySelector, getElementById, createElement } =
     globalThis.document
@@ -27,7 +48,11 @@ const updateShirahaColors = async () => {
         Object.entries(scheme.toJSON())
           .map(
             ([key, value]) =>
-              `--md-sys-color-${key
+              `--${
+                globalThis.shiraha?.colors?.format === 'material'
+                  ? 'md-sys'
+                  : 'shiraha'
+              }-color-${key
                 .replace(/([A-Z]+)/g, '-$1')
                 .toLowerCase()}-${suffix}: ${hexFromArgb(value)}`
           )
