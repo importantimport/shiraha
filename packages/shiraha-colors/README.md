@@ -37,7 +37,7 @@ Browser script to generate colors for Shiraha.
 </head>
 ```
 
-### with Partytown
+### with [Partytown](https://partytown.builder.io)
 
 > TODO
 >
@@ -45,14 +45,6 @@ Browser script to generate colors for Shiraha.
 
 ```html
 <head>
-  <script>
-    shiraha = {
-      colors: {
-        /* Shiraha Colors Config */
-        format: 'material',
-      },
-    }
-  </script>
   <script
     type="text/partytown"
     src="https://unpkg.com/shiraha-colors/nomodule"
