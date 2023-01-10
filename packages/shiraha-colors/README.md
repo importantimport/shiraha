@@ -18,6 +18,7 @@ Browser script to generate colors for Shiraha.
     shiraha = {
       colors: {
         /* Shiraha Colors Config */
+        format: 'material',
       },
     }
   </script>
@@ -44,10 +45,23 @@ Browser script to generate colors for Shiraha.
 
 ```html
 <head>
+  <script>
+    shiraha = {
+      colors: {
+        /* Shiraha Colors Config */
+        format: 'material',
+      },
+    }
+  </script>
   <script
     type="text/partytown"
     src="https://unpkg.com/shiraha-colors/nomodule"
   />
+  <script>
+    partytown = {
+      forward: ['shiraha'],
+    }
+  </script>
   <script>
     /* Inlined Partytown Snippet */
   </script>
