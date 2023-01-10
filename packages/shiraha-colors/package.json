@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/importantimport/shiraha",
   "bugs": "https://github.com/importantimport/shiraha/issues",
+  "unpkg": "./dist/index.js",
   "module": "./dist/index.js",
   "main": "./dist/index.iife.js",
   "types": "./dist/index.d.ts",
