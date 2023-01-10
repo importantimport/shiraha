@@ -32,6 +32,10 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
+      "browser": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./nomodule": {
       "browser": "./dist/index.iife.js",
       "types": "./dist/index.d.ts"
     },
