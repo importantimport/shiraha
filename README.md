@@ -42,6 +42,14 @@ HTML gets better with [semantic elements](https://developer.mozilla.org/en-US/do
 
 Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc.
 
+## 🎨 Shiraha Colors
+
+![brotli size](https://img.badgesize.io/https:/unpkg.com/shiraha-colors?compression=brotli)
+
+A browser script that will automatically extract the theme color from your current page.
+
+Go to [Package README](/packages/shiraha-colors/README.md) for more information.
+
 ## 👥 Contributing
 
 Welcome! Shiraha is still in the early stages of development and I would be happy to merge Pull Requests. (Don't forget to use gitmoji)
