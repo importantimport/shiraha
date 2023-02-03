@@ -2,5 +2,6 @@
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "node"
-  }
+  },
+  "exclude": ["dist"]
 }
