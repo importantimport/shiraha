@@ -24,7 +24,6 @@ const plugins = [
 ]
 
 export const vite = {
-  parser: sugarss,
   plugins: [
     ...plugins,
     postcssLightningCSS({
