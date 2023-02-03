@@ -18,5 +18,8 @@
     "format": {
       "outputs": []
     }
-  }
+  },
+  "globalDependencies": [
+    "postcss.config.js"
+  ]
 }
