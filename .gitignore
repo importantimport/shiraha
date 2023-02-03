@@ -1,4 +1,6 @@
 # dist
+docs/.vitepress/dist
+docs/.vitepress/cache
 dist
 dist-ssr
 *.local
