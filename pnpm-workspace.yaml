@@ -1,3 +1,5 @@
 packages:
-  - pages
+  - docs
+  - examples/*
   - packages/*
+  - pages
