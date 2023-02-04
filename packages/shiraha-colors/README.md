@@ -18,7 +18,6 @@ Browser script to generate colors for Shiraha.
     shiraha = {
       colors: {
         /* Shiraha Colors Config */
-        format: 'material',
       },
     }
   </script>

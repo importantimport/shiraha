@@ -4,16 +4,6 @@ import {
 } from '@importantimport/material-color-utilities'
 
 export type ShirahaColorsOptions = {
-  /**
-   * CSS variable naming format.
-   *
-   * @example
-   * ```ts
-   * shiraha: onPrimary => '--shiraha-color-on-primary'
-   * material: onPrimary => '--md-sys-color-on-primary'
-   * ```
-   */
-  format?: 'shiraha' | 'material'
 }
 
 declare global {
@@ -48,11 +38,7 @@ const updateShirahaColors = async () => {
         Object.entries(scheme.toJSON())
           .map(
             ([key, value]) =>
-              `--${
-                globalThis.shiraha?.colors?.format === 'material'
-                  ? 'md-sys'
-                  : 'shiraha'
-              }-color-${key
+              `--md-sys-color-${key
                 .replace(/([A-Z]+)/g, '-$1')
                 .toLowerCase()}-${suffix}: ${hexFromArgb(value)}`
           )
