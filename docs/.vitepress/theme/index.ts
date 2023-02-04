@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 
-import '../../../packages/shiraha/src/themes/yuki.sss'
-import '../../../packages/shiraha-extra/src/vitepress/vars.sss'
+import 'shiraha/themes/yuki'
+// import 'shiraha-extra/vitepress'
+import 'shiraha-extra/src/vitepress/vars.sss'
 
 export default DefaultTheme

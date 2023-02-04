@@ -78,6 +78,14 @@ importers:
       vitepress: 1.0.0-alpha.45_zzeajr2gnd5wdoahqpgakewsve
       vitest: 0.25.8_sugarss@4.0.1
 
+  docs:
+    specifiers:
+      shiraha: workspace:*
+      shiraha-extra: workspace:*
+    devDependencies:
+      shiraha: link:../packages/shiraha
+      shiraha-extra: link:../packages/shiraha-extra
+
   packages/shiraha:
     specifiers:
       open-props: ^1.4.16
@@ -89,6 +97,12 @@ importers:
       '@importantimport/material-color-utilities': ^0.2.0
     devDependencies:
       '@importantimport/material-color-utilities': 0.2.0
+
+  packages/shiraha-extra:
+    specifiers:
+      shiraha: workspace:*
+    devDependencies:
+      shiraha: link:../shiraha
 
   pages:
     specifiers:

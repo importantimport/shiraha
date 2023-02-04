@@ -13,5 +13,11 @@
     "./package.json": "./package.json",
     "./dist/*": "./dist/*",
     "./src/*": "./src/*"
+  },
+  "devDependencies": {
+    "shiraha": "workspace:*"
+  },
+  "peerDependencies": {
+    "shiraha": "workspace:*"
   }
 }
