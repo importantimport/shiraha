@@ -1,1 +1,9 @@
 @import-glob './vars/*.sss'
+
+@import-glob '../../../shiraha/src/lib/mixin-scheme.sss'
+
+html
+  @mixin scheme light
+
+html.dark
+  @mixin scheme dark
