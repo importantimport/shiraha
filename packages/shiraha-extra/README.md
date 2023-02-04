@@ -1,5 +1,7 @@
 # Shiraha Extra
 
+## Install
+
 > This package is currently unreleased.
 
 ```bash
@@ -10,6 +12,8 @@ pnpm add -D shiraha shiraha-extra # pnpm
 
 ## VitePress Theme
 
+> WIP
+
 ```ts
 // .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme'
@@ -19,4 +23,13 @@ import 'shiraha-extra/vitepress'
 import 'shiraha/themes/baseline'
 
 export DefaultTheme
+```
+
+## Miniflux Theme
+
+> TODO
+
+```css
+@import url('https://unpkg.com/shiraha-extra/miniflux');
+@import url('https://unpkg.com/shiraha/themes/baseline');
 ```
