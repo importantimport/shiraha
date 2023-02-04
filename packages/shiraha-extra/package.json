@@ -9,7 +9,7 @@
   },
   "main": "./dist/vars.css",
   "exports": {
-    "./vitepress": "./dist/vars.css",
+    "./vitepress": "./dist/vitepress/vars.css",
     "./package.json": "./package.json",
     "./dist/*": "./dist/*",
     "./src/*": "./src/*"
