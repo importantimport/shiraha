@@ -6,7 +6,7 @@ import postcssImportExtGlob from 'postcss-import-ext-glob'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssMixins from 'postcss-mixins'
 import postcssJitProps from 'postcss-jit-props'
-import combineSelectors from 'postcss-combine-duplicated-selectors'
+// import combineSelectors from 'postcss-combine-duplicated-selectors'
 import combineMediaQuery from 'postcss-combine-media-query'
 import pruneVar from 'postcss-prune-var'
 import postcssLightningCSS from 'postcss-lightningcss'
@@ -19,7 +19,7 @@ const plugins = [
   postcssCustomMedia(),
   postcssMixins(),
   postcssJitProps(OpenProps),
-  combineSelectors(),
+  // combineSelectors(),
   combineMediaQuery(),
 ]
 
