@@ -1,14 +1,17 @@
 {
-  "name": "vitepress-theme-shiraha",
+  "name": "shiraha-extra",
   "version": "0.0.1-alpha.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "run-s build:*",
-    "build:vitepress": "postcss src/vars.sss --base src --ext css -d dist",
+    "build:vitepress": "postcss src/vitepress/vars.sss --base src --ext css -d dist"
   },
   "main": "./dist/vars.css",
   "exports": {
-    "./vitepress": "./dist/vars.css"
+    "./vitepress": "./dist/vars.css",
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
   }
 }
