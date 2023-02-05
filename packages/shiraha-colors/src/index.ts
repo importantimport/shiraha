@@ -4,6 +4,11 @@ import {
 } from '@importantimport/material-color-utilities'
 
 export type ShirahaColorsOptions = {
+  /**
+   * CSS variable prefix.
+   * @defaultValue '--md-sys-color-'
+   */
+  prefix?: string
 }
 
 declare global {
@@ -38,7 +43,7 @@ const updateShirahaColors = async () => {
         Object.entries(scheme.toJSON())
           .map(
             ([key, value]) =>
-              `--md-sys-color-${key
+              `${globalThis.shiraha?.colors?.prefix ?? '--md-sys-color-'}${key
                 .replace(/([A-Z]+)/g, '-$1')
                 .toLowerCase()}-${suffix}: ${hexFromArgb(value)}`
           )
