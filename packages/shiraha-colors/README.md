@@ -1,6 +1,6 @@
 # Shiraha Colors
 
-Browser script to generate colors for Shiraha.
+Browser script to generate colors for Shiraha / Material Web.
 
 ## Usage
 

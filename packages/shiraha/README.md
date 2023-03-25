@@ -1,6 +1,6 @@
 # Shiraha
 
-A beautiful classless CSS framework with Sugar.
+Material 3 inspired Classless CSS Framework.
 
 ## Usage
 
