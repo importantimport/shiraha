@@ -8,7 +8,8 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "format": "turbo run format"
+    "format": "turbo run format",
+    "release": "pnpm build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
