@@ -4,7 +4,7 @@
 </a>
 </div>
 <h1 align="center">Shiraha</h1>
-<p align="center">Material 3 inspired Classless CSS Framework. [WIP]</p>
+<p align="center">Material 3-inspired Classless CSS Framework. [WIP]</p>
 <p align="center">
 <img src="https://img.badgesize.io/https:/unpkg.com/shiraha?compression=brotli" alt="brotli size" />
 </p>

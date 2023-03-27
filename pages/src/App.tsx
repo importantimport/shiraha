@@ -18,7 +18,7 @@ export default defineComponent({
       meta: [
         {
           name: `description`,
-          content: `Material 3 inspired Classless CSS Framework.`
+          content: `Material 3-inspired Classless CSS Framework.`
         }
       ]
     })

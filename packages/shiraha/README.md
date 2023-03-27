@@ -1,6 +1,6 @@
 # Shiraha
 
-Material 3 inspired Classless CSS Framework.
+Material 3-inspired Classless CSS Framework.
 
 ## Usage
 

@@ -9,7 +9,7 @@ export default defineComponent({
           <span>❄Shiraha&nbsp;</span>
           <code>{version}</code>
         </h1>
-        <h5>Material 3 inspired Classless CSS Framework.</h5>
+        <h5>Material 3-inspired Classless CSS Framework.</h5>
         <nav>
           <ul>
             <li>
