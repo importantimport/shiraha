@@ -9,6 +9,7 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "turbo run format",
+    "changeset": "changeset",
     "release": "pnpm build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
