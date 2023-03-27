@@ -1,15 +1,5 @@
-import {
-  themeFromImage,
-  hexFromArgb,
-} from '@importantimport/material-color-utilities'
-
-export type ShirahaColorsOptions = {
-  /**
-   * CSS variable prefix.
-   * @defaultValue '--md-sys-color-'
-   */
-  prefix?: string
-}
+import { applyShirahaColors } from './utils'
+import type { ShirahaColorsOptions } from './types'
 
 declare global {
   var shiraha:
@@ -19,49 +9,20 @@ declare global {
     | undefined
 }
 
-const updateShirahaColors = async () => {
-  const { head, querySelector, getElementById, createElement } =
-    globalThis.document
-
-  if (!getElementById('shiraha-colors')) {
-    const style = createElement('style')
-    style.id = 'shiraha-colors'
-    head.append(style)
-  }
-
-  const img: HTMLImageElement =
-    querySelector('img.u-featured, img.u-photo') ??
-    querySelector('img[itemprop="image"]') ??
-    querySelector('img')
-
-  if (img) {
-    const theme = await themeFromImage(img)
-    getElementById('shiraha-colors').innerHTML = `:root{${Object.entries(
-      theme.schemes
-    )
-      .map(([suffix, scheme]) =>
-        Object.entries(scheme.toJSON())
-          .map(
-            ([key, value]) =>
-              `${globalThis.shiraha?.colors?.prefix ?? '--md-sys-color-'}${key
-                .replace(/([A-Z]+)/g, '-$1')
-                .toLowerCase()}-${suffix}: ${hexFromArgb(value)}`
-          )
-          .join(';')
-      )
-      .join('')}}`
-  }
-}
-
 let mutationObserverTitle: string
 
-const mutationObserver = new MutationObserver(async ([mutation]) => {
+const mutationObserver = new MutationObserver(async ([{ target }]) => {
   if (
-    mutation.target.nodeName.toLowerCase() === 'title' &&
-    mutationObserverTitle !== mutation.target.textContent
+    target.nodeName.toLowerCase() === 'title' &&
+    mutationObserverTitle !== target.textContent
   ) {
-    mutationObserverTitle = mutation.target.textContent
-    await updateShirahaColors()
+    mutationObserverTitle = target.textContent
+    await applyShirahaColors(
+      globalThis.document.querySelector('img.u-featured, img.u-photo') ??
+        globalThis.document.querySelector('img[itemprop="image"]') ??
+        globalThis.document.querySelector('img'),
+      globalThis.shiraha?.colors
+    )
   }
 })
 
@@ -73,7 +34,13 @@ mutationObserver.observe(globalThis.document.querySelector('title'), {
 
 document.addEventListener(
   'DOMContentLoaded',
-  async () => await updateShirahaColors(),
+  async () =>
+    await applyShirahaColors(
+      globalThis.document.querySelector('img.u-featured, img.u-photo') ??
+        globalThis.document.querySelector('img[itemprop="image"]') ??
+        globalThis.document.querySelector('img'),
+      globalThis.shiraha?.colors
+    ),
   {
     once: true,
   }
