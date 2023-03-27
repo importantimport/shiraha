@@ -53,7 +53,7 @@ jobs:
           version: pnpm changeset version
           commit: 'chore: 🔖 update versions'
           title: 'chore: 🔖 update versions'
-          publish: pnpm -r -F "./packages/**" build && pnpm -r -F "./packages/**" publish --no-git-checks --access public
+          publish: pnpm -rF "./packages/**" build && pnpm -rF "./packages/**" publish --no-git-checks --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
