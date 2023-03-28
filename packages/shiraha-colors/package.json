@@ -25,19 +25,12 @@
   "module": "./dist/index.js",
   "main": "./dist/index.iife.js",
   "types": "./dist/index.d.ts",
-  "browser": {
-    "./dist/index.js": "./dist/index.js",
-    "./dist/index.iife.js": "./dist/index.iife.js"
-  },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "browser": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./nomodule": {
-      "browser": "./dist/index.iife.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.iife.js",
+      "browser": "./dist/index.iife.js"
     },
     "./package.json": "./package.json"
   },
