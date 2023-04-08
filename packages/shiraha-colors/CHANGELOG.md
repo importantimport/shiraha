@@ -1,5 +1,13 @@
 # shiraha-colors
 
+## 0.0.3
+
+### Patch Changes
+
+- [`5c3e27e`](https://github.com/importantimport/shiraha/commit/5c3e27e3ab45890f8e551043c66926396c836623) Thanks [@kwaa](https://github.com/kwaa)! - Refactor: Use applyTheme
+  Refactor: Split build config
+  Refactor: Update export map
+
 ## 0.0.2
 
 ### Patch Changes
