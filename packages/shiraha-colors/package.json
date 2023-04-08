@@ -29,8 +29,14 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.iife.js",
-      "browser": "./dist/index.iife.js"
+      "require": "./dist/index.js",
+      "browser": "./dist/index.js"
+    },
+    "./nomodule": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/nomodule.js",
+      "require": "./dist/nomodule.js",
+      "browser": "./dist/nomodule.js"
     },
     "./package.json": "./package.json"
   },
