@@ -1,34 +1,26 @@
-import type { CustomColor } from '@importantimport/material-color-utilities'
+import {
+  applyTheme,
+  type CustomColor,
+} from '@importantimport/material-color-utilities'
+
+type ApplyTheme = Parameters<typeof applyTheme>[1]
 
 export type ShirahaColorsOptions = {
   /**
-   * CSS variable prefix.
-   * @defaultValue 'md-sys-color'
-   * @example 'onPrimary => --md-sys-color-on-primary'
+   * @defaultValue
+   * ```ts
+   * globalThis.matchMedia('(prefers-color-scheme: dark)').matches
+   *   ? true
+   *   : false
+   * ```
    */
-  prefix?: {
-    color?: string
-
-    palette?: string
-  }
-  /**
-   * CSS color format.
-   * @defaultValue 'hex'
-   * @remarks hsl is not currently supported
-   */
-  colorFormat?: 'hex' | 'rgb'
-  /**
-   * @defaultValue 'internal'
-   */
-  mode?: 'internal' | 'inline'
-  /**
-   * @defaultValue `mode === 'internal' ? document.head : document.body`
-   */
-  target?: HTMLElement
-  /**
-   * @defaultValue []
-   */
-  paletteTones?: number[]
-
+  dark?: ApplyTheme['dark']
+  /** @defaultValue document.body */
+  target?: ApplyTheme['target']
+  /** @defaultValue true */
+  brightnessSuffix?: ApplyTheme['brightnessSuffix']
+  /** @defaultValue undefined */
+  paletteTones?: ApplyTheme['paletteTones']
+  /** @defaultValue undefined */
   customColors?: CustomColor[]
 }
