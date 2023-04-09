@@ -4,7 +4,6 @@ const options: Options = {
   entry: ['src/index.ts'],
   dts: { resolve: true },
   platform: 'browser',
-  target: 'es2020',
   clean: true,
   minify: true,
   treeshake: true,
@@ -15,6 +14,7 @@ export default defineConfig([
   {
     ...options,
     format: ['esm'],
+    target: 'es2022',
     esbuildOptions: (options) => {
       options.legalComments = 'external'
     },
@@ -22,6 +22,7 @@ export default defineConfig([
   {
     ...options,
     format: ['iife'],
+    target: 'es2015',
     esbuildOptions: (options) => {
       options.legalComments = 'external'
       options.entryNames = 'nomodule'
