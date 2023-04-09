@@ -18,15 +18,15 @@ const mutationObserver = new MutationObserver(async ([{ target }]) => {
   ) {
     mutationObserverTitle = target.textContent
     await applyShirahaColors(
-      globalThis.document.querySelector('img.u-featured, img.u-photo') ??
-        globalThis.document.querySelector('img[itemprop="image"]') ??
-        globalThis.document.querySelector('img'),
+      document.querySelector('img.u-featured, img.u-photo') ??
+        document.querySelector('img[itemprop="image"]') ??
+        document.querySelector('img'),
       globalThis.shiraha?.colors
     )
   }
 })
 
-mutationObserver.observe(globalThis.document.querySelector('title'), {
+mutationObserver.observe(document.querySelector('title'), {
   attributes: true,
   childList: true,
   subtree: true,
@@ -36,9 +36,9 @@ document.addEventListener(
   'DOMContentLoaded',
   async () =>
     await applyShirahaColors(
-      globalThis.document.querySelector('img.u-featured, img.u-photo') ??
-        globalThis.document.querySelector('img[itemprop="image"]') ??
-        globalThis.document.querySelector('img'),
+      document.querySelector('img.u-featured, img.u-photo') ??
+        document.querySelector('img[itemprop="image"]') ??
+        document.querySelector('img'),
       globalThis.shiraha?.colors
     ),
   {
