@@ -23,4 +23,6 @@ export type ShirahaColorsOptions = {
   paletteTones?: ApplyTheme['paletteTones']
   /** @defaultValue undefined */
   customColors?: CustomColor[]
+  /** @defaultValue undefined */
+  themeColor?: string
 }
