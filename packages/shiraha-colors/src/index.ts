@@ -32,16 +32,10 @@ mutationObserver.observe(document.querySelector('title'), {
   subtree: true,
 })
 
-document.addEventListener(
-  'DOMContentLoaded',
-  async () =>
-    await applyShirahaColors(
-      document.querySelector('img.u-featured, img.u-photo') ??
-        document.querySelector('img[itemprop="image"]') ??
-        document.querySelector('img'),
-      globalThis.shiraha?.colors
-    ),
-  {
-    once: true,
-  }
-)
+;(async () =>
+  await applyShirahaColors(
+    document.querySelector('img.u-featured, img.u-photo') ??
+      document.querySelector('img[itemprop="image"]') ??
+      document.querySelector('img'),
+    globalThis.shiraha?.colors
+  ))()
