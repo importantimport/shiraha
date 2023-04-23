@@ -1,5 +1,12 @@
 # shiraha-colors
 
+## 0.1.0
+
+### Minor Changes
+
+- [`89de940`](https://github.com/importantimport/shiraha/commit/89de940bd07843e7376a5add33a5bc0d585e2ccc) Thanks [@kwaa](https://github.com/kwaa)! - Feat: auto generate theme-color
+  Refactor: executed immediately after loading
+
 ## 0.0.3
 
 ### Patch Changes
