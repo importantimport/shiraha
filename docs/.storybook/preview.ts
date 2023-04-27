@@ -12,6 +12,11 @@ export default {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+        order: ['stories', 'components', 'typography', 'templates']
+      }
+    },
     html: {
       root: '#root-inner',
       removeComments: true,

@@ -22,5 +22,5 @@ export const Link: StoryObj = {
 }
 
 export default {
-  title: 'Typography/Link',
+  title: 'typography/Link',
 } as Meta

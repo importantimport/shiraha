@@ -66,5 +66,5 @@ export const M3: StoryObj = {
 }
 
 export default {
-  title: 'Components/Footer',
+  title: 'components/Footer',
 } as Meta
