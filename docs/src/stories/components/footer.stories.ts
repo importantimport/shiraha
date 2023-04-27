@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/web-components'
-
 import { html } from 'lit'
 
 export const Relay: StoryObj = {
@@ -17,9 +16,9 @@ export const Relay: StoryObj = {
     </p>
     <br />
     <p>
-      <a href="https://github.com/importantimport/shiraha">GitHub</a>
+      <a href="https://github.com/importantimport/shiraha">Twitter</a>
       <span>&nbsp;&nbsp;</span>
-      <a href="https://github.com/importantimport/shiraha">GitLab</a>
+      <a href="https://github.com/importantimport/shiraha">YouTube</a>
     </p>
     <hr />
     <span>© 2023 [DATA EXPUNGED] · Powered by Shiraha</span>
@@ -67,5 +66,5 @@ export const M3: StoryObj = {
 }
 
 export default {
-  title: 'Footer',
+  title: 'Components/Footer',
 } as Meta
