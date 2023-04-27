@@ -1,6 +1,5 @@
 # dist
-docs/.vitepress/dist
-docs/.vitepress/cache
+docs/storybook-static
 dist
 dist-ssr
 *.local
