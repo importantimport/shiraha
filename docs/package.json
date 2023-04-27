@@ -1,13 +1,24 @@
 {
   "name": "shiraha-docs",
-  "version": "0.0.1-alpha.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
   },
   "devDependencies": {
-    "shiraha": "workspace:*",
-    "shiraha-extra": "workspace:*"
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/blocks": "^7.0.7",
+    "@storybook/builder-vite": "^7.0.7",
+    "@storybook/web-components": "^7.0.7",
+    "@storybook/web-components-vite": "^7.0.7",
+    "storybook": "^7.0.7"
   }
 }
