@@ -8,13 +8,9 @@
 <p align="center">
 <img src="https://img.badgesize.io/https:/unpkg.com/shiraha?compression=brotli" alt="brotli size" />
 </p>
-
-
----
-
 <div align="center">
 
-**[<kbd> <br> Storybook <br> </kbd>](https://importantimport.github.io/shiraha)**
+**[<kbd> <br> Storybook <br> </kbd>](https://importantimport.github.io/shiraha)** 
 **[<kbd> <br> Open in Stackblitz <br> </kbd>](https://stackblitz.com/github/importantimport/hsno)** 
 **[<kbd> <br> Lume Theme Shiraha <br> </kbd>](https://github.com/importantimport/lume_theme_shiraha)**
 
