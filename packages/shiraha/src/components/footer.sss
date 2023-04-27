@@ -1,11 +1,20 @@
 footer
-  border-top: 2px var(--md-sys-color-outline-variant) solid
+  padding: 2rem
 
-  /* hide first <hr />*/
-  & > hr:first-child
-    display: none
+  /* border-top: 2px var(--md-sys-color-outline-variant) solid*/
 
-body > footer
+  /* without divider, relay.material.io style*/
+  &:not(:has(hr:first-child))
+    color: var(--md-sys-color-on-surface-variant)
+
+    background-color: var(--md-sys-color-surface-variant)
+    border-radius: 2rem
+
+  /* with divider, m3.material.io style*/
+
+  /* &:has(hr:first-child)*/
+
+/* body > footer
   max-width: var(--shiraha-content-width)
   margin: 0 auto
-  padding: var(--shiraha-content-padding)
+  padding: var(--shiraha-content-padding)*/
