@@ -9,18 +9,18 @@
 <img src="https://img.badgesize.io/https:/unpkg.com/shiraha?compression=brotli" alt="brotli size" />
 </p>
 
-## 📝 ToDo
 
-- Remaining unfinished default styles
-- Example site
-- Themes:
-  - lume-theme-shiraha
-    <!-- - hexo-theme-shiraha
-    - hugo-theme-shiraha
-    - zola-theme-shiraha -->
-  - miniflux-theme-shiraha
-- Extensions:
-  - [Shiki Twoslash](https://github.com/shikijs/twoslash)
+---
+
+<div align="center">
+
+**[<kbd> <br> Storybook <br> </kbd>](https://importantimport.github.io/shiraha)**
+**[<kbd> <br> Open in Stackblitz <br> </kbd>](https://stackblitz.com/github/importantimport/hsno)** 
+**[<kbd> <br> Lume Theme Shiraha <br> </kbd>](https://github.com/importantimport/lume_theme_shiraha)**
+
+</div>
+
+---
 
 ## ✨ Features
 
@@ -46,12 +46,12 @@ Go to [Package README](/packages/shiraha-colors/README.md) for more information.
 
 ## 👥 Contributing
 
-Welcome! Shiraha is still in the early stages of development and I would be happy to merge Pull Requests. (Don't forget to use gitmoji)
+Welcome! Shiraha is still in the early stages of development and I would be happy to merge Pull Requests.
 
 ```bash
 pnpm dlx degit importantimport/shiraha
 pnpm install
-pnpm dev --host 0.0.0.0
+pnpm -rF shiraha-docs dev
 ```
 
 ## 📄 License
