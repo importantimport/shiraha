@@ -49,6 +49,6 @@
     "build:watch": "tsup --watch"
   },
   "devDependencies": {
-    "@importantimport/material-color-utilities": "^0.2.0"
+    "@importantimport/material-color-utilities": "^0.2.1"
   }
 }
