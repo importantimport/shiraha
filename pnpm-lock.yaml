@@ -140,6 +140,9 @@ importers:
       '@storybook/web-components-vite':
         specifier: ^7.0.7
         version: 7.0.7(lit@2.7.3)(react-dom@18.2.0)(react@18.2.0)(typescript@4.8.4)(vite@4.1.1)
+      shiraha:
+        specifier: workspace:*
+        version: link:../packages/shiraha
       storybook:
         specifier: ^7.0.7
         version: 7.0.7
@@ -456,7 +459,7 @@ packages:
       '@babel/compat-data': 7.21.4
       '@babel/core': 7.21.4
       '@babel/helper-validator-option': 7.21.0
-      browserslist: 4.21.4
+      browserslist: 4.21.5
       lru-cache: 5.1.1
       semver: 6.3.0
     dev: true
