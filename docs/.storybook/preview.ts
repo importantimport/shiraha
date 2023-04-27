@@ -12,5 +12,9 @@ export default {
         date: /Date$/,
       },
     },
+    html: {
+      root: '#root-inner',
+      removeComments: true,
+    },
   },
 } as Preview
