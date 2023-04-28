@@ -155,6 +155,12 @@ importers:
       '@whitespace/storybook-addon-html':
         specifier: ^5.1.4
         version: 5.1.4(@storybook/addons@6.5.16)(@storybook/api@6.5.16)(@storybook/components@7.0.7)(@storybook/core-events@7.0.7)(@storybook/theming@7.0.7)(prettier@2.8.8)(react-dom@18.2.0)(react-syntax-highlighter@15.5.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
       shiraha:
         specifier: workspace:*
         version: link:../packages/shiraha

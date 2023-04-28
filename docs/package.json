@@ -23,6 +23,8 @@
     "@storybook/web-components": "^7.0.7",
     "@storybook/web-components-vite": "^7.0.7",
     "@whitespace/storybook-addon-html": "^5.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "shiraha": "workspace:*",
     "storybook": "^7.0.7",
     "storybook-addon-pseudo-states": "^2.0.1"
