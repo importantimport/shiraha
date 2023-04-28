@@ -29,16 +29,71 @@ export const M3: StoryObj = {
   render: () => html`<footer>
     <hr />
     <section>
-      <span>
-        Material Design is an adaptable system of guidelines, components, and
-        tools that support the best practices of user interface design. Backed
-        by open-source code, Material Design streamlines collaboration between
-        designers and developers, and helps teams quickly build beautiful
-        products.
-      </span>
+      <section>
+        <p>
+          Material Design is an adaptable system of guidelines, components, and
+          tools that support the best practices of user interface design. Backed
+          by open-source code, Material Design streamlines collaboration between
+          designers and developers, and helps teams quickly build beautiful
+          products.
+        </p>
+      </section>
+      <section>
+        <section>
+          <ul>
+            <li>
+              <span>Social</span>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">YouTube</a>
+            </li>
+            <li>
+              <a href="#">Blog RSS</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <span>Libraries</span>
+            </li>
+            <li>
+              <a href="#">Android</a>
+            </li>
+            <li>
+              <a href="#">Compose</a>
+            </li>
+            <li>
+              <a href="#">Flutter</a>
+            </li>
+            <li>
+              <a href="#">Web</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <span>Archived versions</span>
+            </li>
+            <li>
+              <a href="#">Material Design 1</a>
+            </li>
+            <li>
+              <a href="#">Material Design 2</a>
+            </li>
+          </ul>
+        </section>
+      </section>
     </section>
     <section>
-      <ul>
+      <!-- <ul>
         <li>
           <span>Shiraha</span>
         </li>
@@ -60,7 +115,7 @@ export const M3: StoryObj = {
         <li>
           <a href="https://github.com/importantimport/shiraha">Feedback</a>
         </li>
-      </ul>
+      </ul> -->
     </section>
   </footer>`,
 }
