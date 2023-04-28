@@ -10,6 +10,9 @@ export const Section: StoryObj = {
         color: var(--md-sys-color-on-surface-variant);
         background-color: var(--md-sys-color-surface-variant);
       }
+      section:has(section) {
+        background-color: transparent;
+      }
     </style>
     <section>
       <section>1</section>
