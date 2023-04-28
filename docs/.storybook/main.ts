@@ -21,8 +21,12 @@ export default {
   previewBody: (body) => /* html */ `
     <style>
       body {
-        margin: 0 auto !important;
+        max-width: inherit;
+      }
+      #root-inner {
+        max-width: var(--shiraha-content-width);
+        margin: 0 auto;
       }
     </style>
-${body}`,
+    ${body}`,
 } as StorybookConfig
