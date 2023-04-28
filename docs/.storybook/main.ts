@@ -17,4 +17,12 @@ export default {
   },
   core: { builder: '@storybook/builder-vite' },
   docs: { autodocs: 'tag' },
+  // shiraha body style fix
+  previewBody: (body) => /* html */ `
+    <style>
+      body {
+        margin: 0 auto !important;
+      }
+    </style>
+${body}`,
 } as StorybookConfig
