@@ -1,16 +1,47 @@
 table
+  overflow-x: auto
+  border-spacing: 0
   border-collapse: separate
 
   width: 100%
 
-  border: 2px solid var(--md-sys-color-surface-variant)
-  border-radius: var(--size-5)
+  border: 1px solid var(--md-sys-color-surface-variant)
+  border-radius: 1.5rem
 
-td,
-th
-  padding: var(--size-3) var(--size-5)
+  & > * > tr
+    & :is(td, th)
+      padding: 1rem 1.5rem
 
-thead th
-  color: var(--md-sys-color-on-surface-variant)
+      border-right: 1px solid var(--md-sys-color-surface-variant)
 
-  background-color: var(--md-sys-color-surface-variant)
+    & :is(td:last-child, th:last-child)
+      border-right-color: transparent
+
+  & > thead > tr
+    & > :is(th, td)
+      color: var(--md-sys-color-on-surface-variant)
+
+      // TODO: surface-1
+      background-color: var(--md-sys-color-surface-variant)
+
+    & > :is(th:first-child, td:first-child)
+      border-top-left-radius: 1.5rem
+
+    & > :is(th:last-child, td:last-child)
+      border-top-right-radius: 1.5rem
+
+  & > tfoot > tr
+    & > :is(th, td)
+      color: var(--md-sys-color-on-surface-variant)
+
+      // TODO: surface-1
+      background-color: var(--md-sys-color-surface-variant)
+
+    & > :is(th:first-child, td:first-child)
+      border-bottom-left-radius: 1.5rem
+
+    & > :is(th:last-child, td:last-child)
+      border-bottom-right-radius: 1.5rem
+
+  & > :is(tbody, tfoot) > tr > :is(td, th)
+    border-top: 1px solid var(--md-sys-color-surface-variant)
