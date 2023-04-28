@@ -1,10 +1,5 @@
 import{x as n}from"./lit-element-2d314a70.js";const e={render:()=>n`<div id="top" class="page" role="document"> 
   <header role="banner">
-    <div class="open-props">
-      <h1>Open Props</h1>
-    </div>
-    <p>A <a href="https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css#:~:text=51-,Normalize.,over%20the%20styling%20of%20everything.">normalize</a> using Open Props! Minimal styles for all HTML elements. Plus, it's adaptive to light and dark. The props are made available for you to continue building <a href="https://codepen.io/argyleink/pen/jOLaBgG">components</a> too.</p>
-    <hr>
     <h2>Normalized HTML5 Elemenets</h2>
     <p>Based on <a href="https://cbracco.github.io/html5-test-page">this html5 test page</a>.</p>
   </header>
@@ -401,11 +396,6 @@ import{x as n}from"./lit-element-2d314a70.js";const e={render:()=>n`<div id="top
 </div>`},d={title:"templates/Open Props Normalize Demo Page"};var t,i,a;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => html\`<div id="top" class="page" role="document"> 
   <header role="banner">
-    <div class="open-props">
-      <h1>Open Props</h1>
-    </div>
-    <p>A <a href="https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css#:~:text=51-,Normalize.,over%20the%20styling%20of%20everything.">normalize</a> using Open Props! Minimal styles for all HTML elements. Plus, it's adaptive to light and dark. The props are made available for you to continue building <a href="https://codepen.io/argyleink/pen/jOLaBgG">components</a> too.</p>
-    <hr>
     <h2>Normalized HTML5 Elemenets</h2>
     <p>Based on <a href="https://cbracco.github.io/html5-test-page">this html5 test page</a>.</p>
   </header>
@@ -801,4 +791,4 @@ import{x as n}from"./lit-element-2d314a70.js";const e={render:()=>n`<div id="top
   </main>
 </div>\`
 }`,...(a=(i=e.parameters)==null?void 0:i.docs)==null?void 0:a.source}}};const r=["OpenPropsNormalizeDemoPage"];export{e as OpenPropsNormalizeDemoPage,r as __namedExportsOrder,d as default};
-//# sourceMappingURL=openprops.stories-2849137c.js.map
+//# sourceMappingURL=openprops.stories-f6beedb7.js.map
