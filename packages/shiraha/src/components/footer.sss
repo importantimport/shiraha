@@ -1,7 +1,9 @@
 footer
   padding: 2rem
 
-  /* border-top: 2px var(--md-sys-color-outline-variant) solid*/
+  /* with divider, m3.material.io style*/
+  & > hr:first-child
+    margin-bottom: 2rem
 
   /* without divider, relay.material.io style*/
   &:not(:has(hr:first-child))
@@ -14,12 +16,3 @@ footer
       margin: 2rem -2rem
 
       border-color: var(--md-sys-color-surface)
-
-  /* with divider, m3.material.io style*/
-
-  /* &:has(hr:first-child)*/
-
-/* body > footer
-  max-width: var(--shiraha-content-width)
-  margin: 0 auto
-  padding: var(--shiraha-content-padding)*/
