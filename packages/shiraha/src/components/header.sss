@@ -1,9 +1,12 @@
 header
   display: flex
+  flex-direction: column
 
   color: var(--md-sys-color-on-surface)
 
   background-color: var(--md-sys-color-surface)
+
+  padding: 0.5rem 0.25rem
 
   & > nav
     display: flex
@@ -14,6 +17,7 @@ header
     padding: 0 0.25rem
 
     width: 100%
+    min-height: 3rem
 
     // title-large
     & :where(h1, h2, h3, h4, h5, h6)
@@ -25,7 +29,22 @@ header
       font-weight: 400
       line-height: 28px
 
-    // & [class^='material-symbols-']
+      &:first-child
+        padding-left: 0.5rem
 
-header:has(nav:only-child)
-  height: 4rem
+  // headline-medium
+  & > :where(h1, h2, h3, h4, h5, h6)
+    font-size: 28px
+    font-weight: 400
+    line-height: 36px
+
+  // headline-small
+  & > :where(p, span)
+    font-size: 24px
+    font-weight: 400
+    line-height: 32px
+
+  & > :not(nav)
+    padding: 0 1.25rem
+    margin: 0 0 0.75rem 0
+
