@@ -120,6 +120,8 @@ export const M3: StoryObj = {
   </footer>`,
 }
 
+// TODO: material.io/blog style (with extension)
+
 export default {
   title: 'components/Footer',
 } as Meta
