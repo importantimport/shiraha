@@ -1,7 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
-export const Header: StoryObj = {
+export const CenterAlignedHeader = {
+  render: () => html`
+    <header>
+      <nav>
+        <a href="#" class="material-symbols-outlined">menu</a>
+        <h2 style="text-align: center">Title Large</h2>
+        <a href="#" class="material-symbols-outlined">account_circle</a>
+      </nav>
+    </header>
+  `,
+}
+
+export const SmallHeader: StoryObj = {
   render: () => html`
     <header>
       <nav>
