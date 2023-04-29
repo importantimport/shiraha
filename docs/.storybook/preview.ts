@@ -1,7 +1,8 @@
 import type { Preview } from '@storybook/web-components'
 
 import 'shiraha/src/shiraha.sss'
-import 'shiraha/src/themes/yuki.sss'
+// import 'shiraha/src/themes/yuki.sss'
+import 'shiraha/src/themes/baseline-tone-based.sss'
 
 export default {
   parameters: {
