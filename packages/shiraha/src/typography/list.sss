@@ -4,7 +4,6 @@ ul, ol
   & > li
     padding-inline-start: var(--size-2)
     max-inline-size: var(--size-content-2)
-
     &::marker
       color: var(--md-sys-color-outline)
 
@@ -14,3 +13,9 @@ ul
 ol
   list-style-type: decimal
 
+dt
+  font-weight: var(--font-weight-7)
+  max-inline-size: var(--size-content-2)
+
+dt:not(:first-of-type)
+  margin-block-start: var(--size-5)
