@@ -1,0 +1,34 @@
+@import '../lib/mixin-button.sss'
+
+nav
+  display: flex
+
+  width: 100%
+
+  // pagination (ul), breadcrumb (ol)
+  & > :is(ul, ol, dl)
+    display: flex
+    flex-direction: row
+    gap: 1rem
+    align-items: center
+    justify-content: space-between
+
+    width: 100%
+    padding: 1rem
+
+    & > li
+      text-align: center
+
+  & > ul
+    // TODO: text button disabled style
+    & > li > :is(p, span)
+
+      @mixin base-button
+
+      background-color: var(--md-sys-color-surface-variant)
+
+    & > li:first-child:is([rel='prev'], [rel='next'])
+      margin-right: auto
+
+    & > li:last-child:is([rel='prev'], [rel='next'])
+      margin-left: auto
