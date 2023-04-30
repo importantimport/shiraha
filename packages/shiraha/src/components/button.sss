@@ -1,47 +1,30 @@
+@import '../lib/mixin-button.sss'
+
 // icon button
 :is(a, button):is([class^='material-symbols'], [class^='i-']):not(:has(*))
-  margin: 0.25rem
-  padding: 0.5rem
 
-  color: inherit
-  text-decoration: none
-
-  border-radius: 9999px
-
-  transition: background-color 250ms var(--md-sys-motion-easing-emphasized-decelerate)
-
-  &:hover
-    // TODO: state color (on-surface-variant / 0.08)
-    background-color: var(--md-sys-color-surface-variant)
-
-  &:focus
-    // TODO: state color (on-surface-variant / 0.12)
-    background-color: var(--md-sys-color-surface-variant)
+  @mixin base-button
 
   // &:active
 
   // &:disabled
 
+// text button
+:is(button, nav > ul > li > a)
+
+  @mixin base-button
+
+  padding: 0.5rem 0.75rem
+
 // text button with icon
 :is(a, button):has(:is([class^='material-symbols'], [class^='i-']))
+
+  @mixin base-button
+
   display: flex
   gap: 0.75rem
 
-  margin: 0.25rem
   padding: 0.5rem 1rem
-
-  color: inherit
-  text-decoration: none
-
-  border-radius: 9999px
 
   & > :is([class^='material-symbols'], [class^='i-'])
     margin: 0 -0.25rem
-
-  &:hover
-    // TODO: state color (on-surface-variant / 0.08)
-    background-color: var(--md-sys-color-surface-variant)
-
-  &:focus
-    // TODO: state color (on-surface-variant / 0.12)
-    background-color: var(--md-sys-color-surface-variant)
