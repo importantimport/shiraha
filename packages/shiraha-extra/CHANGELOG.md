@@ -1,5 +1,12 @@
 # shiraha-extra
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`e04e87f`](https://github.com/importantimport/shiraha/commit/e04e87fc343f4e8f8023aaf50f2d8f8902015a9c)]:
+  - shiraha@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
