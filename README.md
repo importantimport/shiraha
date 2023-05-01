@@ -5,9 +5,6 @@
 </div>
 <h1 align="center">Shiraha</h1>
 <p align="center">Material 3-inspired Classless CSS Framework. [WIP]</p>
-<p align="center">
-<img src="https://img.badgesize.io/https:/unpkg.com/shiraha?compression=brotli" alt="brotli size" />
-</p>
 <div align="center">
 
 **[<kbd> <br> Storybook <br> </kbd>](https://importantimport.github.io/shiraha)** 
@@ -31,6 +28,10 @@ HTML gets better with [semantic elements](https://developer.mozilla.org/en-US/do
 ### Compatible with some Rehype plugins [WIP]
 
 Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc. -->
+
+## 📝 Documentation
+
+The documentation is located in the docs folder and can be viewed from [importantimport.github.io/shiraha](https://importantimport.github.io/shiraha).
 
 ## 📦️ Packages
 
