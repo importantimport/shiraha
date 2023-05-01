@@ -1,41 +1,53 @@
 details
   position: relative
-  color: var(--md-sys-color-on-surface)
-  background: var(--md-sys-color-surface-container)
-  border-radius: var(--radius-2)
+
   padding-block: var(--size-2)
   padding-inline: var(--size-3)
 
+  color: var(--md-sys-color-on-surface)
+
+  background: var(--md-sys-color-surface-container)
+  border-radius: var(--radius-2)
+
+  & > summary
+    cursor: pointer
+
+    margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1)
+    padding: var(--size-2) var(--size-3)
+    padding-inline-start: 2rem
+
+    font-weight: var(--font-weight-7)
+    list-style: none
+
+    background: var(--md-sys-color-surface-container)
+    border-radius: var(--radius-2)
+
+    transition: 0.2s all ease
+
+    &::before
+      content: '▶'
+
+      position: absolute
+      inset-block-start: 0.5rem
+      inset-inline-start: 0.8rem
+      transform: rotate(0)
+      transform-origin: center
+
+      transition: 0.2s transform ease
+
+    &::marker
+      display: none
+
   &[open]
     > summary
-      border-end-end-radius: 0
-      border-end-start-radius: 0
       margin-block-end: var(--size-2)
-      transition: .2s all ease
+
+      border-end-start-radius: 0
+      border-end-end-radius: 0
+
+      transition: 0.2s all ease
 
       &::before
         transform: rotate(90deg)
-        transition: .2s transform ease
 
-summary
-  cursor: pointer
-  list-style: none
-  font-weight: var(--font-weight-7)
-  background: var(--md-sys-color-surface-container)
-  border-radius: var(--radius-2)
-  margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1)
-  padding: var(--size-2) var(--size-3)
-  padding-inline-start: 2rem
-  transition: .2s all ease
-
-  &::before
-    content: '▶'
-    position: absolute
-    inset-block-start: 0.5rem
-    inset-inline-start: 0.8rem
-    transform: rotate(0)
-    transform-origin: center
-    transition: .2s transform ease
-
-  &::marker
-    display: none
+        transition: 0.2s transform ease
