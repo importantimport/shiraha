@@ -18,7 +18,7 @@
 
 ---
 
-## ✨ Features
+<!-- ## ✨ Features
 
 ### Tight integration with `material-color-utilities` [WIP]
 
@@ -30,15 +30,31 @@ HTML gets better with [semantic elements](https://developer.mozilla.org/en-US/do
 
 ### Compatible with some Rehype plugins [WIP]
 
-Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc.
+Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc. -->
 
-## 🎨 Shiraha Colors
+## 📦️ Packages
 
+### [Shiraha](/packages/shiraha/)
+
+[![npm](https://img.shields.io/npm/v/shiraha)](https://npmjs.com/package/shiraha)
+![brotli size](https://img.badgesize.io/https:/unpkg.com/shiraha?compression=brotli)
+
+Material 3-inspired Classless CSS Framework.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/shiraha" />
+```
+
+### [Shiraha Colors](/packages/shiraha-colors/)
+
+[![npm](https://img.shields.io/npm/v/shiraha-colors)](https://npmjs.com/package/shiraha-colors)
 ![brotli size](https://img.badgesize.io/https:/unpkg.com/shiraha-colors?compression=brotli)
 
 A browser script that will automatically extract the theme color from your current page.
 
-Go to [Package README](/packages/shiraha-colors/README.md) for more information.
+```html
+<script type="module" src="https://esm.run/shiraha-colors" async></script>
+```
 
 ## 👥 Contributing
 
