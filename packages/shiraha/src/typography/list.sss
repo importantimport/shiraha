@@ -1,21 +1,24 @@
-ul, ol
-  padding-inline-start: var(--size-8)
+:is(main, article, .e-content, .prose)
+  & :where(ul, ol)
+    padding-inline-start: var(--size-8)
 
-  & > li
-    padding-inline-start: var(--size-2)
+    &:is(ul)
+      list-style-type: disc
+
+    &:is(ol)
+      list-style-type: decimal
+
+    & > li
+      max-inline-size: var(--size-content-2)
+      padding-inline-start: var(--size-2)
+
+      &::marker
+        color: var(--md-sys-color-outline)
+
+  & :where(dt)
     max-inline-size: var(--size-content-2)
-    &::marker
-      color: var(--md-sys-color-outline)
 
-ul
-  list-style-type: disc
+    font-weight: var(--font-weight-7)
 
-ol
-  list-style-type: decimal
-
-dt
-  font-weight: var(--font-weight-7)
-  max-inline-size: var(--size-content-2)
-
-dt:not(:first-of-type)
-  margin-block-start: var(--size-5)
+    &:not(:first-of-type)
+      margin-block-start: var(--size-5)
