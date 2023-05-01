@@ -38,5 +38,5 @@ export const BreadcrumbWithIcon: StoryObj = {
 }
 
 export default {
-  title: 'components/extra/Breadcrumb',
+  title: 'components/Breadcrumb',
 } as Meta
