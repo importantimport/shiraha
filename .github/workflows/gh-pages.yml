@@ -11,3 +11,4 @@ jobs:
     uses: importantimport/.github/.github/workflows/pnpm-gh-pages.yml@main
     with:
       publish_dir: docs/storybook-static
+      cname: shiraha.js.org
