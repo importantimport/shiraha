@@ -16,8 +16,8 @@
 
   padding: 0.5rem 0.75rem
 
-// text button with icon (only allow `button` tag)
-:is(button):has(:is([class^='material-symbols'], [class^='i-']))
+// text button with icon
+:is(a, button):has(:is([class^='material-symbols'], [class^='i-'])):not(.h-card, .p-category)
 
   @mixin base-button
 
