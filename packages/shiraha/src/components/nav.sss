@@ -9,12 +9,14 @@ nav
   & > :is(ul, ol, dl)
     display: flex
     flex-direction: row
-    gap: 1rem
+    gap: 0.5rem
     align-items: center
-    justify-content: space-between
 
     width: 100%
     padding: 1rem 0
+
+    &:is(ul)
+      justify-content: space-between
 
     & > li
       text-align: center
@@ -32,3 +34,9 @@ nav
 
     & > li:last-child:is([rel='prev'], [rel='next'])
       margin-left: auto
+
+  & > ol > li > a
+    color: var(--md-sys-color-on-surface-variant)
+
+    &:hover
+      color: var(--md-sys-color-on-primary-container)
