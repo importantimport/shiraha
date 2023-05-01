@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
 export const List: StoryObj = {
-  render: () => html` <h3>Definition list</h3>
+  render: () => html`<main>
+    <h3>Definition list</h3>
     <dl>
       <dt>Definition List Title</dt>
       <dd>This is a definition list division.</dd>
@@ -21,7 +22,8 @@ export const List: StoryObj = {
       <li>List Item 1</li>
       <li>List Item 2</li>
       <li>List Item 3</li>
-    </ul>`,
+    </ul>
+  </main>`,
 }
 
 export default {
