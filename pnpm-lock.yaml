@@ -124,6 +124,9 @@ importers:
       material-symbols:
         specifier: ^0.5.5
         version: 0.5.5
+      shiraha-worklets:
+        specifier: workspace:*
+        version: link:../packages/shiraha-worklets
     devDependencies:
       '@storybook/addon-essentials':
         specifier: ^7.0.7
@@ -158,6 +161,9 @@ importers:
       '@whitespace/storybook-addon-html':
         specifier: ^5.1.4
         version: 5.1.4(@storybook/addons@6.5.16)(@storybook/api@6.5.16)(@storybook/components@7.0.7)(@storybook/core-events@7.0.7)(@storybook/theming@7.0.7)(prettier@2.8.8)(react-dom@18.2.0)(react-syntax-highlighter@15.5.0)(react@18.2.0)
+      css-paint-polyfill:
+        specifier: ^3.4.0
+        version: 3.4.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -191,6 +197,8 @@ importers:
       shiraha:
         specifier: workspace:*
         version: link:../shiraha
+
+  packages/shiraha-worklets: {}
 
   pages:
     dependencies:
@@ -5014,6 +5022,10 @@ packages:
   /css-functions-list@3.1.0:
     resolution: {integrity: sha512-/9lCvYZaUbBGvYUgYGFJ4dcYiyqdhSjG7IPVluoV8A1ILjkF7ilmhp1OGUz8n+nmBcu0RNrQAzgD8B6FJbrt2w==}
     engines: {node: '>=12.22'}
+    dev: true
+
+  /css-paint-polyfill@3.4.0:
+    resolution: {integrity: sha512-B89ymLgMZie41d+QrD//5RWnwykvru5H9Yzd/MMJIgPdVsKB7t4lxuhIAyzy5FnoUbb0MztagNVRe9dI7kMbiA==}
     dev: true
 
   /cssesc@3.0.0:
