@@ -1,20 +1,20 @@
 details
   position: relative
-
   padding-block: .5rem
-  padding-inline: 1rem
-
   color: var(--md-sys-color-on-surface)
 
   background: var(--md-sys-color-surface-container)
   border-radius: 5px
 
+  & > :not(summary)
+    padding-inline: 1rem
+
   & > summary
     cursor: pointer
 
     margin: -0.5rem
-    padding: .5rem 1rem
-    padding-inline-start: 2rem
+    padding-block: .5rem
+    padding-inline-start: 2.5rem
 
     font-weight: 700
     list-style: none
