@@ -1,2 +1,2 @@
 const o={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},options:{storySort:{order:["stories","components","typography","templates"]}},html:{root:"#root-inner",removeComments:!0}}};export{o as default};
-//# sourceMappingURL=preview-57c43538.js.map
+//# sourceMappingURL=preview-bc5a5297.js.map

@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-19fc0485.js";import{u as e}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-54d1f3ca.js";import"../sb-preview/runtime.mjs";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-e02d3f7d.js";import"./index-356e4a49.js";const i=`# Shiraha Colors
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-b77a1d89.js";import{u as e}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-39d7955a.js";import"../sb-preview/runtime.mjs";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-e02d3f7d.js";import"./index-356e4a49.js";const i=`# Shiraha Colors
 
 Browser script to generate colors for Shiraha / Material Web.
 
@@ -6,6 +6,17 @@ Browser script to generate colors for Shiraha / Material Web.
 
 \`\`\`html
 <script type="module" src="https://esm.run/shiraha-colors" async><\/script>
+\`\`\`
+
+### nomodule
+
+Add \`<script nomodule\` to be used in environments that do not support ES Module.
+
+\`\`\`html
+<head>
+  <script type="module" src="https://esm.run/shiraha-colors" async><\/script>
+  <script nomodule src="https://esm.run/shiraha-colors/nomodule" async><\/script>
+</head>
 \`\`\`
 
 ### Configuration
@@ -22,15 +33,6 @@ You can see all supported configuration options in [src/types.ts](src/types.ts).
     }
   <\/script>
   <script type="module" src="https://esm.run/shiraha-colors" async><\/script>
-</head>
-\`\`\`
-
-### nomodule
-
-\`\`\`html
-<head>
-  <script type="module" src="https://esm.run/shiraha-colors" async><\/script>
-  <script nomodule src="https://esm.run/shiraha-colors/nomodule" async><\/script>
 </head>
 \`\`\`
 
@@ -56,4 +58,4 @@ You can see all supported configuration options in [src/types.ts](src/types.ts).
 </head>
 \`\`\`
 `;function M(t={}){const{wrapper:r}=Object.assign({},e(),t.components);return r?n.jsx(r,Object.assign({},t,{children:n.jsx(s,{})})):s();function s(){return n.jsx(o,{children:i})}}export{M as default};
-//# sourceMappingURL=shiraha-colors-7e8abeba.js.map
+//# sourceMappingURL=shiraha-colors-d812de7e.js.map
