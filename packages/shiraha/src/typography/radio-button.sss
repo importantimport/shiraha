@@ -1,0 +1,90 @@
+label:has(input[type='radio'])
+  line-height: 1.1
+  display: grid
+  grid-template-columns: 1em auto
+  gap: 0.5em
+  cursor: pointer
+
+  &:not( & ~ &)
+    margin-block-start: 1em
+
+  > input[type='radio']
+    appearance: none
+    background-color: transparent
+    margin: 0
+    font: inherit
+    color: currentColor
+
+    width: 1.15em
+    height: 1.15em
+    border: 0.15em solid var(--md-sys-color-on-surface-variant)
+    border-radius: 50%
+    transform: translateY(-0.075em)
+    
+    display: grid
+    place-content: center
+    cursor: pointer
+
+    &::before
+      content: ""
+      width: 0.58em
+      height: 0.58em
+      border-radius: 50%
+      transform: scale(0)
+      transition: 120ms transform ease-in-out
+      box-shadow: inset 1em 1em var(--md-sys-color-primary)
+      background-color: CanvasText  
+
+    &::after
+      content: ""
+      width: 2em
+      height: 2em
+      border-radius: 50%
+      background-color: var(--md-sys-color-on-surface) 
+      opacity: 0
+      position: absolute
+      z-index: -1
+      inset-block-start: 50%
+      inset-inline-start: 50%
+      transform: translate(-50%, -50%)
+
+    &:hover:not(:disabled)
+      &::after
+        opacity: 0.08
+
+    &:active:not(:disabled)
+      &::after
+        opacity: 0.12
+
+    &:is(:active):not(:checked)
+      &::after
+        background-color: var(--md-sys-color-primary)
+
+    &:checked
+      border-color: var(--md-sys-color-primary)
+
+      &::after
+        opacity: 0
+
+      &::before
+        transform: scale(1)
+
+      &:is(:hover,:focus)
+        &::after
+          background-color: var(--md-sys-color-primary)
+
+      &:is(:active)
+        &::after
+          background-color: var(--md-sys-color-on-surface) 
+
+    &:focus
+      outline: unset
+      &::after
+        opacity: 0.12  
+
+    &:disabled
+      cursor: not-allowed
+      border-color: var(--md-sys-color-on-surface)
+      opacity: 0.38
+      &::before
+        box-shadow: inset 1em 1em var(--md-sys-color-on-surface)
