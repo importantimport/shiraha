@@ -1,0 +1,42 @@
+{
+  "name": "shiraha-worklets",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "藍+85CD",
+  "license": "WTFPL",
+  "keywords": [
+    "paint",
+    "worklet",
+    "css",
+    "houdini"
+  ],
+  "description": "CSS Houdini PaintWorklet for Shiraha.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/shiraha.git",
+    "directory": "packages/shiraha-worklets"
+  },
+  "homepage": "https://github.com/importantimport/shiraha",
+  "bugs": "https://github.com/importantimport/shiraha/issues",
+  "unpkg": "./dist/index.js",
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "browser": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  }
+}
