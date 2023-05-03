@@ -1,5 +1,5 @@
 footer
-  padding: 2rem
+  padding: 2rem 0
 
   /* with divider, m3.material.io style*/
   & > hr:first-child
@@ -7,6 +7,8 @@ footer
 
   /* without divider, relay.material.io style*/
   &:not(:has(hr:first-child))
+    padding: 2rem
+
     color: var(--md-sys-color-on-surface-variant)
 
     background-color: var(--md-sys-color-surface-variant)
