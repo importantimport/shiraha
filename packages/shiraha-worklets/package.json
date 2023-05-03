@@ -16,7 +16,7 @@
     "url": "https://github.com/importantimport/shiraha.git",
     "directory": "packages/shiraha-worklets"
   },
-  "homepage": "https://github.com/importantimport/shiraha",
+  "homepage": "https://shiraha.js.org",
   "bugs": "https://github.com/importantimport/shiraha/issues",
   "unpkg": "./dist/index.js",
   "module": "./dist/index.js",
