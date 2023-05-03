@@ -1,5 +1,8 @@
 :not(nav)
   & > :where(ul, ol)
+    display: flex
+    flex-direction: column
+
     padding-inline-start: var(--size-8)
 
     &:is(ul)
