@@ -31,7 +31,7 @@ Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`,
 
 ## 📝 Documentation
 
-The documentation is located in the docs folder and can be viewed from [importantimport.github.io/shiraha](https://importantimport.github.io/shiraha).
+The documentation is located in the [`docs`](/docs/) folder and can be viewed from [shiraha.js.org](https://shiraha.js.org).
 
 ## 📦️ Packages
 
