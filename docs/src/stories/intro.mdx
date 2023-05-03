@@ -25,3 +25,63 @@ Browser script to generate colors for Shiraha / Material Web.
 ```html
 <script type="module" src="https://esm.run/shiraha-colors" async></script>
 ```
+
+## Notes
+
+### Shiraha Bookmarklet
+
+Inspired by sakura.css
+
+> Source
+
+```ts
+// ( javascript:
+;() => {
+  const error = () => alert('error')
+  const element = (e: string) => Array.from(window.document.querySelectorAll(e))
+  const load = () => {
+    const link = element('link').filter(
+      (e) => 'stylesheet' === e.getAttribute('rel') && e !== n
+    )
+    const style = element('style')
+    const o = link.concat(style)
+    o.forEach((e) => e.parentElement?.removeChild(e))
+  }
+  const n = window.document.createElement('link')
+  n.addEventListener('error', error)
+  n.addEventListener('load', load)
+  n.setAttribute('rel', 'stylesheet')
+  n.setAttribute('href', 'https://unpkg.com/shiraha')
+  window.document.head.appendChild(n)
+}
+// )()
+```
+
+> Minified
+
+```js
+javascript: (() => {
+  let e = () => alert('error'),
+    t = (e) => Array.from(window.document.querySelectorAll(e)),
+    r = () => {
+      let e = t('link').filter(
+          (e) => 'stylesheet' === e.getAttribute('rel') && e !== l
+        ),
+        r = t('style'),
+        n = e.concat(r)
+      n.forEach((e) => e.parentElement?.removeChild(e))
+    },
+    l = window.document.createElement('link')
+  l.addEventListener('error', e),
+    l.addEventListener('load', r),
+    l.setAttribute('rel', 'stylesheet'),
+    l.setAttribute('href', 'https://unpkg.com/shiraha'),
+    window.document.head.appendChild(l)
+})()
+```
+
+> Button
+
+<a href='javascript:(()=>{let e=()=>alert("error"),t=e=>Array.from(window.document.querySelectorAll(e)),r=()=>{let e=t("link").filter(e=>"stylesheet"===e.getAttribute("rel")&&e!==l),r=t("style"),n=e.concat(r);n.forEach(e=>e.parentElement?.removeChild(e))},l=window.document.createElement("link");l.addEventListener("error",e),l.addEventListener("load",r),l.setAttribute("rel","stylesheet"),l.setAttribute("href","https://unpkg.com/shiraha"),window.document.head.appendChild(l)})();'>
+  Shiraha Bookmarklet
+</a>
