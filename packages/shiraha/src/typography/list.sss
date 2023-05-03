@@ -1,5 +1,5 @@
-:is(main, article, .e-content, .prose)
-  & :where(ul, ol)
+:not(nav)
+  & > :where(ul, ol)
     padding-inline-start: var(--size-8)
 
     &:is(ul)
@@ -15,10 +15,10 @@
       &::marker
         color: var(--md-sys-color-outline)
 
-  & :where(dt)
-    max-inline-size: var(--size-content-2)
+:where(dt)
+  max-inline-size: var(--size-content-2)
 
-    font-weight: var(--font-weight-7)
+  font-weight: var(--font-weight-7)
 
-    &:not(:first-of-type)
-      margin-block-start: var(--size-5)
+  &:not(:first-of-type)
+    margin-block-start: var(--size-5)
