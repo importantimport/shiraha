@@ -1,7 +1,9 @@
+/// <reference types="vite/client" />
+
 declare interface CSS {
   paintWorklet: {
     addModule(
-      moduleURL: string,
+      moduleURL: string | URL,
       options?: { credentials: Request['credentials'] }
     ): Promise<void>
   }

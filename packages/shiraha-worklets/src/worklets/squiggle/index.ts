@@ -1,5 +1,4 @@
-import { addModule } from '../../utils/paint/add-module'
-import Squiggle from './worklet'
+import workletURL from '/public/worklet.js?url'
 import './properties'
 
-addModule(Squiggle)
+(CSS as unknown as CSS).paintWorklet.addModule(workletURL)

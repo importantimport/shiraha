@@ -21,14 +21,8 @@
   "unpkg": "./dist/index.js",
   "module": "./dist/index.js",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "browser": "./dist/index.js"
-    },
+    ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -36,7 +30,8 @@
     "package.json"
   ],
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch"
+    "build": "pnpm build:worklet && pnpm build:index",
+    "build:worklet": "vite build -c vite.config.worklet.ts",
+    "build:index": "vite build"
   }
 }
