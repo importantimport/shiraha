@@ -3,6 +3,7 @@ docs/storybook-static
 dist
 dist-ssr
 *.local
+packages/shiraha-worklets/public
 
 # dependencies
 node_modules
