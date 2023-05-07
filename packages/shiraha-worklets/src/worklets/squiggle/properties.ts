@@ -1,5 +1,3 @@
-import { registerProperties } from "../../utils/paint/register-properties"
-
 export const properties = [
   {
     name: '--shiraha-squiggle-thickness',
@@ -8,5 +6,3 @@ export const properties = [
     initialValue: 1,
   },
 ]
-
-registerProperties(properties)
