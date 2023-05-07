@@ -52,17 +52,21 @@ input[type='checkbox']
     &::after
       opacity: 0.12
 
-  &:checked
+  &:is(:checked, :indeterminate)
     &::before
 
       @mixin md-icon-fill
-
-      content: 'check_box'
 
       color: var(--md-sys-color-primary)
 
     &:is(:hover, :focus)::after
       background: var(--md-sys-color-primary)
+
+    &:checked::before
+      content: 'check_box'
+
+    &:indeterminate::before
+      content: 'indeterminate_check_box'
 
   &:disabled
     cursor: not-allowed
