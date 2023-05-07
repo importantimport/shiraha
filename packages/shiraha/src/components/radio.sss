@@ -7,11 +7,11 @@ label:has(input[type='radio'])
 
   line-height: 1.1
 
-  &:not(& ~ &)
-    margin-block-start: 1em
-
   &:has(input[type='radio']:disabled)
     cursor: not-allowed
+
+  &:not(& ~ &)
+    margin-block-start: 1em
 
   & > input[type='radio']
     cursor: pointer
@@ -80,14 +80,14 @@ label:has(input[type='radio'])
         box-shadow: inset 1em 1em var(--md-sys-color-on-surface)
 
     &:checked
-      &:not(:disabled)
-        border-color: var(--md-sys-color-primary)
-
       &::after
         opacity: 0
 
       &::before
         transform: scale(1)
+
+      &:not(:disabled)
+        border-color: var(--md-sys-color-primary)
 
       &:is(:hover,:focus)
         &::after
