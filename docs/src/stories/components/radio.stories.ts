@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
-export const RadioButton: StoryObj = {
+export const Radio: StoryObj = {
   render: () => html` <fieldset>
     <legend>Radio buttons</legend>
     <ul>
