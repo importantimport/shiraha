@@ -13,6 +13,9 @@ label:has(input[type='checkbox'])
   &:not(& ~ &)
     margin-block-start: 1rem
 
+  &:has(input[type='checkbox']:disabled)
+    cursor: not-allowed
+    
 input[type='checkbox']
   cursor: pointer
 
@@ -62,10 +65,11 @@ input[type='checkbox']
 
   &:is(:checked, :indeterminate)
     &::before
-
       @mixin md-icon-fill
 
-      color: var(--md-sys-color-primary)
+    &:not(:disabled)
+      &::before
+        color: var(--md-sys-color-primary)
 
     &:is(:hover, :focus)::after
       background: var(--md-sys-color-primary)
