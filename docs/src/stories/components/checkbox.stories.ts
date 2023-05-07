@@ -34,9 +34,9 @@ export const Checkbox: StoryObj = {
       </li>
 
       <li>
-        <label for="checkbox3"
+        <label for="checkbox4"
           ><input
-            id="checkbox3"
+            id="checkbox4"
             name="checkbox"
             type="checkbox"
             checked="checked"
