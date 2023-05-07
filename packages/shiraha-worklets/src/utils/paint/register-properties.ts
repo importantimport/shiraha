@@ -7,5 +7,5 @@ export const registerProperties = (
   }[]
 ) =>
   properties.forEach((property) =>
-    (CSS as unknown as CSS).registerProperty(property)
+    (window.CSS as unknown as CSS).registerProperty(property)
   )
