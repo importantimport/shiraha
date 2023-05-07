@@ -1,121 +1,91 @@
+// TODO: Animation
+
+@import '../lib/mixins/icon.sss'
+
 label:has(input[type='checkbox'])
   cursor: pointer
 
   display: grid
-  grid-template-columns: 1em auto
-  gap: 0.8em
-
-  line-height: 1.1
+  grid-template-columns: 1rem auto
+  gap: 1rem
+  align-items: center
 
   &:not(& ~ &)
-    margin-block-start: 1em
+    margin-block-start: 1rem
 
-  & > input[type='checkbox']
-    cursor: pointer
+input[type='checkbox']
+  cursor: pointer
 
-    transform: translateY(-0.075em)
+  display: inline-grid
+  place-content: center
 
-    display: grid
-    place-content: center
+  width: 2.5rem
+  height: 2.5rem
+  margin: -0.5rem
 
-    width: 1.125em
-    height: 1.125em
-    margin: 0
+  appearance: none
 
-    font: inherit
-    color: currentcolor
+  &::before
 
-    border: 0.15em solid var(--md-sys-color-on-surface)
-    border-radius: 0.15em
+    @mixin md-icon
 
-    appearance: none
+    content: 'check_box_outline_blank'
 
-    //  icon
-    &::before
-      content: ''
+    color: var(--md-sys-on-surface-variant)
 
-      transform: scale(0)
+  &::after
+    content: ''
 
-      width: 0.65em
-      height: 0.65em
+    position: absolute
+    z-index: -1
 
-      clip-path: polygon(11.25% 41.29%, 0% 54.25%, 39.75% 88.75%, 100% 20%, 86.6% 8.25%, 37.6% 64.16%)
-      border-radius: 0.15em
-      box-shadow: inset 1em 1em var(--md-sys-color-background)
+    width: 2.5rem
+    height: 2.5rem
 
-      transition: 120ms transform ease-in-out
+    opacity: 0
+    background: var(--md-sys-color-on-surface)
+    border-radius: 9999px
 
-    //  hover background
+  &:focus
+    outline: unset
+
     &::after
-      content: ''
+      opacity: 0.12
 
-      position: absolute
-      z-index: -1
-      inset-block-start: 50%
-      inset-inline-start: 50%
-      transform: translate(-50%, -50%)
+  &:checked
+    &::before
 
-      width: 2.2em
-      height: 2.2em
+      @mixin md-icon-fill
 
-      opacity: 0
-      background-color: var(--md-sys-color-on-surface)
-      border-radius: 2.2rem
+      content: 'check_box'
 
-    &:focus
-      outline: unset
+      color: var(--md-sys-color-primary)
 
+    &:is(:hover, :focus)::after
+      background: var(--md-sys-color-primary)
+
+  &:disabled
+    cursor: not-allowed
+
+    opacity: 0.38
+
+    &::before
+      color: var(--md-sys-color-on-surface)
+
+  &:hover:not(:disabled)::after
+    opacity: 0.08
+
+  &:active
+    &:not(:checked)
       &::after
+        background-color: var(--md-sys-color-primary)
+
+        transition: 200ms opacity ease-in-out
+
+    &:not(:disabled)
+      &::after
+        transform-origin: top left
+
         opacity: 0.12
 
-    // Disabled
-    &:disabled
-      cursor: not-allowed
-
-      opacity: 0.38
-      border-color: var(--md-sys-color-on-surface)
-
-    // Enabled
-    &:checked
-      background-color: var(--md-sys-color-primary)
-      border-color: var(--md-sys-color-primary)
-
-      &::after
-        opacity: 0
-
-      &::before
-        transform: scale(1)
-
-      &:disabled
-        background-color: var(--md-sys-color-on-surface)
-        border-color: var(--md-sys-color-on-surface)
-
-      &:is(:hover,:focus)
-        &::after
-          background-color: var(--md-sys-color-primary)
-
-      &:active
-        &::after
-          background-color: var(--md-sys-color-on-surface)
-
-    // 3. Hovered
-    &:hover:not(:disabled)
-      &::after
-        opacity: 0.08
-
-    // 4. Pressed
-    /* stylelint-disable-next-line no-descending-specificity*/
-    &:active
-      &:not(:checked)
-        &::after
-          background-color: var(--md-sys-color-primary)
-
-          transition: 200ms opacity ease-in-out
-
-      &:not(:disabled)
-        &::after
-          transform-origin: top left
-
-          opacity: 0.12
-
-          transition: border-color 0.2s, background-color 0.2s
+        transition: border-color 0.2s, background-color 0.2s
