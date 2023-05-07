@@ -1,4 +1,4 @@
-import{x as e}from"./lit-element-2d314a70.js";const i={render:()=>e`<main>
+import{x as s}from"./lit-element-2d314a70.js";const i={render:()=>s`<main>
     <h3>Definition list</h3>
     <dl>
       <dt>Definition List Title</dt>
@@ -12,14 +12,26 @@ import{x as e}from"./lit-element-2d314a70.js";const i={render:()=>e`<main>
       <li>List Item 1</li>
       <li>List Item 2</li>
       <li>List Item 3</li>
+      <li>
+        List Item 4
+        <ol>
+          <li>List Item 5</li>
+        </ol>
+      </li>
     </ol>
     <h3>Unordered List</h3>
     <ul>
       <li>List Item 1</li>
       <li>List Item 2</li>
       <li>List Item 3</li>
+      <li>
+        List Item 4
+        <ul>
+          <li>List Item 5</li>
+        </ul>
+      </li>
     </ul>
-  </main>`},d={title:"typography/List"};var t,n,s;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  </main>`},d={title:"typography/List"};var t,l,n;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => html\`<main>
     <h3>Definition list</h3>
     <dl>
@@ -34,13 +46,25 @@ import{x as e}from"./lit-element-2d314a70.js";const i={render:()=>e`<main>
       <li>List Item 1</li>
       <li>List Item 2</li>
       <li>List Item 3</li>
+      <li>
+        List Item 4
+        <ol>
+          <li>List Item 5</li>
+        </ol>
+      </li>
     </ol>
     <h3>Unordered List</h3>
     <ul>
       <li>List Item 1</li>
       <li>List Item 2</li>
       <li>List Item 3</li>
+      <li>
+        List Item 4
+        <ul>
+          <li>List Item 5</li>
+        </ul>
+      </li>
     </ul>
   </main>\`
-}`,...(s=(n=i.parameters)==null?void 0:n.docs)==null?void 0:s.source}}};const o=["List"];export{i as List,o as __namedExportsOrder,d as default};
-//# sourceMappingURL=list.stories-aeaee402.js.map
+}`,...(n=(l=i.parameters)==null?void 0:l.docs)==null?void 0:n.source}}};const o=["List"];export{i as List,o as __namedExportsOrder,d as default};
+//# sourceMappingURL=list.stories-e6aa8819.js.map
