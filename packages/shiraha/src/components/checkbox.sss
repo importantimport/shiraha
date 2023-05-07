@@ -5,16 +5,15 @@
 label:has(input[type='checkbox'])
   cursor: pointer
 
-  display: grid
-  grid-template-columns: 1rem auto
+  display: inline-flex
   gap: 1rem
-  align-items: center
+
+  margin: 0
+
+  vertical-align: bottom
 
   &:has(input[type='checkbox']:disabled)
     cursor: not-allowed
-
-  &:not(& ~ &)
-    margin-block-start: 1rem
 
 input[type='checkbox']
   cursor: pointer
