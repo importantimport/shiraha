@@ -57,29 +57,6 @@ Inspired by sakura.css
 // )()
 ```
 
-> Minified
-
-```js
-javascript: (() => {
-  let e = () => alert('error'),
-    t = (e) => Array.from(window.document.querySelectorAll(e)),
-    r = () => {
-      let e = t('link').filter(
-          (e) => 'stylesheet' === e.getAttribute('rel') && e !== l
-        ),
-        r = t('style'),
-        n = e.concat(r)
-      n.forEach((e) => e.parentElement?.removeChild(e))
-    },
-    l = window.document.createElement('link')
-  l.addEventListener('error', e),
-    l.addEventListener('load', r),
-    l.setAttribute('rel', 'stylesheet'),
-    l.setAttribute('href', 'https://unpkg.com/shiraha'),
-    window.document.head.appendChild(l)
-})()
-```
-
 > Button
 
 <a href='javascript:(()=>{let e=()=>alert("error"),t=e=>Array.from(window.document.querySelectorAll(e)),r=()=>{let e=t("link").filter(e=>"stylesheet"===e.getAttribute("rel")&&e!==l),r=t("style"),n=e.concat(r);n.forEach(e=>e.parentElement?.removeChild(e))},l=window.document.createElement("link");l.addEventListener("error",e),l.addEventListener("load",r),l.setAttribute("rel","stylesheet"),l.setAttribute("href","https://unpkg.com/shiraha"),window.document.head.appendChild(l)})();'>
