@@ -52,6 +52,14 @@ input[type='checkbox']
     &::after
       opacity: 0.12
 
+  &:disabled
+    cursor: not-allowed
+
+    opacity: 0.38
+
+    &::before
+      color: var(--md-sys-color-on-surface)
+
   &:is(:checked, :indeterminate)
     &::before
 
@@ -67,14 +75,6 @@ input[type='checkbox']
 
     &:indeterminate::before
       content: 'indeterminate_check_box'
-
-  &:disabled
-    cursor: not-allowed
-
-    opacity: 0.38
-
-    &::before
-      color: var(--md-sys-color-on-surface)
 
   &:hover:not(:disabled)::after
     opacity: 0.08
