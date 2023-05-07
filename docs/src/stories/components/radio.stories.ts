@@ -44,5 +44,5 @@ export const RadioButton: StoryObj = {
 }
 
 export default {
-  title: 'typography/RadioButton',
+  title: 'components/Radio',
 } as Meta

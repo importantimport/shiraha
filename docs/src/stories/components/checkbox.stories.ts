@@ -49,5 +49,5 @@ export const Checkbox: StoryObj = {
 }
 
 export default {
-  title: 'typography/Checkbox',
+  title: 'components/Checkbox',
 } as Meta
