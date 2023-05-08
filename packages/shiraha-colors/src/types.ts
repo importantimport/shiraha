@@ -1,11 +1,11 @@
-import {
+import type {
+  CustomColor,
   applyTheme,
-  type CustomColor,
 } from '@importantimport/material-color-utilities'
 
 type ApplyTheme = Parameters<typeof applyTheme>[1]
 
-export type ShirahaColorsOptions = {
+export interface ShirahaColorsOptions {
   /**
    * @defaultValue
    * ```ts

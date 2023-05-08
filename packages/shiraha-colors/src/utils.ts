@@ -1,7 +1,7 @@
 import {
   applyTheme,
-  themeFromImage,
   hexFromArgb,
+  themeFromImage,
 } from '@importantimport/material-color-utilities'
 import type { ShirahaColorsOptions } from './types'
 
@@ -15,10 +15,8 @@ export const applyShirahaColors = async (
 
     applyTheme(theme, {
       dark:
-        options.dark ??
-        globalThis.matchMedia('(prefers-color-scheme: dark)').matches
-          ? true
-          : false,
+        !!(options.dark
+        ?? globalThis.matchMedia('(prefers-color-scheme: dark)').matches),
       target: options.target ?? document.body,
       brightnessSuffix: options.brightnessSuffix ?? true,
       paletteTones: options.paletteTones,
@@ -27,17 +25,17 @@ export const applyShirahaColors = async (
     if (options.themeColor) {
       document
         .querySelectorAll('meta[name="theme-color"]')
-        .forEach((e) => e.remove())
+        .forEach(e => e.remove())
       ;['light', 'dark'].forEach((scheme) => {
         const themeColor = document.createElement('meta')
         themeColor.name = 'theme-color'
         themeColor.media = `(prefers-color-scheme: ${scheme})`
         themeColor.content = hexFromArgb(
           theme.schemes[scheme][
-            options.themeColor.replaceAll(/([-_][a-z])/g, (s) =>
-              s.slice(1).toUpperCase()
+            options.themeColor.replaceAll(/([-_][a-z])/g, s =>
+              s.slice(1).toUpperCase(),
             )
-          ]
+          ],
         )
         document.head.appendChild(themeColor)
       })

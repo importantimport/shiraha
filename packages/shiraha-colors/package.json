@@ -1,9 +1,17 @@
 {
   "name": "shiraha-colors",
-  "version": "0.1.0",
   "type": "module",
+  "version": "0.1.0",
+  "description": "Browser script to generate colors for Shiraha.",
   "author": "藍+85CD",
   "license": "WTFPL",
+  "homepage": "https://shiraha.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/shiraha.git",
+    "directory": "packages/shiraha-colors"
+  },
+  "bugs": "https://github.com/importantimport/shiraha/issues",
   "keywords": [
     "browser",
     "material",
@@ -13,33 +21,25 @@
     "color extraction",
     "theming"
   ],
-  "description": "Browser script to generate colors for Shiraha.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/importantimport/shiraha.git",
-    "directory": "packages/shiraha-colors"
-  },
-  "homepage": "https://shiraha.js.org",
-  "bugs": "https://github.com/importantimport/shiraha/issues",
-  "unpkg": "./dist/index.js",
-  "module": "./dist/index.js",
-  "main": "./dist/index.iife.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
       "require": "./dist/index.js",
+      "import": "./dist/index.js",
       "browser": "./dist/index.js"
     },
     "./nomodule": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/nomodule.js",
       "require": "./dist/nomodule.js",
+      "import": "./dist/nomodule.js",
       "browser": "./dist/nomodule.js"
     },
     "./package.json": "./package.json"
   },
+  "main": "./dist/index.iife.js",
+  "module": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "package.json"

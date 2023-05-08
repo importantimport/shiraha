@@ -2,6 +2,7 @@ import { paint } from '../../utils/paint/register-paint'
 import { properties } from './properties'
 
 @paint('shiraha-squiggle')
+// eslint-disable-next-line unused-imports/no-unused-vars
 class Squiggle {
   static get inputProperties() {
     return properties.map(({ name }) => name)
@@ -18,7 +19,7 @@ class Squiggle {
     },
     props: {
       get: <T>(s: string) => T
-    }
+    },
   ) {
     const path = [
       'M114',
@@ -93,20 +94,20 @@ class Squiggle {
 
     ctx.scale(height / viewbox[3], height / viewbox[3])
 
-    let path2D = new Path2D(path.join(' '))
+    const path2D = new Path2D(path.join(' '))
 
-    ctx.strokeStyle =
-      props.get<string>('--shiraha-squiggle-stroke-style') ??
-      props.get<string>('--md-sys-color-outline')
+    ctx.strokeStyle
+      = props.get<string>('--shiraha-squiggle-stroke-style')
+      ?? props.get<string>('--md-sys-color-outline')
     ctx.lineWidth = props.get<number>('--shiraha-squiggle-line-width') ?? 1
-    ctx.lineCap =
-      props.get<'butt' | 'round' | 'square'>('--shiraha-squiggle-line-cap') ??
-      'square'
+    ctx.lineCap
+      = props.get<'butt' | 'round' | 'square'>('--shiraha-squiggle-line-cap')
+      ?? 'square'
 
     ctx.stroke(path2D)
     for (let i = 0; i < width + 91 * (height / viewbox[3]); i++) {
       if (i % (91 * (height / viewbox[3])) === 0) {
-        let path2Di = new Path2D()
+        const path2Di = new Path2D()
         path2Di.addPath(path2D, {
           e: i,
           f: 0,
