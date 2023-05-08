@@ -1,51 +1,37 @@
-h1
-  margin-bottom: var(--size-3)
+// Shiraha Adaptive Type Scale
+// https://typescale.com/
+// https://royalfig.github.io/fluid-typography-calculator/
+// https://m2.material.io/design/typography/the-type-system.html#type-scale
+// 1.25x ~ 1.333x
+// 320px ~ 840px
 
-  font-size: 2.25em
-  font-weight: var(--font-weight-8)
-  line-height: var(--font-lineheight-0)
+:where(h1), .h1
+  font-size: clamp(3.052rem, 2.3400000000000003rem + 3.5599999999999987vw, 4.209rem)
+  font-weight: 300
+  letter-spacing: -1.5px
 
-  & strong
-    font-weight: var(--font-weight-9)
+:where(h2), .h2
+  font-size: clamp(2.441rem, 2.000384615384615rem + 2.203076923076924vw, 3.157rem)
+  font-weight: 300
+  letter-spacing: -0.5px
 
-h2
-  margin-top: var(--size-7)
-  margin-bottom: var(--size-3)
+:where(h3), .h3
+  font-size: clamp(1.953rem, 1.697rem + 1.2800000000000007vw, 2.369rem)
+  font-weight: 400
+  letter-spacing: 0
 
-  font-size: 1.5em
-  font-weight: var(--font-weight-7)
-  line-height: var(--font-lineheight-2)
+:where(h4), .h4
+  font-size: clamp(1.563rem, 1.4313076923076922rem + 0.6584615384615384vw, 1.777rem)
+  font-weight: 400
+  letter-spacing: 0.25px
 
-  & strong
-    font-weight: var(--font-weight-8)
+:where(h5), .h5
+  font-size: clamp(1.25rem, 1.198923076923077rem + 0.25538461538461527vw, 1.333rem)
+  font-weight: 400
+  letter-spacing: 0
 
-h3
-  margin-bottom: var(--size-2)
-
-  font-size: 1.25em
-  font-weight: var(--font-weight-6)
-  line-height: var(--font-lineheight-3)
-
-  & strong
-    font-weight: var(--font-weight-7)
-
-h4,
-h5
-  margin-bottom: var(--size-2)
-
-  font-size: inherit
-  font-weight: var(--font-weight-6)
-  line-height: var(--font-lineheight-3)
-
-  & strong
-    font-weight: var(--font-weight-7)
-
-h6
-  margin-bottom: var(--size-2)
-
-  font-size: var(--font-size-1)
-  font-weight: var(--font-weight-5)
-  line-height: var(--font-lineheight-2)
-
-  & strong
-    font-weight: var(--font-weight-6)
+// 1.125x ~ 1.200x
+:where(h6), .h6
+  font-size: clamp(1.125rem, 1.0788461538461538rem + 0.23076923076923067vw, 1.2rem)
+  font-weight: 500
+  letter-spacing: 0.15px
