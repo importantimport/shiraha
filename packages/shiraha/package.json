@@ -43,7 +43,8 @@
     "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
   },
   "devDependencies": {
-    "open-props": "^1.5.8"
+    "open-props": "^1.5.8",
+    "stylelint": "^14.16.1"
   },
   "peerDependencies": {
     "open-props": "^1.4.16"

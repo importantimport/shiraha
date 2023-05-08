@@ -185,6 +185,9 @@ importers:
       open-props:
         specifier: ^1.5.8
         version: 1.5.8
+      stylelint:
+        specifier: ^14.16.1
+        version: 14.16.1
 
   packages/shiraha-colors:
     devDependencies:
