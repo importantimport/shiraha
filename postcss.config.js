@@ -36,6 +36,7 @@ const plugins = [
   combineMediaQuery(),
 ]
 
+/** @type {import('postcss-load-config').Config} */
 export const vite = {
   plugins: [
     ...plugins,
@@ -48,6 +49,7 @@ export const vite = {
   ],
 }
 
+/** @type {import('postcss-load-config').Config} */
 export default ({ env, file }) => ({
   parser: sugarss,
   plugins: [
