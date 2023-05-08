@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as t}from"./index-fd8332d9.js";import{u as o}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-0cbbd56d.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const i=`# Shiraha
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as t}from"./index-99ebae41.js";import{u as o}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-04ee9f8d.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const i=`# Shiraha
 
 Material 3-inspired Classless CSS Framework.
 
@@ -50,4 +50,4 @@ import 'shiraha/src/shiraha.sss'
 
 TODO
 `;function M(s={}){const{wrapper:r}=Object.assign({},o(),s.components);return r?n.jsx(r,Object.assign({},s,{children:n.jsx(a,{})})):a();function a(){return n.jsx(t,{children:i})}}export{M as default};
-//# sourceMappingURL=shiraha-27f6e95c.js.map
+//# sourceMappingURL=shiraha-ef0cf9b6.js.map

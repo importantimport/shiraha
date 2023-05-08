@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-fd8332d9.js";import{u as e}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-0cbbd56d.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const i=`# Shiraha Colors
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-99ebae41.js";import{u as e}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-04ee9f8d.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const i=`# Shiraha Colors
 
 Browser script to generate colors for Shiraha / Material Web.
 
@@ -58,4 +58,4 @@ You can see all supported configuration options in [src/types.ts](src/types.ts).
 </head>
 \`\`\`
 `;function M(t={}){const{wrapper:r}=Object.assign({},e(),t.components);return r?n.jsx(r,Object.assign({},t,{children:n.jsx(s,{})})):s();function s(){return n.jsx(o,{children:i})}}export{M as default};
-//# sourceMappingURL=shiraha-colors-3001efa7.js.map
+//# sourceMappingURL=shiraha-colors-a6937656.js.map
