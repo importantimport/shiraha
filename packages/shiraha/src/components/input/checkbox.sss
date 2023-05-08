@@ -2,6 +2,8 @@
 
 @import '../../lib/mixins/icon.sss'
 
+@import '../../lib/mixins/states.sss'
+
 label:has(input[type='checkbox'])
   cursor: pointer
 
@@ -16,6 +18,9 @@ label:has(input[type='checkbox'])
     cursor: not-allowed
 
 input[type='checkbox']
+
+  @mixin states-after
+
   cursor: pointer
 
   display: inline-grid
@@ -35,24 +40,8 @@ input[type='checkbox']
 
     color: var(--md-sys-on-surface-variant)
 
-  &::after
-    content: ''
-
-    position: absolute
-    z-index: -1
-
-    width: 2.5rem
-    height: 2.5rem
-
-    opacity: 0
-    background: var(--md-sys-color-on-surface)
-    border-radius: 9999px
-
   &:focus
     outline: unset
-
-    &::after
-      opacity: 0.12
 
   &:disabled
     cursor: not-allowed
@@ -78,21 +67,3 @@ input[type='checkbox']
 
     &:indeterminate::before
       content: 'indeterminate_check_box'
-
-  &:hover:not(:disabled)::after
-    opacity: 0.08
-
-  &:active
-    &:not(:checked)
-      &::after
-        background-color: var(--md-sys-color-primary)
-
-        transition: 200ms opacity ease-in-out
-
-    &:not(:disabled)
-      &::after
-        transform-origin: top left
-
-        opacity: 0.12
-
-        transition: border-color 0.2s, background-color 0.2s

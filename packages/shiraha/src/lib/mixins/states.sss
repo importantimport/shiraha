@@ -1,0 +1,45 @@
+// State Layer Mixins
+
+@define-mixin states-after
+  &::after
+    content: ''
+
+    position: absolute
+    z-index: -1
+
+    min-width: 2.5rem
+    height: 2.5rem
+
+    opacity: 0
+    background: var(--md-sys-color-on-surface)
+    border-radius: 9999px
+
+    transition: opacity 0.2s var(--md-sys-motion-easing-standard)
+
+  &:focus::after
+    opacity: 0.12
+
+  &:hover:not(:disabled)::after
+    opacity: 0.08
+
+@define-mixin states-before
+  &::before
+    content: ''
+
+    position: absolute
+    z-index: -1
+
+    min-width: 2.5rem
+    height: 2.5rem
+
+    opacity: 0
+    background: var(--md-sys-color-on-surface)
+    border-radius: 9999px
+
+    transition: opacity 0.2s var(--md-sys-motion-easing-standard)
+
+  &:focus::before
+    opacity: 0.12
+
+  &:hover:not(:disabled)::before
+    opacity: 0.08
