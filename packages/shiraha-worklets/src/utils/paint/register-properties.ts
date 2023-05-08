@@ -4,8 +4,8 @@ export const registerProperties = (
     syntax?: string
     inherits: boolean
     initialValue?: string | number
-  }[]
+  }[],
 ) =>
-  properties.forEach((property) =>
-    (window.CSS as unknown as CSS).registerProperty(property)
+  properties.forEach(property =>
+    (window.CSS as unknown as CSS).registerProperty(property),
   )

@@ -7,7 +7,7 @@ import type { ShirahaColorsOptions } from './types'
 
 export const applyShirahaColors = async (
   img: HTMLImageElement,
-  options: ShirahaColorsOptions = {}
+  options: ShirahaColorsOptions = {},
 ) => {
   if (img.toString() === '[object HTMLImageElement]') {
     img.crossOrigin = 'anonymous'
