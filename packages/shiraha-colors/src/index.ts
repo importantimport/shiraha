@@ -7,17 +7,17 @@ const mutationObserver = new MutationObserver(async ([{ target }]) => {
     target.nodeName.toLowerCase() === 'title'
     && mutationObserverTitle !== target.textContent
   ) {
-    mutationObserverTitle = target.textContent
+    mutationObserverTitle = target.textContent as string
     await applyShirahaColors(
       document.querySelector('img.u-featured, img.u-photo')
         ?? document.querySelector('img[itemprop="image"]')
         ?? document.querySelector('img'),
-      globalThis.shiraha?.colors,
+      window.shiraha?.colors,
     )
   }
 })
 
-mutationObserver.observe(document.querySelector('title'), {
+mutationObserver.observe(document.querySelector('title') as Node, {
   attributes: true,
   childList: true,
   subtree: true,
@@ -27,5 +27,5 @@ mutationObserver.observe(document.querySelector('title'), {
     document.querySelector('img.u-featured, img.u-photo')
       ?? document.querySelector('img[itemprop="image"]')
       ?? document.querySelector('img'),
-    globalThis.shiraha?.colors,
+    window.shiraha?.colors,
   ))()

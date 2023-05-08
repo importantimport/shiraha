@@ -1,9 +1,4 @@
-import type {
-  CustomColor,
-  applyTheme,
-} from '@importantimport/material-color-utilities'
-
-type ApplyTheme = Parameters<typeof applyTheme>[1]
+import type { CustomColor } from '@importantimport/material-color-utilities'
 
 export interface ShirahaColorsOptions {
   /**
@@ -14,13 +9,13 @@ export interface ShirahaColorsOptions {
    *   : false
    * ```
    */
-  dark?: ApplyTheme['dark']
+  dark?: boolean
   /** @defaultValue document.body */
-  target?: ApplyTheme['target']
+  target?: HTMLElement
   /** @defaultValue true */
-  brightnessSuffix?: ApplyTheme['brightnessSuffix']
+  brightnessSuffix?: boolean
   /** @defaultValue undefined */
-  paletteTones?: ApplyTheme['paletteTones']
+  paletteTones?: number[]
   /** @defaultValue undefined */
   customColors?: CustomColor[]
   /** @defaultValue undefined */
