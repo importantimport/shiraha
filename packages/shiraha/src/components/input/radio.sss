@@ -1,112 +1,65 @@
+// TODO: Animation
+
+@import '../../lib/mixins/icon.sss'
+
+@import '../../lib/mixins/states.sss'
+
 label:has(input[type='radio'])
   cursor: pointer
 
-  display: grid
-  grid-template-columns: 1em auto
-  gap: 0.5em
+  display: inline-flex
+  gap: 1rem
 
-  line-height: 1.1
+  margin: 0
+
+  vertical-align: bottom
 
   &:has(input[type='radio']:disabled)
     cursor: not-allowed
 
-  &:not(& ~ &)
-    margin-block-start: 1em
+input[type='radio']
 
-  & > input[type='radio']
-    cursor: pointer
+  @mixin states-after
 
-    transform: translateY(-0.075em)
+  cursor: pointer
 
-    display: grid
-    place-content: center
+  display: inline-grid
+  place-content: center
 
-    width: 1.15em
-    height: 1.15em
-    margin: 0
+  width: 2.5rem
+  height: 2.5rem
+  margin: -0.5rem
 
-    font: inherit
-    color: currentcolor
+  appearance: none
 
-    background-color: transparent
-    border: 0.15em solid var(--md-sys-color-on-surface-variant)
-    border-radius: 50%
+  &::before
 
-    appearance: none
+    @mixin md-icon
+
+    content: 'radio_button_unchecked'
+
+    color: var(--md-sys-on-surface-variant)
+
+  &:focus
+    outline: unset
+
+  &:disabled
+    cursor: not-allowed
+
+    opacity: 0.38
 
     &::before
-      content: ''
+      color: var(--md-sys-color-on-surface)
 
-      transform: scale(0)
+  &:checked
+    &::before
 
-      width: 0.58em
-      height: 0.58em
+      @mixin md-icon
 
-      background-color: canvastext
-      border-radius: 50%
-      box-shadow: inset 1em 1em var(--md-sys-color-primary)
+      content: 'radio_button_checked'
 
-      transition: 120ms transform ease-in-out
+    &:not(:disabled)::before
+      color: var(--md-sys-color-primary)
 
-    &::after
-      content: ''
-
-      position: absolute
-      z-index: -1
-      inset-block-start: 50%
-      inset-inline-start: 50%
-      transform: translate(-50%, -50%)
-
-      width: 2em
-      height: 2em
-
-      opacity: 0
-      background-color: var(--md-sys-color-on-surface)
-      border-radius: 50%
-
-    &:focus
-      outline: unset
-
-      &::after
-        opacity: 0.12
-
-    &:disabled
-      cursor: not-allowed
-
-      opacity: 0.38
-      border-color: var(--md-sys-color-on-surface)
-
-      &::before
-        box-shadow: inset 1em 1em var(--md-sys-color-on-surface)
-
-    &:checked
-      &::after
-        opacity: 0
-
-      &::before
-        transform: scale(1)
-
-      &:not(:disabled)
-        border-color: var(--md-sys-color-primary)
-
-      &:is(:hover,:focus)
-        &::after
-          background-color: var(--md-sys-color-primary)
-
-      &:active
-        &::after
-          background-color: var(--md-sys-color-on-surface)
-
-    /* stylelint-disable-next-line no-descending-specificity*/
-    &:active
-      &:not(:checked)
-        &::after
-          background-color: var(--md-sys-color-primary)
-
-      &:not(:disabled)
-        &::after
-          opacity: 0.12
-
-    &:hover:not(:disabled)
-      &::after
-        opacity: 0.08
+    &:is(:hover, :focus)::after
+      background: var(--md-sys-color-primary)
