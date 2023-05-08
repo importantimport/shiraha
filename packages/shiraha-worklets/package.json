@@ -32,6 +32,8 @@
   "scripts": {
     "build": "pnpm build:worklet && pnpm build:index",
     "build:worklet": "vite build -c vite.config.worklet.ts",
-    "build:index": "vite build"
+    "build:index": "vite build",
+    "lint": "eslint .",
+    "format": "eslint . --fix"
   }
 }
