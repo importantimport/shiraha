@@ -1,3 +1,5 @@
+// Code Block
+
 @import '../lib/mixin-line-numbers.sss'
 
 :where(code, kbd, samp, pre)
@@ -6,23 +8,23 @@
   white-space: pre-wrap
 
 :where(code, samp, kbd)
-  font-weight: var(--font-weight-6)
+  font-weight: 600
 
 :where(code, pre)
   color: var(--md-sys-color-on-surface-variant)
 
   background-color: var(--md-sys-color-surface-variant)
-  border-radius: var(--size-1)
+  border-radius: 0.25rem
 
 :where(code)
   display: inline-block
 
-  padding: var(--size-1) var(--size-2)
+  padding: 0.25rem 0.5rem
 
   vertical-align: middle
 
 :where(pre)
-  padding: calc(var(--size-1) + var(--size-2))
+  padding: 0.75rem
 
   & > :where(code)
     overflow-x: auto
@@ -30,7 +32,7 @@
 
     padding: 0
 
-    font-weight: var(--font-weight-4)
+    font-weight: 400
 
 /* rehype-pretty-code*/
 
