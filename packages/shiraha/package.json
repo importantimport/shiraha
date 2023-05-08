@@ -38,9 +38,12 @@
     "build": "run-s build:*",
     "build:index": "postcss src/*.sss --base src --ext css -d dist",
     "build:themes": "postcss src/themes/*.sss --base src --ext css -d dist",
-    "watch": "postcss src/*.sss --base src --ext css -d dist -w",
-    "lint": "stylelint \"src/**/*.sss\"",
-    "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint .",
+    "lint:stylelint": "stylelint \"src/**/*.sss\"",
+    "format": "run-s format:*",
+    "format:eslint": "eslint . --fix",
+    "format:stylelint": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
   },
   "devDependencies": {
     "open-props": "^1.5.8",
