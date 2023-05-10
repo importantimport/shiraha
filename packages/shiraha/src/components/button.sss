@@ -1,13 +1,11 @@
-@import '../lib/mixin-button.sss'
+// Button
+
+@import '../lib/mixins/button.sss'
 
 // icon button
 :is(a, button):is([class^='material-symbols'], [class^='i-']):not(:has(*))
 
   @mixin base-button
-
-  // &:active
-
-  // &:disabled
 
 // text button
 :is(button, nav > ul > li > a)
