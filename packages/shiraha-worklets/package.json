@@ -30,7 +30,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "pnpm build:worklet && pnpm build:index",
+    "build": "run-s build:*",
     "build:worklet": "vite build -c vite.config.worklet.ts",
     "build:index": "vite build",
     "lint": "eslint .",
