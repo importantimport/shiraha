@@ -35,3 +35,8 @@
   font-size: clamp(1.125rem, 1.0788461538461538rem + 0.23076923076923067vw, 1.2rem)
   font-weight: 500
   letter-spacing: 0.15px
+
+// underline when in content
+:where(.e-content, .prose) :where(h1, h2)
+  padding-bottom: 0.25rem
+  border-bottom: 1px solid var(--md-sys-color-outline)
