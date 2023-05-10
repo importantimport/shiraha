@@ -1,4 +1,13 @@
+// Button Mixin
+
+@import './mixins/states.sss'
+
 @define-mixin base-button
+
+  @mixin states-before
+
+  position: relative
+
   display: inline-block
 
   min-width: 2.5rem
@@ -12,12 +21,5 @@
   background: transparent
   border-radius: 9999px
 
-  transition: background-color 250ms var(--md-sys-motion-easing-emphasized-decelerate)
-
-  &:hover
-    // TODO: state color (on-surface-variant / 0.08)
-    background: var(--md-sys-color-surface-variant)
-
-  &:focus
-    // TODO: state color (on-surface-variant / 0.12)
-    background: var(--md-sys-color-surface-variant)
+  &::before
+    background: var(--md-sys-color-on-surface-variant)
