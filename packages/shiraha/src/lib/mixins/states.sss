@@ -20,6 +20,8 @@
   transition: opacity 0.2s var(--md-sys-motion-easing-standard)
 
 @define-mixin states-after
+  position: relative
+
   &::after
 
     @mixin states-pseudo-element
@@ -31,6 +33,8 @@
     opacity: 0.08
 
 @define-mixin states-before
+  position: relative
+
   &::before
 
     @mixin states-pseudo-element
