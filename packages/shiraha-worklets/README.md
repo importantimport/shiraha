@@ -7,7 +7,7 @@ CSS Houdini PaintWorklet for Shiraha.
 ### via CDN
 
 ```html
-<!-- auto-register all worklets -->
+<!-- auto-register all worklets & properties -->
 <script src="https://esm.run/shiraha-worklets"></script>
 ```
 
@@ -20,6 +20,6 @@ pnpm add shiraha-worklets # pnpm
 ```
 
 ```ts
-// auto-register all worklets
+// auto-register all worklets & properties
 import 'shiraha-worklets'
 ```
