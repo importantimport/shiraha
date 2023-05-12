@@ -20,8 +20,8 @@
     }
   },
   "globalDependencies": [
-    ".eslintrc.json",
     ".stylelintrc.json",
+    "eslint.config.js",
     "postcss.config.js"
   ]
 }

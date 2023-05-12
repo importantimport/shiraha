@@ -10,7 +10,5 @@ export default defineConfig({
       fileName: 'index',
     },
   },
-  css: {
-    postcss: {},
-  },
+  css: { postcss: {} },
 })
