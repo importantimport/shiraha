@@ -46,8 +46,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "lint": "eslint .",
-    "format": "eslint . --fix"
+    "lint": "eslint src",
+    "format": "eslint src --fix"
   },
   "devDependencies": {
     "@importantimport/material-color-utilities": "^0.2.1"
