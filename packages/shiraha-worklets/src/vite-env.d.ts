@@ -15,4 +15,4 @@ declare interface CSS {
   }): void
 }
 
-declare function registerPaint(name: string, classRef: unknown): void
+declare function registerPaint(name: string, classReference: unknown): void

@@ -1,2 +1,2 @@
-export const addModule = (classRef: string) =>
-  (CSS as unknown as CSS).paintWorklet.addModule(classRef)
+export const addModule = (classReference: string) =>
+  (CSS as unknown as CSS).paintWorklet.addModule(classReference)

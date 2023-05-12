@@ -5,7 +5,6 @@ export const registerProperties = (
     inherits: boolean
     initialValue?: string | number
   }[],
-) =>
-  properties.forEach(property =>
-    (window.CSS as unknown as CSS).registerProperty(property),
-  )
+) => {
+  for (const property of properties) (window.CSS as unknown as CSS).registerProperty(property)
+}

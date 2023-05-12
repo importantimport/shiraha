@@ -9,7 +9,7 @@ class Squiggle {
   }
 
   paint(
-    ctx: CanvasRenderingContext2D,
+    context: CanvasRenderingContext2D,
     {
       height,
       width,
@@ -17,7 +17,7 @@ class Squiggle {
       height: number
       width: number
     },
-    props: {
+    properties_: {
       get: <T>(s: string) => T
     },
   ) {
@@ -92,27 +92,27 @@ class Squiggle {
     ]
     const viewbox = [0, 0, 91, 8]
 
-    ctx.scale(height / viewbox[3], height / viewbox[3])
+    context.scale(height / viewbox[3], height / viewbox[3])
 
     const path2D = new Path2D(path.join(' '))
 
-    ctx.strokeStyle
-      = props.get<string>('--shiraha-squiggle-stroke-style')
-      ?? props.get<string>('--md-sys-color-outline')
-    ctx.lineWidth = props.get<number>('--shiraha-squiggle-line-width') ?? 1
-    ctx.lineCap
-      = props.get<'butt' | 'round' | 'square'>('--shiraha-squiggle-line-cap')
+    context.strokeStyle
+      = properties_.get<string>('--shiraha-squiggle-stroke-style')
+      ?? properties_.get<string>('--md-sys-color-outline')
+    context.lineWidth = properties_.get<number>('--shiraha-squiggle-line-width') ?? 1
+    context.lineCap
+      = properties_.get<'butt' | 'round' | 'square'>('--shiraha-squiggle-line-cap')
       ?? 'square'
 
-    ctx.stroke(path2D)
-    for (let i = 0; i < width + 91 * (height / viewbox[3]); i++) {
-      if (i % (91 * (height / viewbox[3])) === 0) {
+    context.stroke(path2D)
+    for (let index = 0; index < width + 91 * (height / viewbox[3]); index++) {
+      if (index % (91 * (height / viewbox[3])) === 0) {
         const path2Di = new Path2D()
         path2Di.addPath(path2D, {
-          e: i,
+          e: index,
           f: 0,
         })
-        ctx.stroke(path2Di)
+        context.stroke(path2Di)
       }
     }
   }
