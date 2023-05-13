@@ -1,11 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/web-components'
-import { html } from 'lit'
-
 import 'css-paint-polyfill'
 import 'shiraha-worklets'
 
+import type { Meta, StoryObj } from '@storybook/web-components'
+import { html } from 'lit'
+
 export const Squiggle: StoryObj = {
-  render: () => html`<style>
+  render: () => html`
+    <style>
       hr {
         border: 0;
         height: 8px;
@@ -24,7 +25,8 @@ export const Squiggle: StoryObj = {
       <hr />
       <br />
       <hr />
-    </main>`,
+    </main>
+  `,
 }
 
 export default {

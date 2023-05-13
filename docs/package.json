@@ -1,12 +1,14 @@
 {
   "name": "shiraha-docs",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint src",
+    "format": "eslint src --fix"
   },
   "dependencies": {
     "lit": "^2.7.4",
