@@ -22,9 +22,12 @@ mutationObserver.observe(document.querySelector('title') as Node, {
   subtree: true,
 })
 
-await applyShirahaColors(
-  document.querySelector('img.u-featured, img.u-photo')
-    ?? document.querySelector('img[itemprop="image"]')
-    ?? document.querySelector('img'),
-  window.shiraha?.colors,
-)
+// eslint-disable-next-line unicorn/prefer-top-level-await
+;(async () => {
+  await applyShirahaColors(
+    document.querySelector('img.u-featured, img.u-photo')
+      ?? document.querySelector('img[itemprop="image"]')
+      ?? document.querySelector('img'),
+    window.shiraha?.colors,
+  )
+})()
