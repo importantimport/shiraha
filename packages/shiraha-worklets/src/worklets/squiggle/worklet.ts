@@ -2,7 +2,7 @@ import { paint } from '../../utils/paint/register-paint'
 import { properties } from './properties'
 
 @paint('shiraha-squiggle')
-// eslint-disable-next-line unused-imports/no-unused-vars
+// eslint-disable-next-line unused-imports/no-unused-vars, @typescript-eslint/no-unused-vars
 class Squiggle {
   static get inputProperties() {
     return properties.map(({ name }) => name)

@@ -4,17 +4,16 @@ let mutationObserverTitle: string
 
 const mutationObserver = new MutationObserver(async ([{ target }]) => {
   if (
-    target.nodeName.toLowerCase() === 'title'
-    && mutationObserverTitle !== target.textContent
-  ) {
-    mutationObserverTitle = target.textContent as string
-    await applyShirahaColors(
-      document.querySelector('img.u-featured, img.u-photo')
-        ?? document.querySelector('img[itemprop="image"]')
-        ?? document.querySelector('img'),
-      window.shiraha?.colors,
-    )
-  }
+    !(target.nodeName.toLowerCase() === 'title'
+    && mutationObserverTitle !== target.textContent)
+  ) return
+  mutationObserverTitle = target.textContent as string
+  await applyShirahaColors(
+    document.querySelector('img.u-featured, img.u-photo')
+          ?? document.querySelector('img[itemprop="image"]')
+          ?? document.querySelector('img'),
+    window.shiraha?.colors,
+  )
 })
 
 mutationObserver.observe(document.querySelector('title') as Node, {
@@ -22,10 +21,10 @@ mutationObserver.observe(document.querySelector('title') as Node, {
   childList: true,
   subtree: true,
 })
-;(async () =>
-  await applyShirahaColors(
-    document.querySelector('img.u-featured, img.u-photo')
-      ?? document.querySelector('img[itemprop="image"]')
-      ?? document.querySelector('img'),
-    window.shiraha?.colors,
-  ))()
+
+await applyShirahaColors(
+  document.querySelector('img.u-featured, img.u-photo')
+    ?? document.querySelector('img[itemprop="image"]')
+    ?? document.querySelector('img'),
+  window.shiraha?.colors,
+)

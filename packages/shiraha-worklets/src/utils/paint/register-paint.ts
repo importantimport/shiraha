@@ -1,4 +1,4 @@
 export const paint
   = (name: string): ClassDecorator =>
-    (classReference: Function) =>
+    (classReference: unknown) =>
       registerPaint(name, classReference)
