@@ -16,22 +16,22 @@
     "shiraha-worklets": "workspace:*"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.9",
-    "@storybook/addon-links": "^7.0.9",
-    "@storybook/addon-storysource": "^7.0.9",
-    "@storybook/blocks": "^7.0.9",
-    "@storybook/builder-vite": "^7.0.9",
-    "@storybook/components": "^7.0.9",
-    "@storybook/core-events": "^7.0.9",
-    "@storybook/theming": "^7.0.9",
-    "@storybook/web-components": "^7.0.9",
-    "@storybook/web-components-vite": "^7.0.9",
+    "@storybook/addon-essentials": "^7.0.11",
+    "@storybook/addon-links": "^7.0.11",
+    "@storybook/addon-storysource": "^7.0.11",
+    "@storybook/blocks": "^7.0.11",
+    "@storybook/builder-vite": "^7.0.11",
+    "@storybook/components": "^7.0.11",
+    "@storybook/core-events": "^7.0.11",
+    "@storybook/theming": "^7.0.11",
+    "@storybook/web-components": "^7.0.11",
+    "@storybook/web-components-vite": "^7.0.11",
     "@whitespace/storybook-addon-html": "^5.1.4",
     "css-paint-polyfill": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "shiraha": "workspace:*",
-    "storybook": "^7.0.9",
+    "storybook": "^7.0.11",
     "storybook-addon-pseudo-states": "^2.0.1"
   }
 }

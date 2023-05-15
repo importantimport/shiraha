@@ -6,7 +6,7 @@
     "source.fixAll.stylelint": true
   },
   "eslint.experimental.useFlatConfig": true,
-  "eslint.validate": ["javascript", "json", "jsonc", "json5"],
+  "eslint.validate": ["javascript", "json", "jsonc", "json5", "markdown", "mdx"],
   "stylelint.snippet": ["sugarss", "vue-sugarss"],
   "stylelint.validate": ["sugarss", "vue-sugarss"],
   "stylelint.configFile": ".stylelintrc.json"
