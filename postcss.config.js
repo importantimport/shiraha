@@ -45,7 +45,7 @@ export const vite = {
 }
 
 /** @type {import('postcss-load-config').Config} */
-export default ({ env, file }) => ({
+export default ({ _env, file }) => ({
   parser: sugarss,
   plugins: [
     ...plugins,
@@ -55,7 +55,8 @@ export default ({ env, file }) => ({
       browsers: 'defaults and supports css-cascade-layers',
       lightningcssOptions: {
         drafts: { nesting: true },
-        minify: env === 'production',
+        minify: true,
+        // minify: env === 'production',
       },
     }),
   ],
