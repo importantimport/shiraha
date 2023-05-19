@@ -1,46 +1,46 @@
 // Shiraha Adaptive Type Scale
 // https://typescale.com/
 // https://royalfig.github.io/fluid-typography-calculator/
-// https://m2.material.io/design/typography/the-type-system.html#type-scale
-// 1.25x ~ 1.333x
+// 1.2x ~ 1.25x
 // 320px ~ 840px
 
+:where(h1, h2, h3, h4, h5, h6)
+  margin-top: 1.5rem
+  margin-bottom: 1rem
+  line-height: 1.25
+  font-weight: 500
+
+// 39.81px ~ 48.83px
 :where(h1),
 .h1
-  font-size: clamp(3.052rem, 2.34rem + 3.56vw, 4.209rem)
-  font-weight: 300
-  letter-spacing: -1.5px
+  font-size: clamp(2.49rem, 2.14rem + 1.73vw, 3.05rem)
 
+// 33.18px ~ 39.06px
 :where(h2),
 .h2
-  font-size: clamp(2.441rem, 2rem + 2.2vw, 3.157rem)
-  font-weight: 300
-  letter-spacing: -0.5px
+  font-size: clamp(2.07rem, 1.85rem + 1.13vw, 2.44rem)
 
+// 27.65px ~ 31.25px
 :where(h3),
 .h3
-  font-size: clamp(1.953rem, 1.7rem + 1.28vw, 2.369rem)
-  font-weight: 400
-  letter-spacing: 0
+  font-size: clamp(1.73rem, 1.59rem + 0.69vw, 1.95rem)
 
+// 23.04px ~ 25.00px
 :where(h4),
 .h4
-  font-size: clamp(1.563rem, 1.43rem + 0.66vw, 1.777rem)
-  font-weight: 400
-  letter-spacing: 0.25px
+  font-size: clamp(1.44rem, 1.36rem + 0.38vw, 1.56rem)
 
+// 19.20px ~ 20.00px
 :where(h5),
 .h5
-  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.333rem)
-  font-weight: 400
-  letter-spacing: 0
+  font-size: clamp(1.2rem, 1.17rem + 0.15vw, 1.25rem)
 
-// 1.125x ~ 1.200x
+// 12.80px ~ 13.33px
+// disabled state
 :where(h6),
 .h6
-  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.2rem)
-  font-weight: 500
-  letter-spacing: 0.15px
+  font-size: clamp(0.8rem, 0.78rem + 0.1vw, 0.83rem)
+  opacity: 38%
 
 // underline when in content
 :where(.e-content, .prose) :where(h1, h2)
