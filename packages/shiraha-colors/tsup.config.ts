@@ -14,7 +14,7 @@ export default defineConfig([
   {
     ...options,
     esbuildOptions: (options) => {
-      options.legalComments = 'external'
+      options.legalComments = 'none'
     },
     format: ['esm'],
     target: 'es2022',
@@ -22,7 +22,7 @@ export default defineConfig([
   {
     ...options,
     esbuildOptions: (options) => {
-      options.legalComments = 'external'
+      options.legalComments = 'none'
       options.entryNames = 'nomodule'
     },
     format: ['iife'],
