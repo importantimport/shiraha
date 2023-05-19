@@ -1,4 +1,4 @@
-import type { CustomColor } from '@importantimport/material-color-utilities'
+import type { CustomColor } from '@material/material-color-utilities'
 
 export interface ShirahaColorsOptions {
   /**
@@ -12,7 +12,7 @@ export interface ShirahaColorsOptions {
   dark?: boolean
   /** @defaultValue document.body */
   target?: HTMLElement
-  /** @defaultValue true */
+  /** @defaultValue false */
   brightnessSuffix?: boolean
   /** @defaultValue undefined */
   paletteTones?: number[]

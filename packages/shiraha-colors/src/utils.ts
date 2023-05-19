@@ -1,8 +1,5 @@
-import {
-  applyTheme,
-  hexFromArgb,
-  themeFromImage,
-} from '@importantimport/material-color-utilities'
+import { hexFromArgb } from '@material/material-color-utilities'
+import { applyTheme, themeFromImage } from 'mcu-extra'
 
 import type { ShirahaColorsOptions } from './types'
 
@@ -16,7 +13,7 @@ export const applyShirahaColors = async (
   const theme = await themeFromImage(img, options.customColors)
 
   applyTheme(theme, {
-    brightnessSuffix: options.brightnessSuffix ?? true,
+    brightnessSuffix: options.brightnessSuffix ?? false,
     dark: !!(
       options.dark
         ?? globalThis.matchMedia('(prefers-color-scheme: dark)').matches

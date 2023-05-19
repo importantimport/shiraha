@@ -170,9 +170,12 @@ importers:
 
   packages/shiraha-colors:
     devDependencies:
-      '@importantimport/material-color-utilities':
-        specifier: ^0.2.1
-        version: 0.2.1
+      '@material/material-color-utilities':
+        specifier: ^0.2.6
+        version: 0.2.6
+      mcu-extra:
+        specifier: ^0.0.4
+        version: 0.0.4(@material/material-color-utilities@0.2.6)
 
   packages/shiraha-worklets: {}
 
@@ -2174,11 +2177,6 @@ packages:
       - typescript
     dev: true
 
-  /@importantimport/material-color-utilities@0.2.1:
-    resolution: {integrity: sha512-hXwCqYJwQDSKp7dAfp1QE9B4eMxGBgU3InAj+VSZjuNE08sepVLqULqp55ZsvN1YgluH2PgdAR30OSJNgURFTw==}
-    requiresBuild: true
-    dev: true
-
   /@istanbuljs/load-nyc-config@1.1.0:
     resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}
     engines: {node: '>=8'}
@@ -2310,6 +2308,10 @@ packages:
       eslint: '>= 8'
     dependencies:
       eslint: 8.40.0
+    dev: true
+
+  /@material/material-color-utilities@0.2.6:
+    resolution: {integrity: sha512-pMdkH7PvuJQS1q9igiPFfrS04Zu1feDXOVV69uWe2kr+RcK+7v3OylIYMwJDIwip1pFdGyTY4KkMy6vPIA/uSw==}
     dev: true
 
   /@mdx-js/react@2.3.0(react@18.2.0):
@@ -7287,6 +7289,14 @@ packages:
 
   /mathml-tag-names@2.1.3:
     resolution: {integrity: sha512-APMBEanjybaPzUrfqU0IMU5I0AswKMH7k8OTLs0vvV4KZpExkTkY87nR/zpbuTPj+gARop7aGUbl11pnDfW6xg==}
+    dev: true
+
+  /mcu-extra@0.0.4(@material/material-color-utilities@0.2.6):
+    resolution: {integrity: sha512-8YJqrcycAhrODBWZKcbfqOvkL/kopwjvZvwG4xUKSQnfmeKeRVT1mslC532PUFvEbohPKtMWGMVkt8dC9YYd3A==}
+    peerDependencies:
+      '@material/material-color-utilities': ^0.2.6
+    dependencies:
+      '@material/material-color-utilities': 0.2.6
     dev: true
 
   /mdast-util-definitions@4.0.0:
