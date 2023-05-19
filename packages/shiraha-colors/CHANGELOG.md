@@ -1,5 +1,13 @@
 # shiraha-colors
 
+## 0.2.0
+
+### Minor Changes
+
+- [`9f62ec5`](https://github.com/importantimport/shiraha/commit/9f62ec544247d10d52de78010560505a293420de) Thanks [@kwaa](https://github.com/kwaa)! - Feat: Tone-based Surfaces Support
+  - `brightnessSuffix` is `false` by default
+  - If `true`, no more values are generated without suffix
+
 ## 0.1.0
 
 ### Minor Changes
