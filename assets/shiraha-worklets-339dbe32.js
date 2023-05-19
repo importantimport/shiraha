@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as s}from"./index-e8b9a494.js";import{u as a}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-da47e136.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const e=`# Shiraha Worklets
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as s}from"./index-451c0bf1.js";import{u as a}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-36152b53.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-c45868c5.js";import"./index-356e4a49.js";const e=`# Shiraha Worklets
 
 CSS Houdini PaintWorklet for Shiraha.
 
@@ -23,4 +23,4 @@ pnpm add shiraha-worklets # pnpm
 // auto-register all worklets & properties
 import 'shiraha-worklets'
 \`\`\``;function o(r){return n.jsx(s,{children:e})}function f(r={}){const{wrapper:t}=Object.assign({},a(),r.components);return t?n.jsx(t,Object.assign({},r,{children:n.jsx(o,r)})):o()}export{f as default};
-//# sourceMappingURL=shiraha-worklets-0e686df9.js.map
+//# sourceMappingURL=shiraha-worklets-339dbe32.js.map
