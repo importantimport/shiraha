@@ -1,9 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    ".stylelintrc.json",
+    "eslint.config.js",
+    "postcss.config.js"
+  ],
   "pipeline": {
-    "dev": {
-      "cache": false
-    },
     "build": {
       "dependsOn": [
         "^build"
@@ -12,16 +14,14 @@
         "dist/**"
       ]
     },
-    "lint": {
-      "outputs": []
+    "dev": {
+      "cache": false
     },
     "format": {
       "outputs": []
+    },
+    "lint": {
+      "outputs": []
     }
-  },
-  "globalDependencies": [
-    ".stylelintrc.json",
-    "eslint.config.js",
-    "postcss.config.js"
-  ]
+  }
 }
