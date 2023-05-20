@@ -7,8 +7,10 @@
 :where(h1, h2, h3, h4, h5, h6)
   margin-top: 1.5rem
   margin-bottom: 1rem
-  line-height: 1.25
+
   font-weight: 500
+  line-height: 1.25
+  text-wrap: balance
 
 // 39.81px ~ 48.83px
 :where(h1),
@@ -40,7 +42,8 @@
 :where(h6),
 .h6
   font-size: clamp(0.8rem, 0.78rem + 0.1vw, 0.83rem)
-  opacity: 38%
+
+  opacity: 0.38
 
 // underline when in content
 :where(.e-content, .prose) :where(h1, h2)
