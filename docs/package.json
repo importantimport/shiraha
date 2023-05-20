@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
     "lint": "eslint src",
-    "format": "eslint src --fix"
+    "format": "eslint src --fix",
+    "cp": "mkdir -p ./storybook-static/nightly/ && cp -r ../packages/shiraha/dist/* ./storybook-static/nightly/"
   },
   "dependencies": {
     "lit": "^2.7.4",

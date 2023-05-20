@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
     "dev": "turbo run dev",
-    "build": "turbo run build",
+    "build": "turbo run build && pnpm -rF shiraha-docs cp",
     "lint": "turbo run lint",
     "format": "turbo run format",
     "changeset": "changeset",
