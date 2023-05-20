@@ -1,3 +1,4 @@
+// eslint-disable-next-line import
 import workletURL from '/public/worklet.js?url'
 
 import { registerProperties } from '../../utils/paint/register-properties'

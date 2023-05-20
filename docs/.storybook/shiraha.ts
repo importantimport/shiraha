@@ -12,7 +12,7 @@ export default create({
 
   // colorPrimary: cssVar('--md-sys-color-primary'),
   // colorSecondary: cssVar('--md-sys-color-secondary'),
-  
+
   // appBg: cssVar('--md-sys-color-background')
   // appContentBg: 'var(--md-sys-color-background)',
 

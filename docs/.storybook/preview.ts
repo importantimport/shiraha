@@ -1,9 +1,9 @@
-import type { Preview } from '@storybook/web-components'
-
 import 'material-symbols/outlined.css'
 import 'shiraha/src/shiraha.sss'
-import 'shiraha/src/themes/baseline-tone-based.sss'
 // import 'shiraha/src/themes/yuki.sss'
+import 'shiraha/src/themes/baseline-tone-based.sss'
+
+import type { Preview } from '@storybook/web-components'
 
 export default {
   parameters: {
@@ -14,14 +14,14 @@ export default {
         date: /Date$/,
       },
     },
+    html: {
+      removeComments: true,
+      root: '#root-inner',
+    },
     options: {
       storySort: {
-        order: ['stories', 'components', 'typography', 'templates']
-      }
-    },
-    html: {
-      root: '#root-inner',
-      removeComments: true,
+        order: ['stories', 'components', 'typography', 'templates'],
+      },
     },
   },
 } as Preview
