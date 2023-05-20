@@ -3,7 +3,6 @@ import type { StorybookConfig } from '@storybook/web-components-vite'
 export const title = 'Shiraha'
 
 export default {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -11,22 +10,25 @@ export default {
     'storybook-addon-pseudo-states',
     '@whitespace/storybook-addon-html',
   ],
+  core: { builder: '@storybook/builder-vite' },
+  docs: { autodocs: 'tag' },
   framework: {
     name: '@storybook/web-components-vite',
     options: {},
   },
-  core: { builder: '@storybook/builder-vite' },
-  docs: { autodocs: 'tag' },
   // shiraha body style fix
-  previewBody: (body) => /* html */ `
+  previewBody: body => /* html */ `
     <style>
       body {
         max-width: inherit;
       }
       #root-inner {
         max-width: var(--shiraha-content-width);
+        padding: var(--shiraha-content-padding);
         margin: 0 auto;
       }
     </style>
-    ${body}`,
+    ${body}
+  `,
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
 } as StorybookConfig
