@@ -14,8 +14,6 @@
   color: var(--md-sys-color-on-surface-variant)
   
   background-color: var(--md-sys-color-surface-container-low)
-  border: 1px solid var(--md-sys-color-surface-variant)
-  border-radius: 0.25rem
 
 :where(code)
   display: inline-block
@@ -24,8 +22,13 @@
 
   vertical-align: middle
 
+  border-radius: 0.25rem
+
 :where(pre)
   padding: 1rem
+
+  border: 1px solid var(--md-sys-color-surface-container-high)
+  border-radius: 0.5rem
 
   & > :where(code)
     overflow-x: auto
