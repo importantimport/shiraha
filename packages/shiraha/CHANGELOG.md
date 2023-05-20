@@ -1,5 +1,11 @@
 # shiraha
 
+## 0.0.6
+
+### Patch Changes
+
+- [`686e7aa`](https://github.com/importantimport/shiraha/commit/686e7aa43d42f515681d3753eb21905fb655019f) Thanks [@kwaa](https://github.com/kwaa)! - Version 0.0.6
+
 ## 0.0.5
 
 ### Patch Changes
