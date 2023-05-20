@@ -51,6 +51,6 @@
   },
   "devDependencies": {
     "open-props": "^1.5.8",
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.6.2"
   }
 }
