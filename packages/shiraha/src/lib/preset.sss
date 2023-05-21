@@ -1,4 +1,4 @@
-@import './mixin-scheme.sss'
+@import './mixins/scheme.sss'
 
 :root
   --shiraha-font-sans: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Inter', 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
@@ -14,7 +14,7 @@
 [data-theme='light'],
 .light
 
-  @mixin scheme light
+  @mixin scheme-important light
 
 @media (--OSdark)
   :root
@@ -24,7 +24,7 @@
 [data-theme='dark'],
 .dark
 
-  @mixin scheme dark
+  @mixin scheme-important dark
 
 /*
  --color--

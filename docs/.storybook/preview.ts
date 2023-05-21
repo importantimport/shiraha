@@ -18,6 +18,7 @@ export default {
     darkMode: {
       dark: { ...themes.dark, brandTitle: 'Shiraha' },
       light: { ...themes.normal, brandTitle: 'Shiraha' },
+      stylePreview: true,
     },
     html: {
       removeComments: true,
