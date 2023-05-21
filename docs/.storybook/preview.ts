@@ -20,7 +20,7 @@ export default {
     },
     options: {
       storySort: {
-        order: ['stories', 'components', 'typography', 'templates'],
+        order: ['stories', 'components', 'typography', 'addons', 'worklets', 'templates'],
       },
     },
   },
