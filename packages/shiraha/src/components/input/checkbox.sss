@@ -62,8 +62,15 @@ input[type='checkbox']
     &:is(:hover, :focus)::after
       background: var(--md-sys-color-primary)
 
+    &:active::after 
+      background: var(--md-sys-color-on-surface)
+
     &:checked::before
       content: 'check_box'
 
     &:indeterminate::before
       content: 'indeterminate_check_box'
+
+  &:active
+    &:not(:checked)::after
+      background: var(--md-sys-color-primary)
