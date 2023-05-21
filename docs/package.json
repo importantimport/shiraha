@@ -31,6 +31,7 @@
     "react-dom": "^18.2.0",
     "shiraha": "workspace:*",
     "storybook": "^7.0.12",
-    "storybook-addon-pseudo-states": "^2.0.1"
+    "storybook-addon-pseudo-states": "^2.0.1",
+    "storybook-dark-mode": "^3.0.0"
   }
 }

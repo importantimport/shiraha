@@ -8,6 +8,7 @@ export default {
     '@storybook/addon-essentials',
     '@storybook/addon-storysource',
     'storybook-addon-pseudo-states',
+    'storybook-dark-mode',
     '@whitespace/storybook-addon-html',
   ],
   core: { builder: '@storybook/builder-vite' },
