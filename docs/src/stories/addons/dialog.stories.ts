@@ -1,3 +1,5 @@
+import 'shiraha/dist/addons/dialog.css'
+
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
@@ -50,5 +52,5 @@ export const Dialog: StoryObj = {
 }
 
 export default {
-  title: 'components/Dialog',
+  title: 'addons/Dialog',
 } as Meta
