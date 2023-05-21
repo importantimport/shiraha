@@ -1,5 +1,11 @@
 # shiraha-colors
 
+## 0.2.1
+
+### Patch Changes
+
+- [`d9b61cd`](https://github.com/importantimport/shiraha/commit/d9b61cd117c43b67197c85ca72eabf4cfd864cb8) Thanks [@kwaa](https://github.com/kwaa)! - Fix: background color tone
+
 ## 0.2.0
 
 ### Minor Changes
