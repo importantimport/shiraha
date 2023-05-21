@@ -1,3 +1,5 @@
+import 'shiraha/dist/addons/chips.css'
+
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
@@ -24,5 +26,5 @@ export const Tags: StoryObj = {
 }
 
 export default {
-  title: 'components/Chips',
+  title: 'addons/Chips',
 } as Meta
