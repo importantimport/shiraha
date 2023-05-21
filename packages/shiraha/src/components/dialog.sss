@@ -1,0 +1,52 @@
+:where(dialog[open])
+  padding: 1.5rem
+  min-width: 280px
+  max-width: 560px
+  border-radius: 1.75rem
+
+  display: flex 
+  flex-direction: column
+  gap: 1rem
+  
+  background-color: var(--md-sys-color-surface-container-high)
+
+  &::backdrop
+    background-color: hsl(0deg 0% 0% / 32%)
+
+  & > :is(h1,h2,h3,h4,h5,h6)
+    margin: 0
+    font-size: 1.5rem
+    font-weight: 400
+    line-height: 2
+
+    color: var(--md-sys-color-on-surface)
+
+  & p
+    margin: 0
+    font-size: 0.875rem
+    line-height: 20px
+    color: var(--md-sys-color-on-surface-variant)
+    letter-spacing: 0.25px
+
+
+  & form
+    text-align: right
+
+    & > :not(button)
+      text-align: left
+
+    & > button
+      font-weight: 500
+      margin: 0
+      margin-block-start: 1.5rem
+      margin-inline-end: 0.5rem
+
+      color: var(--md-sys-color-primary)
+
+:where(dialog[open]):has([class^='material-symbols'],[class^='i-'])
+  align-items: center
+
+  & > :is([class^='material-symbols'],[class^='i-'])
+    width: 24px
+    height: 24px
+    color: var(--md-sys-color-secondary)
