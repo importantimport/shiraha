@@ -63,3 +63,10 @@ input[type='radio']
 
     &:is(:hover, :focus)::after
       background: var(--md-sys-color-primary)
+    
+    &:active::after 
+      background: var(--md-sys-color-on-surface)
+
+  &:active
+    &:not(:checked)::after
+      background: var(--md-sys-color-primary)
