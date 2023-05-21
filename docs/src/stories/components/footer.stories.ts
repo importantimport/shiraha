@@ -10,12 +10,10 @@ export const Relay: StoryObj = {
         height="64"
         width="188"
       />
-      <br />
       <p>
         Relay is changing the way designers and developers collaborate to build
         UI, simplifying UI handoff by connecting design tools losslessly to code.
       </p>
-      <br />
       <p>
         <a href="https://github.com/importantimport/shiraha">Twitter</a>
         <span>&nbsp;&nbsp;</span>
