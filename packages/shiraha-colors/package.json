@@ -1,7 +1,7 @@
 {
   "name": "shiraha-colors",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Browser script to generate colors for Shiraha.",
   "author": "藍+85CD",
   "license": "WTFPL",
