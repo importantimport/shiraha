@@ -14,11 +14,16 @@
   line-height: 1.25
   text-wrap: balance
 
-  // rehype-autolink-headings
-  // { behavior: 'wrap' }
   & > a
-    color: inherit
     text-decoration: none
+
+    // rehype-autolink-headings
+    // { behavior: 'wrap' }
+    &[href^='#']
+      color: inherit
+
+    // TODO:
+    // &[href^='https://']
 
 // 39.81px ~ 48.83px
 :where(h1),
