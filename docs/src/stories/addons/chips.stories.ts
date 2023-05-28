@@ -25,7 +25,7 @@ export const Tags: StoryObj = {
   `,
 }
 
-export const InputChip: StoryObj = {
+export const OutlinedChip: StoryObj = {
   render: () => html`
     <main>
       <a href="#" class="chip chip-outlined">
@@ -37,12 +37,31 @@ export const InputChip: StoryObj = {
       </a>
       <a href="#" class="chip chip-outlined">
         <img src="https://kwaa.dev/assets/any@192.webp" alt="" class="h-photo" />
-        Ping Qiang
+        \u85CD+85CD
         <span class="material-symbols-outlined">close</span>
       </a>
       <a href="#" class="chip chip-outlined">
         <span class="material-symbols-outlined">image</span>
         Input chip
+      </a>
+    </main>
+  `,
+}
+
+export const TonalChip: StoryObj = {
+  render: () => html`
+    <main>
+      <a href="#" class="chip chip-tonal">
+        Filter chip
+      </a>
+      <a href="#" class="chip chip-tonal">
+        <span class="material-symbols-outlined">done</span>
+        Filter chip
+      </a>
+      <a href="#" class="chip chip-tonal">
+        <span class="material-symbols-outlined">done</span>
+        Filter chip
+        <span class="material-symbols-outlined">arrow_drop_down</span>
       </a>
     </main>
   `,
