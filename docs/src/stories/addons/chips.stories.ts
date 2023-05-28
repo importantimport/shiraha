@@ -1,11 +1,11 @@
-import 'shiraha/dist/addons/chips.css'
+import 'shiraha/src/addons/chips.sss'
 
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
 
 export const HCard: StoryObj = {
   render: () => html`
-    <a class="h-card">
+    <a class="h-card chip">
       <img src="https://kwaa.dev/assets/any@192.webp" alt="" class="h-photo" />
       \u85CD+85CD
     </a>
@@ -15,12 +15,35 @@ export const HCard: StoryObj = {
 export const Tags: StoryObj = {
   render: () => html`
     <main>
-      <a href="#" class="p-category">Foo</a>
-      <a href="#" class="p-category">
+      <a href="#" class="p-category chip">Foo</a>
+      <a href="#" class="p-category chip chip-tonal">
         <span class="material-symbols-outlined">tag</span>
         Bar
       </a>
-      <a class="p-category">Baz</a>
+      <a class="p-category chip chip-outlined">Baz</a>
+    </main>
+  `,
+}
+
+export const InputChip: StoryObj = {
+  render: () => html`
+    <main>
+      <a href="#" class="chip chip-outlined">
+        Input chip
+      </a>
+      <a href="#" class="chip chip-outlined">
+        Input chip
+        <span class="material-symbols-outlined">close</span>
+      </a>
+      <a href="#" class="chip chip-outlined">
+        <img src="https://kwaa.dev/assets/any@192.webp" alt="" class="h-photo" />
+        Ping Qiang
+        <span class="material-symbols-outlined">close</span>
+      </a>
+      <a href="#" class="chip chip-outlined">
+        <span class="material-symbols-outlined">image</span>
+        Input chip
+      </a>
     </main>
   `,
 }

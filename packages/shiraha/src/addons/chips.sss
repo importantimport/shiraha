@@ -1,28 +1,43 @@
-:is(.h-card, .p-category)
+.chip
   display: inline-flex
   gap: 0.5rem
   align-items: center
 
   height: 2rem
-  padding: 0 1rem
+  padding: 0 0.75rem
+  margin: 0.25rem
 
   color: var(--md-sys-color-on-surface)
   text-decoration: none
   vertical-align: bottom
 
   background: transparent
-  border: 1px solid var(--md-sys-color-outline)
   border-radius: 0.5rem
 
   & > :is(img, [class^='material-symbols'], [class^='i-'])
     width: 18px
     height: 18px
-    margin-left: -0.5rem
 
     font-size: 18px !important
+
+    &:first-child
+      margin-left: -0.25rem
+      margin-right: 0
+
+    &:last-child:not(:first-child)
+      margin-left: 0
+      margin-right: -0.25rem
 
     &:is(img)
       border-radius: 9999px
 
   &:is(:hover, :focus-visible)
     background: var(--md-sys-color-surface-container)
+
+.chip-outlined
+  border: 1px solid var(--md-sys-color-outline)
+
+.chip-tonal
+  color: var(--md-sys-color-on-surface-variant)
+
+  background: var(--md-sys-color-surface-container-low)
