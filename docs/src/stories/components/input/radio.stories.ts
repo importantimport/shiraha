@@ -45,5 +45,5 @@ export const Radio: StoryObj = {
 }
 
 export default {
-  title: 'components/Radio',
+  title: 'components/Input/Radio',
 } as Meta
