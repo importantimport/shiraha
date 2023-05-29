@@ -3,7 +3,7 @@
 @import '../lib/mixins/button.sss'
 
 // icon button
-:is(a, button):is([class^='material-symbols'], [class^='i-']):not(:has(*))
+:is(a, button):is([class^='material-symbols'], [class^='i-']):not(.chip, :has(*))
 
   @mixin base-button
 
@@ -15,7 +15,7 @@
   padding: 0.5rem 0.75rem
 
 // text button with icon
-:is(a, button):has(:is([class^='material-symbols'], [class^='i-'])):not(.h-card, .p-category)
+:is(a, button):has(:is([class^='material-symbols'], [class^='i-'])):not(.chip)
 
   @mixin base-button
 
