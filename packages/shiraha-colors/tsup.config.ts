@@ -3,7 +3,6 @@ import { defineConfig } from 'tsup'
 const options: Parameters<typeof defineConfig>[0] = {
   clean: true,
   dts: { resolve: true },
-  entry: ['src/index.ts'],
   minify: true,
   outExtension: () => ({ js: '.js' }),
   platform: 'browser',
@@ -13,6 +12,7 @@ const options: Parameters<typeof defineConfig>[0] = {
 export default defineConfig([
   {
     ...options,
+    entry: ['src/index.ts'],
     esbuildOptions: (options) => {
       options.legalComments = 'none'
     },
@@ -21,6 +21,7 @@ export default defineConfig([
   },
   {
     ...options,
+    entry: ['src/nomodule.ts'],
     esbuildOptions: (options) => {
       options.legalComments = 'none'
       options.entryNames = 'nomodule'

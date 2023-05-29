@@ -29,7 +29,7 @@
       "browser": "./dist/index.js"
     },
     "./nomodule": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/nomodule.d.ts",
       "require": "./dist/nomodule.js",
       "import": "./dist/nomodule.js",
       "browser": "./dist/nomodule.js"
