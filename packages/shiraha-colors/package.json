@@ -36,7 +36,7 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.iife.js",
+  "main": "./dist/nomodule.js",
   "module": "./dist/index.js",
   "unpkg": "./dist/index.js",
   "types": "./dist/index.d.ts",
