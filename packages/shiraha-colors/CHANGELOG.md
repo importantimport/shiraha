@@ -1,5 +1,11 @@
 # shiraha-colors
 
+## 0.2.2
+
+### Patch Changes
+
+- [`d21b75c`](https://github.com/importantimport/shiraha/commit/d21b75ce289bf7c1d20dfc47e84799f434c4b387) Thanks [@kwaa](https://github.com/kwaa)! - Fix: exclude h-card
+
 ## 0.2.1
 
 ### Patch Changes
