@@ -14,6 +14,8 @@
   background: transparent
   border-radius: 0.5rem
 
+  white-space: nowrap
+
   & > a
     color: inherit
     text-decoration: none
@@ -45,3 +47,35 @@
   color: var(--md-sys-color-on-surface-variant)
 
   background: var(--md-sys-color-surface-container-low)
+
+@define-mixin chip-container-base
+  display: flex
+  flex-direction: row
+  flex-shrink: 0
+  gap: 0.5rem
+
+  overflow-x: scroll
+
+.chip-container-auto
+
+  @mixin chip-container-base
+
+  flex-wrap: nowrap
+
+  overflow-x: auto
+
+.chip-container-scroll
+
+  @mixin chip-container-base
+
+  flex-wrap: nowrap
+
+  overflow-x: scroll
+
+.chip-container-wrap
+
+  @mixin chip-container-base
+
+  flex-wrap: wrap
+
+  overflow-x: hidden

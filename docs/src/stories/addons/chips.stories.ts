@@ -71,6 +71,166 @@ export const TonalChip: StoryObj = {
   `,
 }
 
+export const ChipContainers: StoryObj = {
+  render: () => html`
+    <main>
+      <h6>Auto Container</h6>
+      <p class="chip-container-auto">
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+      </p>
+      <h6>Scroll Container</h6>
+      <p class="chip-container-scroll">
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+      </p>
+      <h6>Wrap Container</h6>
+      <p class="chip-container-wrap">
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+        <a href="#" class="chip chip-tonal">
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+        </a>
+        <a href="#" class="chip chip-tonal">
+          <span class="material-symbols-outlined">done</span>
+          Filter chip
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+        </a>
+      </p>
+    </main>
+  `,
+}
+
 export default {
   title: 'addons/Chips',
 } as Meta
