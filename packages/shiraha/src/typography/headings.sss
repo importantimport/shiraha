@@ -4,6 +4,8 @@
 // 1.2x ~ 1.25x
 // 320px ~ 840px
 
+@import '../lib/mixins/link.sss'
+
 :where(h1, h2, h3, h4, h5, h6)
   margin-top: 1.5rem
   margin-bottom: 1rem
@@ -22,8 +24,9 @@
     &[href^='#']
       color: inherit
 
-    // TODO:
-    // &[href^='https://']
+    &[href^='https://']
+
+      @mixin link
 
 // 39.81px ~ 48.83px
 :where(h1),
