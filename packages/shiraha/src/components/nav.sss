@@ -7,6 +7,9 @@ nav
 
   width: 100%
 
+  &:has(ul, ol, dl)
+    margin: 1rem 0
+
   // pagination (ul), breadcrumb (ol)
   & > :is(ul, ol, dl)
     display: flex
@@ -15,7 +18,6 @@ nav
     align-items: center
 
     width: 100%
-    padding: 1rem 0
 
     &:is(ul)
       justify-content: space-between
