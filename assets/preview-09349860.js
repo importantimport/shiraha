@@ -1,2 +1,0 @@
-import{t as o}from"./chunk-4NMOSTKD-052c8761.js";import"./index-d475d2ea.js";const t={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},darkMode:{dark:{...o.dark,brandTitle:"Shiraha"},light:{...o.normal,brandTitle:"Shiraha"},stylePreview:!0},html:{removeComments:!0,root:"#root-inner"},options:{storySort:{order:["stories","components","typography","addons","worklets","templates"]}}}};export{t as default};
-//# sourceMappingURL=preview-09349860.js.map
