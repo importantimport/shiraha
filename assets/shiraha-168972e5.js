@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as r}from"./index-ab008f4b.js";import{u as a}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-13da880a.js";import"../sb-preview/runtime.js";import"./chunk-4NMOSTKD-052c8761.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-d38538b0.js";import"./index-356e4a49.js";const i=`# Shiraha
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as r}from"./index-ea983eee.js";import{u as a}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-6e66edaf.js";import"../sb-preview/runtime.js";import"./chunk-4NMOSTKD-052c8761.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-d38538b0.js";import"./index-356e4a49.js";const i=`# Shiraha
 
 Material 3-inspired Classless CSS Framework.
 
@@ -64,4 +64,4 @@ import 'shiraha/src/themes/baseline.sss'
 
 Look at the [Documentation](https://shiraha.js.org/?path=%2Fdocs%2Fstories-intro--docs#shiraha-bookmarklet)
 `;function e(s){return n.jsx(r,{children:i})}function b(s={}){const{wrapper:t}=Object.assign({},a(),s.components);return t?n.jsx(t,Object.assign({},s,{children:n.jsx(e,s)})):e()}export{b as default};
-//# sourceMappingURL=shiraha-d4d31b6d.js.map
+//# sourceMappingURL=shiraha-168972e5.js.map
