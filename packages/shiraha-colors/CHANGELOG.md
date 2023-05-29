@@ -1,5 +1,11 @@
 # shiraha-colors
 
+## 0.2.3
+
+### Patch Changes
+
+- [`21493d8`](https://github.com/importantimport/shiraha/commit/21493d8cad81d2e08051e34d9f3a0de06b083b11) Thanks [@kwaa](https://github.com/kwaa)! - Fix: selector rule
+
 ## 0.2.2
 
 ### Patch Changes
