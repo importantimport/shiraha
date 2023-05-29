@@ -21,6 +21,10 @@ export const Tags: StoryObj = {
         Bar
       </a>
       <a class="p-category chip chip-outlined">Baz</a>
+      <span class="chip chip-tonal">
+        <span class="material-symbols-outlined">tag</span>
+        <a href="#" class="p-category">Tag</a>
+      </span>
     </main>
   `,
 }
