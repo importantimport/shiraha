@@ -4,24 +4,6 @@ Material 3-inspired Classless CSS Framework.
 
 ## Usage
 
-### CDN
-
-Add this line to your page between `<head></head>`:
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/shiraha" />
-<link rel="stylesheet" href="https://unpkg.com/shiraha/dist/themes/baseline.css" />
-```
-
-### Nightly
-
-```diff
-- <link rel="stylesheet" href="https://unpkg.com/shiraha" />
-+ <link rel="stylesheet" href="https://shiraha.js.org/nightly/shiraha.css" />
-- <link rel="stylesheet" href="https://unpkg.com/shiraha/dist/themes/baseline.css" />
-+ <link rel="stylesheet" href="https://shiraha.js.org/nightly/themes/baseline.css" />
-```
-
 ### NPM
 
 Install this package:
@@ -32,34 +14,81 @@ pnpm add -D shiraha # pnpm
 # npm i -D shiraha # npm
 ```
 
-Import it in CSS or JS:
+### CDN
 
-```css
-@import 'shiraha';
-@import 'shiraha/dist/themes/baseline.css';
+#### Stable
+
+You can get the `shiraha` package from your favorite CDN.
+
+For example, unpkg and jsdelivr:
+
+```html
+<!-- unpkg -->
+<link rel="stylesheet" href="https://unpkg.com/shiraha" />
+<!-- equal <link rel="stylesheet" href="https://unpkg.com/shiraha/dist/shiraha.css" /> -->
+
+<!-- jsdelivr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shiraha" />
+<!-- equal <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shiraha/dist/shiraha.css" /> -->
 ```
+
+#### Nightly
+
+You can get the nightly build from `shiraha.js.org/nightly`, This path provides
+only the `dist`.
+
+Please note that everything should be considered unstable.
+
+```html
+<!-- shiraha.js.org/nightly -->
+<link rel="stylesheet" href="https://shiraha.js.org/nightly/shiraha.css" />
+```
+
+### Import
+
+#### Base
+
+The base style of Shiraha, not including themes.
 
 ```ts
 import 'shiraha'
-import 'shiraha/dist/themes/baseline.css'
+
+// or
+// import 'shiraha/dist/shiraha.css'
+
+// source (sugarss)
+// import 'shiraha/src/shiraha.sss'
 ```
 
-#### Import SugarSS
+#### Themes
 
-shiraha exported the `src` folder.
+You may want to use your own theme or generate a theme through [Shiraha Colors](../shiraha-colors/) / [Material Color Utilities](https://github.com/material-foundation/material-color-utilities),
+so Shiraha does not come with a theme.
 
-You will need to additionally install [`open-props`](https://www.npmjs.com/package/open-props), as well as other plugins used in [PostCSS Config](../../postcss.config.js).
-
-```css
-@import 'shiraha/src/shiraha.sss';
-@import 'shiraha/src/themes/baseline.sss';
-```
+If you only need some preset themes, simply import them manually:
 
 ```ts
-import 'shiraha/src/shiraha.sss'
-import 'shiraha/src/themes/baseline.sss'
+// baseline theme
+import 'shiraha/dist/themes/baseline.css'
+// source (sugarss)
+// import 'shiraha/src/themes/baseline.sss'
+
+// yuki theme
+import 'shiraha/dist/themes/yuki.css'
+// source (sugarss)
+// import 'shiraha/src/themes/yuki.sss'
 ```
 
-### Bookmarklet
+#### Addons
 
-Look at the [Documentation](https://shiraha.js.org/?path=%2Fdocs%2Fstories-intro--docs#shiraha-bookmarklet)
+Shiraha base styles are classless whenever possible,
+while some that require class names or are not suitable to be enabled by default will become addons.
+
+For a detailed description of each addon, please see [`shiraha.js.org`](https://shiraha.js.org).
+
+```ts
+import 'shiraha/dist/addons/chips.css'
+
+// source (sugarss)
+// import 'shiraha/src/addons/chips.sss'
+```
