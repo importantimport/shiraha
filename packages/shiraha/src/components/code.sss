@@ -1,7 +1,5 @@
 // Code Block
 
-@import '../lib/mixin-line-numbers.sss'
-
 :where(code, kbd, samp, pre)
   font-family: var(--shiraha-font-mono, var(--font-mono))
   font-size: 0.875em
@@ -47,8 +45,6 @@
   font-size: 0.75em
 
 /* rehype-pretty-code */
-
-@mixin line-numbers code[data-line-numbers]
 
 @media (--OSdark)
   pre[data-theme='light'],
