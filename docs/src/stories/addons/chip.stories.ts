@@ -1,4 +1,4 @@
-import 'shiraha/src/addons/chips.sss'
+import 'shiraha/src/addons/chip.sss'
 
 import type { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
@@ -232,5 +232,5 @@ export const ChipContainers: StoryObj = {
 }
 
 export default {
-  title: 'addons/Chips',
+  title: 'addons/Chip',
 } as Meta
