@@ -3,7 +3,7 @@ import { applyTheme, type Theme, themeFromImage } from 'mcu-extra'
 
 export const scThemeFromImage = async (
   img: HTMLImageElement | null,
-  options: ShirahaColorsOptions = {},
+  options: ShirahaColors.Options = {},
 ) => {
   if (!(img?.toString() === '[object HTMLImageElement]'))
     return
@@ -13,7 +13,7 @@ export const scThemeFromImage = async (
 
 export const scApplyTheme = (
   theme: Theme,
-  options: ShirahaColorsOptions = {},
+  options: ShirahaColors.Options = {},
 ) => {
   applyTheme(theme, {
     brightnessSuffix: options.brightnessSuffix ?? false,
@@ -47,6 +47,6 @@ export const scApplyTheme = (
 
 export const applyShirahaColors = async (
   img: HTMLImageElement | null,
-  options: ShirahaColorsOptions = {},
+  options: ShirahaColors.Options = {},
 ) => await scThemeFromImage(img, options)
   .then(theme => theme && scApplyTheme(theme))

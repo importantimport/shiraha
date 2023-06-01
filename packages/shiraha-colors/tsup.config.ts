@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 const options: Parameters<typeof defineConfig>[0] = {
   clean: true,
-  dts: { resolve: true },
+  dts: false,
   minify: true,
   outExtension: () => ({ js: '.js' }),
   platform: 'browser',
@@ -28,5 +28,11 @@ export default defineConfig([
     },
     format: ['iife'],
     target: 'es2015',
+  },
+  {
+    ...options,
+    entry: ['tmp/worker.js'],
+    format: ['esm'],
+    target: 'es2022',
   },
 ])

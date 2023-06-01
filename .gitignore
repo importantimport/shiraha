@@ -2,6 +2,7 @@
 docs/storybook-static
 dist
 dist-ssr
+tmp
 *.local
 packages/shiraha-worklets/public
 

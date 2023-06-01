@@ -45,7 +45,9 @@
     "package.json"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "run-s build:vite build:tsup",
+    "build:tsup": "tsup",
+    "build:vite": "vite build",
     "lint": "eslint src",
     "format": "eslint src --fix"
   },
