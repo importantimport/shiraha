@@ -1,6 +1,6 @@
-import './observer'
+import './lib/observer'
 
-import { applyShirahaColors } from './utils'
+import { applyShirahaColors } from './lib/theme'
 
 await applyShirahaColors(
   document.querySelector(':not(.h-card) > img:is(.u-featured, .u-photo)')

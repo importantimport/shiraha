@@ -1,4 +1,4 @@
-import { applyShirahaColors } from './utils'
+import { applyShirahaColors } from './theme'
 
 let mutationObserverTitle: string
 

@@ -1,22 +1,25 @@
 import { hexFromArgb } from '@material/material-color-utilities'
-import { applyTheme, themeFromImage } from 'mcu-extra'
+import { applyTheme, type Theme, themeFromImage } from 'mcu-extra'
 
-import type { ShirahaColorsOptions } from './types'
-
-export const applyShirahaColors = async (
+export const scThemeFromImage = async (
   img: HTMLImageElement | null,
   options: ShirahaColorsOptions = {},
 ) => {
   if (!(img?.toString() === '[object HTMLImageElement]'))
     return
   img.crossOrigin = 'anonymous'
-  const theme = await themeFromImage(img, options.customColors)
+  return await themeFromImage(img, options.customColors)
+}
 
+export const scApplyTheme = (
+  theme: Theme,
+  options: ShirahaColorsOptions = {},
+) => {
   applyTheme(theme, {
     brightnessSuffix: options.brightnessSuffix ?? false,
     dark: !!(
       options.dark
-        ?? globalThis.matchMedia('(prefers-color-scheme: dark)').matches
+      ?? globalThis.matchMedia('(prefers-color-scheme: dark)').matches
     ),
     paletteTones: options.paletteTones,
     target: options.target ?? document.body,
@@ -41,3 +44,9 @@ export const applyShirahaColors = async (
     }
   }
 }
+
+export const applyShirahaColors = async (
+  img: HTMLImageElement | null,
+  options: ShirahaColorsOptions = {},
+) => await scThemeFromImage(img, options)
+  .then(theme => theme && scApplyTheme(theme))

@@ -1,6 +1,6 @@
-import './observer'
+import './lib/observer'
 
-import { applyShirahaColors } from './utils'
+import { applyShirahaColors } from './lib/theme'
 
 // eslint-disable-next-line unicorn/prefer-top-level-await
 (async () =>
