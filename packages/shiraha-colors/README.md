@@ -21,7 +21,7 @@ Add `<script nomodule` to be used in environments that do not support ES Module.
 
 ### Configuration
 
-You can see all supported configuration options in [src/types.ts](src/types.ts).
+You can see all supported configuration options in [src/global.d.ts](src/global.d.ts).
 
 ```html
 <head>
