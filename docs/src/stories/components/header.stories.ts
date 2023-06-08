@@ -15,9 +15,9 @@ export const CenterAlignedHeader = {
   render: () => html`
     <header>
       <nav>
-        <a href="#" class="material-symbols-outlined">menu</a>
+        <a role="button" href="#" class="material-symbols-outlined">menu</a>
         <h2 style="text-align: center">Title Large</h2>
-        <a href="#" class="material-symbols-outlined">account_circle</a>
+        <a role="button" href="#" class="material-symbols-outlined">account_circle</a>
       </nav>
     </header>
   `,
@@ -27,11 +27,11 @@ export const SmallHeader: StoryObj = {
   render: () => html`
     <header>
       <nav>
-        <a href="#" class="material-symbols-outlined">arrow_back</a>
+        <a role="button" href="#" class="material-symbols-outlined">arrow_back</a>
         <h2>Title Large</h2>
-        <a href="#" class="material-symbols-outlined">attach_file</a>
-        <a href="#" class="material-symbols-outlined">today</a>
-        <a href="#" class="material-symbols-outlined">more_vert</a>
+        <a role="button" href="#" class="material-symbols-outlined">attach_file</a>
+        <a role="button" href="#" class="material-symbols-outlined">today</a>
+        <a role="button" href="#" class="material-symbols-outlined">more_vert</a>
       </nav>
     </header>
   `,
@@ -41,11 +41,11 @@ export const MediumHeader: StoryObj = {
   render: () => html`
     <header>
       <nav>
-        <a href="#" class="material-symbols-outlined">arrow_back</a>
+        <a role="button" href="#" class="material-symbols-outlined">arrow_back</a>
         <h2></h2>
-        <a href="#" class="material-symbols-outlined">attach_file</a>
-        <a href="#" class="material-symbols-outlined">today</a>
-        <a href="#" class="material-symbols-outlined">more_vert</a>
+        <a role="button" href="#" class="material-symbols-outlined">attach_file</a>
+        <a role="button" href="#" class="material-symbols-outlined">today</a>
+        <a role="button" href="#" class="material-symbols-outlined">more_vert</a>
       </nav>
       <p>Headline Small</p>
     </header>
@@ -56,11 +56,11 @@ export const LargeHeader: StoryObj = {
   render: () => html`
     <header>
       <nav>
-        <a href="#" class="material-symbols-outlined">arrow_back</a>
+        <a role="button" href="#" class="material-symbols-outlined">arrow_back</a>
         <h2></h2>
-        <a href="#" class="material-symbols-outlined">attach_file</a>
-        <a href="#" class="material-symbols-outlined">today</a>
-        <a href="#" class="material-symbols-outlined">more_vert</a>
+        <a role="button" href="#" class="material-symbols-outlined">attach_file</a>
+        <a role="button" href="#" class="material-symbols-outlined">today</a>
+        <a role="button" href="#" class="material-symbols-outlined">more_vert</a>
       </nav>
       <h1>Headline Medium</h1>
     </header>

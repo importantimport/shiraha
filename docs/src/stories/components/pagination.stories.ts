@@ -6,13 +6,13 @@ export const SimplePagination: StoryObj = {
     <nav>
       <ul>
         <li>
-          <a href="#" rel="prev">Prev</a>
+          <a role="button" href="#" rel="prev">Prev</a>
         </li>
         <li><span>1</span></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+        <li><a role="button" href="#">2</a></li>
+        <li><a role="button" href="#">3</a></li>
         <li>
-          <a href="#" rel="next"> Next </a>
+          <a role="button" href="#" rel="next"> Next </a>
         </li>
       </ul>
     </nav>
@@ -24,15 +24,15 @@ export const SimplePaginationWithIcon: StoryObj = {
     <nav>
       <ul class="pagination">
         <li>
-          <a href="#" class="material-symbols-outlined" rel="prev"
+          <a role="button" href="#" class="material-symbols-outlined" rel="prev"
             >navigate_before</a
           >
         </li>
         <li><span>1</span></li>
-        <li><a href="#" class="material-symbols-none">2</a></li>
-        <li><a href="#">3</a></li>
+        <li><a role="button" href="#" class="material-symbols-none">2</a></li>
+        <li><a role="button" href="#">3</a></li>
         <li>
-          <a href="#" class="material-symbols-outlined" rel="next"
+          <a role="button" href="#" class="material-symbols-outlined" rel="next"
             >navigate_next</a
           >
         </li>
@@ -46,21 +46,21 @@ export const SimplePagination2: StoryObj = {
     <nav>
       <ul class="pagination">
         <li>
-          <a href="#" class="material-symbols-outlined">first_page</a>
+          <a role="button" href="#" class="material-symbols-outlined">first_page</a>
         </li>
         <li>
-          <a href="#" class="material-symbols-outlined" rel="prev"
+          <a role="button" href="#" class="material-symbols-outlined" rel="prev"
             >navigate_before</a
           >
         </li>
         <li><span>2</span></li>
         <li>
-          <a href="#" class="material-symbols-outlined" rel="next"
+          <a role="button" href="#" class="material-symbols-outlined" rel="next"
             >navigate_next</a
           >
         </li>
         <li>
-          <a href="#" class="material-symbols-outlined">last_page</a>
+          <a role="button" href="#" class="material-symbols-outlined">last_page</a>
         </li>
       </ul>
     </nav>
@@ -72,13 +72,13 @@ export const PostPagination: StoryObj = {
     <nav>
       <ul class="pagination">
         <li>
-          <a href="#" rel="prev">
+          <a role="button" href="#" rel="prev">
             <span class="material-symbols-outlined">navigate_before</span>
             <span>Prev: Foo</span>
           </a>
         </li>
         <li>
-          <a href="#" rel="next">
+          <a role="button" href="#" rel="next">
             <span>Next: Bar</span>
             <span class="material-symbols-outlined">navigate_next</span>
           </a>
