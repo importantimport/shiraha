@@ -7,6 +7,10 @@
 
   @mixin base-button
 
+  // icon button
+  :is([class^='material-symbols'], [class^='i-'])
+    padding: 0.5rem
+
   // with icon
   &:has(:is([class^='material-symbols'], [class^='i-']))
     display: flex
