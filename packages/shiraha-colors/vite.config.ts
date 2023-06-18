@@ -11,6 +11,7 @@ export default defineConfig({
       name: 'worker',
     },
     outDir: 'tmp',
+    target: 'es2022',
   },
   css: { postcss: {} },
   esbuild: { legalComments: 'external' },
