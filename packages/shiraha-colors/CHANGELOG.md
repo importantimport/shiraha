@@ -1,5 +1,13 @@
 # shiraha-colors
 
+## 0.3.0
+
+### Minor Changes
+
+- [`3c15ec9`](https://github.com/importantimport/shiraha/commit/3c15ec933f83049d9545d58a9faa2d590f5d6524) Thanks [@kwaa](https://github.com/kwaa)! - Feat: priority calculation
+
+  Feat: web worker script
+
 ## 0.2.3
 
 ### Patch Changes
