@@ -48,6 +48,7 @@
     "build": "run-s build:vite build:tsup",
     "build:tsup": "tsup",
     "build:vite": "vite build",
+    "dev": "vite dev",
     "lint": "eslint src",
     "format": "eslint src --fix"
   },
