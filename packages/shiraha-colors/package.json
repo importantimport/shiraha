@@ -22,18 +22,9 @@
     "theming"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.js",
-      "browser": "./dist/index.js"
-    },
-    "./nomodule": {
-      "types": "./dist/nomodule.d.ts",
-      "require": "./dist/nomodule.js",
-      "import": "./dist/nomodule.js",
-      "browser": "./dist/nomodule.js"
-    },
+    ".": "./dist/index.js",
+    "./nomodule": "./dist/nomodule.js",
+    "./worker": "./dist/worker.js",
     "./package.json": "./package.json"
   },
   "main": "./dist/nomodule.js",
