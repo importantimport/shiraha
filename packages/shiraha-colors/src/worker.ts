@@ -16,7 +16,7 @@ const mutationObserver = new MutationObserver(async ([{ target }]) => {
   const element = scGetImageElement()
 
   if (element)
-    worker.postMessage({ image: createImageBitmap(element) })
+    worker.postMessage({ image: await createImageBitmap(element) })
 })
 
 mutationObserver.observe(document.querySelector('title') as Node, {
@@ -28,6 +28,6 @@ mutationObserver.observe(document.querySelector('title') as Node, {
 const element = scGetImageElement()
 
 if (element)
-  worker.postMessage({ image: createImageBitmap(element) })
+  worker.postMessage({ image: await createImageBitmap(element) })
 
 worker.addEventListener('message', (event: MessageEvent) => scApplyTheme(event.data))
