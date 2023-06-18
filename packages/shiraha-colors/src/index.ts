@@ -1,10 +1,9 @@
 import './lib/observer'
 
+import { scGetImageElement } from './lib/image'
 import { applyShirahaColors } from './lib/theme'
 
 await applyShirahaColors(
-  document.querySelector(':not(.h-card) > img:is(.u-featured, .u-photo)')
-  ?? document.querySelector(':not(.h-card) > img[itemprop="image"]')
-  ?? document.querySelector(':not(.h-card) > img'),
+  scGetImageElement(),
   window.shiraha?.colors,
 )

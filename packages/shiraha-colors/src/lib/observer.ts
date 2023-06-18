@@ -1,3 +1,4 @@
+import { scGetImageElement } from './image'
 import { applyShirahaColors } from './theme'
 
 let mutationObserverTitle: string
@@ -9,9 +10,7 @@ const mutationObserver = new MutationObserver(async ([{ target }]) => {
   ) return
   mutationObserverTitle = target.textContent as string
   await applyShirahaColors(
-    document.querySelector('img.u-featured, img.u-photo')
-    ?? document.querySelector('img[itemprop="image"]')
-    ?? document.querySelector('img'),
+    scGetImageElement(),
     window.shiraha?.colors,
   )
 })
