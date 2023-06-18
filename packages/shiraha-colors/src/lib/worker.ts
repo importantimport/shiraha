@@ -12,7 +12,7 @@ addEventListener('message', async ({ data: { image } }: MessageEvent<ShirahaColo
 
   const { data: imageBytes } = context.getImageData(0, 0, image.width, image.height)
 
-  const pixels = new Uint8ClampedArray(imageBytes.length / 4)
+  const pixels: number[] = []
   for (let index = 0; index < imageBytes.length; index += 4) {
     const r = imageBytes[index]
     const g = imageBytes[index + 1]
@@ -20,9 +20,11 @@ addEventListener('message', async ({ data: { image } }: MessageEvent<ShirahaColo
     const a = imageBytes[index + 3]
     if (a < 255)
       continue
+
     const argb = argbFromRgb(r, g, b)
-    pixels[index / 4] = argb
+    pixels.push(argb)
   }
+
   // Convert Pixels to Material Colors
   const result = QuantizerCelebi.quantize(pixels as unknown as number[], 128)
   const ranked = Score.score(result)
