@@ -28,6 +28,17 @@ export const Button: StoryObj = {
         <a class="material-symbols-outlined" role="button" aria-disabled="true">settings</a>
         <input class="material-symbols-outlined" type="button" value="settings" disabled />
       </div>
+      <p>Text Button (with Icon)</p>
+      <div>
+        <button>
+          <span class="material-symbols-outlined">add</span>
+          Text button
+        </button>
+        <a role="button">
+          <span class="material-symbols-outlined">add</span>
+          Text button
+        </a>
+      </div>
     </main>
   `,
 }
