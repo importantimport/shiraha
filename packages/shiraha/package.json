@@ -22,6 +22,7 @@
   ],
   "exports": {
     ".": "./dist/shiraha.css",
+    "./addons/*": "./dist/addons/*.css",
     "./themes/*": "./dist/themes/*.css",
     "./package.json": "./package.json",
     "./dist/*": "./dist/*",
