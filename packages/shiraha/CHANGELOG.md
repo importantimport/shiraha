@@ -1,5 +1,11 @@
 # shiraha
 
+## 0.1.0
+
+### Minor Changes
+
+- [`819fa2b`](https://github.com/importantimport/shiraha/commit/819fa2b959c1073507667fc423055968d47ea209) Thanks [@kwaa](https://github.com/kwaa)! - Refactor!: no more built-in themes
+
 ## 0.0.6
 
 ### Patch Changes
