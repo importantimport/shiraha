@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as t}from"./index-dc14a54b.js";import{u as r}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-b697b554.js";import"../sb-preview/runtime.js";import"./chunk-4NMOSTKD-052c8761.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-d38538b0.js";import"./index-356e4a49.js";const h=`# Shiraha
+import{j as n}from"./jsx-runtime-6eef64cc.js";import{M as t}from"./index-21a1e870.js";import{u as r}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-dc52dd03.js";import"../sb-preview/runtime.js";import"./chunk-4NMOSTKD-052c8761.js";import"./index-d475d2ea.js";import"./index-d37d4223.js";import"./index-d38538b0.js";import"./index-356e4a49.js";const h=`# Shiraha
 
 Material 3-inspired Classless CSS Framework.
 
@@ -93,4 +93,4 @@ import 'shiraha/dist/addons/chips.css'
 // import 'shiraha/src/addons/chips.sss'
 \`\`\`
 `;function a(s){return n.jsx(t,{children:h})}function j(s={}){const{wrapper:e}=Object.assign({},r(),s.components);return e?n.jsx(e,Object.assign({},s,{children:n.jsx(a,s)})):a()}export{j as default};
-//# sourceMappingURL=shiraha-94ebd866.js.map
+//# sourceMappingURL=shiraha-a7e17fa0.js.map
