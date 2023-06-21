@@ -52,7 +52,7 @@
     }
   },
   "devDependencies": {
-    "open-props": "^1.5.8",
-    "stylelint": "^15.6.2"
+    "open-props": "^1.5.9",
+    "stylelint": "^15.8.0"
   }
 }
