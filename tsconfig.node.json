@@ -6,5 +6,8 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["**/*.config.ts"]
+  "include": [
+    "*.config.ts",
+    "**/*.config.ts"
+  ]
 }
