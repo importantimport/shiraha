@@ -1,5 +1,6 @@
-import OpenProps from 'open-props'
 // import combineSelectors from 'postcss-combine-duplicated-selectors'
+
+import OpenProps from 'open-props'
 import combineMediaQuery from 'postcss-combine-media-query'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssImport from 'postcss-import'
@@ -10,6 +11,7 @@ import postcssMixins from 'postcss-mixins'
 import pruneVar from 'postcss-prune-var'
 import sugarss from 'sugarss'
 
+/** @type {{ plugins: import('postcss').AcceptedPlugin[] }} */
 const plugins = [
   postcssImportExtGlob(),
   postcssImport(),
@@ -30,7 +32,7 @@ const plugins = [
   combineMediaQuery(),
 ]
 
-/** @type {import('postcss-load-config').Config} */
+/** @type {{ plugins: import('postcss').AcceptedPlugin[] }} */
 export const vite = {
   plugins: [
     ...plugins,
@@ -43,7 +45,7 @@ export const vite = {
   ],
 }
 
-/** @type {import('postcss-load-config').Config} */
+/** @type {import('postcss-load-config').ConfigFn} */
 export default ({ _env, file }) => ({
   parser: sugarss,
   plugins: [
