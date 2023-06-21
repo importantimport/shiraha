@@ -1,0 +1,43 @@
+{
+  "name": "jsonresume-theme-shiraha",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shiraha theme for JSON Resume.",
+  "author": "藍+85CD",
+  "license": "WTFPL",
+  "homepage": "https://shiraha.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/shiraha.git",
+    "directory": "packages/jsonresume-theme-shiraha"
+  },
+  "bugs": "https://github.com/importantimport/shiraha/issues",
+  "keywords": [
+    "json",
+    "resume",
+    "theme",
+    "shiraha",
+    "curriculum-vitae",
+    "cv"
+  ],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "format": "eslint src --fix",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@kurone-kito/jsonresume-types": "^0.3.7"
+  }
+}

@@ -166,7 +166,11 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
 
-  packages/jsonresume-theme-shiraha: {}
+  packages/jsonresume-theme-shiraha:
+    dependencies:
+      '@kurone-kito/jsonresume-types':
+        specifier: ^0.3.7
+        version: 0.3.7
 
   packages/shiraha:
     devDependencies:
@@ -3567,6 +3571,11 @@ packages:
   /@juggle/resize-observer@3.4.0:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
     dev: true
+
+  /@kurone-kito/jsonresume-types@0.3.7:
+    resolution: {integrity: sha512-P0itXDtmqhjFRKJWflPr6U7uEgXGolJR3UsARmFnlTmfA0h6UEFxnUPN9PgQuxytco6prZhK2X6zas9J2JK3gQ==}
+    engines: {node: '>=14.20'}
+    dev: false
 
   /@lit-labs/ssr-dom-shim@1.1.1:
     resolution: {integrity: sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ==}
