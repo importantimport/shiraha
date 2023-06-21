@@ -1,5 +1,6 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 import { vite as postcss } from '../../postcss.config'
 import pkg from './package.json' assert { type: 'json' }
@@ -19,4 +20,6 @@ export default defineConfig({
     target: 'esnext',
   },
   css: { postcss },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+  plugins: [dts()],
 })
