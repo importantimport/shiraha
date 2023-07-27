@@ -44,7 +44,7 @@
     "format": "eslint src --fix"
   },
   "devDependencies": {
-    "@material/material-color-utilities": "^0.2.6",
+    "@material/material-color-utilities": "^0.2.7",
     "mcu-extra": "^0.0.5"
   }
 }

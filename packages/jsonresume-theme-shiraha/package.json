@@ -45,8 +45,8 @@
     "@kurone-kito/jsonresume-types": "^0.3.7"
   },
   "devDependencies": {
-    "@fontsource/roboto-flex": "^5.0.3",
-    "@material-symbols/font-400": "^0.8.0",
+    "@fontsource/roboto-flex": "^5.0.5",
+    "@material-symbols/font-400": "^0.10.1",
     "shiraha": "workspace:*"
   }
 }
