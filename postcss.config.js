@@ -53,7 +53,7 @@ export default ({ _env, file }) => ({
     // shiraha.css only
     ...(file.dirname.endsWith('shiraha/src') ? [pruneVar()] : []),
     postcssLightningCSS({
-      browsers: 'defaults and supports css-cascade-layers',
+      browsers: 'defaults and supports css-nesting',
       lightningcssOptions: {
         drafts: { nesting: true },
         minify: true,
