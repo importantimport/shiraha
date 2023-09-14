@@ -10,28 +10,28 @@
     "cp": "mkdir -p ./storybook-static/nightly/ && cp -r ../packages/shiraha/dist/* ./storybook-static/nightly/"
   },
   "dependencies": {
-    "lit": "^2.7.6",
-    "material-symbols": "^0.10.1",
+    "lit": "^2.8.0",
+    "material-symbols": "^0.12.0",
     "shiraha-worklets": "workspace:*"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.1.1",
-    "@storybook/addon-links": "^7.1.1",
-    "@storybook/addon-storysource": "^7.1.1",
-    "@storybook/blocks": "^7.1.1",
-    "@storybook/builder-vite": "^7.1.1",
-    "@storybook/components": "^7.1.1",
-    "@storybook/core-events": "^7.1.1",
-    "@storybook/theming": "^7.1.1",
-    "@storybook/web-components": "^7.1.1",
-    "@storybook/web-components-vite": "^7.1.1",
+    "@storybook/addon-essentials": "^7.4.1",
+    "@storybook/addon-links": "^7.4.1",
+    "@storybook/addon-storysource": "^7.4.1",
+    "@storybook/blocks": "^7.4.1",
+    "@storybook/builder-vite": "^7.4.1",
+    "@storybook/components": "^7.4.1",
+    "@storybook/core-events": "^7.4.1",
+    "@storybook/theming": "^7.4.1",
+    "@storybook/web-components": "^7.4.1",
+    "@storybook/web-components-vite": "^7.4.1",
     "@whitespace/storybook-addon-html": "^5.1.6",
     "css-paint-polyfill": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "shiraha": "workspace:*",
-    "storybook": "^7.1.1",
-    "storybook-addon-pseudo-states": "^2.1.0",
-    "storybook-dark-mode": "^3.0.0"
+    "storybook": "^7.4.1",
+    "storybook-addon-pseudo-states": "^2.1.1",
+    "storybook-dark-mode": "^3.0.1"
   }
 }
