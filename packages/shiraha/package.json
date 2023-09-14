@@ -37,11 +37,11 @@
   ],
   "scripts": {
     "build": "run-s build:*",
+    "build:addons": "postcss src/addons/*.sss --base src --ext css -d dist",
     "build:index": "postcss src/*.sss --base src --ext css -d dist",
     "build:themes": "postcss src/themes/*.sss --base src --ext css -d dist",
-    "build:addons": "postcss src/addons/*.sss --base src --ext css -d dist",
-    "lint": "stylelint \"src/**/*.sss\"",
-    "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input"
+    "format": "stylelint \"src/**/*.sss\" --fix --allow-empty-input",
+    "lint": "stylelint \"src/**/*.sss\""
   },
   "peerDependencies": {
     "open-props": "^1.4.16"
