@@ -1,0 +1,26 @@
+{
+  "name": "shiraha-ve",
+  "type": "module",
+  "version": "0.0.6",
+  "description": "Material 3-inspired Classless CSS Framework.",
+  "author": "藍+85CD",
+  "license": "WTFPL",
+  "homepage": "https://shiraha.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/shiraha.git",
+    "directory": "packages/shiraha"
+  },
+  "bugs": "https://github.com/importantimport/shiraha/issues",
+  "keywords": [
+    "classless",
+    "css",
+    "theme",
+    "web-design",
+    "reset",
+    "style"
+  ],
+  "scripts": {
+    "build": "tsup"
+  }
+}
