@@ -187,22 +187,6 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(react-dom@18.2.0)(react@18.2.0)
 
-  packages/jsonresume-theme-shiraha:
-    dependencies:
-      '@kurone-kito/jsonresume-types':
-        specifier: ^0.4.0
-        version: 0.4.0
-    devDependencies:
-      '@fontsource/roboto-flex':
-        specifier: ^5.0.8
-        version: 5.0.8
-      '@material-symbols/font-400':
-        specifier: ^0.12.0
-        version: 0.12.0
-      shiraha:
-        specifier: workspace:*
-        version: link:../shiraha
-
   packages/shiraha:
     devDependencies:
       open-props:
@@ -2457,10 +2441,6 @@ packages:
     resolution: {integrity: sha512-ou3elfqG/hZsbmF4bxeJhPHIf3G2pm0ujc39hYEZrfVqt7Vk/Zji6CXc3W0pmYM8BW1g40U+akTl9DKZhFhInQ==}
     dev: true
 
-  /@fontsource/roboto-flex@5.0.8:
-    resolution: {integrity: sha512-fI9bP8KoNloNhIky6vji/I52xuF9V43Pbdf0lQYIsDMjYFiSQ0RRNyBUFvnuws1Pv6DHy9rXZTdp8GEAqhq2eA==}
-    dev: true
-
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
     engines: {node: '>=10.10.0'}
@@ -2616,11 +2596,6 @@ packages:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
     dev: true
 
-  /@kurone-kito/jsonresume-types@0.4.0:
-    resolution: {integrity: sha512-bylwUUz3tLXUccUUFCo2IjGvAaTOl6xb6EBnJrb5huIzs1vL6UCWQD7gw6Btulz7ID8HOSIO8+ZtNWHwzhVTKA==}
-    engines: {node: '>=16.20'}
-    dev: false
-
   /@lit-labs/ssr-dom-shim@1.1.1:
     resolution: {integrity: sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ==}
 
@@ -2656,10 +2631,6 @@ packages:
       eslint: '>= 8'
     dependencies:
       eslint: 8.49.0
-    dev: true
-
-  /@material-symbols/font-400@0.12.0:
-    resolution: {integrity: sha512-5jLDYHAuzZ8qEUPlZTiJYaSUU4am3wLprllmdvFYOKvKvSCovuEhVzJ/9+kt428B3YKc4zYHtb2HDBpVW78Nbg==}
     dev: true
 
   /@material/material-color-utilities@0.2.7:
