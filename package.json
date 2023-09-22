@@ -4,12 +4,15 @@
   "version": "0.0.1-alpha.0",
   "private": true,
   "scripts": {
-    "preinstall": "npx -y only-allow pnpm",
-    "dev": "turbo run dev",
     "build": "turbo run build && pnpm -rF shiraha-docs cp",
-    "lint": "turbo run lint",
-    "format": "turbo run format",
     "changeset": "changeset",
+    "dev": "turbo run dev",
+    "dev:ve": "run-p dev:ve:package dev:ve:docs",
+    "dev:ve:docs": "pnpm -rF shiraha-docs-ve dev",
+    "dev:ve:package": "pnpm -rF shiraha-ve dev",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "preinstall": "npx -y only-allow pnpm",
     "release": "pnpm build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
