@@ -1,0 +1,19 @@
+{
+  "name": "shiraha-docs-ve",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "histoire build",
+    "dev": "histoire dev",
+    "preview": "histoire preview"
+  },
+  "dependencies": {
+    "shiraha-ve": "workspace:*"
+  },
+  "devDependencies": {
+    "@histoire/plugin-svelte": "^0.17.0",
+    "@sveltejs/vite-plugin-svelte": "^2.4.6",
+    "histoire": "^0.17.0",
+    "svelte": "^4.2.1"
+  }
+}

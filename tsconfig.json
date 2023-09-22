@@ -11,6 +11,7 @@
     ],
     "skipLibCheck": true,
 
+    "allowImportingTsExtensions": true,
     /* Bundler mode */
     "moduleResolution": "node",
     "resolveJsonModule": true,
