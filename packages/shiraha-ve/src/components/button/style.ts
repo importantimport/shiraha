@@ -18,11 +18,15 @@ export const baseButton = (iconButtonClass: string) => ({
   'overflow': 'hidden',
   'padding': '0.5rem 1.5rem',
   'selectors': {
+    '&:active:not(:disabled)': {
+      scale: 0.95,
+    },
     [`&:has(.${iconButtonClass}:first-child:not(last-child))`]: {
       paddingLeft: 16,
     },
   },
   'textDecoration': 'none',
+  'transition': 'ease-in-out 0.1s',
 }) satisfies ComplexStyleRule
 
 export const elevatedButton = {
@@ -32,7 +36,7 @@ export const elevatedButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
     },
-    '&:focus-visible:not(:active, :disabled)': {
+    '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
     },
     /** TODO: shadow-2 */
@@ -49,7 +53,7 @@ export const filledButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.onPrimary, 12, vars.color.primary),
     },
-    '&:focus-visible:not(:active, :disabled)': {
+    '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.onPrimary, 12, vars.color.primary),
     },
     /** TODO: shadow */
@@ -66,7 +70,7 @@ export const outlinedButton = {
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
     },
-    '&:focus-visible:not(:active, :disabled)': {
+    '&:focus-visible:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
       borderColor: vars.color.primary,
     },
@@ -86,7 +90,7 @@ export const textButton = (iconButtonClass: string) => ({
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
     },
-    '&:focus-visible:not(:active, :disabled)': {
+    '&:focus-visible:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
       borderColor: vars.color.primary,
     },
@@ -107,7 +111,7 @@ export const tonalButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 12, vars.color.secondaryContainer),
     },
-    '&:focus-visible:not(:active, :disabled)': {
+    '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 12, vars.color.secondaryContainer),
     },
     /** TODO: shadow */

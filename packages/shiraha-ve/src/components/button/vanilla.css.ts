@@ -4,7 +4,8 @@ import { type RecipeVariants, recipe } from '@vanilla-extract/recipes'
 import * as styles from './style'
 
 export const buttonIcon = style({
-  color: 'inherit',
+  fontSize: '1.25rem !important',
+  padding: 2,
 })
 
 export const button = recipe({
