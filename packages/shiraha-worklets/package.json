@@ -2,6 +2,7 @@
   "name": "shiraha-worklets",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "description": "CSS Houdini PaintWorklet for Shiraha.",
   "author": "藍+85CD",
   "license": "WTFPL",
@@ -30,8 +31,8 @@
     "package.json"
   ],
   "scripts": {
-    "build": "run-s build:*",
     "build:index": "vite build",
+    "build:shiraha-worklets": "run-s build:*",
     "build:worklet": "vite build -c vite.worklet.config.ts",
     "format": "eslint src --fix",
     "lint": "eslint src"
