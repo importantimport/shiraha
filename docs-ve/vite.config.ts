@@ -5,7 +5,14 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   css: { postcss: {} },
   plugins: [
-    svelte(),
+    svelte({
+      onwarn: (warning, defaultHandler) => {
+        if (['reactive-component'].includes(warning.code))
+          return
+
+        defaultHandler(warning)
+      },
+    }),
     vanillaExtractPlugin(),
   ],
   server: { host: '0.0.0.0' },
