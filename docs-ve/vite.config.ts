@@ -15,5 +15,8 @@ export default defineConfig({
     }),
     vanillaExtractPlugin(),
   ],
-  server: { host: '0.0.0.0' },
+  server: {
+    fs: { allow: ['..'] },
+    host: '0.0.0.0',
+  },
 })

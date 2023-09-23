@@ -201,6 +201,9 @@ importers:
 
   docs-ve:
     dependencies:
+      material-symbols:
+        specifier: ^0.12.0
+        version: 0.12.0
       shiraha-ve:
         specifier: workspace:*
         version: link:../packages/shiraha-ve

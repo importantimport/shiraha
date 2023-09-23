@@ -8,6 +8,7 @@
     "preview": "histoire preview"
   },
   "dependencies": {
+    "material-symbols": "^0.12.0",
     "shiraha-ve": "workspace:*"
   },
   "devDependencies": {
