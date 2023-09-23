@@ -29,6 +29,11 @@ HTML gets better with [semantic elements](https://developer.mozilla.org/en-US/do
 
 Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`, `rehype-autolink-heading`, etc. -->
 
+## ✨ Rewrite
+
+Shiraha is being rewritten in Vanilla Extract!
+The new documentation is currently not online, you can see the source code from [shiraha-ve](/packages/shiraha-ve/) and [docs-ve](/docs-ve/).
+
 ## 📝 Documentation
 
 The documentation is located in the [`docs`](/docs/) folder and can be viewed from [shiraha.js.org](https://shiraha.js.org).
