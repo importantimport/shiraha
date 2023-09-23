@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
+  import { logEvent } from 'histoire/client'
   import {
     button,
     buttonIcon,
@@ -16,7 +17,11 @@
 
 <Hst.Story title="Button (vanilla-extract)">
   <Hst.Variant title="default">
-    <button class={button({ type })} {disabled}>
+    <button
+      on:click={(event) => logEvent('click', event)}
+      class={button({ type })}
+      {disabled}
+    >
       {#if icon}
         <span class={[buttonIcon, 'material-symbols-outlined'].join(' ')}>
           {icon}
