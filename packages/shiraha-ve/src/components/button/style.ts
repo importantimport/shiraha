@@ -27,7 +27,7 @@ export const baseButton = (iconButtonClass: string) => ({
   },
   'textDecoration': 'none',
   'transition': 'ease-in-out 0.1s',
-}) satisfies ComplexStyleRule
+}) as const satisfies ComplexStyleRule
 
 export const elevatedButton = {
   /** TODO: shadow-1 */
@@ -44,7 +44,7 @@ export const elevatedButton = {
       backgroundColor: state(vars.color.primary, 8, vars.color.surfaceContainerLow),
     },
   },
-} satisfies ComplexStyleRule
+} as const satisfies ComplexStyleRule
 
 export const filledButton = {
   backgroundColor: vars.color.primary,
@@ -61,7 +61,7 @@ export const filledButton = {
       backgroundColor: state(vars.color.onPrimary, 8, vars.color.primary),
     },
   },
-} satisfies ComplexStyleRule
+} as const satisfies ComplexStyleRule
 
 export const outlinedButton = {
   borderColor: vars.color.outline,
@@ -78,7 +78,7 @@ export const outlinedButton = {
       backgroundColor: opacity(vars.color.primary, 8),
     },
   },
-} satisfies ComplexStyleRule
+} as const satisfies ComplexStyleRule
 
 export const textButton = (iconButtonClass: string) => ({
   ':disabled': {
@@ -102,7 +102,7 @@ export const textButton = (iconButtonClass: string) => ({
       paddingRight: 16,
     },
   },
-}) satisfies ComplexStyleRule
+}) as const satisfies ComplexStyleRule
 
 export const tonalButton = {
   backgroundColor: vars.color.secondaryContainer,
