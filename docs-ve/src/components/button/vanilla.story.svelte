@@ -3,76 +3,37 @@
   import {
     button,
     buttonIcon,
-  } from 'shiraha-ve/dist/components/button/module.js'
-  import 'shiraha-ve/dist/components/button/module.css'
+  } from 'shiraha-ve/dist/components/button/vanilla.js'
+  import 'shiraha-ve/dist/components/button/vanilla.css'
 
   export let Hst: Hst
 
   let disabled = false
-  let text = 'Filled'
+  let icon = 'ac_unit'
+  let text = 'Shiraha'
   let type: keyof typeof button.classNames.variants.type = 'filled'
 </script>
 
 <Hst.Story title="Button (vanilla-extract)">
   <Hst.Variant title="default">
     <button class={button({ type })} {disabled}>
-      <span class={buttonIcon}>t</span>
+      {#if icon}
+        <span class={[buttonIcon, 'material-symbols-outlined'].join(' ')}>
+          {icon}
+        </span>
+      {/if}
       <span>{text}</span>
     </button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Select
-        bind:value={type}
-        options={Object.keys(button.classNames.variants.type)}
-        title="Type"
-      />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
   </Hst.Variant>
 
-  <Hst.Variant title="Filled">
-    <button class={button({ type: 'filled' })} {disabled}>{text}</button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
-  </Hst.Variant>
-
-  <Hst.Variant title="Outlined">
-    <button class={button({ type: 'outlined' })} {disabled}>{text}</button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
-  </Hst.Variant>
-
-  <Hst.Variant title="Elevated">
-    <button class={button({ type: 'elevated' })} {disabled}>{text}</button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
-  </Hst.Variant>
-
-  <Hst.Variant title="Tonal">
-    <button class={button({ type: 'tonal' })} {disabled}>{text}</button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
-  </Hst.Variant>
-
-  <Hst.Variant title="Text">
-    <button class={button({ type: 'text' })} {disabled}>{text}</button>
-
-    <svelte:fragment slot="controls">
-      <Hst.Checkbox bind:value={disabled} title="Disabled" />
-      <Hst.Text bind:value={text} title="Text" />
-    </svelte:fragment>
-  </Hst.Variant>
+  <svelte:fragment slot="controls">
+    <Hst.Checkbox bind:value={disabled} title="Disabled" />
+    <Hst.Select
+      bind:value={type}
+      options={Object.keys(button.classNames.variants.type)}
+      title="Type"
+    />
+    <Hst.Text bind:value={text} title="Text" />
+    <Hst.Text bind:value={icon} title="Icon" />
+  </svelte:fragment>
 </Hst.Story>
