@@ -1,37 +1,22 @@
+import { style } from '@vanilla-extract/css'
 import { type RecipeVariants, recipe } from '@vanilla-extract/recipes'
 
-import { vars } from '../../vars.css'
+import * as styles from './style'
+
+export const buttonIcon = style({
+  color: 'inherit',
+})
 
 export const button = recipe({
-  base: [{
-    borderRadius: 20,
-    display: 'inline-block',
-    height: 40,
-    margin: '0.25rem',
-    minWidth: 40,
-    padding: '0.5rem 0.75rem',
-    textDecoration: 'none',
-  }],
-  // compoundVariants: [],
+  base: [styles.baseButton(buttonIcon)],
   defaultVariants: { type: 'filled' },
   variants: {
     type: {
-      elevated: {},
-      filled: {
-        /**
-         * CSS Relative colors
-         * {@link https://caniuse.com/css-relative-colors}
-         */
-        ':disabled': {
-          backgroundColor: `rgb(from ${vars.color.onSurface} r g b / 0.12)`,
-          color: `rgb(from ${vars.color.onSurface} r g b / 0.38)`,
-        },
-        'backgroundColor': vars.color.primary,
-        'color': vars.color.onPrimary,
-      },
-      filledTonal: {},
-      outlined: {},
-      text: {},
+      elevated: styles.elevatedButton,
+      filled: styles.filledButton,
+      outlined: styles.outlinedButton,
+      text: styles.textButton(buttonIcon),
+      tonal: styles.tonalButton,
     },
   },
 })
