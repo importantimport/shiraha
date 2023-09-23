@@ -1,4 +1,6 @@
-import { ComplexStyleRule } from '@vanilla-extract/css'
+import type { ComplexStyleRule } from '@vanilla-extract/css'
+
+import OP from 'open-props'
 
 import { opacity, state } from '../../utils/color'
 import { vars } from '../../vars.css'
@@ -13,9 +15,8 @@ export const baseButton = (iconButtonClass: string) => ({
   'display': 'inline-flex',
   'gap': 8,
   'height': 40,
-  'margin': '0.25rem',
+  // 'margin': '0.25rem',
   'minWidth': 40,
-  'overflow': 'hidden',
   'padding': '0.5rem 1.5rem',
   'selectors': {
     '&:active:not(:disabled)': {
@@ -30,8 +31,8 @@ export const baseButton = (iconButtonClass: string) => ({
 }) as const satisfies ComplexStyleRule
 
 export const elevatedButton = {
-  /** TODO: shadow-1 */
   backgroundColor: vars.color.surfaceContainerLow,
+  boxShadow: OP.shadow1,
   selectors: {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
@@ -39,9 +40,9 @@ export const elevatedButton = {
     '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
     },
-    /** TODO: shadow-2 */
     '&:hover:not(:active, :disabled)': {
       backgroundColor: state(vars.color.primary, 8, vars.color.surfaceContainerLow),
+      boxShadow: OP.shadow2,
     },
   },
 } as const satisfies ComplexStyleRule
@@ -56,9 +57,9 @@ export const filledButton = {
     '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.onPrimary, 12, vars.color.primary),
     },
-    /** TODO: shadow */
     '&:hover:not(:active, :disabled)': {
       backgroundColor: state(vars.color.onPrimary, 8, vars.color.primary),
+      boxShadow: OP.shadow1,
     },
   },
 } as const satisfies ComplexStyleRule
@@ -114,9 +115,9 @@ export const tonalButton = {
     '&:focus-visible:not(:disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 12, vars.color.secondaryContainer),
     },
-    /** TODO: shadow */
     '&:hover:not(:active, :disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 8, vars.color.secondaryContainer),
+      boxShadow: OP.shadow1,
     },
   },
 } satisfies ComplexStyleRule

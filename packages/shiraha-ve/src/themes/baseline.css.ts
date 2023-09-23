@@ -1,5 +1,6 @@
 import { assignVars, createGlobalTheme, globalStyle } from '@vanilla-extract/css'
 
+import { opDark, opLight } from '../utils/op'
 import { type Theme, vars } from '../vars.css'
 
 /** {@link https://m3.material.io/styles/color/the-color-system/tokens#e26e130c-fa67-48e1-81ca-d28f6e4ed398} */
@@ -43,6 +44,7 @@ export const baselineThemeLight = {
     tertiary: '#7D5260',
     tertiaryContainer: '#FFD8E4',
   },
+  op: opLight,
 } satisfies Theme
 
 /** {@link https://m3.material.io/styles/color/the-color-system/tokens#e26e130c-fa67-48e1-81ca-d28f6e4ed398} */
@@ -86,6 +88,7 @@ export const baselineThemeDark = {
     tertiary: '#EFB8C8',
     tertiaryContainer: '#633B48',
   },
+  op: opDark,
 } satisfies Theme
 
 globalStyle(':root, :host', {

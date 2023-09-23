@@ -44,5 +44,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "open-props": "^1.5.15"
   }
 }

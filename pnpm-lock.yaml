@@ -239,7 +239,11 @@ importers:
         specifier: ^0.0.5
         version: 0.0.5(@material/material-color-utilities@0.2.7)
 
-  packages/shiraha-ve: {}
+  packages/shiraha-ve:
+    devDependencies:
+      open-props:
+        specifier: ^1.5.15
+        version: 1.5.15
 
   packages/shiraha-worklets: {}
 

@@ -1,5 +1,7 @@
 import { type createGlobalTheme, createGlobalThemeContract } from '@vanilla-extract/css'
 
+import { op } from './utils/op'
+
 const color = {
   background: 'md-sys-color-background',
   error: 'md-sys-color-error',
@@ -42,6 +44,7 @@ const color = {
 
 export const vars = createGlobalThemeContract({
   color,
+  op,
 })
 
 export type Theme = Parameters<typeof createGlobalTheme<typeof vars>>[2]
