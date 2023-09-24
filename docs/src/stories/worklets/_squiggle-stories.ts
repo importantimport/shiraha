@@ -1,8 +1,8 @@
-import 'css-paint-polyfill'
-import 'shiraha-worklets'
-
 import type { Meta, StoryObj } from '@storybook/web-components'
+
+import 'css-paint-polyfill'
 import { html } from 'lit'
+import 'shiraha-worklets'
 
 export const Squiggle: StoryObj = {
   render: () => html`

@@ -49,6 +49,7 @@ export default defineConfig({
       label: 'Transparent',
     },
   ],
+  outDir: 'dist',
   plugins: [HstSvelte()],
   setupFile: './histoire.setup.ts',
   theme: {

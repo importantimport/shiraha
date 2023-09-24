@@ -3,11 +3,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "lint": "eslint src",
+    "cp": "run-s cp:nightly cp:ve",
+    "cp:nightly": "mkdir -p ./storybook-static/nightly/ && cp -r ../packages/shiraha/dist/* ./storybook-static/nightly/",
+    "cp:ve": "mkdir -p ./storybook-static/ve/ && cp -r ../docs-ve/dist/* ./storybook-static/ve/",
+    "dev": "storybook dev -p 6006",
     "format": "eslint src --fix",
-    "cp": "mkdir -p ./storybook-static/nightly/ && cp -r ../packages/shiraha/dist/* ./storybook-static/nightly/"
+    "lint": "eslint src"
   },
   "dependencies": {
     "lit": "^2.8.0",

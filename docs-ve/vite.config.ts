@@ -2,7 +2,9 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 import { defineConfig } from 'vite'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // TODO: remove if shiraha-ve => shiraha
+  base: command === 'build' ? '/ve/' : '/',
   css: { postcss: {} },
   plugins: [
     svelte({
@@ -19,4 +21,4 @@ export default defineConfig({
     fs: { allow: ['..'] },
     host: '0.0.0.0',
   },
-})
+}))

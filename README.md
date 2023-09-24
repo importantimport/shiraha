@@ -32,7 +32,9 @@ Shiraha defaults to setting styles for Rehype plugins like `rehype-pretty-code`,
 ## ✨ Rewrite
 
 Shiraha is being rewritten in Vanilla Extract!
-The new documentation is currently not online, you can see the source code from [shiraha-ve](/packages/shiraha-ve/) and [docs-ve](/docs-ve/).
+
+The new documentation is temporarily deployed at https://shiraha.js.org/ve
+and you can see the source code at [shiraha-ve](/packages/shiraha-ve/) and [docs-ve](/docs-ve/).
 
 ## 📝 Documentation
 
