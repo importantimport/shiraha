@@ -51,6 +51,7 @@ export default defineConfig({
   ],
   outDir: 'dist',
   plugins: [HstSvelte()],
+  routerMode: 'hash',
   setupFile: './histoire.setup.ts',
   theme: {
     colors: {
