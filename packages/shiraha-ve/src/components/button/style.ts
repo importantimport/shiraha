@@ -9,6 +9,7 @@ export const baseButton = (iconButtonClass: string) => ({
   ':disabled': {
     backgroundColor: opacity(vars.color.onSurface, 12),
     color: opacity(vars.color.onSurface, 38),
+    cursor: 'not-allowed',
   },
   'borderRadius': 20,
   'color': vars.color.primary,
