@@ -1,4 +1,4 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as logEvent, a3 as globals, a4 as binding_callbacks, a5 as bind, a6 as create_component, a7 as mount_component, a8 as transition_in, a9 as transition_out, aa as destroy_component, ab as space, ac as insert_dev, ad as add_flush_callback, ae as detach_dev, af as element, ag as text, ah as add_location, ai as attr_dev, aj as append_dev, ak as listen_dev, al as set_data_dev, am as prop_dev, _ as __vitePreload, an as createRouter, v as histoireConfig, ao as createWebHistory, ap as createWebHashHistory, aq as markRaw, K as reactive, d as defineComponent, r as ref, ar as watchEffect, o as openBlock, q as createBlock, as as mergeProps, at as resolveDynamicComponent, h as createCommentVNode } from "./vendor-403e08e5.js";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as logEvent, a3 as globals, a4 as binding_callbacks, a5 as bind, a6 as create_component, a7 as mount_component, a8 as transition_in, a9 as transition_out, aa as destroy_component, ab as space, ac as insert_dev, ad as add_flush_callback, ae as detach_dev, af as element, ag as text, ah as add_location, ai as attr_dev, aj as append_dev, ak as listen_dev, al as set_data_dev, am as prop_dev, _ as __vitePreload, an as createRouter, v as histoireConfig, ao as createWebHistory, ap as createWebHashHistory, aq as markRaw, K as reactive, d as defineComponent, r as ref, ar as watchEffect, o as openBlock, q as createBlock, as as mergeProps, at as resolveDynamicComponent, h as createCommentVNode } from "./vendor-8f4b61de.js";
 function O(r, e) {
   if (typeof r != "object" || r === null)
     return r;
@@ -622,12 +622,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-8e58e812.js"), true ? ["assets/HomeView.vue-8e58e812.js","assets/vendor-403e08e5.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-f3669f8f.js"), true ? ["assets/HomeView.vue-f3669f8f.js","assets/vendor-8f4b61de.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-bb8a0b9b.js"), true ? ["assets/StoryView.vue-bb8a0b9b.js","assets/vendor-403e08e5.js","assets/story-f16e30fc.js","assets/MobileOverlay.vue2-762dba37.js","assets/BaseEmpty.vue-b136c604.js","assets/state-93b61a31.js","assets/events-1abb9d5c.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-ddadb654.js"), true ? ["assets/StoryView.vue-ddadb654.js","assets/vendor-8f4b61de.js","assets/story-fa4286e0.js","assets/MobileOverlay.vue2-882fe534.js","assets/BaseEmpty.vue-c218ab2e.js","assets/state-7e86fd58.js","assets/events-820ecf15.js"] : void 0)
     }
   ]
 });
@@ -696,8 +696,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-403e08e5.js").then((n) => n.aZ), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-403e08e5.js").then((n) => n.a_), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-8f4b61de.js").then((n) => n.aZ), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-8f4b61de.js").then((n) => n.a_), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false
