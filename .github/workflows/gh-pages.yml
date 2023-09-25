@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - docs/**
+      - docs-ve/**
   workflow_dispatch:
 
 jobs:
