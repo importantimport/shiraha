@@ -11,6 +11,10 @@ export const baseButton = (iconButtonClass: string) => ({
     color: opacity(vars.color.onSurface, 38),
     cursor: 'not-allowed',
   },
+  ':focus-visible': {
+    outline: `${vars.color.primary} solid 2px`,
+    outlineOffset: 4,
+  },
   'borderRadius': 20,
   'color': vars.color.primary,
   'display': 'inline-flex',
@@ -38,7 +42,7 @@ export const elevatedButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
     },
-    '&:focus-visible:not(:disabled)': {
+    '&:focus:not(:disabled)': {
       backgroundColor: state(vars.color.primary, 12, vars.color.surfaceContainerLow),
     },
     '&:hover:not(:active, :disabled)': {
@@ -55,7 +59,7 @@ export const filledButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.onPrimary, 12, vars.color.primary),
     },
-    '&:focus-visible:not(:disabled)': {
+    '&:focus:not(:disabled)': {
       backgroundColor: state(vars.color.onPrimary, 12, vars.color.primary),
     },
     '&:hover:not(:active, :disabled)': {
@@ -72,7 +76,7 @@ export const outlinedButton = {
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
     },
-    '&:focus-visible:not(:disabled)': {
+    '&:focus:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
       borderColor: vars.color.primary,
     },
@@ -92,7 +96,7 @@ export const textButton = (iconButtonClass: string) => ({
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
     },
-    '&:focus-visible:not(:disabled)': {
+    '&:focus:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
       borderColor: vars.color.primary,
     },
@@ -113,7 +117,7 @@ export const tonalButton = {
     '&:active:not(:disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 12, vars.color.secondaryContainer),
     },
-    '&:focus-visible:not(:disabled)': {
+    '&:focus:not(:disabled)': {
       backgroundColor: state(vars.color.onSecondaryContainer, 12, vars.color.secondaryContainer),
     },
     '&:hover:not(:active, :disabled)': {
