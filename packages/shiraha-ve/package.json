@@ -46,6 +46,6 @@
     "dev": "tsup --watch"
   },
   "devDependencies": {
-    "open-props": "^1.5.15"
+    "open-props": "^1.5.16"
   }
 }
