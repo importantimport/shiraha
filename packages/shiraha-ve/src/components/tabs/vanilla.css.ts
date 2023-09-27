@@ -21,6 +21,8 @@ export const tab = style({
     backgroundColor: opacity(vars.color.onSurface, 8),
   },
   'alignItems': 'center',
+  'borderBottomColor': 'transparent',
+  'borderBottomWidth': 2,
   'display': 'inline-flex',
   'height': 48,
   'justifyContent': 'center',
@@ -30,7 +32,6 @@ export const tab = style({
 export const tabActive = style({
   backgroundColor: opacity(vars.color.onSurface, 12),
   borderBottomColor: vars.color.primary,
-  borderBottomWidth: 2,
 })
 
 /** `[role="tabpanel"]` */
