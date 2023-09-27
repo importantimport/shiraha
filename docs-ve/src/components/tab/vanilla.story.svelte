@@ -1,8 +1,8 @@
 <script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
   import { logEvent } from 'histoire/client'
-  import { tablist, tab, tabActive, tabpanel, tabpanelHidden } from 'shiraha-ve/dist/components/tabs/vanilla.js'
-  import 'shiraha-ve/dist/components/tabs/vanilla.css'
+  import { tablist, tab, tabActive, tabpanel, tabpanelHidden } from 'shiraha-ve/dist/components/tab/vanilla.js'
+  import 'shiraha-ve/dist/components/tab/vanilla.css'
 
   export let Hst: Hst
 
