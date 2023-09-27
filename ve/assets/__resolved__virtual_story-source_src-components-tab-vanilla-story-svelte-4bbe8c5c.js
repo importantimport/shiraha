@@ -1,8 +1,8 @@
-const __resolved__virtual_storySource_srcComponentsTabsVanillaStorySvelte = `<script lang="ts">
+const __resolved__virtual_storySource_srcComponentsTabVanillaStorySvelte = `<script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
   import { logEvent } from 'histoire/client'
-  import { tablist, tab, tabActive, tabpanel, tabpanelHidden } from 'shiraha-ve/dist/components/tabs/vanilla.js'
-  import 'shiraha-ve/dist/components/tabs/vanilla.css'
+  import { tablist, tab, tabActive, tabpanel, tabpanelHidden } from 'shiraha-ve/dist/components/tab/vanilla.js'
+  import 'shiraha-ve/dist/components/tab/vanilla.css'
 
   export let Hst: Hst
 
@@ -68,5 +68,5 @@ const __resolved__virtual_storySource_srcComponentsTabsVanillaStorySvelte = `<sc
 </Hst.Story>
 `;
 export {
-  __resolved__virtual_storySource_srcComponentsTabsVanillaStorySvelte as default
+  __resolved__virtual_storySource_srcComponentsTabVanillaStorySvelte as default
 };

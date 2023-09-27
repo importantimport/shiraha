@@ -14250,7 +14250,7 @@ async function logEvent(name, argument) {
       event
     });
   } else {
-    const { useEventsStore } = await __vitePreload(() => import("./events-046777d4.js"), true ? ["assets/events-046777d4.js","assets/story-dd95e42d.js","assets/GenericMountStory.vue2-0c43c1e8.js"] : void 0);
+    const { useEventsStore } = await __vitePreload(() => import("./events-57450db7.js"), true ? ["assets/events-57450db7.js","assets/story-f9779ddc.js","assets/GenericMountStory.vue2-93573fe7.js"] : void 0);
     useEventsStore().addEvent(event);
   }
 }
@@ -40181,14 +40181,14 @@ export {
   detach_dev as ae,
   element as af,
   text as ag,
-  add_location as ah,
-  attr_dev as ai,
-  append_dev as aj,
-  listen_dev as ak,
-  set_data_dev as al,
-  prop_dev as am,
-  ensure_array_like_dev as an,
-  empty as ao,
+  empty as ah,
+  add_location as ai,
+  attr_dev as aj,
+  append_dev as ak,
+  listen_dev as al,
+  set_data_dev as am,
+  prop_dev as an,
+  ensure_array_like_dev as ao,
   destroy_each as ap,
   createRouter as aq,
   createWebHistory as ar,

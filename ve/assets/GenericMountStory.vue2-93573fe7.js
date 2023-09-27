@@ -1,4 +1,4 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as logEvent, a3 as globals, a4 as binding_callbacks, a5 as bind, a6 as create_component, a7 as mount_component, a8 as transition_in, a9 as transition_out, aa as destroy_component, ab as space, ac as insert_dev, ad as add_flush_callback, ae as detach_dev, af as element, ag as text, ah as add_location, ai as attr_dev, aj as append_dev, ak as listen_dev, al as set_data_dev, am as prop_dev, an as ensure_array_like_dev, ao as empty, ap as destroy_each, _ as __vitePreload, aq as createRouter, v as histoireConfig, ar as createWebHistory, as as createWebHashHistory, at as markRaw, K as reactive, d as defineComponent, r as ref, au as watchEffect, o as openBlock, q as createBlock, av as mergeProps, aw as resolveDynamicComponent, h as createCommentVNode } from "./vendor-a6851fcb.js";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as logEvent, a3 as globals, a4 as binding_callbacks, a5 as bind, a6 as create_component, a7 as mount_component, a8 as transition_in, a9 as transition_out, aa as destroy_component, ab as space, ac as insert_dev, ad as add_flush_callback, ae as detach_dev, af as element, ag as text, ah as empty, ai as add_location, aj as attr_dev, ak as append_dev, al as listen_dev, am as set_data_dev, an as prop_dev, ao as ensure_array_like_dev, ap as destroy_each, _ as __vitePreload, aq as createRouter, v as histoireConfig, ar as createWebHistory, as as createWebHashHistory, at as markRaw, K as reactive, d as defineComponent, r as ref, au as watchEffect, o as openBlock, q as createBlock, av as mergeProps, aw as resolveDynamicComponent, h as createCommentVNode } from "./vendor-d04b0f86.js";
 function O(r, e2) {
   if (typeof r != "object" || r === null)
     return r;
@@ -11,19 +11,19 @@ function O(r, e2) {
   }
   return (e2 === "string" ? String : Number)(r);
 }
-function c$2(r) {
+function c$1(r) {
   var e2 = O(r, "string");
   return typeof e2 == "symbol" ? e2 : String(e2);
 }
 function d$1(r, e2, a2) {
-  return e2 = c$2(e2), e2 in r ? Object.defineProperty(r, e2, { value: a2, enumerable: true, configurable: true, writable: true }) : r[e2] = a2, r;
+  return e2 = c$1(e2), e2 in r ? Object.defineProperty(r, e2, { value: a2, enumerable: true, configurable: true, writable: true }) : r[e2] = a2, r;
 }
 function o(r, e2) {
   var a2 = Object.keys(r);
   if (Object.getOwnPropertySymbols) {
     var t = Object.getOwnPropertySymbols(r);
-    e2 && (t = t.filter(function(n) {
-      return Object.getOwnPropertyDescriptor(r, n).enumerable;
+    e2 && (t = t.filter(function(n2) {
+      return Object.getOwnPropertyDescriptor(r, n2).enumerable;
     })), a2.push.apply(a2, t);
   }
   return a2;
@@ -47,16 +47,16 @@ function p(r, e2) {
 }
 var y = (r, e2, a2) => {
   for (var t of Object.keys(r)) {
-    var n;
-    if (r[t] !== ((n = e2[t]) !== null && n !== void 0 ? n : a2[t]))
+    var n2;
+    if (r[t] !== ((n2 = e2[t]) !== null && n2 !== void 0 ? n2 : a2[t]))
       return false;
   }
   return true;
 }, P = (r) => {
   var e2 = (a2) => {
-    var t = r.defaultClassName, n = v(v({}, r.defaultVariants), a2);
-    for (var f in n) {
-      var s, i2 = (s = n[f]) !== null && s !== void 0 ? s : r.defaultVariants[f];
+    var t = r.defaultClassName, n2 = v(v({}, r.defaultVariants), a2);
+    for (var f in n2) {
+      var s, i2 = (s = n2[f]) !== null && s !== void 0 ? s : r.defaultVariants[f];
       if (i2 != null) {
         var u = i2;
         typeof u == "boolean" && (u = u === true ? "true" : "false");
@@ -65,7 +65,7 @@ var y = (r, e2, a2) => {
       }
     }
     for (var [m2, b] of r.compoundVariants)
-      y(m2, n, r.defaultVariants) && (t += " " + b);
+      y(m2, n2, r.defaultVariants) && (t += " " + b);
     return t;
   };
   return e2.variants = () => Object.keys(r.variantClassNames), e2.classNames = { get base() {
@@ -74,11 +74,11 @@ var y = (r, e2, a2) => {
     return p(r.variantClassNames, (a2) => p(a2, (t) => t.split(" ")[0]));
   } }, e2;
 };
-var c$1 = P({ defaultClassName: "vgkibh1", variantClassNames: { type: { elevated: "vgkibh2", filled: "vgkibh3", outlined: "vgkibh4", text: "vgkibh5", tonal: "vgkibh6" } }, defaultVariants: { type: "filled" }, compoundVariants: [] }), d = "vgkibh0";
+var d = P({ defaultClassName: "vgkibh1", variantClassNames: { icon: { true: "vgkibh2" }, type: { elevated: "vgkibh3", filled: "vgkibh4", outlined: "vgkibh5", text: "vgkibh6", tonal: "vgkibh7" } }, defaultVariants: { icon: false, type: "filled" }, compoundVariants: [[{ icon: true, type: "outlined" }, "vgkibh8"], [{ icon: true, type: "text" }, "vgkibh9"]] }), c = "vgkibh0";
 const vanilla$1 = "";
 const { Object: Object_1 } = globals;
 const file$1 = "src/components/button/vanilla.story.svelte";
-function create_if_block(ctx) {
+function create_if_block_1(ctx) {
   let span;
   let t;
   const block = {
@@ -88,8 +88,8 @@ function create_if_block(ctx) {
         /*icon*/
         ctx[2]
       );
-      attr_dev(span, "class", [d, "material-symbols-outlined"].join(" "));
-      add_location(span, file$1, 25, 8, 540);
+      attr_dev(span, "class", [c, "material-symbols-outlined"].join(" "));
+      add_location(span, file$1, 25, 8, 553);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -112,9 +112,115 @@ function create_if_block(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_if_block.name,
+    id: create_if_block_1.name,
     type: "if",
     source: "(21:6) {#if icon}",
+    ctx
+  });
+  return block;
+}
+function create_if_block(ctx) {
+  let br0;
+  let t0;
+  let br1;
+  let t1;
+  let button_1;
+  let t2;
+  let button_1_class_value;
+  let mounted;
+  let dispose;
+  const block = {
+    c: function create() {
+      br0 = element("br");
+      t0 = space();
+      br1 = element("br");
+      t1 = space();
+      button_1 = element("button");
+      t2 = text(
+        /*icon*/
+        ctx[2]
+      );
+      add_location(br0, file$1, 32, 6, 726);
+      add_location(br1, file$1, 33, 6, 739);
+      attr_dev(button_1, "class", button_1_class_value = [
+        "material-symbols-outlined",
+        c,
+        d({ type: (
+          /*type*/
+          ctx[4]
+        ), icon: true })
+      ].join(" "));
+      button_1.disabled = /*disabled*/
+      ctx[1];
+      add_location(button_1, file$1, 34, 6, 752);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, br0, anchor);
+      insert_dev(target, t0, anchor);
+      insert_dev(target, br1, anchor);
+      insert_dev(target, t1, anchor);
+      insert_dev(target, button_1, anchor);
+      append_dev(button_1, t2);
+      if (!mounted) {
+        dispose = listen_dev(
+          button_1,
+          "click",
+          /*click_handler_1*/
+          ctx[10],
+          false,
+          false,
+          false,
+          false
+        );
+        mounted = true;
+      }
+    },
+    p: function update(ctx2, dirty) {
+      if (dirty & /*icon*/
+      4)
+        set_data_dev(
+          t2,
+          /*icon*/
+          ctx2[2]
+        );
+      if (dirty & /*type*/
+      16 && button_1_class_value !== (button_1_class_value = [
+        "material-symbols-outlined",
+        c,
+        d({ type: (
+          /*type*/
+          ctx2[4]
+        ), icon: true })
+      ].join(" "))) {
+        attr_dev(button_1, "class", button_1_class_value);
+      }
+      if (dirty & /*disabled*/
+      2) {
+        prop_dev(
+          button_1,
+          "disabled",
+          /*disabled*/
+          ctx2[1]
+        );
+      }
+    },
+    d: function destroy(detaching) {
+      if (detaching) {
+        detach_dev(br0);
+        detach_dev(t0);
+        detach_dev(br1);
+        detach_dev(t1);
+        detach_dev(button_1);
+      }
+      mounted = false;
+      dispose();
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_if_block.name,
+    type: "if",
+    source: "(28:4) {#if icon}",
     ctx
   });
   return block;
@@ -125,39 +231,53 @@ function create_default_slot_1$1(ctx) {
   let span;
   let t1;
   let button_1_class_value;
+  let t2;
+  let if_block1_anchor;
   let mounted;
   let dispose;
-  let if_block = (
+  let if_block0 = (
+    /*icon*/
+    ctx[2] && create_if_block_1(ctx)
+  );
+  let if_block1 = (
     /*icon*/
     ctx[2] && create_if_block(ctx)
   );
   const block = {
     c: function create() {
       button_1 = element("button");
-      if (if_block)
-        if_block.c();
+      if (if_block0)
+        if_block0.c();
       t0 = space();
       span = element("span");
       t1 = text(
         /*text*/
         ctx[3]
       );
-      add_location(span, file$1, 29, 6, 658);
-      attr_dev(button_1, "class", button_1_class_value = c$1({ type: (
+      t2 = space();
+      if (if_block1)
+        if_block1.c();
+      if_block1_anchor = empty();
+      add_location(span, file$1, 29, 6, 671);
+      attr_dev(button_1, "class", button_1_class_value = d({ type: (
         /*type*/
         ctx[4]
-      ) }));
+      ), icon: false }));
       button_1.disabled = /*disabled*/
       ctx[1];
       add_location(button_1, file$1, 19, 4, 400);
     },
     m: function mount(target, anchor) {
       insert_dev(target, button_1, anchor);
-      if (if_block)
-        if_block.m(button_1, null);
+      if (if_block0)
+        if_block0.m(button_1, null);
       append_dev(button_1, t0);
       append_dev(button_1, span);
       append_dev(span, t1);
+      insert_dev(target, t2, anchor);
+      if (if_block1)
+        if_block1.m(target, anchor);
+      insert_dev(target, if_block1_anchor, anchor);
       if (!mounted) {
         dispose = listen_dev(
           button_1,
@@ -177,16 +297,16 @@ function create_default_slot_1$1(ctx) {
         /*icon*/
         ctx2[2]
       ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
         } else {
-          if_block = create_if_block(ctx2);
-          if_block.c();
-          if_block.m(button_1, t0);
+          if_block0 = create_if_block_1(ctx2);
+          if_block0.c();
+          if_block0.m(button_1, t0);
         }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
       }
       if (dirty & /*text*/
       8)
@@ -196,10 +316,10 @@ function create_default_slot_1$1(ctx) {
           ctx2[3]
         );
       if (dirty & /*type*/
-      16 && button_1_class_value !== (button_1_class_value = c$1({ type: (
+      16 && button_1_class_value !== (button_1_class_value = d({ type: (
         /*type*/
         ctx2[4]
-      ) }))) {
+      ), icon: false }))) {
         attr_dev(button_1, "class", button_1_class_value);
       }
       if (dirty & /*disabled*/
@@ -211,13 +331,32 @@ function create_default_slot_1$1(ctx) {
           ctx2[1]
         );
       }
+      if (
+        /*icon*/
+        ctx2[2]
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+        } else {
+          if_block1 = create_if_block(ctx2);
+          if_block1.c();
+          if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+        }
+      } else if (if_block1) {
+        if_block1.d(1);
+        if_block1 = null;
+      }
     },
     d: function destroy(detaching) {
       if (detaching) {
         detach_dev(button_1);
+        detach_dev(t2);
+        detach_dev(if_block1_anchor);
       }
-      if (if_block)
-        if_block.d();
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d(detaching);
       mounted = false;
       dispose();
     }
@@ -253,8 +392,8 @@ function create_default_slot$1(ctx) {
     },
     p: function update(ctx2, dirty) {
       const hst_variant_changes = {};
-      if (dirty & /*$$scope, type, disabled, text, icon*/
-      1054) {
+      if (dirty & /*$$scope, type, disabled, icon, text*/
+      2078) {
         hst_variant_changes.$$scope = { dirty, ctx: ctx2 };
       }
       hst_variant.$set(hst_variant_changes);
@@ -316,7 +455,7 @@ function create_controls_slot$1(ctx) {
     ctx[6](value);
   }
   let hst_select_props = {
-    options: Object.keys(c$1.classNames.variants.type),
+    options: Object.keys(d.classNames.variants.type),
     title: "Type"
   };
   if (
@@ -447,7 +586,7 @@ function create_controls_slot$1(ctx) {
     block,
     id: create_controls_slot$1.name,
     type: "slot",
-    source: '(30:2) <svelte:fragment slot=\\"controls\\">',
+    source: '(45:2) <svelte:fragment slot=\\"controls\\">',
     ctx
   });
   return block;
@@ -481,7 +620,7 @@ function create_fragment$1(ctx) {
     p: function update(ctx2, [dirty]) {
       const hst_story_changes = {};
       if (dirty & /*$$scope, icon, text, type, disabled*/
-      1054) {
+      2078) {
         hst_story_changes.$$scope = { dirty, ctx: ctx2 };
       }
       hst_story.$set(hst_story_changes);
@@ -544,14 +683,15 @@ function instance$1($$self, $$props, $$invalidate) {
     $$invalidate(2, icon);
   }
   const click_handler = (event) => logEvent("click", event);
+  const click_handler_1 = (event) => logEvent("click", event);
   $$self.$$set = ($$props2) => {
     if ("Hst" in $$props2)
       $$invalidate(0, Hst = $$props2.Hst);
   };
   $$self.$capture_state = () => ({
     logEvent,
-    button: c$1,
-    buttonIcon: d,
+    button: d,
+    buttonIcon: c,
     Hst,
     disabled,
     icon,
@@ -583,7 +723,8 @@ function instance$1($$self, $$props, $$invalidate) {
     hst_select_value_binding,
     hst_text0_value_binding,
     hst_text1_value_binding,
-    click_handler
+    click_handler,
+    click_handler_1
   ];
 }
 let Vanilla_story$1 = class Vanilla_story extends SvelteComponentDev {
@@ -604,9 +745,9 @@ let Vanilla_story$1 = class Vanilla_story extends SvelteComponentDev {
     throw new Error("<Vanilla_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   }
 };
-var e = "_8mgcwf1", a = "_8mgcwf2", i = "_8mgcwf0", c = "_8mgcwf3", m = "_8mgcwf4";
+var i = "_1ni2kxm1", a = "_1ni2kxm2", n = "_1ni2kxm0", e = "_1ni2kxm3", m = "_1ni2kxm4";
 const vanilla = "";
-const file = "src/components/tabs/vanilla.story.svelte";
+const file = "src/components/tab/vanilla.story.svelte";
 function get_each_context(ctx, list, i2) {
   const child_ctx = ctx.slice();
   child_ctx[5] = list[i2];
@@ -648,7 +789,7 @@ function create_each_block_1(ctx) {
       span = element("span");
       t0 = text(t0_value);
       t1 = space();
-      add_location(span, file, 45, 10, 1085);
+      add_location(span, file, 45, 10, 1083);
       attr_dev(button, "id", button_id_value = /*item*/
       ctx[5].id);
       attr_dev(button, "type", "button");
@@ -660,8 +801,8 @@ function create_each_block_1(ctx) {
       ctx[5].id}-panel`);
       attr_dev(button, "class", button_class_value = /*activeItemId*/
       ctx[2] === /*item*/
-      ctx[5].id ? [e, a].join(" ") : e);
-      add_location(button, file, 41, 8, 782);
+      ctx[5].id ? [i, a].join(" ") : i);
+      add_location(button, file, 41, 8, 780);
     },
     m: function mount(target, anchor) {
       insert_dev(target, button, anchor);
@@ -698,7 +839,7 @@ function create_each_block_1(ctx) {
       if (dirty & /*activeItemId, items*/
       6 && button_class_value !== (button_class_value = /*activeItemId*/
       ctx[2] === /*item*/
-      ctx[5].id ? [e, a].join(" ") : e)) {
+      ctx[5].id ? [i, a].join(" ") : i)) {
         attr_dev(button, "class", button_class_value);
       }
     },
@@ -737,7 +878,7 @@ function create_each_block(ctx) {
       p2 = element("p");
       t0 = text(t0_value);
       t1 = space();
-      add_location(p2, file, 51, 8, 1327);
+      add_location(p2, file, 51, 8, 1325);
       attr_dev(div, "id", div_id_value = `${/*item*/
       ctx[5].id}-panel`);
       attr_dev(div, "role", "tabpanel");
@@ -745,8 +886,8 @@ function create_each_block(ctx) {
       ctx[5].id);
       attr_dev(div, "class", div_class_value = /*activeItemId*/
       ctx[2] === /*item*/
-      ctx[5].id ? c : m);
-      add_location(div, file, 50, 6, 1186);
+      ctx[5].id ? e : m);
+      add_location(div, file, 50, 6, 1184);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -772,7 +913,7 @@ function create_each_block(ctx) {
       if (dirty & /*activeItemId, items*/
       6 && div_class_value !== (div_class_value = /*activeItemId*/
       ctx2[2] === /*item*/
-      ctx2[5].id ? c : m)) {
+      ctx2[5].id ? e : m)) {
         attr_dev(div, "class", div_class_value);
       }
     },
@@ -824,8 +965,8 @@ function create_default_slot_1(ctx) {
       each1_anchor = empty();
       attr_dev(div, "role", "tablist");
       attr_dev(div, "aria-labelledby", "tablist-1");
-      attr_dev(div, "class", i);
-      add_location(div, file, 39, 4, 681);
+      attr_dev(div, "class", n);
+      add_location(div, file, 39, 4, 679);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -1126,10 +1267,10 @@ function instance($$self, $$props, $$invalidate) {
   };
   $$self.$capture_state = () => ({
     logEvent,
-    tablist: i,
-    tab: e,
+    tablist: n,
+    tab: i,
     tabActive: a,
-    tabpanel: c,
+    tabpanel: e,
     tabpanelHidden: m,
     Hst,
     items,
@@ -1167,10 +1308,10 @@ class Vanilla_story2 extends SvelteComponentDev {
   }
 }
 let files = [
-  { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2310b603.js"), true ? [] : void 0) },
-  { "id": "src-components-tabs-vanilla-story-svelte", "path": ["Components", "Tabs", "Tab (vanilla-extract)"], "filePath": "src/components/tabs/vanilla.story.svelte", "story": { "id": "src-components-tabs-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tabs-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 1, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tabs-vanilla-story-svelte-1a1d54d5.js"), true ? [] : void 0) }
+  { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2d40db21.js"), true ? [] : void 0) },
+  { "id": "src-components-tab-vanilla-story-svelte", "path": ["Components", "Tab", "Tab (vanilla-extract)"], "filePath": "src/components/tab/vanilla.story.svelte", "story": { "id": "src-components-tab-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tab-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 1, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tab-vanilla-story-svelte-4bbe8c5c.js"), true ? [] : void 0) }
 ];
-let tree = [{ "title": "Components", "children": [{ "title": "Button", "children": [{ "title": "Button (vanilla-extract)", "index": 0 }] }, { "title": "Tabs", "children": [{ "title": "Tab (vanilla-extract)", "index": 1 }] }] }];
+let tree = [{ "title": "Components", "children": [{ "title": "Button", "children": [{ "title": "Button (vanilla-extract)", "index": 0 }] }, { "title": "Tab", "children": [{ "title": "Tab (vanilla-extract)", "index": 1 }] }] }];
 const base = "/ve/";
 function createRouterHistory() {
   switch (histoireConfig.routerMode) {
@@ -1187,12 +1328,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-e4875e22.js"), true ? ["assets/HomeView.vue-e4875e22.js","assets/vendor-a6851fcb.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-407a2478.js"), true ? ["assets/HomeView.vue-407a2478.js","assets/vendor-d04b0f86.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-bc40caf7.js"), true ? ["assets/StoryView.vue-bc40caf7.js","assets/vendor-a6851fcb.js","assets/story-dd95e42d.js","assets/MobileOverlay.vue2-6d8908f1.js","assets/BaseEmpty.vue-566c7784.js","assets/state-d4aab866.js","assets/events-046777d4.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-cf58e236.js"), true ? ["assets/StoryView.vue-cf58e236.js","assets/vendor-d04b0f86.js","assets/story-f9779ddc.js","assets/MobileOverlay.vue2-a1cd05fd.js","assets/BaseEmpty.vue-654c7d30.js","assets/state-aa78546a.js","assets/events-57450db7.js"] : void 0)
     }
   ]
 });
@@ -1261,8 +1402,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-a6851fcb.js").then((n) => n.b0), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-a6851fcb.js").then((n) => n.b1), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-d04b0f86.js").then((n2) => n2.b0), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-d04b0f86.js").then((n2) => n2.b1), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false
