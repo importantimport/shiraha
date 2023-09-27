@@ -19,7 +19,7 @@
   <Hst.Variant title="default">
     <button
       on:click={(event) => logEvent('click', event)}
-      class={button({ type })}
+      class={button({ type, icon: false })}
       {disabled}
     >
       {#if icon}
@@ -29,6 +29,21 @@
       {/if}
       <span>{text}</span>
     </button>
+    {#if icon}
+      <br />
+      <br />
+      <button
+        on:click={(event) => logEvent('click', event)}
+        class={[
+          'material-symbols-outlined',
+          buttonIcon,
+          button({ type, icon: true }),
+        ].join(' ')}
+        {disabled}
+      >
+        {icon}
+      </button>
+    {/if}
   </Hst.Variant>
 
   <svelte:fragment slot="controls">

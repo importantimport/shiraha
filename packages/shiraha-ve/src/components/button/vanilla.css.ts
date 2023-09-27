@@ -10,12 +10,25 @@ export const buttonIcon = style({
 
 export const button = recipe({
   base: [styles.baseButton(buttonIcon)],
-  defaultVariants: { type: 'filled' },
+  compoundVariants: [
+    {
+      style: styles.iconOutlinedButton,
+      variants: { icon: true, type: 'outlined' },
+    },
+    {
+      style: styles.iconTextButton,
+      variants: { icon: true, type: 'text' },
+    },
+  ],
+  defaultVariants: { icon: false, type: 'filled' },
   variants: {
+    icon: {
+      true: styles.iconButton,
+    },
     type: {
       elevated: styles.elevatedButton,
       filled: styles.filledButton,
-      outlined: styles.outlinedButton,
+      outlined: styles.outlinedButton(buttonIcon),
       text: styles.textButton(buttonIcon),
       tonal: styles.tonalButton,
     },

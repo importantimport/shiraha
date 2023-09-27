@@ -27,7 +27,7 @@ export const baseButton = (iconButtonClass: string) => ({
     '&:active:not(:disabled)': {
       scale: 0.95,
     },
-    [`&:has(.${iconButtonClass}:first-child:not(last-child))`]: {
+    [`&:has(.${iconButtonClass}:first-child:not(:last-child))`]: {
       paddingLeft: 16,
     },
   },
@@ -69,9 +69,11 @@ export const filledButton = {
   },
 } as const satisfies ComplexStyleRule
 
-export const outlinedButton = {
+export const outlinedButton = (iconButtonClass: string) => ({
   borderColor: vars.color.outline,
   borderWidth: 1,
+  /** (8px - 1px) (24px - 1px) */
+  padding: '7px 23px',
   selectors: {
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
@@ -83,15 +85,19 @@ export const outlinedButton = {
     '&:hover:not(:active, :disabled)': {
       backgroundColor: opacity(vars.color.primary, 8),
     },
+    [`&:has(.${iconButtonClass}:first-child:not(:last-child))`]: {
+      /** (16px - 1px) */
+      paddingLeft: 15,
+    },
   },
-} as const satisfies ComplexStyleRule
+}) as const satisfies ComplexStyleRule
 
 export const textButton = (iconButtonClass: string) => ({
   ':disabled': {
     backgroundColor: 'transparent',
     color: opacity(vars.color.onSurface, 38),
   },
-  'padding': '0.5rem 0.75rem',
+  'padding': '8px 12px',
   'selectors': {
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.primary, 12),
@@ -103,7 +109,7 @@ export const textButton = (iconButtonClass: string) => ({
     '&:hover:not(:active, :disabled)': {
       backgroundColor: opacity(vars.color.primary, 8),
     },
-    [`&:has(.${iconButtonClass}:first-child:not(last-child))`]: {
+    [`&:has(.${iconButtonClass}:first-child:not(:last-child))`]: {
       paddingLeft: 12,
       paddingRight: 16,
     },
@@ -125,4 +131,18 @@ export const tonalButton = {
       boxShadow: OP.shadow1,
     },
   },
-} satisfies ComplexStyleRule
+} as const satisfies ComplexStyleRule
+
+export const iconButton = {
+  padding: 8,
+  width: 40,
+} as const satisfies ComplexStyleRule
+
+export const iconOutlinedButton = {
+  padding: 7,
+} as const satisfies ComplexStyleRule
+
+export const iconTextButton = {
+  color: vars.color.onSurfaceVariant,
+  padding: 8,
+} as const satisfies ComplexStyleRule
