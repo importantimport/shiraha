@@ -21,6 +21,7 @@
     "style"
   ],
   "exports": {
+    ".": "./dist/shiraha.css",
     "./*.css": "./dist/*.css",
     "./*.js": {
       "types": "./dist/*.d.ts",
