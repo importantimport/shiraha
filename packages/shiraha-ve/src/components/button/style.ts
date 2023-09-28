@@ -133,15 +133,16 @@ export const tonalButton = {
 } as const satisfies ComplexStyleRule
 
 export const iconButton = {
-  padding: 8,
+  fontSize: 20,
+  padding: 10,
   width: 40,
 } as const satisfies ComplexStyleRule
 
 export const iconOutlinedButton = {
-  padding: 7,
+  padding: 9,
 } as const satisfies ComplexStyleRule
 
 export const iconTextButton = {
   color: vars.color.onSurfaceVariant,
-  padding: 8,
+  padding: 10,
 } as const satisfies ComplexStyleRule
