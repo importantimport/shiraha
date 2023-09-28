@@ -8,7 +8,7 @@
 
 import { globalStyle } from '@vanilla-extract/css'
 
-import * as styles from './style'
+import * as styles from './styles'
 
 globalStyle(':where(h1, h2, h3, h4)', styles.h)
 
