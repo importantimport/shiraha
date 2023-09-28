@@ -1,6 +1,7 @@
 const __resolved__virtual_storySource_srcTypographyHeadingStorySvelte = `<script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
   import 'shiraha-ve/dist/typography/heading/global.css'
+  import 'shiraha-ve/dist/typography/paragraph/global.css'
 
   export let Hst: Hst
 

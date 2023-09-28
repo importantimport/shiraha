@@ -1,4 +1,5 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as ensure_array_like_dev, aa as space, ab as insert_dev, ac as add_flush_callback, ad as detach_dev, ae as validate_dynamic_element, af as validate_void_dynamic_element, ag as empty, ah as destroy_each, ai as element, aj as text, ak as add_location, al as append_dev, am as HtmlTag, an as logEvent, ao as globals, ap as attr_dev, aq as listen_dev, ar as set_data_dev, as as prop_dev, _ as __vitePreload, at as createRouter, v as histoireConfig, au as createWebHistory, av as createWebHashHistory, aw as markRaw, K as reactive, d as defineComponent, r as ref, ax as watchEffect, o as openBlock, q as createBlock, ay as mergeProps, az as resolveDynamicComponent, h as createCommentVNode } from "./vendor-eaf8c4d2.js";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as ensure_array_like_dev, aa as space, ab as insert_dev, ac as add_flush_callback, ad as detach_dev, ae as validate_dynamic_element, af as validate_void_dynamic_element, ag as empty, ah as destroy_each, ai as element, aj as text, ak as add_location, al as append_dev, am as HtmlTag, an as logEvent, ao as globals, ap as attr_dev, aq as listen_dev, ar as set_data_dev, as as prop_dev, _ as __vitePreload, at as createRouter, v as histoireConfig, au as createWebHistory, av as createWebHashHistory, aw as markRaw, K as reactive, d as defineComponent, r as ref, ax as watchEffect, o as openBlock, q as createBlock, ay as mergeProps, az as resolveDynamicComponent, h as createCommentVNode } from "./vendor-e40a6324.js";
+const global$1 = "";
 const global = "";
 const file$2 = "src/typography/heading.story.svelte";
 function get_each_context$1(ctx, list, i2) {
@@ -25,7 +26,7 @@ function create_dynamic_element(ctx) {
       t0 = space();
       t1 = text(t1_value);
       html_tag.a = t0;
-      add_location(svelte_element, file$2, 18, 6, 521);
+      add_location(svelte_element, file$2, 19, 6, 579);
     },
     m: function mount(target, anchor) {
       insert_dev(target, svelte_element, anchor);
@@ -55,7 +56,7 @@ function create_dynamic_element(ctx) {
     block,
     id: create_dynamic_element.name,
     type: "child_dynamic_element",
-    source: "(15:6) <svelte:element this={heading}>",
+    source: "(16:6) <svelte:element this={heading}>",
     ctx
   });
   return block;
@@ -65,7 +66,7 @@ function create_if_block$1(ctx) {
   const block = {
     c: function create() {
       p2 = element("p");
-      add_location(p2, file$2, 23, 8, 649);
+      add_location(p2, file$2, 24, 8, 707);
     },
     m: function mount(target, anchor) {
       insert_dev(target, p2, anchor);
@@ -88,7 +89,7 @@ function create_if_block$1(ctx) {
     block,
     id: create_if_block$1.name,
     type: "if",
-    source: "(19:6) {#if pText}",
+    source: "(20:6) {#if pText}",
     ctx
   });
   return block;
@@ -167,7 +168,7 @@ function create_each_block$1(ctx) {
     block,
     id: create_each_block$1.name,
     type: "each",
-    source: "(14:4) {#each headings as heading}",
+    source: "(15:4) {#each headings as heading}",
     ctx
   });
   return block;
@@ -232,7 +233,7 @@ function create_default_slot_1$2(ctx) {
     block,
     id: create_default_slot_1$2.name,
     type: "slot",
-    source: '(13:2) <Hst.Variant title=\\"default\\">',
+    source: '(14:2) <Hst.Variant title=\\"default\\">',
     ctx
   });
   return block;
@@ -283,7 +284,7 @@ function create_default_slot$2(ctx) {
     block,
     id: create_default_slot$2.name,
     type: "slot",
-    source: '(12:0) <Hst.Story title=\\"Heading\\">',
+    source: '(13:0) <Hst.Story title=\\"Heading\\">',
     ctx
   });
   return block;
@@ -382,7 +383,7 @@ function create_controls_slot$2(ctx) {
     block,
     id: create_controls_slot$2.name,
     type: "slot",
-    source: '(25:2) <svelte:fragment slot=\\"controls\\">',
+    source: '(26:2) <svelte:fragment slot=\\"controls\\">',
     ctx
   });
   return block;
@@ -1827,7 +1828,7 @@ class Vanilla_story2 extends SvelteComponentDev {
   }
 }
 let files = [
-  { "id": "src-typography-heading-story-svelte", "path": ["Typography", "Heading"], "filePath": "src/typography/heading.story.svelte", "story": { "id": "src-typography-heading-story-svelte", "title": "Heading", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-heading-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Heading_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-heading-story-svelte-19ae558c.js"), true ? [] : void 0) },
+  { "id": "src-typography-heading-story-svelte", "path": ["Typography", "Heading"], "filePath": "src/typography/heading.story.svelte", "story": { "id": "src-typography-heading-story-svelte", "title": "Heading", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-heading-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Heading_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-heading-story-svelte-ed8b200d.js"), true ? [] : void 0) },
   { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 1, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2d40db21.js"), true ? [] : void 0) },
   { "id": "src-components-tab-vanilla-story-svelte", "path": ["Components", "Tab", "Tab (vanilla-extract)"], "filePath": "src/components/tab/vanilla.story.svelte", "story": { "id": "src-components-tab-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tab-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 2, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tab-vanilla-story-svelte-4bbe8c5c.js"), true ? [] : void 0) }
 ];
@@ -1848,12 +1849,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-faa09798.js"), true ? ["assets/HomeView.vue-faa09798.js","assets/vendor-eaf8c4d2.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-de032f08.js"), true ? ["assets/HomeView.vue-de032f08.js","assets/vendor-e40a6324.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-cf46c4cf.js"), true ? ["assets/StoryView.vue-cf46c4cf.js","assets/vendor-eaf8c4d2.js","assets/story-011ca158.js","assets/MobileOverlay.vue2-cc25a858.js","assets/BaseEmpty.vue-11be5c6e.js","assets/state-341fd168.js","assets/events-b0b4976c.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-7af5f124.js"), true ? ["assets/StoryView.vue-7af5f124.js","assets/vendor-e40a6324.js","assets/story-e09c855d.js","assets/MobileOverlay.vue2-2653dba2.js","assets/BaseEmpty.vue-fa5ed3d0.js","assets/state-7dfc0d90.js","assets/events-b81d3a34.js"] : void 0)
     }
   ]
 });
@@ -1922,8 +1923,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-eaf8c4d2.js").then((n2) => n2.b3), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-eaf8c4d2.js").then((n2) => n2.b4), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-e40a6324.js").then((n2) => n2.b3), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-e40a6324.js").then((n2) => n2.b4), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false
