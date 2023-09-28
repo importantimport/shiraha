@@ -20,7 +20,6 @@ export const baseButton = (iconButtonClass: string) => ({
   'display': 'inline-flex',
   'gap': 8,
   'height': 40,
-  // 'margin': '0.25rem',
   'minWidth': 40,
   'padding': '0.5rem 1.5rem',
   'selectors': {

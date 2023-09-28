@@ -13,5 +13,10 @@ globalStyle('*, ::before, ::after', {
   'borderColor': vars.color.primary,
   'borderStyle': 'solid',
   'borderWidth': 0,
-  'boxSizing': 'border-box',
+  'boxSizing': 'inherit',
+})
+
+globalStyle('::selection', {
+  backgroundColor: vars.color.primary,
+  color: vars.color.onPrimary,
 })
