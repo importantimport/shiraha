@@ -5,6 +5,7 @@ on:
     paths:
       - docs/**
       - docs-ve/**
+      - packages/shiraha-ve/**
   workflow_dispatch:
 
 jobs:
