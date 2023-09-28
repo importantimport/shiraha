@@ -7,22 +7,14 @@
  */
 
 import { globalStyle } from '@vanilla-extract/css'
-import OP from 'open-props'
 
 import * as styles from './style'
 
-globalStyle(':where(h1, h2, h3, h4)', {
-  '@supports': {
-    '(text-wrap: pretty)': {
-      textWrap: 'pretty',
-    },
-    'not (text-wrap: pretty)': {
-      textWrap: 'balance',
-    },
-  },
-  'fontWeight': OP.fontWeight6,
-  // 'margin': '3rem 0 1.38rem',
-})
+globalStyle(':where(h1, h2, h3, h4)', styles.h)
+
+globalStyle(':where(h1, h2, h3):not(:first-child)', styles.h123NotFirstChild)
+
+globalStyle(':where(h4, h5, h6):not(:first-child)', styles.h456NotFirstChild)
 
 globalStyle(':where(h1), .h1', styles.h1)
 

@@ -7,5 +7,5 @@ export const p = {
 } as const satisfies ComplexStyleRule
 
 export const pNotFirstChild = {
-  marginTop: 16,
+  marginTop: 24,
 } as const satisfies ComplexStyleRule

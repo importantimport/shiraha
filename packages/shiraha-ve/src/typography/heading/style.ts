@@ -1,5 +1,30 @@
 import type { ComplexStyleRule } from '@vanilla-extract/css'
 
+import OP from 'open-props'
+
+export const h = {
+  '@supports': {
+    '(text-wrap: pretty)': {
+      textWrap: 'pretty',
+    },
+    'not (text-wrap: pretty)': {
+      textWrap: 'balance',
+    },
+  },
+  'fontWeight': OP.fontWeight6,
+  'letterSpacing': '-0.025em',
+  'paddingBottom': 8,
+  'scrollMargin': 80,
+} as const satisfies ComplexStyleRule
+
+export const h123NotFirstChild = {
+  marginTop: 48,
+} as const satisfies ComplexStyleRule
+
+export const h456NotFirstChild = {
+  marginTop: 24,
+} as const satisfies ComplexStyleRule
+
 export const h1 = {
   fontSize: 'clamp(2.49rem, 2.14rem + 1.73vw, 3.05rem)',
   marginTop: 0,
