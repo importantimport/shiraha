@@ -12808,6 +12808,9 @@ function destroy_each(iterations, detaching) {
 function element(name) {
   return document.createElement(name);
 }
+function svg_element(name) {
+  return document.createElementNS("http://www.w3.org/2000/svg", name);
+}
 function text(data) {
   return document.createTextNode(data);
 }
@@ -12839,6 +12842,89 @@ function set_data(text2, data) {
 }
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   return new CustomEvent(type, { detail, bubbles, cancelable });
+}
+class HtmlTag {
+  constructor(is_svg = false) {
+    /**
+     * @private
+     * @default false
+     */
+    __publicField(this, "is_svg", false);
+    /** parent for creating node */
+    __publicField(this, "e");
+    /** html tag nodes */
+    __publicField(this, "n");
+    /** target */
+    __publicField(this, "t");
+    /** anchor */
+    __publicField(this, "a");
+    this.is_svg = is_svg;
+    this.e = this.n = null;
+  }
+  /**
+   * @param {string} html
+   * @returns {void}
+   */
+  c(html) {
+    this.h(html);
+  }
+  /**
+   * @param {string} html
+   * @param {HTMLElement | SVGElement} target
+   * @param {HTMLElement | SVGElement} anchor
+   * @returns {void}
+   */
+  m(html, target, anchor = null) {
+    if (!this.e) {
+      if (this.is_svg)
+        this.e = svg_element(
+          /** @type {keyof SVGElementTagNameMap} */
+          target.nodeName
+        );
+      else
+        this.e = element(
+          /** @type {keyof HTMLElementTagNameMap} */
+          target.nodeType === 11 ? "TEMPLATE" : target.nodeName
+        );
+      this.t = target.tagName !== "TEMPLATE" ? target : (
+        /** @type {HTMLTemplateElement} */
+        target.content
+      );
+      this.c(html);
+    }
+    this.i(anchor);
+  }
+  /**
+   * @param {string} html
+   * @returns {void}
+   */
+  h(html) {
+    this.e.innerHTML = html;
+    this.n = Array.from(
+      this.e.nodeName === "TEMPLATE" ? this.e.content.childNodes : this.e.childNodes
+    );
+  }
+  /**
+   * @returns {void} */
+  i(anchor) {
+    for (let i2 = 0; i2 < this.n.length; i2 += 1) {
+      insert(this.t, this.n[i2], anchor);
+    }
+  }
+  /**
+   * @param {string} html
+   * @returns {void}
+   */
+  p(html) {
+    this.d();
+    this.h(html);
+    this.i(this.a);
+  }
+  /**
+   * @returns {void} */
+  d() {
+    this.n.forEach(detach);
+  }
 }
 let current_component;
 function set_current_component(component) {
@@ -13034,6 +13120,10 @@ function get_spread_update(levels, updates) {
 }
 function get_spread_object(spread_props) {
   return typeof spread_props === "object" && spread_props !== null ? spread_props : {};
+}
+const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)$/;
+function is_void(name) {
+  return void_element_names.test(name) || name.toLowerCase() === "!doctype";
 }
 function bind(component, name, callback) {
   const index2 = component.$$.props[name];
@@ -13248,6 +13338,17 @@ function validate_slots(name, slot, keys) {
     if (!~keys.indexOf(slot_key)) {
       console.warn(`<${name}> received an unexpected slot "${slot_key}".`);
     }
+  }
+}
+function validate_dynamic_element(tag) {
+  const is_string = typeof tag === "string";
+  if (tag && !is_string) {
+    throw new Error('<svelte:element> expects "this" attribute to be a string.');
+  }
+}
+function validate_void_dynamic_element(tag) {
+  if (tag && is_void(tag)) {
+    console.warn(`<svelte:element this="${tag}"> is self-closing and cannot have content.`);
   }
 }
 class SvelteComponentDev extends SvelteComponent {
@@ -14250,7 +14351,7 @@ async function logEvent(name, argument) {
       event
     });
   } else {
-    const { useEventsStore } = await __vitePreload(() => import("./events-57450db7.js"), true ? ["assets/events-57450db7.js","assets/story-f9779ddc.js","assets/GenericMountStory.vue2-93573fe7.js"] : void 0);
+    const { useEventsStore } = await __vitePreload(() => import("./events-b0b4976c.js"), true ? ["assets/events-b0b4976c.js","assets/story-011ca158.js","assets/GenericMountStory.vue2-5bce6546.js"] : void 0);
     useEventsStore().addEvent(event);
   }
 }
@@ -40136,73 +40237,76 @@ export {
   init as Z,
   __vitePreload as _,
   useRoute as a,
-  flexsearch_bundleExports as a$,
+  useMediaQuery as a$,
   safe_not_equal as a0,
   validate_slots as a1,
-  logEvent as a2,
-  globals as a3,
-  binding_callbacks as a4,
-  bind as a5,
-  create_component as a6,
-  mount_component as a7,
-  transition_in as a8,
-  transition_out as a9,
-  useResizeObserver as aA,
-  nm as aB,
-  withModifiers as aC,
-  renderSlot as aD,
-  vModelText as aE,
-  onUnmounted as aF,
-  VTooltip as aG,
-  createStaticVNode as aH,
-  EVENT_SEND as aI,
-  toRaw as aJ,
-  Dropdown as aK,
-  clone as aL,
-  omit as aM,
-  useTimeoutFn as aN,
-  onClickOutside as aO,
-  nextTick as aP,
-  om as aQ,
-  Ug as aR,
-  Yg as aS,
-  Jg as aT,
-  shallowRef as aU,
-  getHighlighter as aV,
-  onBeforeUnmount as aW,
-  scrollIntoView as aX,
-  useMediaQuery as aY,
-  useFocus as aZ,
-  refDebounced as a_,
-  destroy_component as aa,
-  space as ab,
-  insert_dev as ac,
-  add_flush_callback as ad,
-  detach_dev as ae,
-  element as af,
-  text as ag,
-  empty as ah,
-  add_location as ai,
-  attr_dev as aj,
-  append_dev as ak,
-  listen_dev as al,
-  set_data_dev as am,
-  prop_dev as an,
-  ensure_array_like_dev as ao,
-  destroy_each as ap,
-  createRouter as aq,
-  createWebHistory as ar,
-  createWebHashHistory as as,
-  markRaw as at,
-  watchEffect as au,
-  mergeProps as av,
-  resolveDynamicComponent as aw,
-  toRefs as ax,
-  unindent as ay,
-  useRouter as az,
+  binding_callbacks as a2,
+  bind as a3,
+  create_component as a4,
+  mount_component as a5,
+  transition_in as a6,
+  transition_out as a7,
+  destroy_component as a8,
+  ensure_array_like_dev as a9,
+  toRefs as aA,
+  unindent as aB,
+  useRouter as aC,
+  useResizeObserver as aD,
+  nm as aE,
+  withModifiers as aF,
+  renderSlot as aG,
+  vModelText as aH,
+  onUnmounted as aI,
+  VTooltip as aJ,
+  createStaticVNode as aK,
+  EVENT_SEND as aL,
+  toRaw as aM,
+  Dropdown as aN,
+  clone as aO,
+  omit as aP,
+  useTimeoutFn as aQ,
+  onClickOutside as aR,
+  nextTick as aS,
+  om as aT,
+  Ug as aU,
+  Yg as aV,
+  Jg as aW,
+  shallowRef as aX,
+  getHighlighter as aY,
+  onBeforeUnmount as aZ,
+  scrollIntoView as a_,
+  space as aa,
+  insert_dev as ab,
+  add_flush_callback as ac,
+  detach_dev as ad,
+  validate_dynamic_element as ae,
+  validate_void_dynamic_element as af,
+  empty as ag,
+  destroy_each as ah,
+  element as ai,
+  text as aj,
+  add_location as ak,
+  append_dev as al,
+  HtmlTag as am,
+  logEvent as an,
+  globals as ao,
+  attr_dev as ap,
+  listen_dev as aq,
+  set_data_dev as ar,
+  prop_dev as as,
+  createRouter as at,
+  createWebHistory as au,
+  createWebHashHistory as av,
+  markRaw as aw,
+  watchEffect as ax,
+  mergeProps as ay,
+  resolveDynamicComponent as az,
   createElementBlock as b,
-  client as b0,
-  index as b1,
+  useFocus as b0,
+  refDebounced as b1,
+  flexsearch_bundleExports as b2,
+  client as b3,
+  index as b4,
   computed as c,
   defineComponent as d,
   createVNode as e,

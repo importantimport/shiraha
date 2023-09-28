@@ -1,6 +1,34 @@
 {
   "stories": [
     {
+      "id": "src-typography-heading-story-svelte",
+      "title": "Heading",
+      "group": null,
+      "layout": {
+        "type": "single",
+        "iframe": true
+      },
+      "icon": null,
+      "iconColor": null,
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-typography-heading-story-svelte-0",
+          "title": "default",
+          "icon": null,
+          "iconColor": null
+        }
+      ],
+      "relativePath": "src/typography/heading.story.svelte",
+      "supportPluginId": "svelte4",
+      "treePath": [
+        "Typography",
+        "Heading"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-button-vanilla-story-svelte",
       "title": "Button (vanilla-extract)",
       "group": null,
