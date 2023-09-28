@@ -7,5 +7,5 @@ import './base/reset.css'
 // theme
 import './themes/baseline.css'
 // typography
-import './typography/divider.global.css'
-import './typography/heading.global.css'
+import './typography/divider/global.css'
+import './typography/heading/global.css'
