@@ -11,6 +11,7 @@ export * from './styles.tonal'
 
 export const iconButton = {
   fontSize: 20,
+  overflow: 'hidden',
   padding: 10,
   width: 40,
 } as const satisfies ComplexStyleRule
