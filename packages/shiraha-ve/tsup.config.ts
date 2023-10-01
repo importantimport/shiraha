@@ -20,7 +20,6 @@ export default defineConfig(({ watch }) => ({
       identifiers: watch ? 'debug' : 'short',
       processCss: async css => transform({
         code: Buffer.from(css),
-        drafts: { nesting: true },
         filename: undefined,
         minify: !watch,
         targets,

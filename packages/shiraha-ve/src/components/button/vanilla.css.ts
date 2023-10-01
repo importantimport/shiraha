@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css'
 import { type RecipeVariants, recipe } from '@vanilla-extract/recipes'
 
-import * as styles from './style'
+import * as styles from './styles'
 
 export const buttonIcon = style({
   fontSize: '1.25rem !important',
