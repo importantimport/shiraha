@@ -1,7 +1,10 @@
 import { globalStyle } from '@vanilla-extract/css'
 import OP from 'open-props'
 
+import { vars } from '../vars.css'
+
 globalStyle('html', {
+  accentColor: vars.color.primary,
   boxSizing: 'border-box',
   fontFamily: OP.fontSans,
   fontSize: OP.fontSize1,
