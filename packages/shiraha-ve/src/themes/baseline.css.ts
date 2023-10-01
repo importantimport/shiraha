@@ -1,4 +1,4 @@
-import { assignVars, createGlobalTheme, globalStyle } from '@vanilla-extract/css'
+import { assignVars, globalStyle } from '@vanilla-extract/css'
 
 import { opDark, opLight } from '../utils/op'
 import { type Theme, vars } from '../vars.css'
@@ -45,7 +45,7 @@ export const baselineThemeLight = {
     tertiaryContainer: '#FFD8E4',
   },
   op: opLight,
-} satisfies Theme
+} as const satisfies Theme
 
 /** {@link https://m3.material.io/styles/color/the-color-system/tokens#e26e130c-fa67-48e1-81ca-d28f6e4ed398} */
 export const baselineThemeDark = {
@@ -89,19 +89,27 @@ export const baselineThemeDark = {
     tertiaryContainer: '#633B48',
   },
   op: opDark,
-} satisfies Theme
+} as const satisfies Theme
 
 globalStyle(':root, :host', {
   '@media': {
     '(perfers-color-scheme: dark)': {
+      colorScheme: 'dark',
       vars: assignVars(vars, baselineThemeDark),
     },
     '(perfers-color-scheme: light)': {
+      colorScheme: 'light',
       vars: assignVars(vars, baselineThemeLight),
     },
   },
 })
 
-createGlobalTheme('[data-theme="dark"], .dark', vars, baselineThemeDark)
+globalStyle('[data-theme="dark"], .dark', {
+  colorScheme: 'dark',
+  vars: assignVars(vars, baselineThemeDark),
+})
 
-createGlobalTheme('[data-theme="light"], .light', vars, baselineThemeLight)
+globalStyle('[data-theme="light"], .light', {
+  colorScheme: 'light',
+  vars: assignVars(vars, baselineThemeLight),
+})
