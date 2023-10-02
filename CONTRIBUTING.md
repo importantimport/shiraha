@@ -50,9 +50,10 @@ I don't think there is much to write here.
 
 ## [Shiraha](/packages/shiraha/)
 
-Shiraha written using SugarSS. Can be used as a reference when improving Shiraha
-VE, but this package no longer accepts PR (as it will be replaced by Shiraha VE)
+Original Shiraha written using SugarSS. Can be used as a reference when
+improving Shiraha VE, but this package no longer accepts PR (as it will be
+replaced by Shiraha VE)
 
 ## [Shiraha Worklets](/packages/shiraha-worklets/)
 
-Abandoned package, no longer accepting PR.
+Deprecated package, no longer accepting PR.
