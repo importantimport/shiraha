@@ -37,6 +37,13 @@ The new documentation is temporarily deployed at https://shiraha.js.org/ve and
 you can see the source code at [shiraha-ve](/packages/shiraha-ve/) and
 [docs-ve](/docs-ve/).
 
+## 👥 Contributing
+
+Welcome! Shiraha is still in the early stages of development and I would be
+happy to merge Pull Requests.
+
+You might want to look: [`CONTRIBUTING.md`](/CONTRIBUTING.md)
+
 ## 📝 Documentation
 
 The documentation is located in the [`docs`](/docs/) folder and can be viewed
@@ -66,13 +73,6 @@ current page.
 ```html
 <script type="module" src="https://esm.run/shiraha-colors" async></script>
 ```
-
-## 👥 Contributing
-
-Welcome! Shiraha is still in the early stages of development and I would be
-happy to merge Pull Requests.
-
-You might want to look: [`CONTRIBUTING.md`](/CONTRIBUTING.md)
 
 ## 📄 License
 
