@@ -30,7 +30,7 @@ export const tab = style({
 })
 
 export const tabActive = style({
-  backgroundColor: opacity(vars.color.onSurface, 12),
+  // backgroundColor: opacity(vars.color.onSurface, 12),
   borderBottomColor: vars.color.primary,
 })
 

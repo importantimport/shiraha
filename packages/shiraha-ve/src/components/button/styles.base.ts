@@ -6,6 +6,7 @@ import { vars } from '../../vars.css'
 export const baseButtonGlobal = {
   borderRadius: 20,
   color: vars.color.primary,
+  cursor: 'pointer',
   display: 'inline-flex',
   gap: 8,
   height: 40,

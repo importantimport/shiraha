@@ -5,8 +5,8 @@
 
   export let Hst: Hst
 
-  let icon = 'ac_unit'
-  let text = 'Shiraha'
+  // let icon = 'ac_unit'
+  // let text = 'Shiraha'
 </script>
 
 <Hst.Story title="Button (global)">
@@ -33,8 +33,8 @@
     <!-- <input type="file" /> -->
   </Hst.Variant>
 
-  <svelte:fragment slot="controls">
+  <!-- <svelte:fragment slot="controls">
     <Hst.Text bind:value={text} title="Text" />
     <Hst.Text bind:value={icon} title="Icon" />
-  </svelte:fragment>
+  </svelte:fragment> -->
 </Hst.Story>
