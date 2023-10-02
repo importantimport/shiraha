@@ -1,7 +1,7 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as add_flush_callback, aa as element, ab as text, ac as add_location, ad as insert_dev, ae as append_dev, af as set_data_dev, ag as detach_dev, ah as ensure_array_like_dev, ai as space, aj as validate_dynamic_element, ak as validate_void_dynamic_element, al as empty, am as destroy_each, an as HtmlTag, ao as logEvent, ap as globals, aq as attr_dev, ar as listen_dev, as as prop_dev, _ as __vitePreload, at as createRouter, v as histoireConfig, au as createWebHistory, av as createWebHashHistory, aw as markRaw, K as reactive, d as defineComponent, r as ref, ax as watchEffect, o as openBlock, q as createBlock, ay as mergeProps, az as resolveDynamicComponent, h as createCommentVNode } from "./vendor-fe3d45a3.js";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as add_flush_callback, aa as element, ab as text, ac as add_location, ad as insert_dev, ae as append_dev, af as set_data_dev, ag as detach_dev, ah as ensure_array_like_dev, ai as space, aj as validate_dynamic_element, ak as validate_void_dynamic_element, al as empty, am as destroy_each, an as HtmlTag, ao as attr_dev, ap as noop, aq as logEvent, ar as globals, as as listen_dev, at as prop_dev, _ as __vitePreload, au as createRouter, v as histoireConfig, av as createWebHistory, aw as createWebHashHistory, ax as markRaw, K as reactive, d as defineComponent, r as ref, ay as watchEffect, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode } from "./vendor-26c14481.js";
 const global$2 = "";
-const file$3 = "src/typography/blockquote.story.svelte";
-function create_default_slot_1$3(ctx) {
+const file$4 = "src/typography/blockquote.story.svelte";
+function create_default_slot_1$4(ctx) {
   let blockquote;
   let t;
   const block = {
@@ -11,7 +11,7 @@ function create_default_slot_1$3(ctx) {
         /*text*/
         ctx[1]
       );
-      add_location(blockquote, file$3, 15, 4, 416);
+      add_location(blockquote, file$4, 15, 4, 416);
     },
     m: function mount(target, anchor) {
       insert_dev(target, blockquote, anchor);
@@ -34,21 +34,21 @@ function create_default_slot_1$3(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_default_slot_1$3.name,
+    id: create_default_slot_1$4.name,
     type: "slot",
     source: '(11:2) <Hst.Variant title=\\"default\\">',
     ctx
   });
   return block;
 }
-function create_default_slot$3(ctx) {
+function create_default_slot$4(ctx) {
   let hst_variant;
   let current;
   hst_variant = new /*Hst*/
   ctx[0].Variant({
     props: {
       title: "default",
-      $$slots: { default: [create_default_slot_1$3] },
+      $$slots: { default: [create_default_slot_1$4] },
       $$scope: { ctx }
     },
     $$inline: true
@@ -85,7 +85,7 @@ function create_default_slot$3(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_default_slot$3.name,
+    id: create_default_slot$4.name,
     type: "slot",
     source: '(10:0) <Hst.Story title=\\"Blockquote\\">',
     ctx
@@ -155,7 +155,7 @@ function create_controls_slot$3(ctx) {
   });
   return block;
 }
-function create_fragment$3(ctx) {
+function create_fragment$4(ctx) {
   let hst_story;
   let current;
   hst_story = new /*Hst*/
@@ -164,7 +164,7 @@ function create_fragment$3(ctx) {
       title: "Blockquote",
       $$slots: {
         controls: [create_controls_slot$3],
-        default: [create_default_slot$3]
+        default: [create_default_slot$4]
       },
       $$scope: { ctx }
     },
@@ -205,14 +205,14 @@ function create_fragment$3(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_fragment$3.name,
+    id: create_fragment$4.name,
     type: "component",
     source: "",
     ctx
   });
   return block;
 }
-function instance$3($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   validate_slots("Blockquote_story", slots, []);
   let { Hst } = $$props;
@@ -254,12 +254,12 @@ function instance$3($$self, $$props, $$invalidate) {
 class Blockquote_story extends SvelteComponentDev {
   constructor(options) {
     super(options);
-    init(this, options, instance$3, create_fragment$3, safe_not_equal, { Hst: 0 });
+    init(this, options, instance$4, create_fragment$4, safe_not_equal, { Hst: 0 });
     dispatch_dev("SvelteRegisterComponent", {
       component: this,
       tagName: "Blockquote_story",
       options,
-      id: create_fragment$3.name
+      id: create_fragment$4.name
     });
   }
   get Hst() {
@@ -271,13 +271,13 @@ class Blockquote_story extends SvelteComponentDev {
 }
 const global$1 = "";
 const global = "";
-const file$2 = "src/typography/heading.story.svelte";
+const file$3 = "src/typography/heading.story.svelte";
 function get_each_context$1(ctx, list, i2) {
   const child_ctx = ctx.slice();
   child_ctx[6] = list[i2];
   return child_ctx;
 }
-function create_dynamic_element(ctx) {
+function create_dynamic_element$1(ctx) {
   let svelte_element;
   let html_tag;
   let t0;
@@ -296,7 +296,7 @@ function create_dynamic_element(ctx) {
       t0 = space();
       t1 = text(t1_value);
       html_tag.a = t0;
-      add_location(svelte_element, file$2, 19, 6, 579);
+      add_location(svelte_element, file$3, 19, 6, 579);
     },
     m: function mount(target, anchor) {
       insert_dev(target, svelte_element, anchor);
@@ -324,7 +324,7 @@ function create_dynamic_element(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_dynamic_element.name,
+    id: create_dynamic_element$1.name,
     type: "child_dynamic_element",
     source: "(16:6) <svelte:element this={heading}>",
     ctx
@@ -336,7 +336,7 @@ function create_if_block$1(ctx) {
   const block = {
     c: function create() {
       p2 = element("p");
-      add_location(p2, file$2, 24, 8, 707);
+      add_location(p2, file$3, 24, 8, 707);
     },
     m: function mount(target, anchor) {
       insert_dev(target, p2, anchor);
@@ -377,7 +377,7 @@ function create_each_block$1(ctx) {
   );
   let svelte_element = (
     /*heading*/
-    ctx[6] && create_dynamic_element(ctx)
+    ctx[6] && create_dynamic_element$1(ctx)
   );
   let if_block = (
     /*pText*/
@@ -443,7 +443,7 @@ function create_each_block$1(ctx) {
   });
   return block;
 }
-function create_default_slot_1$2(ctx) {
+function create_default_slot_1$3(ctx) {
   let each_1_anchor;
   let each_value = ensure_array_like_dev(
     /*headings*/
@@ -501,21 +501,21 @@ function create_default_slot_1$2(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_default_slot_1$2.name,
+    id: create_default_slot_1$3.name,
     type: "slot",
     source: '(14:2) <Hst.Variant title=\\"default\\">',
     ctx
   });
   return block;
 }
-function create_default_slot$2(ctx) {
+function create_default_slot$3(ctx) {
   let hst_variant;
   let current;
   hst_variant = new /*Hst*/
   ctx[0].Variant({
     props: {
       title: "default",
-      $$slots: { default: [create_default_slot_1$2] },
+      $$slots: { default: [create_default_slot_1$3] },
       $$scope: { ctx }
     },
     $$inline: true
@@ -552,7 +552,7 @@ function create_default_slot$2(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_default_slot$2.name,
+    id: create_default_slot$3.name,
     type: "slot",
     source: '(13:0) <Hst.Story title=\\"Heading\\">',
     ctx
@@ -658,7 +658,7 @@ function create_controls_slot$2(ctx) {
   });
   return block;
 }
-function create_fragment$2(ctx) {
+function create_fragment$3(ctx) {
   let hst_story;
   let current;
   hst_story = new /*Hst*/
@@ -667,7 +667,7 @@ function create_fragment$2(ctx) {
       title: "Heading",
       $$slots: {
         controls: [create_controls_slot$2],
-        default: [create_default_slot$2]
+        default: [create_default_slot$3]
       },
       $$scope: { ctx }
     },
@@ -708,14 +708,14 @@ function create_fragment$2(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_fragment$2.name,
+    id: create_fragment$3.name,
     type: "component",
     source: "",
     ctx
   });
   return block;
 }
-function instance$2($$self, $$props, $$invalidate) {
+function instance$3($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   validate_slots("Heading_story", slots, []);
   let { Hst } = $$props;
@@ -774,12 +774,12 @@ function instance$2($$self, $$props, $$invalidate) {
 class Heading_story extends SvelteComponentDev {
   constructor(options) {
     super(options);
-    init(this, options, instance$2, create_fragment$2, safe_not_equal, { Hst: 0 });
+    init(this, options, instance$3, create_fragment$3, safe_not_equal, { Hst: 0 });
     dispatch_dev("SvelteRegisterComponent", {
       component: this,
       tagName: "Heading_story",
       options,
-      id: create_fragment$2.name
+      id: create_fragment$3.name
     });
   }
   get Hst() {
@@ -787,6 +787,317 @@ class Heading_story extends SvelteComponentDev {
   }
   set Hst(value) {
     throw new Error("<Heading_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+  }
+}
+const style = ":where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]){color:var(--md-sys-color-primary);cursor:pointer;border-radius:20px;gap:8px;min-width:40px;height:40px;padding:.5rem 1.5rem;text-decoration:none;transition:all .1s ease-in-out;display:inline-flex}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):disabled{background-color:rgb(from var(--md-sys-color-on-surface)r g b/12%);color:rgb(from var(--md-sys-color-on-surface)r g b/38%);cursor:not-allowed}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):focus-visible{outline:var(--md-sys-color-primary)solid 2px;outline-offset:4px}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):active:not(:disabled){scale:.95}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):has([class^=material-symbols]:first-child:not(:last-child)){padding-left:16px}:where(button:not([role]),[role=button],input[type=button]){background-color:var(--md-sys-color-surface-container-low);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}:where(button:not([role]),[role=button],input[type=button]):active:not(:disabled),:where(button:not([role]),[role=button],input[type=button]):focus:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-primary)12%,var(--md-sys-color-surface-container-low)100%)}:where(button:not([role]),[role=button],input[type=button]):hover:not(:active,:disabled){background-color:color-mix(in srgb,var(--md-sys-color-primary)8%,var(--md-sys-color-surface-container-low)100%);box-shadow:0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%))}:where(input[type=submit]){background-color:var(--md-sys-color-primary);color:var(--md-sys-color-on-primary)}:where(input[type=submit]):active:not(:disabled),:where(input[type=submit]):focus:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-primary)12%,var(--md-sys-color-primary)100%)}:where(input[type=submit]):hover:not(:active,:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-primary)8%,var(--md-sys-color-primary)100%);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}:where(input[type=reset]){background-color:var(--md-sys-color-error);color:var(--md-sys-color-on-error)}:where(input[type=reset]):is(:active,:focus):not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-error)12%,var(--md-sys-color-error)100%)}:where(input[type=reset]):hover:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-error)8%,var(--md-sys-color-error)100%);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}\n";
+const file$2 = "src/components/button/global.story.svelte";
+function create_dynamic_element(ctx) {
+  let svelte_element;
+  const block = {
+    c: function create() {
+      svelte_element = element("style");
+      svelte_element.textContent = `${style}`;
+      add_location(svelte_element, file$2, 13, 4, 190);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, svelte_element, anchor);
+    },
+    p: noop,
+    d: function destroy(detaching) {
+      if (detaching) {
+        detach_dev(svelte_element);
+      }
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_dynamic_element.name,
+    type: "child_dynamic_element",
+    source: "(7:4) <svelte:element this={'style'}>",
+    ctx
+  });
+  return block;
+}
+function create_default_slot_1$2(ctx) {
+  let t0;
+  let h40;
+  let t2;
+  let button0;
+  let t4;
+  let a2;
+  let t6;
+  let h41;
+  let t8;
+  let button1;
+  let t10;
+  let h42;
+  let t12;
+  let input0;
+  let t13;
+  let input1;
+  let t14;
+  let input2;
+  validate_dynamic_element("style");
+  validate_void_dynamic_element("style");
+  let svelte_element = create_dynamic_element(ctx);
+  const block = {
+    c: function create() {
+      if (svelte_element)
+        svelte_element.c();
+      t0 = space();
+      h40 = element("h4");
+      h40.textContent = "Buttons";
+      t2 = space();
+      button0 = element("button");
+      button0.textContent = "button";
+      t4 = space();
+      a2 = element("a");
+      a2.textContent = "a role=button";
+      t6 = space();
+      h41 = element("h4");
+      h41.textContent = "Button State";
+      t8 = space();
+      button1 = element("button");
+      button1.textContent = "button disabled";
+      t10 = space();
+      h42 = element("h4");
+      h42.textContent = "Input Buttons";
+      t12 = space();
+      input0 = element("input");
+      t13 = space();
+      input1 = element("input");
+      t14 = space();
+      input2 = element("input");
+      add_location(h40, file$2, 15, 4, 251);
+      add_location(button0, file$2, 16, 4, 272);
+      attr_dev(a2, "role", "button");
+      attr_dev(a2, "href", "https://github.com/importantimport/shiraha");
+      attr_dev(a2, "target", "_blank");
+      add_location(a2, file$2, 17, 4, 300);
+      add_location(h41, file$2, 25, 4, 441);
+      button1.disabled = true;
+      add_location(button1, file$2, 26, 4, 467);
+      add_location(h42, file$2, 28, 4, 514);
+      attr_dev(input0, "type", "button");
+      input0.value = "input type=button";
+      add_location(input0, file$2, 29, 4, 541);
+      attr_dev(input1, "type", "submit");
+      input1.value = "input type=submit";
+      add_location(input1, file$2, 30, 4, 595);
+      attr_dev(input2, "type", "reset");
+      input2.value = "input type=reset";
+      add_location(input2, file$2, 31, 4, 649);
+    },
+    m: function mount(target, anchor) {
+      if (svelte_element)
+        svelte_element.m(target, anchor);
+      insert_dev(target, t0, anchor);
+      insert_dev(target, h40, anchor);
+      insert_dev(target, t2, anchor);
+      insert_dev(target, button0, anchor);
+      insert_dev(target, t4, anchor);
+      insert_dev(target, a2, anchor);
+      insert_dev(target, t6, anchor);
+      insert_dev(target, h41, anchor);
+      insert_dev(target, t8, anchor);
+      insert_dev(target, button1, anchor);
+      insert_dev(target, t10, anchor);
+      insert_dev(target, h42, anchor);
+      insert_dev(target, t12, anchor);
+      insert_dev(target, input0, anchor);
+      insert_dev(target, t13, anchor);
+      insert_dev(target, input1, anchor);
+      insert_dev(target, t14, anchor);
+      insert_dev(target, input2, anchor);
+    },
+    p: function update(ctx2, dirty) {
+      {
+        svelte_element.p(ctx2, dirty);
+      }
+    },
+    d: function destroy(detaching) {
+      if (detaching) {
+        detach_dev(t0);
+        detach_dev(h40);
+        detach_dev(t2);
+        detach_dev(button0);
+        detach_dev(t4);
+        detach_dev(a2);
+        detach_dev(t6);
+        detach_dev(h41);
+        detach_dev(t8);
+        detach_dev(button1);
+        detach_dev(t10);
+        detach_dev(h42);
+        detach_dev(t12);
+        detach_dev(input0);
+        detach_dev(t13);
+        detach_dev(input1);
+        detach_dev(t14);
+        detach_dev(input2);
+      }
+      if (svelte_element)
+        svelte_element.d(detaching);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_default_slot_1$2.name,
+    type: "slot",
+    source: '(6:2) <Hst.Variant title=\\"default\\">',
+    ctx
+  });
+  return block;
+}
+function create_default_slot$2(ctx) {
+  let hst_variant;
+  let current;
+  hst_variant = new /*Hst*/
+  ctx[0].Variant({
+    props: {
+      title: "default",
+      $$slots: { default: [create_default_slot_1$2] },
+      $$scope: { ctx }
+    },
+    $$inline: true
+  });
+  const block = {
+    c: function create() {
+      create_component(hst_variant.$$.fragment);
+    },
+    m: function mount(target, anchor) {
+      mount_component(hst_variant, target, anchor);
+      current = true;
+    },
+    p: function update(ctx2, dirty) {
+      const hst_variant_changes = {};
+      if (dirty & /*$$scope*/
+      2) {
+        hst_variant_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      hst_variant.$set(hst_variant_changes);
+    },
+    i: function intro(local) {
+      if (current)
+        return;
+      transition_in(hst_variant.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(hst_variant.$$.fragment, local);
+      current = false;
+    },
+    d: function destroy(detaching) {
+      destroy_component(hst_variant, detaching);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_default_slot$2.name,
+    type: "slot",
+    source: '(5:0) <Hst.Story title=\\"Button (global)\\">',
+    ctx
+  });
+  return block;
+}
+function create_fragment$2(ctx) {
+  let hst_story;
+  let current;
+  hst_story = new /*Hst*/
+  ctx[0].Story({
+    props: {
+      title: "Button (global)",
+      $$slots: { default: [create_default_slot$2] },
+      $$scope: { ctx }
+    },
+    $$inline: true
+  });
+  const block = {
+    c: function create() {
+      create_component(hst_story.$$.fragment);
+    },
+    l: function claim(nodes) {
+      throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    },
+    m: function mount(target, anchor) {
+      mount_component(hst_story, target, anchor);
+      current = true;
+    },
+    p: function update(ctx2, [dirty]) {
+      const hst_story_changes = {};
+      if (dirty & /*$$scope*/
+      2) {
+        hst_story_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      hst_story.$set(hst_story_changes);
+    },
+    i: function intro(local) {
+      if (current)
+        return;
+      transition_in(hst_story.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(hst_story.$$.fragment, local);
+      current = false;
+    },
+    d: function destroy(detaching) {
+      destroy_component(hst_story, detaching);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_fragment$2.name,
+    type: "component",
+    source: "",
+    ctx
+  });
+  return block;
+}
+function instance$2($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  validate_slots("Global_story", slots, []);
+  let { Hst } = $$props;
+  $$self.$$.on_mount.push(function() {
+    if (Hst === void 0 && !("Hst" in $$props || $$self.$$.bound[$$self.$$.props["Hst"]])) {
+      console.warn("<Global_story> was created without expected prop 'Hst'");
+    }
+  });
+  const writable_props = ["Hst"];
+  Object.keys($$props).forEach((key) => {
+    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$" && key !== "slot")
+      console.warn(`<Global_story> was created with unknown prop '${key}'`);
+  });
+  $$self.$$set = ($$props2) => {
+    if ("Hst" in $$props2)
+      $$invalidate(0, Hst = $$props2.Hst);
+  };
+  $$self.$capture_state = () => ({ style, Hst });
+  $$self.$inject_state = ($$props2) => {
+    if ("Hst" in $$props2)
+      $$invalidate(0, Hst = $$props2.Hst);
+  };
+  if ($$props && "$$inject" in $$props) {
+    $$self.$inject_state($$props.$$inject);
+  }
+  return [Hst];
+}
+class Global_story extends SvelteComponentDev {
+  constructor(options) {
+    super(options);
+    init(this, options, instance$2, create_fragment$2, safe_not_equal, { Hst: 0 });
+    dispatch_dev("SvelteRegisterComponent", {
+      component: this,
+      tagName: "Global_story",
+      options,
+      id: create_fragment$2.name
+    });
+  }
+  get Hst() {
+    throw new Error("<Global_story>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+  }
+  set Hst(value) {
+    throw new Error("<Global_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   }
 }
 function O(r, e2) {
@@ -1535,7 +1846,7 @@ let Vanilla_story$1 = class Vanilla_story extends SvelteComponentDev {
     throw new Error("<Vanilla_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   }
 };
-var i = "_1ni2kxm1", a = "_1ni2kxm2", n = "_1ni2kxm0", e = "_1ni2kxm3", m = "_1ni2kxm4";
+var i = "_1ni2kxm1", a = "_1ni2kxm2", e = "_1ni2kxm0", n = "_1ni2kxm3", m = "_1ni2kxm4";
 const vanilla = "";
 const file = "src/components/tab/vanilla.story.svelte";
 function get_each_context(ctx, list, i2) {
@@ -1676,7 +1987,7 @@ function create_each_block(ctx) {
       ctx[5].id);
       attr_dev(div, "class", div_class_value = /*activeItemId*/
       ctx[2] === /*item*/
-      ctx[5].id ? e : m);
+      ctx[5].id ? n : m);
       add_location(div, file, 50, 6, 1184);
     },
     m: function mount(target, anchor) {
@@ -1703,7 +2014,7 @@ function create_each_block(ctx) {
       if (dirty & /*activeItemId, items*/
       6 && div_class_value !== (div_class_value = /*activeItemId*/
       ctx2[2] === /*item*/
-      ctx2[5].id ? e : m)) {
+      ctx2[5].id ? n : m)) {
         attr_dev(div, "class", div_class_value);
       }
     },
@@ -1755,7 +2066,7 @@ function create_default_slot_1(ctx) {
       each1_anchor = empty();
       attr_dev(div, "role", "tablist");
       attr_dev(div, "aria-labelledby", "tablist-1");
-      attr_dev(div, "class", n);
+      attr_dev(div, "class", e);
       add_location(div, file, 39, 4, 679);
     },
     m: function mount(target, anchor) {
@@ -2057,10 +2368,10 @@ function instance($$self, $$props, $$invalidate) {
   };
   $$self.$capture_state = () => ({
     logEvent,
-    tablist: n,
+    tablist: e,
     tab: i,
     tabActive: a,
-    tabpanel: e,
+    tabpanel: n,
     tabpanelHidden: m,
     Hst,
     items,
@@ -2100,10 +2411,11 @@ class Vanilla_story2 extends SvelteComponentDev {
 let files = [
   { "id": "src-typography-blockquote-story-svelte", "path": ["Typography", "Blockquote"], "filePath": "src/typography/blockquote.story.svelte", "story": { "id": "src-typography-blockquote-story-svelte", "title": "Blockquote", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-blockquote-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Blockquote_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-blockquote-story-svelte-3de177c8.js"), true ? [] : void 0) },
   { "id": "src-typography-heading-story-svelte", "path": ["Typography", "Heading"], "filePath": "src/typography/heading.story.svelte", "story": { "id": "src-typography-heading-story-svelte", "title": "Heading", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-heading-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 1, component: Heading_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-heading-story-svelte-ed8b200d.js"), true ? [] : void 0) },
-  { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 2, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2d40db21.js"), true ? [] : void 0) },
-  { "id": "src-components-tab-vanilla-story-svelte", "path": ["Components", "Tab", "Tab (vanilla-extract)"], "filePath": "src/components/tab/vanilla.story.svelte", "story": { "id": "src-components-tab-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tab-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 3, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tab-vanilla-story-svelte-4bbe8c5c.js"), true ? [] : void 0) }
+  { "id": "src-components-button-global-story-svelte", "path": ["Components", "Button", "Button (global)"], "filePath": "src/components/button/global.story.svelte", "story": { "id": "src-components-button-global-story-svelte", "title": "Button (global)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-global-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 2, component: Global_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-global-story-svelte-61602b55.js"), true ? [] : void 0) },
+  { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 3, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2d40db21.js"), true ? [] : void 0) },
+  { "id": "src-components-tab-vanilla-story-svelte", "path": ["Components", "Tab", "Tab (vanilla-extract)"], "filePath": "src/components/tab/vanilla.story.svelte", "story": { "id": "src-components-tab-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tab-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 4, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tab-vanilla-story-svelte-4bbe8c5c.js"), true ? [] : void 0) }
 ];
-let tree = [{ "title": "Components", "children": [{ "title": "Button", "children": [{ "title": "Button (vanilla-extract)", "index": 2 }] }, { "title": "Tab", "children": [{ "title": "Tab (vanilla-extract)", "index": 3 }] }] }, { "title": "Typography", "children": [{ "title": "Blockquote", "index": 0 }, { "title": "Heading", "index": 1 }] }];
+let tree = [{ "title": "Components", "children": [{ "title": "Button", "children": [{ "title": "Button (global)", "index": 2 }, { "title": "Button (vanilla-extract)", "index": 3 }] }, { "title": "Tab", "children": [{ "title": "Tab (vanilla-extract)", "index": 4 }] }] }, { "title": "Typography", "children": [{ "title": "Blockquote", "index": 0 }, { "title": "Heading", "index": 1 }] }];
 const base = "/ve/";
 function createRouterHistory() {
   switch (histoireConfig.routerMode) {
@@ -2120,12 +2432,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-a413ea6b.js"), true ? ["assets/HomeView.vue-a413ea6b.js","assets/vendor-fe3d45a3.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-d13a0816.js"), true ? ["assets/HomeView.vue-d13a0816.js","assets/vendor-26c14481.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-876d0fe4.js"), true ? ["assets/StoryView.vue-876d0fe4.js","assets/vendor-fe3d45a3.js","assets/story-2d55b947.js","assets/MobileOverlay.vue2-f8e7ed5e.js","assets/BaseEmpty.vue-db7c02a5.js","assets/state-cf3bd39c.js","assets/events-e4b18216.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-e6de248c.js"), true ? ["assets/StoryView.vue-e6de248c.js","assets/vendor-26c14481.js","assets/story-e51fa44b.js","assets/MobileOverlay.vue2-acfcf853.js","assets/BaseEmpty.vue-04128078.js","assets/state-59600b97.js","assets/events-014614b8.js"] : void 0)
     }
   ]
 });
@@ -2194,8 +2506,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-fe3d45a3.js").then((n2) => n2.b3), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-fe3d45a3.js").then((n2) => n2.b4), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-26c14481.js").then((n2) => n2.b4), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-26c14481.js").then((n2) => n2.b5), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false
