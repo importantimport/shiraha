@@ -57,6 +57,34 @@
       "markdownFile": null
     },
     {
+      "id": "src-typography-link-story-svelte",
+      "title": "Link",
+      "group": null,
+      "layout": {
+        "type": "single",
+        "iframe": true
+      },
+      "icon": null,
+      "iconColor": null,
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-typography-link-story-svelte-0",
+          "title": "default",
+          "icon": null,
+          "iconColor": null
+        }
+      ],
+      "relativePath": "src/typography/link.story.svelte",
+      "supportPluginId": "svelte4",
+      "treePath": [
+        "Typography",
+        "Link"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-button-global-story-svelte",
       "title": "Button (global)",
       "group": null,

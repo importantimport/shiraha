@@ -1,7 +1,7 @@
 const __resolved__virtual_storySource_srcTypographyHeadingStorySvelte = `<script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
-  import 'shiraha-ve/dist/typography/heading/global.css'
-  import 'shiraha-ve/dist/typography/paragraph/global.css'
+  import style from 'shiraha-ve/dist/typography/heading/global.css?inline'
+  import styleP from 'shiraha-ve/dist/typography/paragraph/global.css?inline'
 
   export let Hst: Hst
 
@@ -16,6 +16,8 @@ const __resolved__virtual_storySource_srcTypographyHeadingStorySvelte = `<script
 
 <Hst.Story title="Heading">
   <Hst.Variant title="default">
+    <svelte:element this={'style'}>{style}</svelte:element>
+    <svelte:element this={'style'}>{styleP}</svelte:element>
     {#each headings as heading}
       <svelte:element this={heading}>
         {@html hText}
