@@ -11,7 +11,7 @@
   <Hst.Variant title="default">
     <svelte:element this={'style'}>{style}</svelte:element>
     <ul>
-      {#each { length: 6 } as _, i}
+      {#each { length: 5 } as _}
         <!-- svelte-ignore a11y-invalid-attribute -->
         <li><a href="#">{@html text}</a></li>
       {/each}
