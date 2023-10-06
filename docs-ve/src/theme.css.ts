@@ -6,10 +6,10 @@ createGlobalTheme('html:not(.dark, .htw-dark)', vars, baselineThemeLight)
 createGlobalTheme('html.dark, html.htw-dark', vars, baselineThemeDark)
 
 // fix boxShadow
-// globalStyle('.histoire-generic-render-story', { margin: -12 })
+// globalStyle('.__histoire-render-story', { margin: -12 })
 
 // fix boxShadow
-globalStyle('.histoire-generic-render-story > *', { padding: 12 })
+globalStyle('.__histoire-render-story > *', { padding: 12 })
 
 // fix font size
-globalStyle('.histoire-generic-render-story', { fontSize: '1em' })
+globalStyle('.__histoire-render-story', { fontSize: '1rem' })
