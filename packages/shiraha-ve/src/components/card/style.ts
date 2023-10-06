@@ -1,4 +1,4 @@
-import { ComplexStyleRule } from '@vanilla-extract/css'
+import type { ComplexStyleRule } from '@vanilla-extract/css'
 
 import { opacity, state } from '../../utils/color'
 import { vars } from '../../vars.css'

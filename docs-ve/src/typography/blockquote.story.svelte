@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
-  import 'shiraha-ve/dist/typography/blockquote/global.css'
+  import style from 'shiraha-ve/dist/typography/blockquote/global.css?inline'
 
   export let Hst: Hst
 
@@ -13,6 +13,7 @@
 
 <Hst.Story title="Blockquote">
   <Hst.Variant title="default">
+    <svelte:element this={'style'}>{style}</svelte:element>
     <blockquote>
       {text}
     </blockquote>
