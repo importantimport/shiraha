@@ -10,3 +10,6 @@ createGlobalTheme('html.dark, html.htw-dark', vars, baselineThemeDark)
 
 // fix boxShadow
 globalStyle('.histoire-generic-render-story > *', { padding: 12 })
+
+// fix font size
+globalStyle('.histoire-generic-render-story', { fontSize: '1em' })
