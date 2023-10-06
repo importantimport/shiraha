@@ -283,6 +283,9 @@ html.dark, html.htw-dark {
 .histoire-generic-render-story > * {
   padding: 12px;
 }
+.histoire-generic-render-story {
+  font-size: 1em;
+}
 
 .resize-observer[data-v-b329ee4c]{
   position:absolute;
