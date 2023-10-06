@@ -280,11 +280,11 @@ html.dark, html.htw-dark {
   --shadow-color: 220 40% 2%;
   --shadow-strength: 25%;
 }
-.histoire-generic-render-story > * {
+.__histoire-render-story > * {
   padding: 12px;
 }
-.histoire-generic-render-story {
-  font-size: 1em;
+.__histoire-render-story {
+  font-size: 1rem;
 }
 
 .resize-observer[data-v-b329ee4c]{
