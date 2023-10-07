@@ -1,12 +1,12 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as validate_dynamic_element, aa as validate_void_dynamic_element, ab as add_flush_callback, ac as space, ad as element, ae as text, af as add_location, ag as insert_dev, ah as append_dev, ai as set_data_dev, aj as detach_dev, ak as noop, al as ensure_array_like_dev, am as empty, an as destroy_each, ao as HtmlTag, ap as attr_dev, aq as logEvent, ar as globals, as as listen_dev, at as prop_dev, _ as __vitePreload, au as createRouter, v as histoireConfig, av as createWebHistory, aw as createWebHashHistory, ax as markRaw, K as reactive, d as defineComponent, r as ref, ay as watchEffect, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode } from "./vendor-a9951768.js";
-const style$3 = "blockquote{border-left-color:var(--md-sys-color-surface-variant);border-left-width:4px;margin-top:24px;padding-left:24px;font-style:italic}\n";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as validate_dynamic_element, aa as validate_void_dynamic_element, ab as add_flush_callback, ac as space, ad as element, ae as text, af as add_location, ag as insert_dev, ah as append_dev, ai as set_data_dev, aj as detach_dev, ak as noop, al as ensure_array_like_dev, am as empty, an as destroy_each, ao as HtmlTag, ap as attr_dev, aq as logEvent, ar as globals, as as listen_dev, at as prop_dev, _ as __vitePreload, au as createRouter, v as histoireConfig, av as createWebHistory, aw as createWebHashHistory, ax as markRaw, K as reactive, d as defineComponent, r as ref, ay as watchEffect, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode } from "./vendor-9550a5b3.js";
+const style$2 = "blockquote{border-left-color:var(--md-sys-color-surface-variant);border-left-width:4px;margin-top:24px;padding-left:24px;font-style:italic}\n";
 const file$5 = "src/typography/blockquote.story.svelte";
 function create_dynamic_element$3(ctx) {
   let svelte_element;
   const block = {
     c: function create() {
       svelte_element = element("style");
-      svelte_element.textContent = `${style$3}`;
+      svelte_element.textContent = `${style$2}`;
       add_location(svelte_element, file$5, 15, 4, 434);
     },
     m: function mount(target, anchor) {
@@ -282,7 +282,7 @@ function instance$5($$self, $$props, $$invalidate) {
     if ("Hst" in $$props2)
       $$invalidate(0, Hst = $$props2.Hst);
   };
-  $$self.$capture_state = () => ({ style: style$3, Hst, text: text2 });
+  $$self.$capture_state = () => ({ style: style$2, Hst, text: text2 });
   $$self.$inject_state = ($$props2) => {
     if ("Hst" in $$props2)
       $$invalidate(0, Hst = $$props2.Hst);
@@ -312,7 +312,7 @@ class Blockquote_story extends SvelteComponentDev {
     throw new Error("<Blockquote_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   }
 }
-const style$2 = ":where(h1,h2,h3,h4){letter-spacing:-.025em;padding-bottom:8px;scroll-margin:80px;font-weight:600}:where(h1,h2,h3):not(:first-child){margin-top:48px}:where(h4,h5,h6):not(:first-child){margin-top:24px}:where(h1),.h1{margin-top:0;font-size:clamp(2.49rem,2.14rem + 1.73vw,3.05rem)}:where(h2),.h2{font-size:clamp(2.07rem,1.85rem + 1.13vw,2.44rem)}:where(h3),.h3{font-size:clamp(1.73rem,1.59rem + .69vw,1.95rem)}:where(h4),.h4{font-size:clamp(1.44rem,1.36rem + .38vw,1.56rem)}:where(h5),.h5{font-size:clamp(1.2rem,1.17rem + .15vw,1.25rem)}:where(h6),.h6{font-size:clamp(.8rem,.78rem + .1vw,.83rem)}@supports (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:pretty}}@supports not (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:balance}}\n";
+const styleH = ":where(h1,h2,h3,h4){letter-spacing:-.025em;padding-bottom:8px;scroll-margin:80px;font-weight:600}:where(h1,h2,h3):not(:first-child){margin-top:48px}:where(h4,h5,h6):not(:first-child){margin-top:24px}:where(h1),.h1{margin-top:0;font-size:clamp(2.49rem,2.14rem + 1.73vw,3.05rem)}:where(h2),.h2{font-size:clamp(2.07rem,1.85rem + 1.13vw,2.44rem)}:where(h3),.h3{font-size:clamp(1.73rem,1.59rem + .69vw,1.95rem)}:where(h4),.h4{font-size:clamp(1.44rem,1.36rem + .38vw,1.56rem)}:where(h5),.h5{font-size:clamp(1.2rem,1.17rem + .15vw,1.25rem)}:where(h6),.h6{font-size:clamp(.8rem,.78rem + .1vw,.83rem)}@supports (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:pretty}}@supports not (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:balance}}\n";
 const styleP = "p{font-size:1rem}p:not(:first-child){margin-top:24px}\n";
 const file$4 = "src/typography/heading.story.svelte";
 function get_each_context$2(ctx, list, i2) {
@@ -325,7 +325,7 @@ function create_dynamic_element_2(ctx) {
   const block = {
     c: function create() {
       svelte_element = element("style");
-      svelte_element.textContent = `${style$2}`;
+      svelte_element.textContent = `${styleH}`;
       add_location(svelte_element, file$4, 18, 4, 582);
     },
     m: function mount(target, anchor) {
@@ -347,7 +347,7 @@ function create_dynamic_element_2(ctx) {
   });
   return block;
 }
-function create_dynamic_element_1(ctx) {
+function create_dynamic_element_1$1(ctx) {
   let svelte_element;
   const block = {
     c: function create() {
@@ -367,7 +367,7 @@ function create_dynamic_element_1(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
-    id: create_dynamic_element_1.name,
+    id: create_dynamic_element_1$1.name,
     type: "child_dynamic_element",
     source: "(16:4) <svelte:element this={'style'}>",
     ctx
@@ -549,7 +549,7 @@ function create_default_slot_1$4(ctx) {
   let svelte_element0 = create_dynamic_element_2(ctx);
   validate_dynamic_element("style");
   validate_void_dynamic_element("style");
-  let svelte_element1 = create_dynamic_element_1(ctx);
+  let svelte_element1 = create_dynamic_element_1$1(ctx);
   let each_value = ensure_array_like_dev(
     /*headings*/
     ctx[3]
@@ -878,7 +878,7 @@ function instance$4($$self, $$props, $$invalidate) {
       $$invalidate(0, Hst = $$props2.Hst);
   };
   $$self.$capture_state = () => ({
-    style: style$2,
+    style: styleH,
     styleP,
     Hst,
     headings,
@@ -1296,13 +1296,40 @@ class Link_story extends SvelteComponentDev {
 }
 const style = ":where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]){color:var(--md-sys-color-primary);cursor:pointer;border-radius:20px;gap:8px;min-width:40px;height:40px;padding:.5rem 1.5rem;text-decoration:none;transition:all .1s ease-in-out;display:inline-flex}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):disabled{background-color:rgb(from var(--md-sys-color-on-surface)r g b/12%);color:rgb(from var(--md-sys-color-on-surface)r g b/38%);cursor:not-allowed}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):focus-visible{outline:var(--md-sys-color-primary)solid 2px;outline-offset:4px}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):active:not(:disabled){scale:.95}:where(button:not([role]),[role=button],input[type=button],input[type=submit],input[type=reset]):has([class^=material-symbols]:first-child:not(:last-child)){padding-left:16px}:where(button:not([role]),[role=button],input[type=button]){background-color:var(--md-sys-color-surface-container-low);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}:where(button:not([role]),[role=button],input[type=button]):active:not(:disabled),:where(button:not([role]),[role=button],input[type=button]):focus:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-primary)12%,var(--md-sys-color-surface-container-low)100%)}:where(button:not([role]),[role=button],input[type=button]):hover:not(:active,:disabled){background-color:color-mix(in srgb,var(--md-sys-color-primary)8%,var(--md-sys-color-surface-container-low)100%);box-shadow:0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%))}:where(input[type=submit]){background-color:var(--md-sys-color-primary);color:var(--md-sys-color-on-primary)}:where(input[type=submit]):active:not(:disabled),:where(input[type=submit]):focus:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-primary)12%,var(--md-sys-color-primary)100%)}:where(input[type=submit]):hover:not(:active,:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-primary)8%,var(--md-sys-color-primary)100%);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}:where(input[type=reset]){background-color:var(--md-sys-color-error);color:var(--md-sys-color-on-error)}:where(input[type=reset]):is(:active,:focus):not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-error)12%,var(--md-sys-color-error)100%)}:where(input[type=reset]):hover:not(:disabled){background-color:color-mix(in srgb,var(--md-sys-color-on-error)8%,var(--md-sys-color-error)100%);box-shadow:0 1px 2px -1px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 9%))}\n";
 const file$2 = "src/components/button/global.story.svelte";
-function create_dynamic_element(ctx) {
+function create_dynamic_element_1(ctx) {
   let svelte_element;
   const block = {
     c: function create() {
       svelte_element = element("style");
       svelte_element.textContent = `${style}`;
-      add_location(svelte_element, file$2, 13, 4, 190);
+      add_location(svelte_element, file$2, 14, 4, 265);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, svelte_element, anchor);
+    },
+    p: noop,
+    d: function destroy(detaching) {
+      if (detaching) {
+        detach_dev(svelte_element);
+      }
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block,
+    id: create_dynamic_element_1.name,
+    type: "child_dynamic_element",
+    source: "(8:4) <svelte:element this={'style'}>",
+    ctx
+  });
+  return block;
+}
+function create_dynamic_element(ctx) {
+  let svelte_element;
+  const block = {
+    c: function create() {
+      svelte_element = element("style");
+      svelte_element.textContent = `${styleH}`;
+      add_location(svelte_element, file$2, 15, 4, 325);
     },
     m: function mount(target, anchor) {
       insert_dev(target, svelte_element, anchor);
@@ -1318,138 +1345,154 @@ function create_dynamic_element(ctx) {
     block,
     id: create_dynamic_element.name,
     type: "child_dynamic_element",
-    source: "(7:4) <svelte:element this={'style'}>",
+    source: "(9:4) <svelte:element this={'style'}>",
     ctx
   });
   return block;
 }
 function create_default_slot_1$2(ctx) {
   let t0;
+  let t1;
   let h40;
-  let t2;
+  let t3;
   let button0;
-  let t4;
+  let t5;
   let a2;
-  let t6;
+  let t7;
   let h41;
-  let t8;
+  let t9;
   let button1;
-  let t10;
+  let t11;
   let h42;
-  let t12;
-  let input0;
   let t13;
-  let input1;
+  let input0;
   let t14;
+  let input1;
+  let t15;
   let input2;
   validate_dynamic_element("style");
   validate_void_dynamic_element("style");
-  let svelte_element = create_dynamic_element(ctx);
+  let svelte_element0 = create_dynamic_element_1(ctx);
+  validate_dynamic_element("style");
+  validate_void_dynamic_element("style");
+  let svelte_element1 = create_dynamic_element(ctx);
   const block = {
     c: function create() {
-      if (svelte_element)
-        svelte_element.c();
+      if (svelte_element0)
+        svelte_element0.c();
       t0 = space();
+      if (svelte_element1)
+        svelte_element1.c();
+      t1 = space();
       h40 = element("h4");
       h40.textContent = "Buttons";
-      t2 = space();
+      t3 = space();
       button0 = element("button");
       button0.textContent = "button";
-      t4 = space();
+      t5 = space();
       a2 = element("a");
       a2.textContent = "a role=button";
-      t6 = space();
+      t7 = space();
       h41 = element("h4");
       h41.textContent = "Button State";
-      t8 = space();
+      t9 = space();
       button1 = element("button");
       button1.textContent = "button disabled";
-      t10 = space();
+      t11 = space();
       h42 = element("h4");
       h42.textContent = "Input Buttons";
-      t12 = space();
-      input0 = element("input");
       t13 = space();
-      input1 = element("input");
+      input0 = element("input");
       t14 = space();
+      input1 = element("input");
+      t15 = space();
       input2 = element("input");
-      add_location(h40, file$2, 15, 4, 251);
-      add_location(button0, file$2, 16, 4, 272);
+      add_location(h40, file$2, 17, 4, 387);
+      add_location(button0, file$2, 18, 4, 408);
       attr_dev(a2, "role", "button");
       attr_dev(a2, "href", "https://github.com/importantimport/shiraha");
       attr_dev(a2, "target", "_blank");
-      add_location(a2, file$2, 17, 4, 300);
-      add_location(h41, file$2, 25, 4, 441);
+      add_location(a2, file$2, 19, 4, 436);
+      add_location(h41, file$2, 27, 4, 577);
       button1.disabled = true;
-      add_location(button1, file$2, 26, 4, 467);
-      add_location(h42, file$2, 28, 4, 514);
+      add_location(button1, file$2, 28, 4, 603);
+      add_location(h42, file$2, 30, 4, 650);
       attr_dev(input0, "type", "button");
       input0.value = "input type=button";
-      add_location(input0, file$2, 29, 4, 541);
+      add_location(input0, file$2, 31, 4, 677);
       attr_dev(input1, "type", "submit");
       input1.value = "input type=submit";
-      add_location(input1, file$2, 30, 4, 595);
+      add_location(input1, file$2, 32, 4, 731);
       attr_dev(input2, "type", "reset");
       input2.value = "input type=reset";
-      add_location(input2, file$2, 31, 4, 649);
+      add_location(input2, file$2, 33, 4, 785);
     },
     m: function mount(target, anchor) {
-      if (svelte_element)
-        svelte_element.m(target, anchor);
+      if (svelte_element0)
+        svelte_element0.m(target, anchor);
       insert_dev(target, t0, anchor);
+      if (svelte_element1)
+        svelte_element1.m(target, anchor);
+      insert_dev(target, t1, anchor);
       insert_dev(target, h40, anchor);
-      insert_dev(target, t2, anchor);
+      insert_dev(target, t3, anchor);
       insert_dev(target, button0, anchor);
-      insert_dev(target, t4, anchor);
+      insert_dev(target, t5, anchor);
       insert_dev(target, a2, anchor);
-      insert_dev(target, t6, anchor);
+      insert_dev(target, t7, anchor);
       insert_dev(target, h41, anchor);
-      insert_dev(target, t8, anchor);
+      insert_dev(target, t9, anchor);
       insert_dev(target, button1, anchor);
-      insert_dev(target, t10, anchor);
+      insert_dev(target, t11, anchor);
       insert_dev(target, h42, anchor);
-      insert_dev(target, t12, anchor);
-      insert_dev(target, input0, anchor);
       insert_dev(target, t13, anchor);
-      insert_dev(target, input1, anchor);
+      insert_dev(target, input0, anchor);
       insert_dev(target, t14, anchor);
+      insert_dev(target, input1, anchor);
+      insert_dev(target, t15, anchor);
       insert_dev(target, input2, anchor);
     },
     p: function update(ctx2, dirty) {
       {
-        svelte_element.p(ctx2, dirty);
+        svelte_element0.p(ctx2, dirty);
+      }
+      {
+        svelte_element1.p(ctx2, dirty);
       }
     },
     d: function destroy(detaching) {
       if (detaching) {
         detach_dev(t0);
+        detach_dev(t1);
         detach_dev(h40);
-        detach_dev(t2);
+        detach_dev(t3);
         detach_dev(button0);
-        detach_dev(t4);
+        detach_dev(t5);
         detach_dev(a2);
-        detach_dev(t6);
+        detach_dev(t7);
         detach_dev(h41);
-        detach_dev(t8);
+        detach_dev(t9);
         detach_dev(button1);
-        detach_dev(t10);
+        detach_dev(t11);
         detach_dev(h42);
-        detach_dev(t12);
-        detach_dev(input0);
         detach_dev(t13);
-        detach_dev(input1);
+        detach_dev(input0);
         detach_dev(t14);
+        detach_dev(input1);
+        detach_dev(t15);
         detach_dev(input2);
       }
-      if (svelte_element)
-        svelte_element.d(detaching);
+      if (svelte_element0)
+        svelte_element0.d(detaching);
+      if (svelte_element1)
+        svelte_element1.d(detaching);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block,
     id: create_default_slot_1$2.name,
     type: "slot",
-    source: '(6:2) <Hst.Variant title=\\"default\\">',
+    source: '(7:2) <Hst.Variant title=\\"default\\">',
     ctx
   });
   return block;
@@ -1500,7 +1543,7 @@ function create_default_slot$2(ctx) {
     block,
     id: create_default_slot$2.name,
     type: "slot",
-    source: '(5:0) <Hst.Story title=\\"Button (global)\\">',
+    source: '(6:0) <Hst.Story title=\\"Button (global)\\">',
     ctx
   });
   return block;
@@ -1577,7 +1620,7 @@ function instance$2($$self, $$props, $$invalidate) {
     if ("Hst" in $$props2)
       $$invalidate(0, Hst = $$props2.Hst);
   };
-  $$self.$capture_state = () => ({ style, Hst });
+  $$self.$capture_state = () => ({ style, styleH, Hst });
   $$self.$inject_state = ($$props2) => {
     if ("Hst" in $$props2)
       $$invalidate(0, Hst = $$props2.Hst);
@@ -2917,7 +2960,7 @@ let files = [
   { "id": "src-typography-blockquote-story-svelte", "path": ["Typography", "Blockquote"], "filePath": "src/typography/blockquote.story.svelte", "story": { "id": "src-typography-blockquote-story-svelte", "title": "Blockquote", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-blockquote-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 0, component: Blockquote_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-blockquote-story-svelte-fcc8c8b1.js"), true ? [] : void 0) },
   { "id": "src-typography-heading-story-svelte", "path": ["Typography", "Heading"], "filePath": "src/typography/heading.story.svelte", "story": { "id": "src-typography-heading-story-svelte", "title": "Heading", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-heading-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 1, component: Heading_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-heading-story-svelte-5f008172.js"), true ? [] : void 0) },
   { "id": "src-typography-link-story-svelte", "path": ["Typography", "Link"], "filePath": "src/typography/link.story.svelte", "story": { "id": "src-typography-link-story-svelte", "title": "Link", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-typography-link-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 2, component: Link_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-typography-link-story-svelte-2d598db2.js"), true ? [] : void 0) },
-  { "id": "src-components-button-global-story-svelte", "path": ["Components", "Button", "Button (global)"], "filePath": "src/components/button/global.story.svelte", "story": { "id": "src-components-button-global-story-svelte", "title": "Button (global)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-global-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 3, component: Global_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-global-story-svelte-61602b55.js"), true ? [] : void 0) },
+  { "id": "src-components-button-global-story-svelte", "path": ["Components", "Button", "Button (global)"], "filePath": "src/components/button/global.story.svelte", "story": { "id": "src-components-button-global-story-svelte", "title": "Button (global)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-global-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 3, component: Global_story, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-global-story-svelte-dff68e09.js"), true ? [] : void 0) },
   { "id": "src-components-button-vanilla-story-svelte", "path": ["Components", "Button", "Button (vanilla-extract)"], "filePath": "src/components/button/vanilla.story.svelte", "story": { "id": "src-components-button-vanilla-story-svelte", "title": "Button (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-button-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 4, component: Vanilla_story$1, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-button-vanilla-story-svelte-2d40db21.js"), true ? [] : void 0) },
   { "id": "src-components-tab-vanilla-story-svelte", "path": ["Components", "Tab", "Tab (vanilla-extract)"], "filePath": "src/components/tab/vanilla.story.svelte", "story": { "id": "src-components-tab-vanilla-story-svelte", "title": "Tab (vanilla-extract)", "group": null, "layout": { "type": "single", "iframe": true }, "icon": null, "iconColor": null, "docsOnly": false, "variants": [{ "id": "src-components-tab-vanilla-story-svelte-0", "title": "default", "icon": null, "iconColor": null }] }, "supportPluginId": "svelte4", "index": 5, component: Vanilla_story2, source: () => __vitePreload(() => import("./__resolved__virtual_story-source_src-components-tab-vanilla-story-svelte-4bbe8c5c.js"), true ? [] : void 0) }
 ];
@@ -2938,12 +2981,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-350881e8.js"), true ? ["assets/HomeView.vue-350881e8.js","assets/vendor-a9951768.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-7c473c07.js"), true ? ["assets/HomeView.vue-7c473c07.js","assets/vendor-9550a5b3.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-b7ef2ef4.js"), true ? ["assets/StoryView.vue-b7ef2ef4.js","assets/vendor-a9951768.js","assets/story-463b8d65.js","assets/MobileOverlay.vue2-aaf6300a.js","assets/BaseEmpty.vue-b4247fc6.js","assets/state-d8f86a51.js","assets/events-8ecb0b77.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-fbcc4fd6.js"), true ? ["assets/StoryView.vue-fbcc4fd6.js","assets/vendor-9550a5b3.js","assets/story-cad76347.js","assets/MobileOverlay.vue2-15eead46.js","assets/BaseEmpty.vue-dbcb9b4d.js","assets/state-2c566a34.js","assets/events-79a3ec13.js"] : void 0)
     }
   ]
 });
@@ -3012,8 +3055,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-a9951768.js").then((n2) => n2.b4), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-a9951768.js").then((n2) => n2.b5), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-9550a5b3.js").then((n2) => n2.b4), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-9550a5b3.js").then((n2) => n2.b5), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false

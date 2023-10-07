@@ -2,6 +2,7 @@ const __resolved__virtual_storySource_srcComponentsButtonGlobalStorySvelte = `<s
   import type { Hst } from '@histoire/plugin-svelte'
   // import { logEvent } from 'histoire/client'
   import style from 'shiraha-ve/dist/components/button/global.css?inline'
+  import styleH from 'shiraha-ve/dist/typography/heading/global.css?inline'
 
   export let Hst: Hst
 
@@ -12,6 +13,7 @@ const __resolved__virtual_storySource_srcComponentsButtonGlobalStorySvelte = `<s
 <Hst.Story title="Button (global)">
   <Hst.Variant title="default">
     <svelte:element this={'style'}>{style}</svelte:element>
+    <svelte:element this={'style'}>{styleH}</svelte:element>
 
     <h4>Buttons</h4>
     <button>button</button>
