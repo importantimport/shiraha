@@ -280,10 +280,10 @@ html.dark, html.htw-dark {
   --shadow-color: 220 40% 2%;
   --shadow-strength: 25%;
 }
-.__histoire-render-story > * {
+#app > .histoire-generic-render-story > * {
   padding: 12px;
 }
-.__histoire-render-story {
+#app > .histoire-generic-render-story {
   font-size: 1rem;
 }
 
