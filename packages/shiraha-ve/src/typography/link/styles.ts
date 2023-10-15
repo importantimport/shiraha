@@ -15,3 +15,19 @@ export const linkHover = {
   backgroundSize: '100% 0.125em',
   color: vars.color.onPrimaryContainer,
 } as const satisfies ComplexStyleRule
+
+export const tag = {
+  background: `linear-gradient(0deg, ${vars.color.onPrimaryContainer}, ${vars.color.onPrimaryContainer}) no-repeat right bottom / 0 0.125em`,
+  color: vars.color.primary,
+  display: 'inline-block',
+  marginInlineEnd: '8px',
+  textDecoration: 'none',
+  transition: `background-size ${md.duration.medium4} ${md.motion.emphasizedDecelerate}`,
+} as const satisfies ComplexStyleRule
+
+export const tagMarker = {
+  content: '#',
+  display: 'inline-block',
+  fontSize: '0.8em',
+  marginInlineEnd: '2px',
+} as const satisfies ComplexStyleRule
