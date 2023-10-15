@@ -4,7 +4,8 @@ const __resolved__virtual_storySource_srcTypographyLinkStorySvelte = `<script la
 
   export let Hst: Hst
 
-  let text = 'Shiraha'
+  let linkText = 'Shiraha'
+  let tagText = 'tag'
 <\/script>
 
 <Hst.Story title="Link">
@@ -13,13 +14,18 @@ const __resolved__virtual_storySource_srcTypographyLinkStorySvelte = `<script la
     <ul>
       {#each { length: 5 } as _}
         <!-- svelte-ignore a11y-invalid-attribute -->
-        <li><a href="#">{@html text}</a></li>
+        <li><a href="#">{@html linkText}</a></li>
       {/each}
     </ul>
+      {#each { length: 5 } as _}
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <a href="#" rel="tag">{@html tagText}</a>
+      {/each}
   </Hst.Variant>
 
   <svelte:fragment slot="controls">
-    <Hst.Text bind:value={text} title="Link Text" />
+    <Hst.Text bind:value={linkText} title="Link Text" />
+    <Hst.Text bind:value={tagText} title="Tag Text" />
   </svelte:fragment>
 </Hst.Story>
 `;
