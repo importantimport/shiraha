@@ -4,14 +4,14 @@ import { vars } from '../../vars.css'
 
 export const chip = {
   backgroundColor: vars.color.surfaceContainerLow,
-  borderRadius: '9999px',
-  color: vars.color.primary,
+  borderRadius: '8px',
+  color: vars.color.onSurface,
   display: 'inline-block',
-  fontSize: 14,
+  fontSize: '14px',
+  fontWeight: 500,
   marginRight: '4px',
-  paddingBlock: '2px',
-  paddingInline: '8px',
-  textDecoration: 'none',
+  paddingBlock: '4px',
+  paddingInline: '12px',
 } as const satisfies ComplexStyleRule
 
 export const chipHover = {
