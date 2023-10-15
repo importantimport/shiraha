@@ -15,3 +15,15 @@ export const linkHover = {
   backgroundSize: '100% 0.125em',
   color: vars.color.onPrimaryContainer,
 } as const satisfies ComplexStyleRule
+
+export const tag = {
+  color: vars.color.primary,
+  display: 'inline-block',
+  marginInlineEnd: '8px',
+} as const satisfies ComplexStyleRule
+
+export const tagMarker = {
+  content: '#',
+  display: 'inline-block',
+  marginInlineEnd: '2px',
+} as const satisfies ComplexStyleRule
