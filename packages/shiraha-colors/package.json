@@ -24,7 +24,6 @@
   "exports": {
     ".": "./dist/index.js",
     "./nomodule": "./dist/nomodule.js",
-    "./worker": "./dist/worker.js",
     "./package.json": "./package.json"
   },
   "main": "./dist/nomodule.js",
@@ -36,12 +35,10 @@
     "package.json"
   ],
   "scripts": {
-    "build": "run-s build:vite build:tsup",
-    "build:tsup": "tsup",
-    "build:vite": "vite build",
+    "build": "tsup",
     "dev": "vite dev",
     "lint": "eslint src",
-    "format": "eslint src --fix"
+    "lint:fix": "eslint src --fix"
   },
   "devDependencies": {
     "@material/material-color-utilities": "^0.2.7",

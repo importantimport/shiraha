@@ -29,10 +29,4 @@ export default defineConfig([
     format: ['iife'],
     target: 'es2015',
   },
-  {
-    ...options,
-    entry: ['tmp/worker.js'],
-    format: ['esm'],
-    target: 'es2022',
-  },
 ])
