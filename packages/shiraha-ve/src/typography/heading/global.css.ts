@@ -1,11 +1,3 @@
-/**
- * Adaptive Type Scale
- * 1.2x ~ 1.25x
- * 20rem (320px) ~ 52.5rem (840px)
- * {@link https://typescale.com}
- * {@link https://royalfig.github.io/fluid-typography-calculator/}
- */
-
 import { globalStyle } from '@vanilla-extract/css'
 
 import * as styles from './styles'
