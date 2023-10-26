@@ -3,6 +3,10 @@ import type { CustomColor } from '@material/material-color-utilities'
 declare global {
   namespace ShirahaColors {
     interface Options {
+      /** @defaultValue false */
+      brightnessSuffix?: boolean
+      /** @defaultValue undefined */
+      customColors?: CustomColor[]
       /**
        * @defaultValue
        * ```ts
@@ -12,29 +16,20 @@ declare global {
        * ```
        */
       dark?: boolean
-      /** @defaultValue document.body */
-      target?: HTMLElement
-      /** @defaultValue false */
-      brightnessSuffix?: boolean
       /** @defaultValue undefined */
       paletteTones?: number[]
-      /** @defaultValue undefined */
-      customColors?: CustomColor[]
+      /** @defaultValue document.body */
+      target?: HTMLElement
       /** @defaultValue undefined */
       themeColor?: string
-    }
-
-    interface WorkerData {
-      image: ImageBitmap
-      options?: ShirahaColors.Options
     }
   }
 
   interface Window {
     shiraha:
-      | {
-          colors?: ShirahaColors.Options
-        }
-      | undefined
+    | {
+      colors?: ShirahaColors.Options
+    }
+    | undefined
   }
 }

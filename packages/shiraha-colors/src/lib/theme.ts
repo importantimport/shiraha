@@ -1,21 +1,21 @@
 import { hexFromArgb } from '@material/material-color-utilities'
-import { applyTheme, type Theme, themeFromImage } from 'mcu-extra'
+import { type Theme, applyTheme as mcuApplyTheme, themeFromImage as mcuThemeFromImage } from 'mcu-extra'
 
-export const scThemeFromImage = async (
+export const themeFromImage = async (
   img: HTMLImageElement | null,
   options: ShirahaColors.Options = {},
 ) => {
   if (!(img?.toString() === '[object HTMLImageElement]'))
     return
   img.crossOrigin = 'anonymous'
-  return await themeFromImage(img, options.customColors)
+  return await mcuThemeFromImage(img, options.customColors)
 }
 
-export const scApplyTheme = (
+export const applyTheme = (
   theme: Theme,
   options: ShirahaColors.Options = {},
 ) => {
-  applyTheme(theme, {
+  mcuApplyTheme(theme, {
     brightnessSuffix: options.brightnessSuffix ?? false,
     dark: !!(
       options.dark
@@ -34,11 +34,9 @@ export const scApplyTheme = (
       themeColor.media = `(prefers-color-scheme: ${scheme})`
       themeColor.content = hexFromArgb(
         // @ts-expect-error ts(7053)
-        theme.schemes[scheme][
-          options.themeColor.replaceAll(/([_-][a-z])/g, s =>
-            s.slice(1).toUpperCase(),
-          )
-        ],
+        theme.schemes[scheme][options.themeColor.replaceAll(/([_-][a-z])/g, s =>
+          s.slice(1).toUpperCase(),
+        )],
       )
       document.head.append(themeColor)
     }
@@ -48,5 +46,5 @@ export const scApplyTheme = (
 export const applyShirahaColors = async (
   img: HTMLImageElement | null,
   options: ShirahaColors.Options = {},
-) => await scThemeFromImage(img, options)
-  .then(theme => theme && scApplyTheme(theme))
+) => await themeFromImage(img, options)
+  .then(theme => theme && applyTheme(theme))

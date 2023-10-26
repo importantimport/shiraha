@@ -1,8 +1,8 @@
-import { scGetImageElement } from './lib/image'
+import { getImageElement } from './lib/image'
 import './lib/observer'
 import { applyShirahaColors } from './lib/theme'
 
 await applyShirahaColors(
-  scGetImageElement(),
+  getImageElement(),
   window.shiraha?.colors,
 )
