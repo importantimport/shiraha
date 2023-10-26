@@ -1,4 +1,4 @@
-import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as validate_dynamic_element, aa as validate_void_dynamic_element, ab as add_flush_callback, ac as space, ad as element, ae as text, af as add_location, ag as insert_dev, ah as append_dev, ai as set_data_dev, aj as detach_dev, ak as noop, al as ensure_array_like_dev, am as empty, an as destroy_each, ao as attr_dev, ap as HtmlTag, aq as logEvent, ar as globals, as as listen_dev, at as prop_dev, _ as __vitePreload, au as createRouter, v as histoireConfig, av as createWebHistory, aw as createWebHashHistory, ax as markRaw, K as reactive, d as defineComponent, r as ref, ay as watchEffect, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode } from "./vendor-e38640c8.js";
+import { Y as SvelteComponentDev, Z as init, $ as dispatch_dev, a0 as safe_not_equal, a1 as validate_slots, a2 as binding_callbacks, a3 as bind, a4 as create_component, a5 as mount_component, a6 as transition_in, a7 as transition_out, a8 as destroy_component, a9 as validate_dynamic_element, aa as validate_void_dynamic_element, ab as add_flush_callback, ac as space, ad as element, ae as text, af as add_location, ag as insert_dev, ah as append_dev, ai as set_data_dev, aj as detach_dev, ak as noop, al as ensure_array_like_dev, am as empty, an as destroy_each, ao as attr_dev, ap as HtmlTag, aq as logEvent, ar as globals, as as listen_dev, at as prop_dev, _ as __vitePreload, au as createRouter, v as histoireConfig, av as createWebHistory, aw as createWebHashHistory, ax as markRaw, K as reactive, d as defineComponent, r as ref, ay as watchEffect, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode } from "./vendor-44eb59fb.js";
 const style$3 = "blockquote{border-left-color:var(--md-sys-color-surface-variant);border-left-width:4px;margin-top:24px;padding-left:24px;font-style:italic}\n";
 const file$6 = "src/typography/blockquote.story.svelte";
 function create_dynamic_element$4(ctx) {
@@ -677,7 +677,7 @@ class Chip_story extends SvelteComponentDev {
     throw new Error("<Chip_story>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   }
 }
-const styleH = ":where(h1,h2,h3,h4){letter-spacing:-.025em;padding-bottom:8px;scroll-margin:80px;font-weight:600}:where(h1,h2,h3):not(:first-child){margin-top:48px}:where(h4,h5,h6):not(:first-child){margin-top:24px}:where(h1),.h1{margin-top:0;font-size:clamp(2.49rem,2.14rem + 1.73vw,3.05rem)}:where(h2),.h2{font-size:clamp(2.07rem,1.85rem + 1.13vw,2.44rem)}:where(h3),.h3{font-size:clamp(1.73rem,1.59rem + .69vw,1.95rem)}:where(h4),.h4{font-size:clamp(1.44rem,1.36rem + .38vw,1.56rem)}:where(h5),.h5{font-size:clamp(1.2rem,1.17rem + .15vw,1.25rem)}:where(h6),.h6{font-size:clamp(.8rem,.78rem + .1vw,.83rem)}@supports (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:pretty}}@supports not (text-wrap:pretty){:where(h1,h2,h3,h4){text-wrap:balance}}\n";
+const styleH = ":where(h1,h2,h3,h4){letter-spacing:-.025em;text-wrap:balance;padding-bottom:8px;scroll-margin:80px;font-weight:600}:where(h1,h2,h3):not(:first-child){margin-top:48px}:where(h4,h5,h6):not(:first-child){margin-top:24px}:where(h1),.h1{margin-top:0;font-size:clamp(2.49rem,2.14rem + 1.73vw,3.05rem)}:where(h2),.h2{font-size:clamp(2.07rem,1.85rem + 1.13vw,2.44rem)}:where(h3),.h3{font-size:clamp(1.73rem,1.59rem + .69vw,1.95rem)}:where(h4),.h4{font-size:clamp(1.44rem,1.36rem + .38vw,1.56rem)}:where(h5),.h5{font-size:clamp(1.2rem,1.17rem + .15vw,1.25rem)}:where(h6),.h6{font-size:clamp(.8rem,.78rem + .1vw,.83rem)}\n";
 const styleP = "p{font-size:1rem}p:not(:first-child){margin-top:24px}\n";
 const file$4 = "src/typography/heading.story.svelte";
 function get_each_context$2(ctx, list, i2) {
@@ -3471,12 +3471,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-beeee870.js"), true ? ["assets/HomeView.vue-beeee870.js","assets/vendor-e38640c8.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-0f7cd5a0.js"), true ? ["assets/HomeView.vue-0f7cd5a0.js","assets/vendor-44eb59fb.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-4b0c529a.js"), true ? ["assets/StoryView.vue-4b0c529a.js","assets/vendor-e38640c8.js","assets/story-619c7bb2.js","assets/MobileOverlay.vue2-c76d6a64.js","assets/BaseEmpty.vue-e3520647.js","assets/state-577cb0df.js","assets/events-a5747048.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-2edee1b8.js"), true ? ["assets/StoryView.vue-2edee1b8.js","assets/vendor-44eb59fb.js","assets/story-88e414f2.js","assets/MobileOverlay.vue2-265e63bc.js","assets/BaseEmpty.vue-9ecd13b6.js","assets/state-86d94805.js","assets/events-486d9785.js"] : void 0)
     }
   ]
 });
@@ -3545,8 +3545,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-e38640c8.js").then((n2) => n2.b4), true ? [] : void 0),
-  "svelte4": () => __vitePreload(() => import("./vendor-e38640c8.js").then((n2) => n2.b5), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-44eb59fb.js").then((n2) => n2.b4), true ? [] : void 0),
+  "svelte4": () => __vitePreload(() => import("./vendor-44eb59fb.js").then((n2) => n2.b5), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false

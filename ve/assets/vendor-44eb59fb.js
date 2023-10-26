@@ -14351,7 +14351,7 @@ async function logEvent(name, argument) {
       event
     });
   } else {
-    const { useEventsStore } = await __vitePreload(() => import("./events-a5747048.js"), true ? ["assets/events-a5747048.js","assets/story-619c7bb2.js","assets/GenericMountStory.vue2-8607916f.js"] : void 0);
+    const { useEventsStore } = await __vitePreload(() => import("./events-486d9785.js"), true ? ["assets/events-486d9785.js","assets/story-88e414f2.js","assets/GenericMountStory.vue2-cbf50823.js"] : void 0);
     useEventsStore().addEvent(event);
   }
 }
