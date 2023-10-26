@@ -13,6 +13,7 @@ globalStyle('html', {
   lineHeight: 1.5,
   overflowWrap: 'break-word',
   tabSize: 4,
+  textWrap: 'pretty',
   wordWrap: 'break-word',
 })
 

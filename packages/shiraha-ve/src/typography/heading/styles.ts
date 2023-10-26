@@ -3,18 +3,11 @@ import type { ComplexStyleRule } from '@vanilla-extract/css'
 import OP from 'open-props'
 
 export const h = {
-  '@supports': {
-    '(text-wrap: pretty)': {
-      textWrap: 'pretty',
-    },
-    'not (text-wrap: pretty)': {
-      textWrap: 'balance',
-    },
-  },
-  'fontWeight': OP.fontWeight6,
-  'letterSpacing': '-0.025em',
-  'paddingBottom': 8,
-  'scrollMargin': 80,
+  fontWeight: OP.fontWeight6,
+  letterSpacing: '-0.025em',
+  paddingBottom: 8,
+  scrollMargin: 80,
+  textWrap: 'balance',
 } as const satisfies ComplexStyleRule
 
 export const h123NotFirstChild = {
