@@ -1,11 +1,14 @@
 import { globalStyle } from '@vanilla-extract/css'
 
-globalStyle('img, audio, video', {
+globalStyle(':where(img, audio, video)', {
+  borderRadius: 2,
   maxWidth: '100%',
 })
 
-globalStyle('figure, picture', {
+globalStyle(':where(figure, picture)', {
   margin: '1rem 0',
 })
 
-// globalStyle('figcaption', {})
+globalStyle(':where(figcaption)', {
+  fontSize: '0.875em',
+})
