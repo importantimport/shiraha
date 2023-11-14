@@ -141,6 +141,35 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-breadcrumb-global-story-svelte",
+      "title": "Breadcrumb",
+      "group": null,
+      "layout": {
+        "type": "single",
+        "iframe": true
+      },
+      "icon": null,
+      "iconColor": null,
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-breadcrumb-global-story-svelte-0",
+          "title": "default",
+          "icon": null,
+          "iconColor": null
+        }
+      ],
+      "relativePath": "src/components/breadcrumb/global.story.svelte",
+      "supportPluginId": "svelte4",
+      "treePath": [
+        "Components",
+        "Breadcrumb",
+        "Breadcrumb"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-button-global-story-svelte",
       "title": "Button (global)",
       "group": null,

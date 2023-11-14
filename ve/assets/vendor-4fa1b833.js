@@ -14489,7 +14489,7 @@ async function logEvent(name, argument) {
       event
     });
   } else {
-    const { useEventsStore } = await __vitePreload(() => import("./events-70fbbda8.js"), true ? ["assets/events-70fbbda8.js","assets/story-ad1196e9.js","assets/GenericMountStory.vue2-16d114f2.js"] : void 0);
+    const { useEventsStore } = await __vitePreload(() => import("./events-829740fb.js"), true ? ["assets/events-829740fb.js","assets/story-ee4bc19c.js","assets/GenericMountStory.vue2-7a0f8217.js"] : void 0);
     useEventsStore().addEvent(event);
   }
 }
@@ -40417,17 +40417,17 @@ export {
   add_flush_callback as ab,
   space as ac,
   element as ad,
-  text as ae,
-  add_location as af,
-  insert_dev as ag,
-  append_dev as ah,
-  set_data_dev as ai,
-  detach_dev as aj,
-  noop$2 as ak,
-  ensure_array_like_dev as al,
-  empty as am,
-  destroy_each as an,
-  attr_dev as ao,
+  add_location as ae,
+  insert_dev as af,
+  detach_dev as ag,
+  noop$2 as ah,
+  ensure_array_like_dev as ai,
+  empty as aj,
+  destroy_each as ak,
+  attr_dev as al,
+  text as am,
+  append_dev as an,
+  set_data_dev as ao,
   HtmlTag as ap,
   logEvent as aq,
   globals as ar,

@@ -1,4 +1,4 @@
-import { ax as markRaw } from "./vendor-3da8712f.js";
+import { ax as markRaw } from "./vendor-4fa1b833.js";
 let searchData$1 = { "index": { "reg": "{}", "text.cfg": '{"doc":0,"opt":1}', "text.map": "[{},{},{},{},{},{},{},{},{}]", "text.ctx": "[{}]" }, "idMap": {} };
 const searchData = markRaw(searchData$1);
 function onUpdate(cb) {
