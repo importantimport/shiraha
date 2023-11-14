@@ -2,8 +2,10 @@ import { globalStyle } from '@vanilla-extract/css'
 
 import * as styles from './styles'
 
-globalStyle(':where(nav[aria-labelledby="breadcrumb"]) > *', styles.breadcrumb)
+const root = ':where(nav[aria-labelledby="breadcrumb"])'
 
-globalStyle(':where(nav[aria-labelledby="breadcrumb"]) > ul > li', styles.breadcrumbUlLi)
+globalStyle(`${root} > *`, styles.breadcrumb)
 
-globalStyle(':where(nav[aria-labelledby="breadcrumb"]) > ul > li+li:before', styles.breadcrumbUlLiLiBefore)
+globalStyle(`${root} > ul > li`, styles.breadcrumbUlLi)
+
+globalStyle(`${root} > ul > li+li:before`, styles.breadcrumbUlLiLiBefore)
