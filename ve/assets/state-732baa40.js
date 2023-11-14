@@ -1,5 +1,5 @@
-import { c as clientSupportPlugins } from "./GenericMountStory.vue2-7a0f8217.js";
-import { d as defineComponent, r as ref, ay as watchEffect, ax as markRaw, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode, K as reactive, v as histoireConfig, z as isRef, g as unref } from "./vendor-4fa1b833.js";
+import { c as clientSupportPlugins } from "./GenericMountStory.vue2-58964d18.js";
+import { d as defineComponent, r as ref, ay as watchEffect, ax as markRaw, o as openBlock, q as createBlock, az as mergeProps, aA as resolveDynamicComponent, h as createCommentVNode, K as reactive, v as histoireConfig, z as isRef, g as unref } from "./vendor-fc3108a6.js";
 const __default__ = {
   inheritAttrs: false
 };

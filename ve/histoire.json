@@ -142,7 +142,7 @@
     },
     {
       "id": "src-components-breadcrumb-global-story-svelte",
-      "title": "Breadcrumb",
+      "title": "Breadcrumb (global)",
       "group": null,
       "layout": {
         "type": "single",
@@ -164,7 +164,7 @@
       "treePath": [
         "Components",
         "Breadcrumb",
-        "Breadcrumb"
+        "Breadcrumb (global)"
       ],
       "virtual": false,
       "markdownFile": null

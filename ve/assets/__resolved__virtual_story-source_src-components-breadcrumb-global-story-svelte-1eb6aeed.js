@@ -1,6 +1,7 @@
 const __resolved__virtual_storySource_srcComponentsBreadcrumbGlobalStorySvelte = `<script lang="ts">
   import type { Hst } from '@histoire/plugin-svelte'
   import style from 'shiraha-ve/dist/components/breadcrumb/global.css?inline'
+  import styleL from 'shiraha-ve/dist/typography/link/global.css?inline'
   import styleP from 'shiraha-ve/dist/typography/paragraph/global.css?inline'
 
   export let Hst: Hst
@@ -8,9 +9,10 @@ const __resolved__virtual_storySource_srcComponentsBreadcrumbGlobalStorySvelte =
   let icon = false
 <\/script>
 
-<Hst.Story title="Breadcrumb">
+<Hst.Story title="Breadcrumb (global)">
   <Hst.Variant title="default">
     <svelte:element this={'style'}>{style}</svelte:element>
+    <svelte:element this={'style'}>{styleL}</svelte:element>
     <svelte:element this={'style'}>{styleP}</svelte:element>
     <p>Breadcrumb (Paragraph)</p>
     <nav aria-labelledby="breadcrumb">
