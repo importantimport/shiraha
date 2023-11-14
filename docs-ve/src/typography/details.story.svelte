@@ -17,7 +17,7 @@
     <svelte:element this={'style'}>{style}</svelte:element>
     <details>
       <summary>{summary}</summary>
-      <p>{text}</p>
+      <p>{@html text}</p>
     </details>
   </Hst.Variant>
 

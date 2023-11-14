@@ -15,7 +15,7 @@
   <Hst.Variant title="default">
     <svelte:element this={'style'}>{style}</svelte:element>
     <blockquote>
-      {text}
+      {@html text}
     </blockquote>
   </Hst.Variant>
 
