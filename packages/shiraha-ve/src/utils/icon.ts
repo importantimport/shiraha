@@ -1,5 +1,6 @@
 import type { ComplexStyleRule } from '@vanilla-extract/css'
 
+/** {@link https://github.com/marella/material-symbols/blob/main/material-symbols/index.css} */
 export const icon = (content: string) => ({
   MozOsxFontSmoothing: 'grayscale',
   WebkitFontSmoothing: 'antialiased',
@@ -10,6 +11,7 @@ export const icon = (content: string) => ({
     'Material Symbols Outlined',
     'Material Symbols Rounded',
     'Material Symbols Sharp',
+    // UNTESTED
     'Material Icons',
     'Material Icons Outliend',
     'Material Icons Sharp',
