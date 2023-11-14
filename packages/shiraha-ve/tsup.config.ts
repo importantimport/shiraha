@@ -7,6 +7,9 @@ import { defineConfig } from 'tsup'
 
 const targets = browserslistToTargets(browserslist('defaults and supports css-nesting'))
 
+// TODO:
+// `vanilla.css.ts` dts true
+// `global.css.ts` dts false
 export default defineConfig(({ watch }) => ({
   dts: { resolve: true },
   entry: Object.fromEntries(glob

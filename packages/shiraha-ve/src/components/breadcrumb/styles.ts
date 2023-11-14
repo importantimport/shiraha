@@ -1,4 +1,8 @@
-/** {@link https://github.com/oscarotero/semantic-html/blob/master/html/breadcrumb.md} */
+/**
+ * {@link https://www.w3.org/TR/html5/common-idioms-without-dedicated-elements.html#bread-crumb-navigation}
+ * {@link https://github.com/oscarotero/semantic-html/blob/master/html/breadcrumb.md}
+ * {@link https://a11y-style-guide.com/style-guide/section-navigation.html#kssref-navigation-breadcrumbs}
+ */
 
 import type { ComplexStyleRule } from '@vanilla-extract/css'
 
