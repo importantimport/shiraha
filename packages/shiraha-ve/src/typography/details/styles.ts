@@ -35,8 +35,7 @@ export const detailsSummary = {
 
 /** `:where(details) > summary::after` */
 export const detailsSummaryAfter = {
-  ...icon,
-  content: 'expand_more',
+  ...icon('expand_more'),
   marginLeft: 'auto',
   /** TODO:change this */
   transition: '0.2s transform ease',

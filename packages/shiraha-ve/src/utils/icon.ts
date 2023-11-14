@@ -1,8 +1,9 @@
 import type { ComplexStyleRule } from '@vanilla-extract/css'
 
-export const icon = {
+export const icon = (content: string) => ({
   MozOsxFontSmoothing: 'grayscale',
   WebkitFontSmoothing: 'antialiased',
+  content,
   direction: 'ltr',
   display: 'inline-block',
   fontFamily: [
@@ -24,7 +25,7 @@ export const icon = {
   textTransform: 'none',
   whiteSpace: 'nowrap',
   wordWrap: 'normal',
-} as const satisfies ComplexStyleRule
+}) as const satisfies ComplexStyleRule
 
 export const iconFill = {
   fontVariationSettings: '\'FILL\' 1',
