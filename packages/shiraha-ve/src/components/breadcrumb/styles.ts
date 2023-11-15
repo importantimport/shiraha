@@ -8,14 +8,14 @@ import type { ComplexStyleRule } from '@vanilla-extract/css'
 
 import { icon } from '../../utils/icon'
 
-/** `:where(nav[aria-labelledby="breadcrumb"]) > *` */
+/** `:where(nav[aria-label="breadcrumbs"]) > *` */
 export const breadcrumb = {
   display: 'flex',
   flexDirection: 'row',
   gap: '0.5rem',
 } as const satisfies ComplexStyleRule
 
-/** `:where(nav[aria-labelledby="breadcrumb"]) > ul > li` */
+/** `:where(nav[aria-label="breadcrumbs"]) > ul > li` */
 export const breadcrumbUlLi = {
   alignItems: 'center',
   display: 'inline-flex',
@@ -23,7 +23,7 @@ export const breadcrumbUlLi = {
   height: 24,
 } as const satisfies ComplexStyleRule
 
-/** `:where(nav[aria-labelledby="breadcrumb"]) > ul > li+li:before` */
+/** `:where(nav[aria-label="breadcrumbs"]) > ul > li+li:before` */
 export const breadcrumbUlLiLiBefore = {
   ...icon('chevron_right'),
 } as const satisfies ComplexStyleRule

@@ -15,7 +15,7 @@
     <svelte:element this={'style'}>{styleL}</svelte:element>
     <svelte:element this={'style'}>{styleP}</svelte:element>
     <p>Breadcrumb (Paragraph)</p>
-    <nav aria-labelledby="breadcrumb">
+    <nav aria-label="breadcrumbs">
       <p>
         <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="#">Shiraha</a>
@@ -35,7 +35,7 @@
       </p>
     </nav>
     <p>Breadcrumb (Unordered List)</p>
-    <nav aria-labelledby="breadcrumb">
+    <nav aria-label="breadcrumbs">
       <ul>
         <li>
           <!-- svelte-ignore a11y-invalid-attribute -->
