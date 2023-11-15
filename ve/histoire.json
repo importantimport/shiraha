@@ -228,6 +228,64 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-footer-global-story-svelte",
+      "title": "Footer (global)",
+      "group": null,
+      "layout": {
+        "type": "single",
+        "iframe": true
+      },
+      "icon": null,
+      "iconColor": null,
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-footer-global-story-svelte-0",
+          "title": "default",
+          "icon": null,
+          "iconColor": null
+        }
+      ],
+      "relativePath": "src/components/footer/global.story.svelte",
+      "supportPluginId": "svelte4",
+      "treePath": [
+        "Components",
+        "Footer",
+        "Footer (global)"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-pagination-global-story-svelte",
+      "title": "Pagination (global)",
+      "group": null,
+      "layout": {
+        "type": "single",
+        "iframe": true
+      },
+      "icon": null,
+      "iconColor": null,
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-pagination-global-story-svelte-0",
+          "title": "default",
+          "icon": null,
+          "iconColor": null
+        }
+      ],
+      "relativePath": "src/components/pagination/global.story.svelte",
+      "supportPluginId": "svelte4",
+      "treePath": [
+        "Components",
+        "Pagination",
+        "Pagination (global)"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-tab-vanilla-story-svelte",
       "title": "Tab (vanilla-extract)",
       "group": null,

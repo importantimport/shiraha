@@ -14489,7 +14489,7 @@ async function logEvent(name, argument) {
       event
     });
   } else {
-    const { useEventsStore } = await __vitePreload(() => import("./events-9f4599c5.js"), true ? ["assets/events-9f4599c5.js","assets/story-d67d66ae.js","assets/GenericMountStory.vue2-58964d18.js"] : void 0);
+    const { useEventsStore } = await __vitePreload(() => import("./events-ec7a9417.js"), true ? ["assets/events-ec7a9417.js","assets/story-56eef47e.js","assets/GenericMountStory.vue2-6af63c94.js"] : void 0);
     useEventsStore().addEvent(event);
   }
 }
