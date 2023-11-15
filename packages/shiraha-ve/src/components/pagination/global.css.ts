@@ -1,9 +1,7 @@
-/**
- * {@link https://github.com/oscarotero/semantic-html/blob/master/html/pagination.md}
- * {@link https://a11y-style-guide.com/style-guide/section-navigation.html}
- */
+import { globalStyle } from '@vanilla-extract/css'
 
-import type { ComplexStyleRule } from '@vanilla-extract/css'
+import * as styles from './styles'
 
-/** `:where(nav[aria-label="pagination"], [role="navigation"])` */
-export const pagination = {} as const satisfies ComplexStyleRule
+const root = ':where(nav[aria-label="pagination"], [role="navigation"])'
+
+globalStyle(`${root} > ul`, styles.pagination)
