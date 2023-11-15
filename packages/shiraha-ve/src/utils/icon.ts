@@ -21,7 +21,7 @@ export const icon = (content: string) => ({
   fontFeatureSettings: 'liga',
   fontSize: 24,
   // fontStyle: 'normal',
-  // fontWeight: 'normal',
+  fontWeight: 'normal',
   // letterSpacing: 'normal',
   lineHeight: 1,
   textRendering: 'optimizeLegibility',
