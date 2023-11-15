@@ -15,6 +15,13 @@
 <Hst.Story title="Details">
   <Hst.Variant title="default">
     <svelte:element this={'style'}>{style}</svelte:element>
+    <p>without summary</p>
+    <details>{@html text}</details>
+    <br />
+    <p>pre-opened, without summary</p>
+    <details open>{@html text}</details>
+    <br />
+    <p>with summary</p>
     <details>
       <summary>{summary}</summary>
       <p>{@html text}</p>
