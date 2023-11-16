@@ -8,13 +8,13 @@
     "preview": "histoire preview"
   },
   "dependencies": {
-    "material-symbols": "^0.13.2",
+    "material-symbols": "^0.14.0",
     "shiraha-ve": "workspace:*"
   },
   "devDependencies": {
     "@histoire/plugin-svelte": "^0.17.4",
     "@sveltejs/vite-plugin-svelte": "^2.5.2",
-    "histoire": "^0.17.4",
+    "histoire": "^0.17.5",
     "svelte": "^4.2.3"
   }
 }
