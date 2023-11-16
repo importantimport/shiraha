@@ -20,6 +20,7 @@ const color = {
   onSurfaceVariant: 'md-sys-color-on-surface-variant',
   onTertiary: 'md-sys-color-on-tertiary',
   onTertiaryContainer: 'md-sys-color-on-tertiary-container',
+  // eslint-disable-next-line perfectionist/sort-objects
   outline: 'md-sys-color-outline',
   outlineVariant: 'md-sys-color-outline-variant',
   primary: 'md-sys-color-primary',

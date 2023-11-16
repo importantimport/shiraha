@@ -4,15 +4,15 @@ import { opacity } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const baseButtonGlobal = {
-  borderRadius: 20,
-  color: vars.color.primary,
-  cursor: 'pointer',
   display: 'inline-flex',
   gap: 8,
-  height: 40,
   minWidth: 40,
+  height: 40,
   padding: '0.5rem 1.5rem',
+  color: vars.color.primary,
   textDecoration: 'none',
+  cursor: 'pointer',
+  borderRadius: 20,
   transition: 'ease-in-out 0.1s',
 } as const satisfies ComplexStyleRule
 
@@ -25,9 +25,9 @@ export const baseButtonWithIconChild = {
 } as const satisfies ComplexStyleRule
 
 export const baseButtonDisabled = {
-  backgroundColor: opacity(vars.color.onSurface, 12),
   color: opacity(vars.color.onSurface, 38),
   cursor: 'not-allowed',
+  backgroundColor: opacity(vars.color.onSurface, 12),
 } as const satisfies ComplexStyleRule
 
 export const baseButtonFocusVisible = {

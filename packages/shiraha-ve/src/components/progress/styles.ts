@@ -4,12 +4,12 @@ import { md } from '../../utils/md'
 import { vars } from '../../vars.css'
 
 export const progressGlobal = {
-  appearance: 'none',
-  backgroundColor: vars.color.surfaceContainerHighest,
-  height: 4,
-  overflow: 'hidden',
   position: 'relative',
   width: '100%',
+  height: 4,
+  overflow: 'hidden',
+  appearance: 'none',
+  backgroundColor: vars.color.surfaceContainerHighest,
 } as const satisfies ComplexStyleRule
 
 export const progressBar = {
@@ -34,14 +34,14 @@ export const progress = {
 } as const satisfies ComplexStyleRule
 
 export const progressIndeterminate = (animationName: string) => ({
-  animation: `${animationName} 2s ${md.motion.standardDecelerate} infinite`,
-  backgroundColor: vars.color.primary,
-  content: '',
-  height: '100%',
-  left: 0,
   position: 'absolute',
   top: 0,
+  left: 0,
   width: '100%',
+  height: '100%',
+  content: '',
+  backgroundColor: vars.color.primary,
+  animation: `${animationName} 2s ${md.motion.standardDecelerate} infinite`,
   willChange: 'left',
 }) as const satisfies ComplexStyleRule
 

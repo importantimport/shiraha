@@ -10,10 +10,10 @@ export * from './styles.text'
 export * from './styles.tonal'
 
 export const iconButton = {
-  fontSize: 20,
-  overflow: 'hidden',
-  padding: 10,
   width: 40,
+  padding: 10,
+  overflow: 'hidden',
+  fontSize: 20,
 } as const satisfies ComplexStyleRule
 
 export const iconOutlinedButton = {
@@ -21,6 +21,6 @@ export const iconOutlinedButton = {
 } as const satisfies ComplexStyleRule
 
 export const iconTextButton = {
-  color: vars.color.onSurfaceVariant,
   padding: 10,
+  color: vars.color.onSurfaceVariant,
 } as const satisfies ComplexStyleRule

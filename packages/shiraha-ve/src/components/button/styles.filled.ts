@@ -6,8 +6,8 @@ import { state } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const filledButtonGlobal = {
-  backgroundColor: vars.color.primary,
   color: vars.color.onPrimary,
+  backgroundColor: vars.color.primary,
 } as const satisfies ComplexStyleRule
 
 export const filledButtonActive = {

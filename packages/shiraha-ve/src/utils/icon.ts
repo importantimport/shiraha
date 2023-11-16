@@ -2,11 +2,13 @@ import type { ComplexStyleRule } from '@vanilla-extract/css'
 
 /** {@link https://github.com/marella/material-symbols/blob/main/material-symbols/index.css} */
 export const icon = (content: string) => ({
-  MozOsxFontSmoothing: 'grayscale',
-  WebkitFontSmoothing: 'antialiased',
-  content,
   // direction: 'ltr',
   display: 'inline-block',
+  // ].join(', '),
+  fontFamily: '"Material Symbols Outlined", "Material Symbols Rounded", "Material Symbols Sharp"',
+  fontSize: 24,
+  // fontStyle: 'normal',
+  fontWeight: 'normal',
   // fontFamily: [
   //   'Material Symbols Outlined',
   //   'Material Symbols Rounded',
@@ -16,18 +18,16 @@ export const icon = (content: string) => ({
   //   'Material Icons Outliend',
   //   'Material Icons Sharp',
   //   'Material Icons Two Tone',
-  // ].join(', '),
-  fontFamily: '"Material Symbols Outlined", "Material Symbols Rounded", "Material Symbols Sharp"',
   fontFeatureSettings: 'liga',
-  fontSize: 24,
-  // fontStyle: 'normal',
-  fontWeight: 'normal',
+  WebkitFontSmoothing: 'antialiased',
+  MozOsxFontSmoothing: 'grayscale',
   // letterSpacing: 'normal',
   lineHeight: 1,
-  textRendering: 'optimizeLegibility',
+  wordWrap: 'normal',
   // textTransform: 'none',
   whiteSpace: 'nowrap',
-  wordWrap: 'normal',
+  content,
+  textRendering: 'optimizeLegibility',
 }) as const satisfies ComplexStyleRule
 
 export const iconFill = {

@@ -8,6 +8,6 @@ export const section = {
 } as const satisfies ComplexStyleRule
 
 export const sectionChild = {
-  marginBottom: 0,
   marginTop: 0,
+  marginBottom: 0,
 } as const satisfies ComplexStyleRule

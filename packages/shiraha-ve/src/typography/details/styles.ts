@@ -7,12 +7,12 @@ import { vars } from '../../vars.css'
 
 /** `:where(details)` */
 export const details = {
+  position: 'relative',
+  paddingBlock: '1rem',
+  color: vars.color.onSurface,
   backgroundColor: vars.color.surfaceContainer,
   /** TODO: change this */
   borderRadius: 5,
-  color: vars.color.onSurface,
-  paddingBlock: '1rem',
-  position: 'relative',
 } as const satisfies ComplexStyleRule
 
 /** `:where(details) > :not(summary)` */
@@ -22,13 +22,13 @@ export const detailsNotSummary = {
 
 /** `:where(details) > summary` */
 export const detailsSummary = {
-  alignItems: 'center',
-  cursor: 'pointer',
   display: 'flex',
-  fontWeight: OP.fontWeight7,
   gap: '1rem',
-  listStyle: 'none',
+  alignItems: 'center',
   padding: '0 1.5rem',
+  fontWeight: OP.fontWeight7,
+  listStyle: 'none',
+  cursor: 'pointer',
   /** TODO: change this */
   transition: '0.2s all ease',
 } as const satisfies ComplexStyleRule
@@ -48,10 +48,10 @@ export const detailsSummaryMarker = {
 
 /** `:where(details[open]) > summary` */
 export const detailsOpenSummary = {
-  borderEndEndRadius: 0,
-  borderEndStartRadius: 0,
-  marginBlockEnd: '1rem',
   padding: '0.5rem 1.5rem',
+  marginBlockEnd: '1rem',
+  borderEndStartRadius: 0,
+  borderEndEndRadius: 0,
   /** TODO: change this */
   transition: '0.2s all ease',
 } as const satisfies ComplexStyleRule

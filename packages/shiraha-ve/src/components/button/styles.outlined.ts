@@ -4,10 +4,10 @@ import { opacity } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const outlinedButtonGlobal = {
-  borderColor: vars.color.outline,
-  borderWidth: 1,
   /** (8px - 1px) (24px - 1px) */
   padding: '7px 23px',
+  borderColor: vars.color.outline,
+  borderWidth: 1,
 } as const satisfies ComplexStyleRule
 
 export const outlinedButtonActive = {

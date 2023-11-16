@@ -6,8 +6,8 @@ import { state } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const tonalButtonGlobal = {
-  backgroundColor: vars.color.secondaryContainer,
   color: vars.color.onSecondaryContainer,
+  backgroundColor: vars.color.secondaryContainer,
 } as const satisfies ComplexStyleRule
 
 export const tonalButtonActive = {

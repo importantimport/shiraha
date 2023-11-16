@@ -5,8 +5,8 @@ import { vars } from '../../vars.css'
 
 export const textButtonGlobal = {
   ':disabled': {
-    backgroundColor: 'transparent',
     color: opacity(vars.color.onSurface, 38),
+    backgroundColor: 'transparent',
   },
   'padding': '8px 12px',
 } as const satisfies ComplexStyleRule
@@ -25,8 +25,8 @@ export const textButtonHover = {
 } as const satisfies ComplexStyleRule
 
 export const textButtonWithIconChild = {
-  paddingLeft: 12,
   paddingRight: 16,
+  paddingLeft: 12,
 }
 
 export const textButtonSelectors = (iconButtonClass: string) => ({

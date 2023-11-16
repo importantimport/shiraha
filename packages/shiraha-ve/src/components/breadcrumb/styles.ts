@@ -17,9 +17,9 @@ export const breadcrumb = {
 
 /** `:where(nav[aria-label="breadcrumbs"]) > ul > li` */
 export const breadcrumbUlLi = {
-  alignItems: 'center',
   display: 'inline-flex',
   gap: '0.5rem',
+  alignItems: 'center',
   height: 24,
 } as const satisfies ComplexStyleRule
 

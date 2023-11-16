@@ -12,11 +12,11 @@ import OP from 'open-props'
 
 /** `:where(h1, h2, h3, h4, h5, h6)` */
 export const h = {
-  fontWeight: OP.fontWeight6,
-  letterSpacing: '-0.025em',
   paddingBottom: 8,
-  scrollMargin: 80,
+  fontWeight: OP.fontWeight6,
   textWrap: 'balance',
+  letterSpacing: '-0.025em',
+  scrollMargin: 80,
 } as const satisfies ComplexStyleRule
 
 /** `:where(h1, h2, h3):not(:first-child)` */
@@ -31,8 +31,8 @@ export const h456NotFirstChild = {
 
 /** `:where(h1)` */
 export const h1 = {
-  fontSize: 'clamp(2.49rem, 2.14rem + 1.73vw, 3.05rem)',
   marginTop: 0,
+  fontSize: 'clamp(2.49rem, 2.14rem + 1.73vw, 3.05rem)',
 } as const satisfies ComplexStyleRule
 
 /** `:where(h2)` */
