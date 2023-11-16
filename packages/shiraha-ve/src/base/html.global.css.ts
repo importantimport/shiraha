@@ -23,5 +23,5 @@ globalStyle('html:focus-within', {
       scrollBehavior: 'auto',
     },
   },
-  'scrollBehavior': 'smooth',
+  scrollBehavior: 'smooth',
 })

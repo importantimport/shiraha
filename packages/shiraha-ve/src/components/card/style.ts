@@ -4,11 +4,11 @@ import { opacity, state } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const baseCard = {
+  borderRadius: 12,
   ':disabled': {
     backgroundColor: opacity(vars.color.surfaceVariant, 38),
   },
-  'borderRadius': 12,
-  'selectors': {
+  selectors: {
     '&:active:not(:disabled)': {
       scale: 0.95,
     },
@@ -49,14 +49,14 @@ export const filledCard = {
 } as const satisfies ComplexStyleRule
 
 export const outlinedCard = {
+  backgroundColor: vars.color.surface,
+  borderColor: vars.color.outlineVariant,
   ':disabled': {
     backgroundColor: 'transparent',
     // TODO: check
     borderColor: opacity(vars.color.outline, 12),
   },
-  'backgroundColor': vars.color.surface,
-  'borderColor': vars.color.outlineVariant,
-  'selectors': {
+  selectors: {
     '&:active:not(:disabled)': {
       backgroundColor: opacity(vars.color.onSurface, 12),
     },

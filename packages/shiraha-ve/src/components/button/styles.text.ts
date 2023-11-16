@@ -4,11 +4,11 @@ import { opacity } from '../../utils/color'
 import { vars } from '../../vars.css'
 
 export const textButtonGlobal = {
+  padding: '8px 12px',
   ':disabled': {
     color: opacity(vars.color.onSurface, 38),
     backgroundColor: 'transparent',
   },
-  'padding': '8px 12px',
 } as const satisfies ComplexStyleRule
 
 export const textButtonActive = {

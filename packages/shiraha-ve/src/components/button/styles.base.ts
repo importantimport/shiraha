@@ -38,7 +38,7 @@ export const baseButtonFocusVisible = {
 export const baseButtonSelectors = (iconButtonClass: string) => ({
   ':disabled': baseButtonDisabled,
   ':focus-visible': baseButtonFocusVisible,
-  'selectors': {
+  selectors: {
     '&:active:not(:disabled)': baseButtonActive,
     [`&:has(.${iconButtonClass}:first-child:not(:last-child))`]: baseButtonWithIconChild,
   },

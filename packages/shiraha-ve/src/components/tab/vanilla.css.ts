@@ -13,6 +13,13 @@ export const tablist = style({
 
 /** `[role="tab"]` */
 export const tab = style({
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+  height: 48,
+  borderBottomColor: 'transparent',
+  borderBottomWidth: 2,
   ':focus-visible': {
     backgroundColor: opacity(vars.color.onSurface, 12),
     outline: `${vars.color.primary} auto 2px`,
@@ -20,13 +27,6 @@ export const tab = style({
   ':hover': {
     backgroundColor: opacity(vars.color.onSurface, 8),
   },
-  'alignItems': 'center',
-  'borderBottomColor': 'transparent',
-  'borderBottomWidth': 2,
-  'display': 'inline-flex',
-  'height': 48,
-  'justifyContent': 'center',
-  'width': '100%',
 })
 
 export const tabActive = style({
