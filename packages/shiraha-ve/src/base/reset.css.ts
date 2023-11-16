@@ -74,9 +74,9 @@ globalStyle('small', {
 globalStyle('sub, sup', {
   '@layer': {
     [base]: {
+      position: 'relative',
       fontSize: '75%',
       lineHeight: 0,
-      position: 'relative',
       verticalAlign: 'baseline',
     },
   },
@@ -110,12 +110,12 @@ globalStyle('sup', {
 globalStyle('table', {
   '@layer': {
     [base]: {
+      /** 1 */
+      textIndent: 0,
       /** 3 */
       borderCollapse: 'collapse',
       /** 2 */
       borderColor: 'inherit',
-      /** 1 */
-      textIndent: 0,
     },
   },
 })
@@ -128,12 +128,12 @@ globalStyle('table', {
 globalStyle('button, input, optgroup, select, textarea', {
   '@layer': {
     [base]: {
-      /** 1 */
-      color: 'inherit',
+      /** 3 */
+      padding: 0,
+      /** 2 */
+      margin: 0,
       /** 1 */
       fontFamily: 'inherit',
-      /** 1 */
-      fontFeatureSettings: 'inherit',
       /** 1 */
       fontSize: '100%',
       /** 1 */
@@ -141,11 +141,11 @@ globalStyle('button, input, optgroup, select, textarea', {
       /** 1 */
       fontWeight: 'inherit',
       /** 1 */
+      fontFeatureSettings: 'inherit',
+      /** 1 */
       lineHeight: 'inherit',
-      /** 2 */
-      margin: 0,
-      /** 3 */
-      padding: 0,
+      /** 1 */
+      color: 'inherit',
     },
   },
 })
@@ -166,12 +166,12 @@ globalStyle('button, select', {
 globalStyle('button, [type="button"], [type="reset"], [type="submit"]', {
   '@layer': {
     [base]: {
-      /** 1 */
-      WebkitAppearance: 'button',
       /** 2 */
       backgroundColor: 'transparent',
       /** 2 */
       backgroundImage: 'none',
+      /** 1 */
+      WebkitAppearance: 'button',
     },
   },
 })
@@ -222,8 +222,8 @@ globalStyle('::-webkit-inner-spin-button, ::-webkit-outer-spin-button', {
 globalStyle('[type="search"]', {
   '@layer': {
     [base]: {
-      WebkitAppearance: 'textfield',
       outlineOffset: '-2px',
+      WebkitAppearance: 'textfield',
     },
   },
 })
@@ -244,8 +244,8 @@ globalStyle('::-webkit-search-decoration', {
 globalStyle('::-webkit-file-upload-button', {
   '@layer': {
     [base]: {
-      WebkitAppearance: 'button',
       font: 'inherit',
+      WebkitAppearance: 'button',
     },
   },
 })
@@ -271,8 +271,8 @@ globalStyle('blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre', {
 globalStyle('fieldset', {
   '@layer': {
     [base]: {
-      margin: 0,
       padding: 0,
+      margin: 0,
     },
   },
 })
@@ -288,9 +288,9 @@ globalStyle('legend', {
 globalStyle('ol, ul, menu', {
   '@layer': {
     [base]: {
-      listStyle: 'none',
-      margin: 0,
       padding: 0,
+      margin: 0,
+      listStyle: 'none',
     },
   },
 })
@@ -372,8 +372,8 @@ globalStyle('img, svg, video, canvas, audio, iframe, embed, object', {
 globalStyle('img, video', {
   '@layer': {
     [base]: {
-      height: 'auto',
       maxWidth: '100%',
+      height: 'auto',
     },
   },
 })

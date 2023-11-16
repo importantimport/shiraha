@@ -34,8 +34,8 @@ globalStyle(`${submitButton}:hover:not(:active, ${disabled})`, styles.filledButt
 
 // Reset Button (Filled Style, Error Color)
 globalStyle(`${resetButton}:not(${disabled})`, {
-  backgroundColor: vars.color.error,
   color: vars.color.onError,
+  backgroundColor: vars.color.error,
 })
 
 globalStyle(`${resetButton}:is(:active, :focus):not(${disabled})`, {

@@ -8,16 +8,16 @@ globalStyle('abbr:where([title])', { textDecoration: 'underline dotted' })
 globalStyle(':where(b, strong)', { fontWeight: OP.fontWeight7 })
 
 globalStyle(':where(mark)', {
-  backgroundColor: vars.color.tertiaryContainer,
   color: vars.color.onTertiaryContainer,
+  backgroundColor: vars.color.tertiaryContainer,
 })
 
 globalStyle(':where(small)', { fontSize: '80%' })
 
 const subsup = {
+  position: 'relative',
   fontSize: '75%',
   lineHeight: 0,
-  position: 'relative',
   verticalAlign: 'baseline',
 } as const satisfies ComplexStyleRule
 

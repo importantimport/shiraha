@@ -7,6 +7,7 @@ import { type Theme, vars } from '../vars.css'
 export const baselineThemeLight = {
   color: {
     background: '#FEF7FF',
+    outline: '#79747E',
     error: '#B3261E',
     errorContainer: '#F9DEDC',
     inverseOnSurface: '#F4EFF4',
@@ -23,7 +24,6 @@ export const baselineThemeLight = {
     onSurfaceVariant: '#49454E',
     onTertiary: '#FFFFFF',
     onTertiaryContainer: '#370B1E',
-    outline: '#79747E',
     outlineVariant: '#C4C7C5',
     primary: '#6750A4',
     primaryContainer: '#EADDFF',
@@ -51,6 +51,7 @@ export const baselineThemeLight = {
 export const baselineThemeDark = {
   color: {
     background: '#141218',
+    outline: '#938F99',
     error: '#F2B8B5',
     errorContainer: '#8C1D18',
     inverseOnSurface: '#313033',
@@ -67,7 +68,6 @@ export const baselineThemeDark = {
     onSurfaceVariant: '#CAC4D0',
     onTertiary: '#492532',
     onTertiaryContainer: '#FFD8E4',
-    outline: '#938F99',
     outlineVariant: '#444746',
     primary: '#D0BCFF',
     primaryContainer: '#4F378B',

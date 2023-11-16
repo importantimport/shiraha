@@ -1,9 +1,9 @@
 import { globalStyle } from '@vanilla-extract/css'
 
 globalStyle('ol, ul', {
+  marginTop: '1.5rem',
   marginBottom: '1.5rem',
   marginLeft: '1.5rem',
-  marginTop: '1.5rem',
 })
 
 globalStyle(':where(ol)', { listStyleType: 'decimal' })

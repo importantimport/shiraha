@@ -5,9 +5,9 @@ import { vars } from '../vars.css'
 globalStyle('*, ::before, ::after', {
   '@media': {
     '(prefers-reduced-motion: reduce)': {
+      transitionDuration: '0.01ms !important',
       animationDuration: '0.01ms !important',
       animationIterationCount: '1 !important',
-      transitionDuration: '0.01ms !important',
     },
   },
   'borderColor': vars.color.primary,
@@ -17,6 +17,6 @@ globalStyle('*, ::before, ::after', {
 })
 
 globalStyle('::selection', {
-  backgroundColor: vars.color.primary,
   color: vars.color.onPrimary,
+  backgroundColor: vars.color.primary,
 })

@@ -5,10 +5,10 @@ import { vars } from '../../vars.css'
 
 /** `[role="tablist"]` */
 export const tablist = style({
-  borderBottomColor: vars.color.surfaceVariant,
-  borderBottomWidth: 1,
   display: 'flex',
   width: '100%',
+  borderBottomColor: vars.color.surfaceVariant,
+  borderBottomWidth: 1,
 })
 
 /** `[role="tab"]` */
@@ -36,8 +36,8 @@ export const tabActive = style({
 
 /** `[role="tabpanel"]` */
 export const tabpanel = style({
-  padding: 12,
   width: '100%',
+  padding: 12,
 })
 
 export const tabpanelHidden = style({

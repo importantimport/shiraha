@@ -1,8 +1,8 @@
 import { globalStyle } from '@vanilla-extract/css'
 
 globalStyle(':where(img, audio, video)', {
-  borderRadius: 2,
   maxWidth: '100%',
+  borderRadius: 2,
 })
 
 globalStyle(':where(figure, picture)', {
