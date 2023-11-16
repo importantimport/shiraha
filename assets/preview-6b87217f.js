@@ -1,0 +1,2 @@
+import{t as e}from"./chunk-E56DBAEL-fe5ff450.js";const r={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},darkMode:{dark:{...e.dark,brandTitle:"Shiraha"},light:{...e.normal,brandTitle:"Shiraha"},stylePreview:!0},html:{removeComments:!0,root:"#root-inner"},options:{storySort:{order:["stories","components","typography","addons","worklets","templates"]}}}};export{r as default};
+//# sourceMappingURL=preview-6b87217f.js.map
